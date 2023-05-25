@@ -9,16 +9,16 @@ const Footer = () => {
   return (
     <>
       {/* line */}
-      <div className="w-full h-px bg-[#ABB2BF] mt-20 mb-8"></div>
+      <div className="w-full h-px bg-[#ABB2BF] mt-10 mb-8"></div>
       {/* footer */}
       <div className="px-5 max-w-[1560px] mx-auto">
         {/* top */}
-        <div className="flex justify-between gap-y-10 flex-wrap">
+        <div className="flex flex-wrap justify-between gap-y-10">
           {/* left */}
           <div className="mx-auto md:mx-0">
-            <div className=" flex items-center gap-8 mb-3 ">
+            <div className="flex items-center gap-8 mb-3 ">
               {/* logo */}
-              <div className=" flex gap-2 items-center text-2xl text-white font-bold">
+              <div className="flex items-center gap-2 text-2xl font-bold text-white ">
                 <Logo />
                 <span className="uppercase">Otmane Omry</span>
               </div>
@@ -31,11 +31,11 @@ const Footer = () => {
             </div>
           </div>
           {/* right */}
-          <div className=" mx-auto md:mx-0">
+          <div className="mx-auto  md:mx-0">
             {/* title */}
-            <h2 className=" text-white text-2xl font-medium mb-3">Media</h2>
+            <h2 className="mb-3 text-2xl font-medium text-white ">Media</h2>
             {/* media */}
-            <div className="flex items-center gap-2 justify-center">
+            <div className="flex items-center justify-center gap-2">
               <Link href="https://www.linkedin.com/in/otmaneomry/">
                 <Linkedin/>
               </Link>

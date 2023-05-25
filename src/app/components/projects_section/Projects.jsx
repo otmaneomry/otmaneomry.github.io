@@ -28,9 +28,9 @@ const Projects = () => {
 
   return (
       <>
-        <div id="work" className="px-5 max-w-[1560px] mx-auto mt-20 py-10">
+        <div id="work" className="px-5 max-w-[1560px] mx-auto mt-10">
           {/* top */}
-          <div className=" flex justify-between items-center gap-5">
+          <div className="flex items-center justify-between gap-5 ">
             {/* left */}
             <div className=" text-white w-2/3 font-medium text-[32px] flex items-center gap-2">
               <div className="">
@@ -39,7 +39,7 @@ const Projects = () => {
               <div className="line w-2/3 h-px bg-[#C778DD]"></div>
             </div>
             {/* right */}
-            <div className=" text-white font-medium">
+            <div className="font-medium text-white ">
               <a href="">
                 <span>View all ~~&gt;</span>
               </a>

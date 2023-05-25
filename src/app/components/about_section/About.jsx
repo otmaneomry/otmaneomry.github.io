@@ -6,13 +6,13 @@ import man from "public/assets/images/man-about-otmane.png";
 const AboutSec = () => {
   return (
       <>
-        <div id="aboutsec" className="px-5 max-w-[1560px] mx-auto mt-20 py-10">
+        <div id="aboutsec" className="px-5 max-w-[1560px] mx-auto mt-10 py-10">
           {/* bottom */}
-          <div className=" flex-wrap flex items-center justify-between">
+          <div className="flex flex-wrap items-center justify-between ">
             {/* left */}
             <div className="md:w-[48%] w-full">
               {/* title */}
-              <div className=" mb-12">
+              <div className="mb-12 ">
                 <div className=" text-white w-2/3 font-medium text-[32px] flex items-center gap-2">
                   <div className="">
                     <span className="text-[#C778DD]">#</span>about-me
@@ -49,7 +49,7 @@ const AboutSec = () => {
               </div>
             </div>
             {/* right */}
-            <div className=" mx-auto">
+            <div className="mx-auto ">
               <img className="mx-auto" src={man.src} alt=""/>
             </div>
           </div>

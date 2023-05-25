@@ -5,11 +5,11 @@ import Github from "@/app/components/svg/github";
 const Contact = () => {
   return (
       <>
-        <div id="contacts" className="px-5 max-w-[1560px] mx-auto mt-20 py-10">
+        <div id="contacts" className="px-5 max-w-[1560px] mx-auto mt-10 py-10">
           {/* top */}
           <div className="">
             {/* header */}
-            <div className=" mb-10">
+            <div className="mb-10 ">
               <div className=" text-white w-2/3 font-medium text-[32px] flex items-center gap-2">
                 <div className="">
                   <span className="text-[#C778DD]">#</span>contacts
@@ -19,25 +19,25 @@ const Contact = () => {
             </div>
           </div>
           {/* bottom */}
-          <div className=" flex items-start flex-wrap gap-10 justify-between">
+          <div className="flex flex-wrap items-start justify-between gap-10 ">
             {/* left */}
-            <div className="left w-full md:w-1/2">
+            <div className="w-full left md:w-1/2">
               <p className=" text-[#ABB2BF]">
                 I’m interested in freelance opportunities. However, if you have
                 other request or question, don’t hesitate to contact me
               </p>
             </div>
             {/* right */}
-            <div className=" mx-auto">
+            <div className="mx-auto ">
               {/* box */}
               <div className="border border-[#ABB2BF] p-4">
-                <h2 className=" mb-4 text-white font-semibold">
+                <h2 className="mb-4 font-semibold text-white ">
                   Message me here
                 </h2>
                 {/* get in touch */}
                 <div className="flex flex-col gap-2">
                   {/* links */}
-                  <Link href="mailto:omry.otmane@gmail.com" className="flex gap-1 items-center" alt="mail of otmane omry">
+                  <Link href="mailto:omry.otmane@gmail.com" className="flex items-center gap-1" alt="mail of otmane omry">
                     <Mail/>
                     <span className="text-[#ABB2BF]">omry.otmane@gmail.com</span>
                   </Link>
