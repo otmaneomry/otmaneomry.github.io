@@ -2,7 +2,7 @@
 
 const Project_card = ({index, img, langs, title, disc}) => {
   return (
-      <div key={`project-${index}`} className="border mx-auto w-[90%] md:w-[48%] lg:w-[30%] border-[#ABB2BF] p-0">
+      <div key={`project-${index}`} className="border mx-auto w-full md:w-[48%] lg:w-[30%] border-[#ABB2BF] p-0">
         {/* img */}
         <div className="">
           <img className=" w-full" src={img} alt={title}/>

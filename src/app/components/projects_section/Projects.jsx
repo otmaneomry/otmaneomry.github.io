@@ -22,7 +22,7 @@ const Projects = () => {
       img: third,
       langs: ["Laravel", "React Native", "React"],
       title: "BASF Morocco",
-      disc: "platforme ecomerce for users to buy products from basf",
+      disc: "Platforme ecomerce for users to buy products from basf",
     },
   ];
 

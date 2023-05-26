@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
         {/* bottom */}
         <div className="text-center text-[#ABB2BF] pb-8 mt-12">
-          © Copyright 2023. Made by <Link href="https://github.com/beharus/Youtube_portfolio"
+          © Copyright 2023. by <Link href="https://github.com/beharus/Youtube_portfolio"
                                           className="text-[#C778DD]">Behruz Eshquvatov</Link>
         </div>
       </div>

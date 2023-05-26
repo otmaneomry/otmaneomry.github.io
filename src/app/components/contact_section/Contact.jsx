@@ -9,7 +9,7 @@ const Contact = () => {
           {/* top */}
           <div className="">
             {/* header */}
-            <div className="mb-10 ">
+            <div className="mb-4 ">
               <div className=" text-white w-2/3 font-medium text-[32px] flex items-center gap-2">
                 <div className="">
                   <span className="text-[#C778DD]">#</span>contacts
@@ -28,7 +28,7 @@ const Contact = () => {
               </p>
             </div>
             {/* right */}
-            <div className="mx-auto ">
+            <div className="mx-auto w-full md:w-1/3">
               {/* box */}
               <div className="border border-[#ABB2BF] p-4">
                 <h2 className="mb-4 font-semibold text-white ">
