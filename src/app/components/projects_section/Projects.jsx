@@ -8,19 +8,19 @@ const Projects = () => {
   const projects = [
     {
       img: first,
-      langs: ["Node.js", "Next.js", "React.js", "Typescript", "Tailwind css"],
+      langs: [],
       title: "Zabaqist",
       disc: "e-learning platforme for students and teachers",
     },
     {
       img: second,
-      langs: ["Laravel", "React Native", "React"],
+      langs: [],      
       title: "Om Pharma",
       disc: "Quiz app for users to test their knowledge about medicine",
     },
     {
       img: third,
-      langs: ["Laravel", "React Native", "React"],
+      langs: [],   
       title: "BASF Morocco",
       disc: "Platforme ecomerce for users to buy products from basf",
     },
