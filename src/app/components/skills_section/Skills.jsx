@@ -6,8 +6,8 @@ const Skills = () => {
     {title : "Operating system", languages : ["Linux", "macOS", "Windows"]},
     {title: "Development languages", languages: ["JAVA", "C", "C++", "PHP", "Python", "Node.js"]},
     {title: "Mobile development", languages: ["Android", "Kotlin", "React native", "Ionic", "Unity"]},
-    {title: "Web", languages: ["Vue.js 3", "Vue.js 2", "NuxtJS", "React", "Semantic Web"]},
-    {title: "Frameworks", languages: ["Laravel", "Express.js", "AdonisJS", "Angular"]},
+    {title: "Web", languages: ["React", "Vue.js 3", "Vue.js 2", "NuxtJS", "Semantic Web"]},
+    {title: "Frameworks", languages: ["Spring", "Laravel", "Express.js", "AdonisJS", "Angular"]},
     {title: "Analysis and Design", languages: ["UML", "Merise", "MDA", "Design Patterns"]},
     {title: "ERP", languages: ["Open ERP", "Odoo"]},
     {title: "Web Service", languages: ["SOAP", "REST", "GrapheQL"]},
@@ -34,7 +34,7 @@ const Skills = () => {
               <Mandelbrot />
             </div>
             {/* right & mapping */}
-            <div className="flex flex-wrap justify-around w-full gap-4 mx-auto  md:justify-end md:w-1/2">
+            <div className="flex flex-wrap justify-around w-full gap-4 mx-auto md:justify-end md:w-1/2">
               {skills.map(({title, languages}, index) => {
                 return (
                     <div key={`skills-${index}`} className="w-full sm:w-[45%] lg:w-[30%] border border-[#ABB2BF]">
