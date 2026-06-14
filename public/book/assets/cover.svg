@@ -214,7 +214,7 @@
 <text x="336" y="904" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#adbac7">Scale &amp; ship</text>
 <text x="400" y="932" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" font-style="italic" fill="#8b949e">“Show me the mechanism. Then show me the system.”</text>
 <text x="400" y="959" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" letter-spacing="4" font-weight="600" fill="#c9d1d9">OTMANE OMRY</text>
-<text x="400" y="978" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="9" letter-spacing="2.5" fill="#6e7681">v1.4 · SEVENTEEN INCIDENTS · ONE HOSTILE REVIEW</text>
+<text x="400" y="978" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="9" letter-spacing="2.5" fill="#6e7681">v2.0 · SEVENTEEN INCIDENTS · ONE HOSTILE REVIEW</text>
 <path d="M34,38 L34,16 L56,16" fill="none" stroke="#6DB33F" stroke-width="1.5" opacity="0.22"/>
 <path d="M766,38 L766,16 L744,16" fill="none" stroke="#6DB33F" stroke-width="1.5" opacity="0.22"/>
 <path d="M34,962 L34,984 L56,984" fill="none" stroke="#6DB33F" stroke-width="1.5" opacity="0.22"/>
