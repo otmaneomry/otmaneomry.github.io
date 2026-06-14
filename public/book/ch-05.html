@@ -1,0 +1,792 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter 5 — The Front Door · The Spring Boot Mastery Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.1">
+        <meta name="author" content="Otmane Omry">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch-06.html" />
+    
+    
+    <link rel="prev" href="part-03.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    The Spring Boot Mastery Book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="part-01.html">
+            
+                <a href="part-01.html">
+            
+                    
+                    Part I — The Craft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch-01.html">
+            
+                <a href="ch-01.html">
+            
+                    
+                    Chapter 1 — The Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-02.html">
+            
+                <a href="part-02.html">
+            
+                    
+                    Part II — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch-02.html">
+            
+                <a href="ch-02.html">
+            
+                    
+                    Chapter 2 — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch-03.html">
+            
+                <a href="ch-03.html">
+            
+                    
+                    Chapter 3 — Smoke and Mirrors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch-04.html">
+            
+                <a href="ch-04.html">
+            
+                    
+                    Chapter 4 — The Magic Show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="part-03.html">
+            
+                <a href="part-03.html">
+            
+                    
+                    Part III — The Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="ch-05.html">
+            
+                <a href="ch-05.html">
+            
+                    
+                    Chapter 5 — The Front Door
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch-06.html">
+            
+                <a href="ch-06.html">
+            
+                    
+                    Chapter 6 — The Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="part-04.html">
+            
+                <a href="part-04.html">
+            
+                    
+                    Part IV — The Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch-07.html">
+            
+                <a href="ch-07.html">
+            
+                    
+                    Chapter 7 — The Thousand Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch-08.html">
+            
+                <a href="ch-08.html">
+            
+                    
+                    Chapter 8 — The Silent Commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch-09.html">
+            
+                <a href="ch-09.html">
+            
+                    
+                    Chapter 9 — The Proxy You Didn't Write
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="part-05.html">
+            
+                <a href="part-05.html">
+            
+                    
+                    Part V — Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ch-10.html">
+            
+                <a href="ch-10.html">
+            
+                    
+                    Chapter 10 — The Breach That Wasn't
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="ch-11.html">
+            
+                <a href="ch-11.html">
+            
+                    
+                    Chapter 11 — Forty Minutes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="ch-12.html">
+            
+                <a href="ch-12.html">
+            
+                    
+                    Chapter 12 — Three A.M.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="ch-13.html">
+            
+                <a href="ch-13.html">
+            
+                    
+                    Chapter 13 — The Cascade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="part-06.html">
+            
+                <a href="part-06.html">
+            
+                    
+                    Part VI — The Architect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="ch-14.html">
+            
+                <a href="ch-14.html">
+            
+                    
+                    Chapter 14 — The Split
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="ch-15.html">
+            
+                <a href="ch-15.html">
+            
+                    
+                    Chapter 15 — Faster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="ch-16.html">
+            
+                <a href="ch-16.html">
+            
+                    
+                    Chapter 16 — The Architect's Chair
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="part-07.html">
+            
+                <a href="part-07.html">
+            
+                    
+                    Capstone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="ch-17.html">
+            
+                <a href="ch-17.html">
+            
+                    
+                    Chapter 17 — The Hostile Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="appendices.html">
+            
+                <a href="appendices.html">
+            
+                    
+                    Appendices — The map behind the story
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 5 — The Front Door</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-5-—-the-front-door">Chapter 5 — The Front Door</h1>
+<p>The report landed in the Stonethrow queue on a Tuesday morning, and Marisol escalated it before her coffee went cold. Reporter: <strong>@sable</strong> — the number-one name on Glasshouse's own leaderboard, the researcher whose real identity was a running office bet. Severity: Medium, information disclosure. Title: <em>Your front door leaks your floor plan.</em></p>
+<p>Lena read it aloud at triage, every word, because she wanted the room to hear the prose. It was clinically polite. The reproduction steps were better than the team's own runbooks — numbered, deterministic, with expected-versus-actual for each request. Step three was the one that made the room go still:</p>
+<pre><code class="lang-http"><span class="hljs-keyword">POST</span> <span class="hljs-string">/api/reports</span> <span class="hljs-meta">HTTP/1.1</span>
+<span class="hljs-attribute">Host</span><span class="hljs-punctuation">: </span>glasshouse.io
+<span class="hljs-attribute">Content-Type</span><span class="hljs-punctuation">: </span>application/json
+
+<span class="language-pgsql">{"programId": <span class="hljs-number">4112</span>, "title": <span class="hljs-keyword">null</span>, "body": "x", "severity": "HIGH"}
+
+HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">500</span> <span class="hljs-type">Internal</span> <span class="hljs-keyword">Server</span> Error
+Content-<span class="hljs-keyword">Type</span>: application/<span class="hljs-type">json</span>
+
+{
+  "timestamp": "2026-03-24T09:41:17.882+00:00",
+  "status": <span class="hljs-number">500</span>,
+  "error": "Internal Server Error",
+  "trace": "org.springframework.dao.DataIntegrityViolationException: ...
+      at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.logExceptions...
+      ... HikariPool-1 ... jdbc:postgresql://atrium-prod-db:5432/atrium ...",
+  "path": "/api/reports"
+}
+</span></code></pre>
+<p>A null title. That was all it took. Atrium answered with a full stack trace: Hibernate class names, the failing SQL, and — riding along in a wrapped cause's message — a fragment of the production JDBC URL. Malformed JSON got a 400 with the same <code>trace</code> field. An invalid severity enum, likewise. Every failure shape on the public API was a guided tour of the internals.</p>
+<p>The report closed with a single lowercase signature: <em>— s.</em></p>
+<p>"Our best customer," Lena said quietly, "just told us our porch light shines straight onto the safe." She looked around the table. "We sell trust to security researchers. This is the one bug we don't get to have."</p>
+<p>Elias slid the printout across the table to Maya. "It's yours."</p>
+<p>She took it with both hands and felt January arrive again: comment #1 beside a line that <em>worked</em> — <em>works is not done.</em> Same lesson, new postmark; this time the green ink had come from outside the building.</p>
+<blockquote>
+<p>⏸ <strong>Your call.</strong> Before Maya opens a single file, commit: who — or what — assembled that error JSON, what let a null title reach Postgres, and which -ility just failed in front of the platform's best researcher?</p>
+</blockquote>
+<h2 id="the-investigation">The investigation</h2>
+<p>Reproducing it took ninety seconds. Understanding it took the afternoon, and the understanding was worse than the bug.</p>
+<p>First question: who wrote that error body? No code in Atrium built that JSON. The <code>DataIntegrityViolationException</code> left the repository uncaught, so the servlet container performed an <em>error dispatch</em> to Boot's <code>/error</code> endpoint, where an auto-configured <code>BasicErrorController</code> assembled a response from <code>DefaultErrorAttributes</code>. The answer was <em>nobody</em> — and that was the problem. The stack trace was in it because of three lines of YAML:</p>
+<pre><code class="lang-yaml"><span class="hljs-comment"># application.yml — git blame: 2019, "temporary, debugging the CSV importer"</span>
+<span class="hljs-attr">server:</span>
+  <span class="hljs-attr">error:</span>
+    <span class="hljs-attr">include-stacktrace:</span> <span class="hljs-string">always</span>
+    <span class="hljs-attr">include-message:</span> <span class="hljs-string">always</span>
+</code></pre>
+<p><em>Temporary.</em> The default for <code>include-stacktrace</code> was <code>never</code>; someone had opted into the leak, once, for a CSV importer that no longer existed. She read <code>ErrorMvcAutoConfiguration</code> until she knew exactly which bean built which field — the new reflex, kicking in without her noticing: read the machinery until it stops being magic. The commit was old enough to start school.</p>
+<p>Second question: why was a null title reaching the database at all? She opened the submission controller and found 2019 staring back:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@RestController</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ReportSubmissionController</span> {
+
+    <span class="hljs-meta">@Autowired</span>
+    <span class="hljs-keyword">private</span> ReportRepository reports;            <span class="hljs-comment">// 2019 vintage</span>
+
+    <span class="hljs-meta">@PostMapping("/api/reports")</span>
+    <span class="hljs-keyword">public</span> Report <span class="hljs-title function_">submit</span><span class="hljs-params">(<span class="hljs-meta">@RequestBody</span> Report report)</span> {  <span class="hljs-comment">// the JPA entity, raw off the wire</span>
+        <span class="hljs-keyword">return</span> reports.save(report);             <span class="hljs-comment">// no @Valid — the database is the validator now</span>
+    }
+}
+</code></pre>
+<p>The JPA entity was bound straight from the wire and saved with nothing checking it in between; the only validation was whatever constraint the database happened to enforce. That meant the <em>error messages</em> were written by Postgres and Hibernate, for an audience of attackers.</p>
+<p>It was comment #1 run in reverse, she realized. In January, an entity had leaked <em>out</em> through Jackson after the session closed — contract coupled to schema on the way to the wire. Here, one came <em>in</em> off the wire before anything checked it: the same unguarded boundary, crossed in the opposite direction.</p>
+<p><em>At Meridian I parsed request JSON by hand, and the null check lived in the same ten lines as the parsing — bound and checked were one motion,</em> she thought. <em>My instinct says a framework that binds the object has surely checked it too.</em> In Spring MVC, binding and validation are separate steps, and the second is opt-in: no <code>@Valid</code> on the parameter means no validation, no exception, no 400. Her instinct was the trap — the framework had been doing exactly what the code asked, which was nothing.</p>
+<p>(If you called it at the pause: both answers are <em>nobody</em> — and the -ility isn't only security; it's contract integrity. Elias gets there.)</p>
+<p>Third: the wider she looked, the worse it got. Three other public controllers had hand-rolled <code>try/catch</code> blocks returning three different error shapes — one <code>{"error": ...}</code>, one <code>{"message": ...}</code>, one a bare string. And when she replayed Sable's request with <code>Accept: text/html</code>, the same failure came back as the Whitelabel error page. The error path chose an HTML view or a JSON body depending on the header. It had <em>content-negotiated its own leak</em>. The API layer wasn't designed. It was sedimentary.</p>
+<h2 id="what-the-senior-sees">What the senior sees</h2>
+<p>"Before you fix the door," Elias said, uncapping a marker at the Wall, "learn the house." He drew a socket on the far left and a database cylinder on the far right, then handed her the marker. "One request. Socket to DB and back. You talk, I interrupt."</p>
+<p>"A request hits the pod. Tomcat's connector accepts the connection and a worker thread picks it up."</p>
+<p>"Then?"</p>
+<p>"The filter chain. Servlet filters, before any Spring MVC exists." She drew boxes. "Then the <code>DispatcherServlet</code>."</p>
+<p>"Which is what?"</p>
+<p>"A servlet. Just a servlet, registered at <code>/</code>, sitting inside Tomcat like any other." She heard how the sentence demystified itself as she said it. "The entire framework happens inside one servlet's <code>service()</code> method. Front controller pattern — one entry point that dispatches to everything else."</p>
+<p><em>So the DispatcherServlet is Meridian's biggest hand-rolled servlet, finished — the routing table, the JSON parsing, the dispatch switch, the response writing, everything that servlet grew inside one <code>service()</code> method, redone as pluggable strategies,</em> she thought, and for once the hand-wired years were a head start instead of a trap.</p>
+<p>"Who calls your controller method?" Elias asked. "Name it."</p>
+<p>"The DispatcherServlet—"</p>
+<p>"Too coarse. Name the hop."</p>
+<p>She worked it out at the board, source open on her laptop. The <code>HandlerMapping</code> — concretely, <code>RequestMappingHandlerMapping</code> — matched path and method. It returned a <code>HandlerExecutionChain</code>: not just the handler but the <code>HandlerInterceptor</code>s wrapped around it. Atrium's own <code>ApiTimingInterceptor</code> ran there — <code>preHandle</code> before the handler, <code>afterCompletion</code> on the way out even when things failed, <code>postHandle</code> only on success. Then the <code>HandlerAdapter</code> invoked the method. <em>It</em> was the one that knew how to build the arguments.</p>
+<p>"What turns Sable's JSON into your object, and where does it live?"</p>
+<p>"An argument resolver. <code>RequestResponseBodyMethodProcessor</code> sees <code>@RequestBody</code>, asks the registered <code>HttpMessageConverter</code>s who can read <code>application/json</code>, and Jackson's converter deserializes it." She tapped the spot. "And if the parameter is annotated <code>@Valid</code>, Bean Validation runs right here, after binding, <em>before</em> the controller is ever entered. Failure throws <code>MethodArgumentNotValidException</code> — the controller never sees the garbage."</p>
+<p>"And the way back?"</p>
+<p>"<code>@RestController</code> means <code>@ResponseBody</code>, so the return value skips view resolution and goes back through the converters — chosen by content negotiation against the <code>Accept</code> header." She drew the unused branch anyway: <code>ViewResolver</code>, where a <code>ModelAndView</code> would have gone looking for a JSP — server-rendered HTML, the older model. Atrium hadn't rendered a view since 2021; the SPA drew the screens, the API served the data, and the JSP branch on the diagram got labeled <em>the road not taken</em>. "Then interceptors unwind, filters unwind, response flushes."</p>
+<p>She stepped back. The drawing ran the full width of the Wall, socket to cylinder, beneath February's smoke-cloud proxy (the <code>@Transactional</code> wrapper a <code>this.</code> call walks straight past, dispatching on the raw object inside) and March's precedence ladder (property sources outranking one another in fixed order, command line down to packaged defaults):</p>
+<p class="diagram"><img src="assets/diag-666d95afe3721339.svg" alt="diagram"></img></p>
+
+<p>(The compact version, born that afternoon; the full render lives in Appendix E.)</p>
+<p>Looking at it, she understood why Elias had cancelled an afternoon for this, as he had in March. Back then, the ConditionEvaluationReport had made bean absence <em>interrogable</em> — every auto-configuration candidate listed, every vetoing condition named. This drawing gave a request the same property. Systems you can ask, instead of systems you must believe.</p>
+<p>Elias studied the wall. "Now the question that matters. Where would you catch an exception thrown by a <em>filter</em>?"</p>
+<p>"<code>@RestControllerAdvice</code>," she said. "Global exception handling, catches everyth—"</p>
+<p>He waited, which with Elias meant <em>no</em>.</p>
+<p><em>A <code>try/catch</code> at the outermost frame catches everything beneath it — at Meridian, the hand-rolled logging filter had been that frame.</em> She'd assumed the advice sat where her old catch-all had. Her own diagram said otherwise: the advice wasn't a layer in front of anything — it was consulted by <code>ExceptionHandlerExceptionResolver</code> <em>inside</em> the DispatcherServlet's dispatch loop. A filter that threw did so <em>before the servlet ran for that request</em>, so the exception fell to the container, which error-dispatched it to <code>/error</code>, straight into the auto-configured controller with the loose YAML. The hand-wired reflex was the trap — and that path was the actual anatomy of Sable's 500.</p>
+<p>"Advice lives inside the servlet's world," she said slowly. "Filters live in front of it. My advice can never see a filter's exception. They're different jurisdictions."</p>
+<p>Elias drew three brackets under the diagram. "Filter: sees the raw <code>ServletRequest</code> and <code>ServletResponse</code>, doesn't know what a handler is, can wrap or short-circuit everything. Interceptor: inside the servlet, knows <em>which</em> handler was chosen, brackets the invocation. Advice: narrowest scope, richest context — the exception phase of dispatch only. People file this choice under style," he added. "It isn't. It's jurisdiction — a layering decision about which layer is <em>allowed to know what</em>. A filter that imports your domain types has annexed territory it can't defend. Draw the borders on purpose, and every cross-cutting concern has exactly one legal home." Then he tapped the empty whiteboard to the left of the servlet, out past the filters. "Security lives out here, in front of the front door. Remember the geography. One day the worst week of your year will start in this exact spot."</p>
+<p>She wrote it down. It would take until July to learn what he meant.</p>
+<h2 id="the-fix">The fix</h2>
+<p>Maya wrote the rebuild plan as four invariants, because rules outlive patches.</p>
+<p><strong>One: DTOs at the boundary. Entities never.</strong> This finished the lesson from her first week — comment #1 in green ink, <em>"Works is not done. What happens when this entity meets Jackson after the session closes?"</em> Records, immutable, with Jakarta Bean Validation doing the gatekeeping declaratively:</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">SubmitReportRequest</span><span class="hljs-params">(
+        @NotNull Long programId,
+        @NotBlank @Size(max = 200)</span> String title,
+        <span class="hljs-meta">@NotBlank</span> String body,
+        <span class="hljs-meta">@NotNull</span> Severity severity) {}
+
+<span class="hljs-meta">@RestController</span>
+<span class="hljs-meta">@RequestMapping("/api/{version}/reports")</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ReportSubmissionController</span> {
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> ReportSubmissionService service;
+
+    ReportSubmissionController(ReportSubmissionService service) {
+        <span class="hljs-built_in">this</span>.service = service;
+    }
+
+    <span class="hljs-meta">@PostMapping(version = "2")</span>
+    ResponseEntity&lt;ReportCreatedResponse&gt; <span class="hljs-title function_">submit</span><span class="hljs-params">(
+            <span class="hljs-meta">@Valid</span> <span class="hljs-meta">@RequestBody</span> SubmitReportRequest request)</span> {
+        <span class="hljs-type">ReportCreatedResponse</span> <span class="hljs-variable">created</span> <span class="hljs-operator">=</span> service.submit(request);
+        <span class="hljs-keyword">return</span> ResponseEntity
+                .created(URI.create(<span class="hljs-string">"/api/v2/reports/"</span> + created.id()))
+                .body(created);
+    }
+}
+</code></pre>
+<p>That <code>version = "2"</code> was Framework 7's new native versioning. The attribute names a version but never says where one lives in a request, and the framework will not guess: start the app with no strategy registered and the context fails fast, with <em>API version specified, but no ApiVersionStrategy configured</em>. On its own the annotation is half a sentence; one registration completes it, and Maya put hers where the next person would go looking for the policy:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Configuration</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ApiVersionConfig</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">WebMvcConfigurer</span> {
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">configureApiVersioning</span><span class="hljs-params">(ApiVersionConfigurer versioning)</span> {
+        versioning.usePathSegment(<span class="hljs-number">1</span>)            <span class="hljs-comment">// /api/v2/reports → version "2"</span>
+                  .addSupportedVersions(<span class="hljs-string">"1"</span>, <span class="hljs-string">"2"</span>)
+                  .setVersionRequired(<span class="hljs-literal">true</span>);    <span class="hljs-comment">// unversioned → designed 400, not drift</span>
+    }
+}
+</code></pre>
+<p><code>setVersionRequired(true)</code> was ADR-005's "explicit defaults" clause made executable: a request with no version earned a designed error, not whatever shape the oldest mapping happened to have.</p>
+<p>A correct submission now returned what the HTTP spec had always asked for: <strong>201 Created with a <code>Location</code> header</strong> pointing at the new resource — the contract, not a habit. The detail endpoint alongside it took its id as a <code>@PathVariable</code> and an <code>includeActivity</code> flag as a <code>@RequestParam</code>, each bound by its own resolver; only <code>@RequestBody</code> ever touched Jackson.</p>
+<p><strong>Two: one error shape for the whole API.</strong> A single <code>@RestControllerAdvice</code> producing RFC 7807 <code>ProblemDetail</code> — a standard error format that has been first-class in Spring since Framework 6, machine-readable <code>type</code> URIs and all:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@RestControllerAdvice</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ApiProblemHandler</span> {
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-type">Logger</span> <span class="hljs-variable">log</span> <span class="hljs-operator">=</span> LoggerFactory.getLogger(ApiProblemHandler.class);
+
+    <span class="hljs-meta">@ExceptionHandler(MethodArgumentNotValidException.class)</span>
+    ProblemDetail <span class="hljs-title function_">invalid</span><span class="hljs-params">(MethodArgumentNotValidException ex)</span> {
+        <span class="hljs-type">var</span> <span class="hljs-variable">pd</span> <span class="hljs-operator">=</span> ProblemDetail.forStatusAndDetail(
+                HttpStatus.BAD_REQUEST, <span class="hljs-string">"Request validation failed."</span>);
+        pd.setType(URI.create(<span class="hljs-string">"https://glasshouse.io/problems/validation"</span>));
+        pd.setProperty(<span class="hljs-string">"errors"</span>, ex.getFieldErrors().stream()
+                .map(f -&gt; Map.of(<span class="hljs-string">"field"</span>, f.getField(), <span class="hljs-string">"reason"</span>, f.getDefaultMessage()))
+                .toList());
+        <span class="hljs-keyword">return</span> pd;
+    }
+
+    <span class="hljs-meta">@ExceptionHandler(Exception.class)</span>   <span class="hljs-comment">// last resort: log everything, tell nothing</span>
+    ProblemDetail <span class="hljs-title function_">fallback</span><span class="hljs-params">(Exception ex, HttpServletRequest request)</span> {
+        log.error(<span class="hljs-string">"Unhandled exception at {}"</span>, request.getRequestURI(), ex);
+        <span class="hljs-keyword">return</span> ProblemDetail.forStatusAndDetail(
+                HttpStatus.INTERNAL_SERVER_ERROR, <span class="hljs-string">"An unexpected error occurred."</span>);
+    }
+}
+</code></pre>
+<p><code>MethodArgumentNotValidException</code> became a structured 400 listing each failing field and its reason — the client's own data, nothing internal. <code>HttpMessageNotReadableException</code> — Sable's broken-JSON case — got its own designed 400. And the 2019 override came out of <code>application.yml</code> entirely, returning <code>include-stacktrace</code> to its default <code>never</code>. Even the container's error dispatch — the one path her advice could never reach — now had nothing left to leak.</p>
+<p><strong>Three: versioning as a first-class citizen.</strong> As of Boot 4 — Spring Framework 7 underneath — API versioning is native to the web framework: a <code>version</code> attribute on the mapping annotations, with the resolution strategy (path segment, header, or query parameter) registered once in a <code>WebMvcConfigurer</code> — the <code>ApiVersionConfig</code> above. Atrium chose the path segment; public routes moved to <code>/api/v2/**</code>, the v1 shapes were frozen and marked deprecated, and <code>RequestMappingHandlerMapping</code> now matched on version the same way it matched on path and method. No more hand-rolled <code>if (version.equals(...))</code> archaeology.</p>
+<p><strong>Four: one Jackson, configured once.</strong> A single builder-customizer bean — Boot's hook for shaping the auto-configured mapper — set non-null inclusion and ISO-8601 timestamps in one documented place, replacing the per-controller <code>ObjectMapper</code>s scattered through the codebase. Content negotiation stayed, but every negotiable representation now came from the same, deliberate configuration. A <code>MockMvc</code> test pinned each failure shape so the contract couldn't drift back.</p>
+<h2 id="the-contract-governed">The contract, governed</h2>
+<p>The invariants were done by Wednesday evening when Lena appeared with the bounty sheet. "Triage scored it Medium. Sanity-check me — my gut says we got off cheap."</p>
+<p>"Your gut's right," Maya said. "Medium scores the <em>data</em>; it's the wrong score for what it proved. A stack trace in an error body isn't cosmetic — it's a contract violation. The error surface is part of the API; Sable consumed a response we never designed, which means we'd spent seven years publishing a contract nobody wrote."</p>
+<p>Elias, passing with coffee, stopped. "Say the -ilities."</p>
+<p>"Interoperability — one error grammar instead of four accidents. Evolvability — a version policy, so the contract can change without breaking whoever built against it. And security, because every undesigned response is attack surface. An API is a governed product surface: who may change what, with what notice. Deprecation should be a process with dates, not an outage with apologies."</p>
+<p>"Then write the governance down," Elias said, "or you've described a mood."</p>
+<blockquote>
+<p><strong>ADR-005 — API contract governance.</strong>
+<strong>Context:</strong> A malformed request leaked a stack trace — Hibernate internals and a production JDBC URL fragment — to an external researcher, because Atrium's error responses were accidental: per-endpoint folklore in three shapes, plus Boot's <code>/error</code> running under a 2019 debug flag. <strong>Decision:</strong> RFC 7807/9457 <code>ProblemDetail</code> is the only error shape on the public API; all responses are records, never entities (per ADR-001); validation happens at the binding layer via <code>@Valid</code>; the versioning policy is deliberate — Boot 4 native versioning, path-segment resolution, explicit defaults, and a published sunset process for deprecated versions. <strong>Consequences:</strong> Every error is now a designed response and every contract change a governed one; the version policy taxes each new endpoint with a decision it never used to owe, but it makes deprecation a process instead of an outage.</p>
+</blockquote>
+<h3 id="⚖-your-move-architect">⚖ Your move, architect</h3>
+<p>Invariant three was the contested clause — the design review ran forty minutes over, because everyone had a versioning religion. Note what the fight was <em>not</em> about: Boot 4 makes any strategy a one-line registration, and ADR-005 demanded a sunset policy whichever way the room voted. The forty minutes were spent on the resolution mechanism itself — where, physically, does the version live in a request integrators script against? Commit before reading on.</p>
+<ul>
+<li><strong>A — Path segment.</strong> <code>/api/v2/**</code>: every log line, curl reproduction, and cache key agrees on what was called.</li>
+<li><strong>B — Header / media-type.</strong> Canonical URLs forever; the version travels invisibly in <code>Accept</code> or a custom header.</li>
+<li><strong>C — Query parameter.</strong> <code>?version=2</code>: the cheapest thing an integrator can flip; ugly in caches and bookmarks.</li>
+</ul>
+<p><strong>The trade-offs, since you've committed:</strong> <strong>A</strong> — Atrium's choice — buys debuggability and cache-friendliness (every log line, cache key, and support ticket agrees on what was called) and pays in URL proliferation: the version infects every link and tempts teams into copying whole route trees. <strong>B</strong> buys clean, stable URLs and pays in invisibility: curl reproductions omit the header and caches can't vary without <code>Vary</code> discipline — harder debugging by design. <strong>C</strong> buys the gentlest migration — integrators change one parameter, not their URL structure — and pays at the cache and at the contract: query strings fragment cache keys, leak into referrer logs and bookmarks, and make the version read like an option instead of a promise. None of the three rides free, which is the point: any scheme applied uniformly beats per-team improvisation, and the failure mode was never the wrong mechanism — it was having four.</p>
+<p>And the mechanism is the <em>small</em> decision; pick wrong and you pay for a migration. The decision underneath is the public contract: the <code>ProblemDetail</code> shape and the URL grammar integrators build against. That one is a one-way door. Once Sable's scanners parse your error bodies and Northbeam's scripts hard-code your routes, every "we'll firm it up later" becomes a breaking change you inflict on people who did nothing wrong. Shipping loose to "keep the contract flexible" means deciding later under <em>worse</em> information — live integrators, frozen mistakes — and paying twice: once to build loose, once to break everyone. Hence ADR-005's consequences clause: deprecation is a process with dates, because nothing else reopens the door. This is a one-way door — commit deliberately, version from day one, and spend the review effort <em>before</em> first publish, when forty minutes in a room is the cheapest the decision will ever be.</p>
+<p>The retest request went out Thursday. Sable's reply was one line: <em>Better. — s.</em></p>
+<p>On Friday, Maya walked the full team through the Wall — socket to DB and back, every component named, every jurisdiction marked. The Request Journey diagram stayed up; the sun-bleached <em>DO NOT ERASE</em> note acquired a neighbor. The ADR binder took its fifth entry, and Marisol taped Sable's report beside the diagram — the outside world, permanently auditing the drawing. Elias decreed, in the tone he used for things that were already true, that every future hire would trace it in their first week.</p>
+<p>"You'll be giving the tour," he added to Maya, and then, almost to himself: "I won't be the one giving this tour forever."</p>
+<p>She didn't catch the weight of it. Lena was already talking about how marketing wanted the newly presentable platform front and center for a spring campaign, and that felt like good news.</p>
+<h2 id="the-debrief-—-ch5-the-front-door">The debrief — Ch.5, The Front Door</h2>
+<blockquote>
+<p><strong>Trace an HTTP request from the socket to the DB and back.</strong> <strong>Claim</strong> — Spring MVC is a front-controller pipeline: one servlet, the <code>DispatcherServlet</code>, dispatches every request through pluggable strategies. <strong>Mechanism</strong> — Tomcat's connector accepts the socket and assigns a worker thread → the servlet filter chain runs (security lives here, before Spring MVC exists) → <code>DispatcherServlet</code> → <code>HandlerMapping</code> selects the handler plus its interceptor chain → <code>preHandle</code> → <code>HandlerAdapter</code> invokes the method via argument resolvers (<code>@RequestBody</code> through Jackson's <code>HttpMessageConverter</code>, then <code>@Valid</code> via Bean Validation — <code>MethodArgumentNotValidException</code> fires before the controller runs) → controller → service (where the <code>@Transactional</code> proxy wraps) → repository proxy → <code>EntityManager</code> and persistence context → a HikariCP connection → the database; the return value goes back through a converter chosen by content negotiation, <code>postHandle</code>/<code>afterCompletion</code> fire, filters unwind, the response flushes. <strong>Trade-off</strong> — the uniform pipeline centralizes cross-cutting concerns (advice, converters, versioning) cheaply, but each layer sees only its own jurisdiction. <strong>Failure mode</strong> — exceptions thrown in front of the servlet never reach <code>@ControllerAdvice</code>; they fall to the container's error dispatch, and a permissive <code>/error</code> configuration will happily publish your stack traces — which is exactly how a security platform leaked its floor plan.</p>
+</blockquote>
+<p><strong>THE ARCHITECT'S LENS</strong></p>
+<ul>
+<li><strong>-ilities at stake:</strong> <strong>Contract integrity</strong> — interoperability (one error grammar every integrator can parse) and <strong>evolvability</strong> (one deliberate version policy) — plus <strong>security of the error surface</strong>: every response shape you didn't design is attack surface you don't control.</li>
+<li><strong>The ADR:</strong> ADR-005 — API contract governance: <code>ProblemDetail</code> as the only error shape, records at the boundary (per ADR-001), validation at the binding layer, versioning with explicit defaults and a published sunset process.</li>
+<li><strong>Rejected alternatives:</strong> per-endpoint <code>try/catch</code> folklore (the sedimentary API, three error shapes and counting); leaving validation to the database (Postgres writing client-facing error messages for an audience of attackers); ungoverned header/media-type versioning (clean URLs bought with invisibility); and no version policy at all — not a smaller decision, just an unrecorded one.</li>
+<li><strong>Fight or lean:</strong> <em>Lean</em> on the framework's contract machinery — <code>ProblemDetail</code>, <code>@Valid</code>, advice, native versioning are first-class; hand-rolling them is fighting for no prize. <em>Fight</em> your own overridden defaults — <code>include-stacktrace: always</code> was the team opting <em>out</em> of safety and forgetting the sale — and never fight the geography: harden <code>/error</code> rather than pretending advice can reach a filter's exception.</li>
+</ul>
+<p><strong>Story anchors</strong></p>
+<ul>
+<li><em>Sable's 500 with the JDBC URL in it</em> → unhandled exceptions falling through to Boot's <code>/error</code> with <code>include-stacktrace: always</code>; honest <code>ProblemDetail</code> from a <code>@RestControllerAdvice</code> is the cure.</li>
+<li><em>"Who calls your controller method? Name it."</em> → the DispatcherServlet pipeline: HandlerMapping → interceptors → HandlerAdapter → argument resolvers → converters.</li>
+<li><em>Maya reaching for advice to catch a filter's exception</em> → jurisdictions: Filter (in front of the servlet, raw streams), HandlerInterceptor (inside, knows the handler), advice (exception phase of dispatch only).</li>
+<li><em>Lena's bounty sheet — "Medium is the wrong score for what it proved"</em> → the error surface is security architecture: information disclosure is a contract violation, not a cosmetic bug — hence ADR-005, every error a designed response.</li>
+</ul>
+<p><strong>Interview ammo</strong></p>
+<ul>
+<li><em>Kill-shot #4: Trace an HTTP request from the socket to the DB and back, naming every component.</em> — The four-beat answer above; the differentiator is naming the hops (<code>RequestMappingHandlerMapping</code>, <code>HandlerAdapter</code>, argument resolvers, <code>HttpMessageConverter</code>) and knowing what wraps where.</li>
+<li><em>Follow-up: Where do you catch an exception thrown by a filter, and why not <code>@ControllerAdvice</code>?</em> — Advice is invoked by <code>ExceptionHandlerExceptionResolver</code> inside the DispatcherServlet's dispatch; a filter throws before the servlet runs, so you handle it in the filter layer itself (or accept the container's error dispatch to a hardened <code>/error</code>).</li>
+<li><em>Follow-up: What exactly builds your <code>@RequestBody</code> argument, and what fires when validation fails?</em> — The <code>RequestResponseBodyMethodProcessor</code> argument resolver delegates to the Jackson <code>HttpMessageConverter</code> selected by content type, then runs Bean Validation for <code>@Valid</code>; failure throws <code>MethodArgumentNotValidException</code> before the controller method is entered.</li>
+<li><em>Architect follow-up — How do you version a public API without breaking integrators, and how much does the mechanism matter?</em> — Less than the policy: pick one resolution strategy (Boot 4's <code>version</code> attribute makes path, header, or query first-class), publish explicit defaults and a dated sunset process, and pin it in tests — integrators can plan around a process, not around surprises.</li>
+</ul>
+<p><strong>Pointers</strong> → Playbook Ch.10 · <code>examples/ch10_mvc/</code></p>
+<hr></hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="part-03.html" class="navigation navigation-prev " aria-label="Previous page: Part III — The Request">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch-06.html" class="navigation navigation-next " aria-label="Next page: Chapter 6 — The Pool">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 5 — The Front Door","level":"1.9","depth":1,"next":{"title":"Chapter 6 — The Pool","level":"1.10","depth":1,"path":"ch-06.md","ref":"ch-06.md","articles":[]},"previous":{"title":"Part III — The Request","level":"1.8","depth":1,"path":"part-03.md","ref":"part-03.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Otmane Omry","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The Spring Boot Mastery Book","language":"en","gitbook":"*"},"file":{"path":"ch-05.md","mtime":"2026-06-14T00:07:22.819Z","type":"markdown"},"gitbook":{"version":"6.2.1","time":"2026-06-14T00:07:44.741Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

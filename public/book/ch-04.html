@@ -1,0 +1,738 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter 4 — The Magic Show · The Spring Boot Mastery Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.1">
+        <meta name="author" content="Otmane Omry">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="part-03.html" />
+    
+    
+    <link rel="prev" href="ch-03.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    The Spring Boot Mastery Book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="part-01.html">
+            
+                <a href="part-01.html">
+            
+                    
+                    Part I — The Craft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch-01.html">
+            
+                <a href="ch-01.html">
+            
+                    
+                    Chapter 1 — The Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-02.html">
+            
+                <a href="part-02.html">
+            
+                    
+                    Part II — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch-02.html">
+            
+                <a href="ch-02.html">
+            
+                    
+                    Chapter 2 — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch-03.html">
+            
+                <a href="ch-03.html">
+            
+                    
+                    Chapter 3 — Smoke and Mirrors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="ch-04.html">
+            
+                <a href="ch-04.html">
+            
+                    
+                    Chapter 4 — The Magic Show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="part-03.html">
+            
+                <a href="part-03.html">
+            
+                    
+                    Part III — The Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch-05.html">
+            
+                <a href="ch-05.html">
+            
+                    
+                    Chapter 5 — The Front Door
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch-06.html">
+            
+                <a href="ch-06.html">
+            
+                    
+                    Chapter 6 — The Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="part-04.html">
+            
+                <a href="part-04.html">
+            
+                    
+                    Part IV — The Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch-07.html">
+            
+                <a href="ch-07.html">
+            
+                    
+                    Chapter 7 — The Thousand Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch-08.html">
+            
+                <a href="ch-08.html">
+            
+                    
+                    Chapter 8 — The Silent Commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch-09.html">
+            
+                <a href="ch-09.html">
+            
+                    
+                    Chapter 9 — The Proxy You Didn't Write
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="part-05.html">
+            
+                <a href="part-05.html">
+            
+                    
+                    Part V — Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ch-10.html">
+            
+                <a href="ch-10.html">
+            
+                    
+                    Chapter 10 — The Breach That Wasn't
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="ch-11.html">
+            
+                <a href="ch-11.html">
+            
+                    
+                    Chapter 11 — Forty Minutes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="ch-12.html">
+            
+                <a href="ch-12.html">
+            
+                    
+                    Chapter 12 — Three A.M.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="ch-13.html">
+            
+                <a href="ch-13.html">
+            
+                    
+                    Chapter 13 — The Cascade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="part-06.html">
+            
+                <a href="part-06.html">
+            
+                    
+                    Part VI — The Architect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="ch-14.html">
+            
+                <a href="ch-14.html">
+            
+                    
+                    Chapter 14 — The Split
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="ch-15.html">
+            
+                <a href="ch-15.html">
+            
+                    
+                    Chapter 15 — Faster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="ch-16.html">
+            
+                <a href="ch-16.html">
+            
+                    
+                    Chapter 16 — The Architect's Chair
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="part-07.html">
+            
+                <a href="part-07.html">
+            
+                    
+                    Capstone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="ch-17.html">
+            
+                <a href="ch-17.html">
+            
+                    
+                    Chapter 17 — The Hostile Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="appendices.html">
+            
+                <a href="appendices.html">
+            
+                    
+                    Appendices — The map behind the story
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 4 — The Magic Show</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-4-—-the-magic-show">Chapter 4 — The Magic Show</h1>
+<p>The failover drill was scheduled for 6:30 on a Tuesday morning in March, which meant Idris had been awake since five, drinking coffee the consistency of roofing tar and narrating his own actions like a bomb-disposal video. The plan was boring on purpose: kill the Postgres replica in prod, watch the platform degrade gracefully, watch the dashboard go amber, watch the alert fire, bring the replica back, write down the timings. Atrium had survived seven years; the drill was supposed to confirm the folklore.</p>
+<p>Idris killed the replica at 6:31. Then he waited for the dashboard to notice.</p>
+<p>It didn't. The health panel glowed the same serene green it had glowed all night. He refreshed it. He curled the actuator endpoint directly. <code>{"status":"UP"}</code>, smooth as a salesman. Meanwhile, two terminals over, the replica was — his word in the incident channel — <em>extremely</em> down. For forty minutes a real degraded dependency was invisible to every pane of glass the company owned, and the only reason anyone knew was that Idris had broken it himself, on purpose, with a calendar invite.</p>
+<p>At standup he projected two JSON payloads side by side. Staging's health endpoint showed a <code>db</code> component, dutifully <code>UP</code>. Prod's showed nothing — no <code>db</code>, no replica check, no component at all. Just the top-level green lie.</p>
+<p>"Last week's platform dependency bump went out Thursday," Idris said. "Version numbers only. Reviewed and approved." He did not look at Maya. He didn't have to; she'd approved it herself. A green diff, a tidy bump, the kind of PR you wave through between meetings.</p>
+<p>Elias studied the two payloads for a long moment. Then he asked the room, mildly, "Why does this bean exist in staging and not in prod?"</p>
+<p>Silence. Eight engineers, seven years of folklore, and not one person could say why any given health bean existed anywhere.</p>
+<p>"Then nobody owns it," Elias said. He capped his pen. "Magic is just a mechanism you haven't read yet. Roadmap work is cancelled this afternoon. Bring lunch."</p>
+<h2 id="the-investigation">The investigation</h2>
+<p>Maya started where she always started: grep. <code>ReplicaLagHealthIndicator</code> appeared nowhere in Atrium's source. Not in <code>config/</code>, not in <code>monitoring/</code>, not in any <code>@Configuration</code> class she could find. The bean that was supposed to watch the database wasn't defined by any code the team had written in this repository.</p>
+<p><em>At Meridian this would have been a line in main(),</em> she thought. <em>new ReplicaLagHealthIndicator(dataSource, maxLag), registered by hand — code I wrote, in a file I owned, that a dependency bump could not silently delete.</em> That instinct — that wiring lives in user code — was exactly why she'd never thought to look anywhere else. The hand-wired reflex wasn't a head start this time. It was the blindfold.</p>
+<p>The class lived in a separate internal repo: <code>glasshouse-monitoring-spring-boot-starter</code>, written in 2021 by an engineer who'd left in 2023. Inside, a small auto-configuration:</p>
+<pre><code class="lang-java"><span class="hljs-comment">// glasshouse-monitoring-spring-boot-starter — migrated from</span>
+<span class="hljs-comment">// spring.factories during the Boot 3 upgrade; nobody read it then either.</span>
+<span class="hljs-meta">@AutoConfiguration</span>
+<span class="hljs-meta">@ConditionalOnClass(ReplicaHealthProbe.class)</span>   <span class="hljs-comment">// compiled against osprey-metrics 2.x</span>
+<span class="hljs-meta">@ConditionalOnProperty("glasshouse.monitoring.replica-probe.enabled")</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ReplicaMonitoringAutoConfiguration</span> {
+
+    <span class="hljs-meta">@Bean</span>
+    HealthIndicator <span class="hljs-title function_">replicaLagHealthIndicator</span><span class="hljs-params">(
+            DataSource dataSource,
+            <span class="hljs-meta">@Value("${glasshouse.monitoring.replica-probe.max-lag:5s}")</span> Duration maxLag)</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ReplicaLagHealthIndicator</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">ReplicaHealthProbe</span>(dataSource), maxLag);
+    }
+}
+</code></pre>
+<p>Next to it in the repo, a fossil: an empty <code>META-INF/spring.factories</code> with a comment — <code>moved to AutoConfiguration.imports for Boot 3, delete after merge</code>. Three years old. The actual registration now lived in <code>META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports</code>, one fully-qualified class name on one line. That file was the bean's birth certificate, and nobody at Glasshouse had ever read it.</p>
+<p>"Reproduce it," Elias said. "Locally. Don't theorize."</p>
+<blockquote>
+<p>⏸ <strong>Your call.</strong> Two conditions gate that bean; Thursday's bump changed only version numbers. Which gate failed in prod, why was the failure <em>silent</em>, and which -ility just died with the dashboard? Commit.</p>
+</blockquote>
+<p>Maya booted Atrium with the prod property set and <code>--debug</code> on the command line. The ConditionEvaluationReport filled her terminal: every auto-configuration Boot had considered — hundreds of them — with the conditions each had evaluated and the verdict. She scrolled past <code>DataSourceAutoConfiguration matched</code>, past Jackson, past Tomcat, hunting. Then:</p>
+<pre><code class="lang-text">ReplicaMonitoringAutoConfiguration:
+   Did not match:
+      - @ConditionalOnClass did not find required class
+        'io.osprey.metrics.jdbc.ReplicaHealthProbe' (OnClassCondition)
+</code></pre>
+<p>The room — Idris and two others had drifted over — audibly exhaled. The dependency bump had taken osprey-metrics from 2.9 to 3.0. In 3.0 the vendor had repackaged: <code>io.osprey.metrics.jdbc</code> became <code>io.osprey.metrics.probe.jdbc</code>. The starter jar, compiled against 2.x, asked the classpath for a class that no longer existed at that address. And <code>@ConditionalOnClass</code> did precisely what it was designed to do: it backed off. Quietly. No <code>ClassNotFoundException</code>, no warning, no log line. The silence wasn't a malfunction — it was the feature, pointed the wrong way.</p>
+<p>(If you called <code>@ConditionalOnClass</code> at the pause: take the second beat too. The -ility that died wasn't availability — the replica was <em>allowed</em> to fail; that was the drill. The real casualty gets named at the Wall, and billed to the supply chain.)</p>
+<p>"That explains prod," Idris said slowly. "Why did staging never catch it?"</p>
+<p>Maya pulled up the profiles. There it was, the second condition:</p>
+<pre><code class="lang-yaml"><span class="hljs-comment"># application-prod.yml — the only place the module was ever switched on</span>
+<span class="hljs-attr">glasshouse:</span>
+  <span class="hljs-attr">monitoring:</span>
+    <span class="hljs-attr">replica-probe:</span>
+      <span class="hljs-attr">enabled:</span> <span class="hljs-literal">true</span>        <span class="hljs-comment"># staging never sets this — "staging has no replicas"</span>
+
+<span class="hljs-attr">management:</span>
+  <span class="hljs-attr">health:</span>
+    <span class="hljs-attr">db:</span>
+      <span class="hljs-attr">enabled:</span> <span class="hljs-literal">false</span>       <span class="hljs-comment"># 2021: "the custom check is better" — prod kept no fallback</span>
+</code></pre>
+<p>Staging had never run the custom probe at all — the activating property only existed in the prod profile. So staging fell through to Boot's default <code>db</code> health contributor. That check is a connection-validity ping — <code>Connection.isValid()</code> against the primary — and it knows nothing about replicas. Staging therefore showed a database check, just not the one prod depended on. And prod had been left with no fallback: the original author had disabled Boot's default there because the custom check was "better," so when the custom probe stopped registering, no check remained at all. Both environments green. Both wrong. Differently.</p>
+<p>Maya stared at the <code>enabled: false</code> line and thought of the sinkhole Elias had circled and dated in January — <em>code is copied more often than it's read</em>, inked beside a return type that leaked raw JPA entities across an API boundary. The note had never been about that one return type; it marked any working-but-wrong pattern that propagates by paste. Config was worse: yaml is copied with no compiler to object and no type to mismatch. This line had outlived its author by three years, meaning nothing to anyone who'd pasted profiles around it since.</p>
+<p>"Two conditions and a profile," Elias said. "A murder weapon in three parts. Now — to the Wall. All of you."</p>
+<h2 id="what-the-senior-sees">What the senior sees</h2>
+<p>Elias drew two doors on the Wall, side by side, both opening into a box labeled <strong>ApplicationContext</strong>.</p>
+<p>"Every bean enters through one of these. Door one." He tapped it. "Maya — what's inside <code>@SpringBootApplication</code>?"</p>
+<p>"It's…" She caught herself before saying <em>the magic annotation</em>. "Three annotations. <code>@Configuration</code>, so the class can define beans. <code>@ComponentScan</code>, which walks downward from the main class's package — which is why <code>AtriumApplication</code> sits at <code>com.glasshouse.atrium</code> and everything lives beneath it. And <code>@EnableAutoConfiguration</code>."</p>
+<p>"Door one is yours," Elias said. "Your packages, your stereotypes, scanned from the root down. Move the main class and half your beans vanish — loudly, at least. Door two is the one nobody here had read." He wrote <code>AutoConfiguration.imports</code> over the second door. "Boot does not scan jars hoping to find configuration. It reads a list. Every jar may carry one file at <code>META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports</code>; the import selector behind <code>@EnableAutoConfiguration</code> collects every such file on the classpath and gets a roll-call of candidate classes. Before Boot 2.7 the list lived in <code>spring.factories</code> — your fossil. A starter that still registers only there is silently dead on anything modern. Sound familiar?"</p>
+<p>"Then the conditions," Maya said. "Each candidate is a gate, not a guarantee."</p>
+<p>"Name the gates."</p>
+<p>"<code>@ConditionalOnClass</code> — is this type on the classpath. The annotation itself is read from the class file's metadata with ASM, never loaded, which is why an auto-configuration can safely name a class that isn't there — and why its absence makes no sound. <code>@ConditionalOnProperty</code> — did the operator turn this on. <code>@ConditionalOnBean</code> and <code>@ConditionalOnMissingBean</code> — does the context already contain, or lack, a bean." She paused, seeing the shape of it. "And those last two only make sense if there's an order. They're evaluated against the beans registered <em>so far</em>."</p>
+<p>"Which is why ordering is part of the contract," Elias said. "<code>@AutoConfigureAfter</code>, or the <code>after</code> attribute on <code>@AutoConfiguration</code>. Condition on a <code>DataSource</code> before <code>DataSourceAutoConfiguration</code> has run and your gate fails for a bean that was ten milliseconds from existing. And the back-off gate — <code>OnMissingBean</code> — is the whole social contract of Boot. Why does your <code>@Bean</code> beat Boot's default, every time, with no flag?"</p>
+<p>Maya worked it through aloud. "User configuration is processed before auto-configuration is evaluated. So when Boot's default <code>DataSource</code> bean reaches its <code>@ConditionalOnMissingBean</code> check, my bean is already in the registry. Boot sees it and yields. I win by declaring, not by disabling." She looked at the yaml still on the screen. "Which is what 2021-guy should have done, instead of turning the default <code>db</code> check off with a property and leaving prod with no net."</p>
+<p><em>So a starter is a Maven dependency that arrives already wired,</em> she thought. <em>At Meridian a jar was just bytes on the classpath — the wiring was always mine to write. This is dependencies, plus the code that registers them — and the registration travels inside the jar.</em> The naming convention got two minutes — <code>glasshouse-monitoring-spring-boot-starter</code>, company-first, because <code>spring-boot-starter-*</code> belongs to Boot itself. The parent BOM got five. <code>spring-boot-dependencies</code> pins hundreds of third-party versions, tested together as one matrix. That was exactly why the bump of everything <em>in</em> the BOM had been safe, and why osprey-metrics, which wasn't, had walked in unread.</p>
+<p>Elias capped his pen — by now the team knew it meant the mechanism was settled and the bill was coming. "Name what this incident spent. Idris."</p>
+<p>"Operability. For forty minutes the system couldn't tell us the truth about itself."</p>
+<p>"That's the symptom's -ility. Maya — the cause's."</p>
+<p>"Evolvability," she said, slower. "But not ours — the supply chain's. We treated Thursday's bump as a chore; it was an architecture event. The blast radius ran from osprey's <code>jdbc</code> package, through a condition in a starter nobody had read, into prod's only health check — and the diff that detonated it was two characters of version number."</p>
+<p>"Because the BOM is not a convenience," Elias said. "It's a contract. Inside its tested matrix, a bump moves you between tested points. Outside — where osprey lived from the day it got its own version line — the testing burden is yours whether or not anyone signs for it, and the upgrade gets a reviewer who asks what the jar promises the classpath and which conditions, in which repos, lean on that promise." He nodded at the condition report still on Maya's screen. "The second rule you've already run. The container will explain its own composition — every candidate, every gate, every verdict; <code>--debug</code> at boot, <code>/actuator/conditions</code> while it runs. A system you can <em>interrogate</em> is an operability property like any other: it exists only if you design the habit of asking. This morning the answer took four minutes to read and three years to think of reading."</p>
+<p>Then Elias drew a ladder on the Wall and labeled the rungs top to bottom: <strong>CLI args &gt; env vars &gt; profile yml &gt; application.yml &gt; defaults</strong>. He drew it low, under the lifecycle column and February's smoke cloud (the proxy drawn as a cloud around the raw bean; the advice lives on that wrapper, and a <code>this.</code> call never crosses it). The Wall now read like the container itself — how a bean is born, then who decides whether it may be:</p>
+<p class="diagram"><img src="assets/diag-2df46dc9d1f7469a.svg" alt="diagram"></img></p>
+
+<p>Resolution starts at the top: the first rung that defines a property wins. A lower rung speaks only when every rung above it stays silent.</p>
+<p>"The other half of your murder weapon. A bean can be gated on configuration, and configuration is a layered fight. Higher rung wins. Idris — prove the ladder."</p>
+<p>Idris, without ceremony, set <code>GLASSHOUSE_MONITORING_REPLICA_PROBE_ENABLED=true</code> on the staging deployment and let the pod restart. The env var outranked the profile file, and relaxed binding mapped the screaming snake case onto the kebab-case property without anyone writing a translation. The probe module woke up in an environment whose yml had never heard of it.</p>
+<p><em>Meridian's homegrown loader had a crude version of this,</em> Maya thought. <em>Read the properties file, then let -D flags stomp it — two rungs, hand-coded, in a class from 2014. This is the same ladder grown five rungs tall, with the case-translation I'd never have thought to write. For once the hand-wired instinct is a head start, not a trap.</em></p>
+<p>"One more thing," she said, and it came out before she'd decided to confess it. "At Meridian I wrote all of this wiring myself in main(), and I complained about the boilerplate constantly. Boot deleted the boilerplate, and I never once asked where it went."</p>
+<p>"Every convenience is a debt of understanding," Elias said. "Today you paid one back."</p>
+<h2 id="the-fix">The fix</h2>
+<p>The rewrite was small and merciless. Every condition became explicit, and every condition carried a comment saying <em>why</em>. The property binding moved out of stringly-typed <code>@Value</code> into a validated record. The difference is mechanical: <code>@Value</code> resolves one string at one injection point and fails wherever that bean happens to live, while <code>@ConfigurationProperties</code> binds the whole tree — typed, relaxed, validated at startup, and visible to the IDE's metadata. And the starter's own bean now wore the back-off gate, so any future app could override it by declaring:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Validated</span>
+<span class="hljs-meta">@ConfigurationProperties("glasshouse.monitoring.replica-probe")</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">record</span> <span class="hljs-title class_">ReplicaProbeProperties</span><span class="hljs-params">(
+        <span class="hljs-type">boolean</span> enabled,
+        @DefaultValue("5s")</span> Duration maxLag) { }
+
+<span class="hljs-meta">@AutoConfiguration(after = DataSourceAutoConfiguration.class)</span>  <span class="hljs-comment">// the DataSource must exist first</span>
+<span class="hljs-meta">@ConditionalOnClass(name = "io.osprey.metrics.probe.jdbc.ReplicaHealthProbe")</span> <span class="hljs-comment">// 3.x home, by name</span>
+<span class="hljs-meta">@ConditionalOnBean(DataSource.class)</span>
+<span class="hljs-meta">@ConditionalOnProperty(prefix = "glasshouse.monitoring.replica-probe",
+                       name = "enabled", havingValue = "true")</span>
+<span class="hljs-meta">@EnableConfigurationProperties(ReplicaProbeProperties.class)</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ReplicaMonitoringAutoConfiguration</span> {
+
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-meta">@ConditionalOnMissingBean(name = "replicaLagHealthIndicator")</span>  <span class="hljs-comment">// override by declaring</span>
+    HealthIndicator <span class="hljs-title function_">replicaLagHealthIndicator</span><span class="hljs-params">(DataSource ds, ReplicaProbeProperties props)</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ReplicaLagHealthIndicator</span>(ReplicaHealthProbe.of(ds), props.maxLag());
+    }
+}
+</code></pre>
+<p>The <code>management.health.db.enabled: false</code> line was deleted from the prod profile; Boot's default primary check now ran everywhere as the baseline, with the replica probe layered on top. The fossil <code>spring.factories</code> was finally buried. And because a silent absence had cost them forty blind minutes, Maya added the test the incident had shown was missing: a startup smoke test that boots the context with prod-shaped properties and asserts — by name — that the critical beans exist. Not that they work. That they <em>exist</em>. Absence had just been promoted to a failure class of its own.</p>
+<p>It was, she realized while naming the test class, ADR-002's move aimed at a new target. The fitness functions from the morning staging died politely had turned architecture rules into executable claims that fail the build the moment they stop being true; this one made the <em>container's composition</em> the same kind of claim.</p>
+<p>The runbook gained its shortest and most useful page: <em>"My bean didn't get created" — run with <code>--debug</code>, read the ConditionEvaluationReport, find your class under negative matches, read which condition said no. The report is the answer; everything else is guessing.</em></p>
+<p>And one more file rode along in the PR, the binder's fourth entry, half a page, dated:</p>
+<blockquote>
+<p><strong>ADR-004 — Config governance.</strong>
+<strong>Context:</strong> A transitive repackage inside a routine version bump silently removed prod's only database health bean; at standup nobody could say why any bean existed anywhere. <strong>Decision:</strong> Feature configuration binds through typed <code>@Validated @ConfigurationProperties</code> only — no raw <code>@Value</code> in feature code; profiles overlay a shared base, never fork it; every third-party version rides the BOM or gets a named owner; a startup smoke test asserts critical beans exist by name; reading the <code>--debug</code> condition report is a documented runbook skill, not archaeology. <strong>Consequences:</strong> Config becomes a schema, validated at boot; the BOM constrains upgrade freedom in exchange for a tested matrix; absence is now a failure class with a test that catches it.</p>
+</blockquote>
+<h3 id="⚖-your-move-architect">⚖ Your move, architect</h3>
+<p>The PR was easy to approve. The real decision sat underneath it: what is Atrium's config <em>strategy</em>, now that everyone has watched a bean vanish without a sound? Commit before reading on.</p>
+<ul>
+<li><strong>A — Fix the bean, keep ad-hoc <code>@Value</code> and tribal knowledge.</strong> Document the gotcha on the wiki; zero process cost today.</li>
+<li><strong>B — Govern it.</strong> Typed <code>@Validated @ConfigurationProperties</code> only, profiles that overlay rather than fork, all versions on the BOM, the bean-existence smoke test, condition-report reading as a runbook skill.</li>
+<li><strong>C — Centralize now.</strong> Stand up Spring Cloud Config Server: one source of truth, runtime refresh, every deployment pulls its config at boot.</li>
+</ul>
+<p><strong>The trade-offs, since you've committed:</strong> <strong>A</strong> costs nothing today and prices the <em>next</em> vanishing bean at a day of blind dashboards — and the tribal knowledge it leans on resigned in 2023; operability stays folklore. <strong>B</strong> is what Maya wrote into ADR-004: a schema tax — every knob needs a record, a constraint, a metadata entry — buying <em>interrogability</em>: config that fails loudly at boot instead of lying quietly at runtime, bean existence asserted by a test instead of assumed by memory. <strong>C</strong> buys runtime refresh nobody asked for, priced at a new failure domain in front of every boot — config server down, fleet can't start — plus a consistency question (<em>which pods hold which config?</em>) nobody was ready to answer in March. Same shape as January's move: <strong>B keeps C purchasable</strong> — typed records relocate to any backend — while C bought now is infrastructure in search of a requirement. (Chapter 14 prices central config honestly, once there's more than one deployable to feed.)</p>
+<p>"Where does Kubernetes point at this thing, now that it's back?" Idris asked, mostly to himself, while reviewing the PR. "Liveness, readiness — we should fight about that properly someday." Nobody took the bait. It was March; that fight was a September problem, and nobody knew it yet.</p>
+<p>On Friday, Maya gave her first-ever brown-bag, standing at the front of a room instead of the side of one. She titled the deck <strong>The Magic Show</strong> and walked the whole chain — <code>@SpringBootApplication</code> to its three annotations, the two doors into the context, the <code>.imports</code> roll-call, the conditional gates, the precedence ladder Idris had inked permanently onto the Wall beneath February's smoke-cloud proxy drawing and its caption, <em>this. goes around the mirror</em>. The penultimate slide was the one nobody had asked for and everybody photographed — the greenfield path, the same machinery with nothing on fire. New service → <code>start.spring.io</code> → pick the starters. The parent BOM pins every third-party version, so you declare dependencies and almost never a version number; auto-configuration conditions in a working baseline off your classpath. Your whole job is a typed <code>@ConfigurationProperties</code> record for your own knobs, an <code>application-{profile}.yml</code> per environment, and one calm read of the condition report before the first deploy. The magic was never the problem. Unread magic was.</p>
+<p>Her closing slide was a single sentence: <em>A bean is never magic. It is a list entry that survived its conditions.</em></p>
+<p>Elias sat in the second row and wrote nothing in green the entire hour. Afterward, he stopped at her desk and pointed his pen toward the controllers package.</p>
+<p>"You know how the beans are born," he said. "Now learn what they do all day."</p>
+<h2 id="the-debrief-—-ch4-the-magic-show">The debrief — Ch.4, The Magic Show</h2>
+<blockquote>
+<p><strong>How does <code>@EnableAutoConfiguration</code> find configurations, and how would you debug one that didn't apply?</strong> — <strong>Claim:</strong> Boot never scans jars for configuration; it reads a declared list and then lets conditions veto it. <strong>Mechanism:</strong> <code>@EnableAutoConfiguration</code> imports a selector that reads every <code>META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports</code> file on the classpath (<code>spring.factories</code> before Boot 2.7/3.0), then evaluates each candidate's <code>@Conditional</code> gates — <code>OnClass</code> against ASM-read metadata so an absent class can't blow up the read, <code>OnProperty</code> against the environment, <code>OnBean</code>/<code>OnMissingBean</code> against the beans registered <em>so far</em>, which is why <code>@AutoConfigureAfter</code> ordering is part of correctness; user config is processed first, so Boot's <code>@ConditionalOnMissingBean</code> defaults yield to your declarations. <strong>Trade-off:</strong> silent back-off is the design — it's what lets your <code>@Bean</code> win without flags — but the price is that absence produces no error, no log, nothing. <strong>Failure mode:</strong> a renamed class or an unset profile property deletes a bean with zero output; the diagnostic is <code>--debug</code> (or <code>/actuator/conditions</code>) and reading the ConditionEvaluationReport's negative matches — not grepping your own code, because the bean was never in your code.</p>
+</blockquote>
+<p><strong>THE ARCHITECT'S LENS</strong></p>
+<ul>
+<li><strong>-ilities at stake:</strong> <strong>Evolvability as a supply-chain property</strong> — the BOM is a tested-matrix contract: bumps inside it move between tested points; a dependency outside it makes every upgrade an architecture event with a blast radius someone must own. And <strong>operability as interrogability</strong> — a container that can explain its own composition (<code>--debug</code>, <code>/actuator/conditions</code>) is a property only if reading it is a designed habit. Silent back-off spends operability to buy override-by-declaration; ADR-004 buys it back at the beans that matter.</li>
+<li><strong>The ADR:</strong> ADR-004 — config governance: typed <code>@Validated @ConfigurationProperties</code> only, profiles overlay (never fork), versions ride the BOM or get an owner, critical beans asserted by name in a startup smoke test, the condition report a runbook skill. Config becomes schema, validated at boot.</li>
+<li><strong>Rejected alternatives:</strong> ad-hoc <code>@Value</code> plus tribal knowledge (free today; the next vanishing bean costs a blind day, and the tribe resigned in 2023); Spring Cloud Config Server now (runtime refresh nobody asked for, a new failure domain in front of every boot — re-priced in Ch.14); disabling auto-configuration and hand-wiring everything (fighting the whole social contract to punish one unread jar).</li>
+<li><strong>Fight or lean:</strong> <em>Lean</em> on conditions and the BOM — silent back-off is what lets your <code>@Bean</code> win by declaring, and the matrix is tested so you don't have to. <em>Fight</em> the silence wherever your 3 a.m. depends on a bean existing: the framework can't know which absences are fatal to you, so promote those to named, asserted, smoke-tested existence.</li>
+</ul>
+<p><strong>Story anchors</strong></p>
+<ul>
+<li>The green dashboard over a dead replica → <code>@ConditionalOnClass</code> backing off silently after the class moved packages in a routine bump.</li>
+<li>The two doors on the Wall → <code>@ComponentScan</code> from the root package (your beans) vs <code>AutoConfiguration.imports</code> (the jars' beans) — two distinct entrances into the context.</li>
+<li>Idris's env-var flip on the staging deployment → the config-precedence ladder (CLI &gt; env &gt; profile yml &gt; application.yml &gt; defaults) plus relaxed binding mapping <code>SCREAMING_SNAKE</code> onto kebab-case.</li>
+<li>Elias's standup question — <em>"Why does this bean exist in staging and not in prod?"</em> — met by eight engineers' silence → a bean nobody can explain is a bean nobody owns; ADR-004 turns existence into an asserted, smoke-tested claim.</li>
+</ul>
+<p><strong>Interview ammo</strong></p>
+<ul>
+<li><em>Kill-shot #6: How does <code>@EnableAutoConfiguration</code> find configurations, and how would you debug one that didn't apply?</em> — It reads <code>AutoConfiguration.imports</code> files from every jar (not classpath scanning), filters each candidate through its <code>@Conditional</code> gates, and the debug path is <code>--debug</code>/<code>/actuator/conditions</code> to read which condition vetoed your class.</li>
+<li><em>Follow-up: Why does your own <code>@Bean</code> override Boot's default — and when doesn't it?</em> — User config registers before auto-config evaluates, so Boot's <code>@ConditionalOnMissingBean</code> sees your bean and backs off; it fails to back off when your bean's type/name doesn't match what the condition checks, and then you get both.</li>
+<li><em>Follow-up: Why is <code>@ConditionalOnBean</code> dangerous without <code>@AutoConfigureAfter</code>?</em> — Conditions evaluate against bean definitions registered so far, so without ordering you can condition on a bean that's defined ten milliseconds later and wrongly back off; only condition on beans from configs you're explicitly ordered after.</li>
+<li><em>Architect follow-up — The platform team proposes Spring Cloud Config Server "so this never happens again." Your call?</em> — Wrong -ility: this incident was interrogability, not centralization — typed validated properties plus a bean-existence smoke test buy that without a new failure domain in front of every boot; central config gets priced when there are multiple deployables and a real runtime-refresh requirement.</li>
+</ul>
+<p><strong>Pointers</strong> → Playbook Ch.3–4 · <code>examples/ch04_autoconfig/</code> + <code>examples/ch03_starters/</code></p>
+<hr></hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch-03.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 3 — Smoke and Mirrors">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="part-03.html" class="navigation navigation-next " aria-label="Next page: Part III — The Request">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 4 — The Magic Show","level":"1.7","depth":1,"next":{"title":"Part III — The Request","level":"1.8","depth":1,"path":"part-03.md","ref":"part-03.md","articles":[]},"previous":{"title":"Chapter 3 — Smoke and Mirrors","level":"1.6","depth":1,"path":"ch-03.md","ref":"ch-03.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Otmane Omry","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The Spring Boot Mastery Book","language":"en","gitbook":"*"},"file":{"path":"ch-04.md","mtime":"2026-06-14T00:07:21.468Z","type":"markdown"},"gitbook":{"version":"6.2.1","time":"2026-06-14T00:07:44.741Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

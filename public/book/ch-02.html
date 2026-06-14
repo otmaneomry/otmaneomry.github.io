@@ -1,0 +1,776 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter 2 — The Container · The Spring Boot Mastery Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.1">
+        <meta name="author" content="Otmane Omry">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch-03.html" />
+    
+    
+    <link rel="prev" href="part-02.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    The Spring Boot Mastery Book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="part-01.html">
+            
+                <a href="part-01.html">
+            
+                    
+                    Part I — The Craft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch-01.html">
+            
+                <a href="ch-01.html">
+            
+                    
+                    Chapter 1 — The Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-02.html">
+            
+                <a href="part-02.html">
+            
+                    
+                    Part II — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="ch-02.html">
+            
+                <a href="ch-02.html">
+            
+                    
+                    Chapter 2 — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch-03.html">
+            
+                <a href="ch-03.html">
+            
+                    
+                    Chapter 3 — Smoke and Mirrors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch-04.html">
+            
+                <a href="ch-04.html">
+            
+                    
+                    Chapter 4 — The Magic Show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="part-03.html">
+            
+                <a href="part-03.html">
+            
+                    
+                    Part III — The Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch-05.html">
+            
+                <a href="ch-05.html">
+            
+                    
+                    Chapter 5 — The Front Door
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch-06.html">
+            
+                <a href="ch-06.html">
+            
+                    
+                    Chapter 6 — The Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="part-04.html">
+            
+                <a href="part-04.html">
+            
+                    
+                    Part IV — The Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch-07.html">
+            
+                <a href="ch-07.html">
+            
+                    
+                    Chapter 7 — The Thousand Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch-08.html">
+            
+                <a href="ch-08.html">
+            
+                    
+                    Chapter 8 — The Silent Commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch-09.html">
+            
+                <a href="ch-09.html">
+            
+                    
+                    Chapter 9 — The Proxy You Didn't Write
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="part-05.html">
+            
+                <a href="part-05.html">
+            
+                    
+                    Part V — Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ch-10.html">
+            
+                <a href="ch-10.html">
+            
+                    
+                    Chapter 10 — The Breach That Wasn't
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="ch-11.html">
+            
+                <a href="ch-11.html">
+            
+                    
+                    Chapter 11 — Forty Minutes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="ch-12.html">
+            
+                <a href="ch-12.html">
+            
+                    
+                    Chapter 12 — Three A.M.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="ch-13.html">
+            
+                <a href="ch-13.html">
+            
+                    
+                    Chapter 13 — The Cascade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="part-06.html">
+            
+                <a href="part-06.html">
+            
+                    
+                    Part VI — The Architect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="ch-14.html">
+            
+                <a href="ch-14.html">
+            
+                    
+                    Chapter 14 — The Split
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="ch-15.html">
+            
+                <a href="ch-15.html">
+            
+                    
+                    Chapter 15 — Faster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="ch-16.html">
+            
+                <a href="ch-16.html">
+            
+                    
+                    Chapter 16 — The Architect's Chair
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="part-07.html">
+            
+                <a href="part-07.html">
+            
+                    
+                    Capstone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="ch-17.html">
+            
+                <a href="ch-17.html">
+            
+                    
+                    Chapter 17 — The Hostile Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="appendices.html">
+            
+                <a href="appendices.html">
+            
+                    
+                    Appendices — The map behind the story
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 2 — The Container</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-2-—-the-container">Chapter 2 — The Container</h1>
+<p>Staging died at 6:50 a.m., which was, Maya would later admit, the politest possible time for it.</p>
+<p>The nightly CI run had deployed her branch — the decomposition Elias had blessed, splitting the 600-line god service into <code>ReportService</code> and <code>ProgramService</code> — and the pod never went <code>Ready</code>. At the bottom of the log, her first Spring stack trace that wasn't about her code's logic at all:</p>
+<p><code>BeanCurrentlyInCreationException: Error creating bean with name 'reportService': Requested bean is currently in creation: Is there an unresolvable circular reference?</code></p>
+<p>The trace was almost conversational: <code>reportService</code> needs <code>programService</code>, which needs <code>reportService</code> — <em>currently in creation</em>. The container had walked her dependency graph, found a loop, and refused to play. The loop was in her own diff:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ReportService</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> ProgramService programs;   <span class="hljs-comment">// digest rows need program names</span>
+
+    <span class="hljs-keyword">public</span> <span class="hljs-title function_">ReportService</span><span class="hljs-params">(ProgramService programs)</span> {
+        <span class="hljs-built_in">this</span>.programs = programs;
+    }
+}
+
+<span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ProgramService</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> ReportService reports;     <span class="hljs-comment">// program summaries need report counts</span>
+
+    <span class="hljs-keyword">public</span> <span class="hljs-title function_">ProgramService</span><span class="hljs-params">(ReportService reports)</span> {
+        <span class="hljs-built_in">this</span>.reports = reports;
+    }
+}
+</code></pre>
+<p>Each constructor demanded the other bean, finished and whole, before its own first line could run. No order could satisfy that. <em>My old <code>main()</code> at Meridian would never have let me type this,</em> she thought. <em>Hand-wiring the graph meant choosing the construction order yourself — two <code>new</code> calls that each demand the other's result first is a line that can't be written. The container had just rediscovered, at boot, what my fingers used to know.</em></p>
+<p>It was also, she registered distantly, a Tuesday. ADR-001 was a week old — <em>dependencies point one direction, arrive through constructors, the boundary speaks contracts</em> — and Elias's prophecy had been specific: the first violation wouldn't be malice; it would be a Tuesday. Here it was, written by the constitution's own author — a cycle is the direction rule with no direction left at all. The one mercy: because both dependencies arrived through constructors, the container had to face the loop while building the graph. It died on the launch pad instead of in a heap dump.</p>
+<p>Idris read over her shoulder, deadpan. "Spring failing at startup is the system doing you a favor. Prod failing at noon never writes you a stack trace this polite. Frame it."</p>
+<p>She didn't get the chance. At 11:20, support escalated a P1, and the week stopped being funny.</p>
+<p>A researcher attached a screenshot of their report-preview pane: a draft vulnerability write-up — detailed, severity-scored, internal — belonging to a <em>different researcher</em>, against a <em>different company's</em> program. On Glasshouse, whose entire product was the promise that disclosure stays controlled, that wasn't a bug; it was the apocalypse with a ticket number. Lena appeared at Maya's desk, laptop held like a subpoena: the affected customer was threatening to pull their program. "I need a sentence I can say out loud. Preferably one with the word <em>contained</em> in it."</p>
+<h2 id="the-investigation">The investigation</h2>
+<p>The preview pane was rendered by <code>DraftPreviewService</code>, a class older than half the team. Maya's stomach dropped before she consciously knew why:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">DraftPreviewService</span> {
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> DraftRepository drafts;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> PreviewTemplate template;
+    <span class="hljs-keyword">private</span> Draft currentDraft;   <span class="hljs-comment">// 2019: "temp cache, avoids double-load" — git blame</span>
+
+    <span class="hljs-keyword">public</span> <span class="hljs-title function_">DraftPreviewService</span><span class="hljs-params">(DraftRepository drafts, PreviewTemplate template)</span> {
+        <span class="hljs-built_in">this</span>.drafts = drafts;
+        <span class="hljs-built_in">this</span>.template = template;
+    }
+
+    <span class="hljs-keyword">public</span> PreviewHtml <span class="hljs-title function_">render</span><span class="hljs-params">(Long draftId, ResearcherId viewer)</span> {
+        <span class="hljs-built_in">this</span>.currentDraft = drafts.load(draftId);      <span class="hljs-comment">// step 1: stash on a field</span>
+        applyRedactionsFor(viewer);                    <span class="hljs-comment">// step 2: mutate the field</span>
+        <span class="hljs-keyword">return</span> template.render(<span class="hljs-built_in">this</span>.currentDraft);     <span class="hljs-comment">// step 3: read it back</span>
+    }
+}
+</code></pre>
+<blockquote>
+<p>⏸ <strong>Your call.</strong> Maya's stomach knows before she does. Before the next line names it: what is wrong with this class, how does researcher A's draft reach researcher B's screen, and which -ility just failed? Commit.</p>
+</blockquote>
+<p>A mutable field. On a <code>@Service</code>. Written at the top of every call, read at the bottom.</p>
+<p><em>And at Meridian this would have been fine,</em> she thought, and made herself finish the thought, because it was the whole bug. <em>There I'd have written <code>new DraftPreviewService(...)</code> inside the handler — one object per call, the field dying with the stack frame. "I'll just new it" was correct in a hand-wired world. Spring never hands you a fresh one. The default is one shared instance. For everything. Forever.</em></p>
+<p>She said it out loud: "At Meridian I'd have <code>new</code>-ed one per request. Here there is exactly one. Forever."</p>
+<p>One instance, one <code>currentDraft</code> field, every Tomcat worker thread writing to it. Researcher A's request stashes draft A. Researcher B lands on another thread and stashes draft B into <em>the same field</em>. Thread A reaches step 3 and renders whatever is there now. The field is shared because the object is shared; nothing more is required for the race. It was seven years old. Her own digest work had added a preview prefetch that multiplied calls to <code>render()</code> by fifty. She hadn't written the bug. She'd built it a highway.</p>
+<p>(If you called the field at the pause: the loud -ility down is <em>security</em> — wrong researcher, wrong company. A quieter one hides behind it; Elias will make her name it at the Wall.)</p>
+<p>The Canary was already on her desk — Elias had seen the P1 too. House rule, the one he'd issued in January with the bird itself (whoever owns the gnarliest open bug explains it to the bird, out loud and in full sentences, before escalating to a human): <em>you'll want this; everyone does eventually.</em> Eventually was a Tuesday. She picked up the dented yellow bird, felt ridiculous for four seconds, and explained in full sentences: "You are a singleton. There is one of you for the whole application. Your field is a whiteboard bolted to the kitchen wall: every request that walks past writes its secrets on it and reads whatever the last person wrote. The fix is not a better whiteboard. It's to stop owning a whiteboard."</p>
+<p>Saying it out loud surfaced the second half: fixing this class prevented nothing about the next one.</p>
+<h2 id="what-the-senior-sees">What the senior sees</h2>
+<p>Elias was at the Wall when she found him, green pen already out. He drew a tall empty column next to the sun-bleached <code>DO NOT ERASE</code> note.</p>
+<p>"Two failures, one week," he said. "A cycle and a leak. Tell me what they have in common."</p>
+<p>"They're both… me not knowing what the container actually does between <code>main()</code> and the first request."</p>
+<p>"Good. So let's watch it work." He wrote <em>IoC</em> at the top of the column. "Inversion of control isn't a slogan. You never call <code>new</code> on a collaborator — you declare what you need, and the container builds the graph: construction order, lifetime, all decided for you. Both of this week's failures happened inside decisions you didn't know it was making." Component scan came first. <code>@ComponentScan</code> walks the packages and finds the stereotypes — <code>@Component</code> and its specializations <code>@Service</code>, <code>@Repository</code>, <code>@Controller</code>, plus <code>@Configuration</code> classes with their <code>@Bean</code> methods. What it registers is not objects but <em>recipes</em>: <code>BeanDefinition</code>s. "Then the first hook," he said. "<code>BeanFactoryPostProcessor</code>s run against those definitions, before any bean exists — that's how <code>@Configuration</code> classes get parsed and property placeholders resolved. Later, <code>BeanPostProcessor</code>s run against the <em>instances</em>. One edits the recipe, the other decorates the cake. Now — why did your cycle kill staging at boot instead of prod at noon?"</p>
+<p>"Because the <code>ApplicationContext</code> doesn't wait. It builds every singleton eagerly at startup."</p>
+<p>"Yes. A plain <code>BeanFactory</code> is just a lazy lookup — ask, receive. The <code>ApplicationContext</code> is a <code>BeanFactory</code> with opinions: it pre-instantiates every singleton during refresh, registers the post-processors automatically, publishes events, owns the <code>Environment</code>. Eager creation means wiring mistakes detonate on the launch pad, where they cost nothing." <em>So the <code>ApplicationContext</code> is my old <code>main()</code>,</em> she thought, <em>— the dependency-ordered wiring I used to type by hand, plus lifetimes, plus a biography for every object it builds.</em></p>
+<p>"Idris gave you the operations version at six fifty," Elias added. "Here's the architecture version. Eager creation is a free integration test on every deploy: the whole singleton graph — every constructor, every <code>@PostConstruct</code> — must succeed before the pod's readiness probe goes green, so a wiring mistake structurally <em>cannot</em> reach a user. That's <strong>availability</strong>, purchased at boot. We never sell it back — sprinkle <code>@Lazy</code> to speed up restarts and the first failure quietly moves from the pipeline to the first unlucky request at noon."</p>
+<p>He made her build the biography down the new column, in her handwriting, question by question, until she could recite it cold:</p>
+<p><strong>instantiate → populate dependencies → <code>*Aware</code> callbacks → <code>BeanPostProcessor.postProcessBeforeInitialization</code> → <code>@PostConstruct</code> / <code>afterPropertiesSet</code> → init method → <code>BeanPostProcessor.postProcessAfterInitialization</code> → in service → <code>@PreDestroy</code> / <code>DisposableBean</code>.</strong></p>
+<p>"Where does <code>@PostConstruct</code> come from?" he asked.</p>
+<p>"The annotation?"</p>
+<p>He just looked at her. "Show me the mechanism."</p>
+<p>She opened the framework source instead of guessing, and found it: <code>CommonAnnotationBeanPostProcessor</code>, Spring's own <code>BeanPostProcessor</code>. It scans each bean for the annotation and invokes the method during the <em>before-initialization</em> phase. A hook, using the hook system.</p>
+<p>"So <code>@PostConstruct</code> isn't a feature of Java," she said slowly. "It's a customer of the lifecycle, same as anything I could write."</p>
+<p>"Everything is. That's the design." Then he tapped the last entry before <em>in service</em> — <code>postProcessAfterInitialization</code> — and held the pen there. "Remember this spot. Something important is born here. Not today's lesson. Soon."</p>
+<p>He drew a star beside it. By standup the column ran the height of the Wall, a vertical spine beside the sun-bleached note:</p>
+<p class="diagram"><img src="assets/diag-c0891eeb439c7f76.svg" alt="diagram"></img></p>
+
+<p>They did the cycle next. Spring keeps three caches while building singletons: finished beans in <code>singletonObjects</code>, half-built beans exposed early in <code>earlySingletonObjects</code>, and <code>singletonFactories</code> — factories that <em>can</em> hand out a reference to a bean that exists but isn't initialized yet. That machinery means a <strong>setter or field</strong> cycle is resolvable. A is instantiated, registers its early factory, starts populating, and needs B. B is built; when <em>it</em> needs A, it receives A's early reference from the cache. Both finish. The early reference is what breaks the deadlock. "But your cycle was in the <strong>constructors</strong>," he said. "An early reference requires the object to <em>exist</em>. A constructor cycle needs each object before the other's first line can run. There is nothing for the cache to hand out."</p>
+<p>"And the catch," he added, "is that the early reference escapes <em>before</em> initialization finishes — your neighbor receives a bean whose <code>@PostConstruct</code> hasn't run yet. The cache is clever enough to mint AOP proxies early, so those survive the loop. If a post-processor replaces the bean <em>after</em> init, the reference your neighbor holds and the bean the container keeps are two different objects — and Spring aborts the boot rather than let that stand. One reason Boot has shipped with circular references <em>disabled by default</em> since 2.6: even resolvable cycles fail fast unless you opt back in. The framework decided your design smell wasn't worth its cleverness. It's right."</p>
+<p>Thirty seconds of quick-fire, pen popping against the board: two beans, one type? <code>@Primary</code> declares the default; <code>@Qualifier</code> picks by name at the injection point. A bean whose <em>job</em> is manufacturing another bean? <code>FactoryBean&lt;T&gt;</code>: ask for it, get the product; prefix the name with <code>&amp;</code> for the factory itself. Scopes beyond singleton: <code>prototype</code> — a new instance per injection point or lookup — and <code>@RequestScope</code>/<code>@SessionScope</code> for web state. "With one famous catch," he said. "Injection happens once, at startup — so a prototype injected into a singleton is resolved a single time and held forever. Unless you go through an <code>ObjectProvider</code> or a scoped proxy that re-resolves per use, the narrow scope drowns in the wide one."</p>
+<p>"So I <em>could</em> slap <code>@RequestScope</code> on <code>DraftPreviewService</code>," Maya said. "Make it behave like an object I'd <code>new</code>-ed inside the handler."</p>
+<p>"You could. Why won't you?"</p>
+<p>"Because the state shouldn't exist at all. Scope would be a patch over a field that has no reason to live. It needs to be stateless, not differently stateful."</p>
+<p>"One more -ility and you pass," he said. "Name what statelessness buys at the system level."</p>
+<p>She thought of Idris's pod dashboards. "Scalability. The load balancer assumes any replica can serve any request — only true if no instance holds state between calls. Today the field lied between two threads in one JVM; three pods behind a balancer and it lies between <em>machines</em>."</p>
+<p>"So the stateless-singleton rule is a <em>precondition</em> for horizontal scale, not a style preference." Elias capped the pen. That was apparently the whole exam.</p>
+<h2 id="the-fix">The fix</h2>
+<p>The cycle first. Elias made her try <code>@Lazy</code> before rejecting it, because rejecting a tool you've never held is superstition:</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-title function_">ReportService</span><span class="hljs-params">(<span class="hljs-meta">@Lazy</span> ProgramService programs)</span> { ... }
+</code></pre>
+<p>Staging booted. A breakpoint showed <code>programs</code> was no <code>ProgramService</code> at all but a proxy that would resolve the real bean on first use. "So it works by lying to the constructor," she said. "It hands me an IOU. The cycle's still in the design — I've just hidden it, and whatever goes wrong cashing the IOU goes wrong at first use, in production, instead of at startup, for free."</p>
+<p>"Break-glass," Elias agreed. "Legacy code you can't reshape, a boot-order knot. Not a refactor you control."</p>
+<p>The honest fix was the one the cycle had been pointing at. The two services didn't need <em>each other</em>; they both needed a third thing neither of them was. She extracted it:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ProgramDirectory</span> {          <span class="hljs-comment">// the thing they were both reaching for</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> ProgramRepository programs;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> ReportRepository reports;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-title function_">ProgramDirectory</span><span class="hljs-params">(ProgramRepository programs, ReportRepository reports)</span> {
+        <span class="hljs-built_in">this</span>.programs = programs;
+        <span class="hljs-built_in">this</span>.reports = reports;
+    }
+
+    <span class="hljs-keyword">public</span> ProgramSummary <span class="hljs-title function_">summaryFor</span><span class="hljs-params">(Long programId)</span> { ... }   <span class="hljs-comment">// names + counts</span>
+}
+</code></pre>
+<p><code>ReportService</code> and <code>ProgramService</code> each took a <code>ProgramDirectory</code>. Neither took the other. The graph was a DAG again, and staging went green. <em>A circular dependency is rarely two classes that need each other,</em> she wrote in her notes. <em>It's one missing class that both of them are trying to be.</em></p>
+<p>Then the leak. The fix was almost insultingly small. Values move down the call stack as locals and parameters. The whiteboard comes off the wall:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">DraftPreviewService</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> DraftRepository drafts;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> PreviewTemplate template;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-title function_">DraftPreviewService</span><span class="hljs-params">(DraftRepository drafts, PreviewTemplate template)</span> {
+        <span class="hljs-built_in">this</span>.drafts = drafts;
+        <span class="hljs-built_in">this</span>.template = template;
+    }
+
+    <span class="hljs-keyword">public</span> PreviewHtml <span class="hljs-title function_">render</span><span class="hljs-params">(Long draftId, ResearcherId viewer)</span> {
+        <span class="hljs-type">Draft</span> <span class="hljs-variable">draft</span> <span class="hljs-operator">=</span> drafts.load(draftId);
+        <span class="hljs-type">Draft</span> <span class="hljs-variable">redacted</span> <span class="hljs-operator">=</span> redactFor(draft, viewer);   <span class="hljs-comment">// pure function, no field</span>
+        <span class="hljs-keyword">return</span> template.render(redacted);
+    }
+}
+</code></pre>
+<p>The collaborator fields are <code>final</code>, set once in the constructor, and safe to share across every thread because they never change. Per-request data lives and dies on the stack. The diff was a dozen lines; the consequence was a customer retained.</p>
+<p>That evening Elias stopped at her desk and set the printed postmortem draft back down. "January's review caught forty-seven problems because I happened to read forty pages of your code. Nobody reviewed 2019's <code>currentDraft</code> field into existence — somebody reviewed it <em>through</em>. And your cycle sailed past me wearing my own blessing. What does that tell you about review as enforcement?"</p>
+<p>"That it's vigilance," Maya said. "And vigilance decays — with headcount, with deadlines, with whoever's tired on a Thursday."</p>
+<p>"So. Architecture you can't enforce is architecture you hope for. The question is what enforcement costs."</p>
+<h3 id="⚖-your-move-architect">⚖ Your move, architect</h3>
+<p>How do you stop the <em>next</em> violation — the mutable field or constructor knot not yet written, by an engineer not yet hired? Before reading on, commit.</p>
+<ul>
+<li><strong>A — Review vigilance, sharpened.</strong> A checklist in the PR template, the green pen's rules taught at onboarding. Free, immediate, zero infrastructure.</li>
+<li><strong>B — Real module walls.</strong> Spring Modulith or JPMS boundaries: illegal dependencies become <em>unexpressible</em> — rejected by the module verifier — not merely detectable.</li>
+<li><strong>C — Fitness functions in CI.</strong> ArchUnit tests asserting the constitution itself — field injection, mutable singleton state, dependency direction, entities on the wire — failing the build, by rule name, on violation. (The build-time check Chapter 1's fork promised.)</li>
+</ul>
+<p><strong>The trade-offs, since you've committed:</strong> <strong>A</strong> costs nothing and decays — forty-seven catches in January, zero this week; the <strong>evolvability</strong> it guards lives in the heads of whoever hasn't quit yet. <strong>B</strong> buys the strongest <strong>enforceability</strong> at the heaviest <strong>cost</strong> — a quarter of migration for a seven-year monolith, bought before Atrium's borders have settled. <strong>C</strong> is what they chose: a fitness function asserts a <em>property of the architecture</em>, not a behavior of the code — the constitution made executable, enforcement that survives personnel, which is what evolvability requires. Its tax: rule maintenance, documented escape hatches, the occasional morning arguing with a robot. The move rhymes with January's seams fork (package-by-feature chosen over a microservice cut precisely because it kept the split purchasable later): <strong>C keeps B purchasable</strong> — every ArchUnit rule today is a border Modulith could harden later — at a tenth of the cost tonight.</p>
+<p>Small fixes don't prevent recurrence, so she made it structural. The new rule was plain: singleton beans hold no mutable state — collaborators <code>final</code>, request data flows through parameters, anything genuinely stateful must justify its scope in review. It joined ADR-001's rules in a constitution that went into the same PR as tests. Idris wired the ArchUnit rules into CI, failing the build on non-final instance fields in <code>@Service</code>/<code>@Component</code> classes, each failure naming its law:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@ArchTest</span>
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-type">ArchRule</span> <span class="hljs-variable">singletonsHoldNoMutableState</span> <span class="hljs-operator">=</span>
+        fields().that().areDeclaredInClassesThat().areAnnotatedWith(Service.class)
+                .or().areDeclaredInClassesThat().areAnnotatedWith(Component.class)
+                .should().beFinal()
+                .because(<span class="hljs-string">"ADR-002: singleton beans hold no mutable state"</span>);
+</code></pre>
+<p>Beside it went the constitutional core — ADR-001's direction, the invariant from the Wall. ArchUnit can assert that kind of rule too: not which fields must be <code>final</code>, but which packages a class is allowed to depend on. Maya read it twice before approving. It was the first time <em>the domain knows nothing about the web</em> had existed anywhere a deadline couldn't erase it:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@ArchTest</span>
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-type">ArchRule</span> <span class="hljs-variable">dependenciesPointInward</span> <span class="hljs-operator">=</span>
+        noClasses().that().resideInAPackage(<span class="hljs-string">"..digest.."</span>)
+                .and().areNotAnnotatedWith(RestController.class)
+                .should().dependOnClassesThat()
+                .resideInAnyPackage(<span class="hljs-string">"..web.."</span>, <span class="hljs-string">"jakarta.servlet.."</span>)
+                .because(<span class="hljs-string">"ADR-002: the domain knows nothing about the web — ADR-001's rule, enforced"</span>);
+</code></pre>
+<blockquote>
+<p><strong>ADR-002 — Executable architecture (fitness functions).</strong>
+<strong>Context:</strong> ADR-001's rules were violated within a fortnight — innocently, by their own author; review vigilance decays and doesn't survive turnover. <strong>Decision:</strong> The constitution becomes a test suite: ArchUnit rules in CI fail the build on field injection, non-final singleton state, dependency-direction violations, and entities returned from controllers; eager singleton startup is treated as a free integration test and never traded away. <strong>Consequences:</strong> Violations fail the build with the rule named, instead of surfacing as a P1 with a customer attached. Costs accepted: rule maintenance, documented escape hatches, and arguing with a robot instead of with Elias.</p>
+</blockquote>
+<p>She wrote PM-31, her first postmortem, owning both halves of the week under one title: <em>Two faces of the same ignorance.</em> Lena got her sentence with <em>contained</em> in it, plus one she liked better: <em>structurally can't recur</em>.</p>
+<p>The decomposition branch merged Thursday and deployed clean. Buried in it, unremarked by anyone — including its author — <code>bulkTriage()</code> now called <code>this.updateStatus()</code>, a method wearing a <code>@Transactional</code> annotation no caller would ever reach the way the container intended. Nothing failed. Nothing would, for a while.</p>
+<p>Friday, a calendar invite from Elias appeared for early February: <strong>"The proxy talk."</strong> Below it, one sentence: <em>Bring the lifecycle column. We're going back to the spot I told you to remember.</em></p>
+<h2 id="the-debrief-—-ch2-the-container">The debrief — Ch.2, The Container</h2>
+<blockquote>
+<p><strong>Walk the bean lifecycle — where exactly do <code>BeanPostProcessor</code>s run, and how is <code>@PostConstruct</code> implemented?</strong>
+<strong>Claim:</strong> a Spring bean's life is a fixed, hookable state machine driven by the container, and the hooks are where every "magic" feature actually lives. <strong>Mechanism:</strong> instantiate → populate dependencies → <code>*Aware</code> callbacks → <code>BeanPostProcessor.postProcessBeforeInitialization</code> → <code>@PostConstruct</code>/<code>afterPropertiesSet</code> → init method → <code>BeanPostProcessor.postProcessAfterInitialization</code> → in service → <code>@PreDestroy</code>/<code>DisposableBean</code>; <code>@PostConstruct</code> is no JVM feature but <code>CommonAnnotationBeanPostProcessor</code> — a BPP Spring ships — finding the annotation and invoking the method in the before-init phase, while <code>BeanFactoryPostProcessor</code>s run earlier still, against bean <em>definitions</em> rather than instances. <strong>Trade-off:</strong> eager singleton creation plus uniform hooks means wiring mistakes explode at startup (cheap) and frameworks get a universal decoration point — paid for with boot-time work and a container you must understand. <strong>Failure mode:</strong> <code>@PostConstruct</code> runs <em>before</em> <code>postProcessAfterInitialization</code>, so it sees the raw, undecorated bean — rely inside it on anything added in after-init (proxies, most famously) and it silently isn't there yet.</p>
+</blockquote>
+<p><strong>THE ARCHITECT'S LENS</strong></p>
+<ul>
+<li><strong>-ilities at stake:</strong> <strong>Availability</strong> as fail-fast integrity — eager singleton creation means a pod that can't construct its graph never goes <code>Ready</code>; a whole failure class moves from 2 a.m. to the pipeline. <strong>Scalability</strong> as precondition — any-replica-serves-any-request is only true when singletons hold no instance state. And the chapter's real subject, <strong>evolvability through enforceability</strong>: architecture you can prove with a failing build, not hope for in review.</li>
+<li><strong>The ADR:</strong> ADR-002 — executable architecture: the ADR-001 constitution plus the stateless-singleton rule, enforced by ArchUnit fitness functions in CI; eager startup never traded away.</li>
+<li><strong>Rejected alternatives:</strong> review vigilance alone (free; decays with headcount — 47 catches in January, zero this week); <code>@RequestScope</code> on the leaky service (differently stateful, not stateless — a patch over a field with no reason to live); full Spring Modulith/JPMS walls now (strongest enforcement, a quarter-long migration — kept purchasable, ADR-002's rules as the down payment).</li>
+<li><strong>Fight or lean:</strong> <em>Lean</em> on the strict container — eager refresh, constructor-cycle refusal, circular references off by default since 2.6: the framework declining to be clever for you is a gift. <em>Fight</em> the reflex to make bad shapes boot — <code>@Lazy</code> IOUs and exotic scopes convert launch-pad failures back into 2 a.m. ones.</li>
+</ul>
+<p><strong>Story anchors</strong></p>
+<ul>
+<li>The 6:50 a.m. staging corpse and Idris's "polite stack trace" → eager singleton instantiation in the <code>ApplicationContext</code>: constructor cycles fail at boot — startup-time failure is a feature.</li>
+<li>One draft field, two researchers, the whiteboard bolted to the kitchen wall → singleton is Spring's default scope (the #1 flip for hand-wired instincts — a bean is not an object you just <code>new</code>-ed for this call); singleton beans must be stateless.</li>
+<li>Elias's pen tapping <code>BPP.after</code> — "something important is born here" → <code>BeanPostProcessor</code>s decorate every bean during initialization; <code>@PostConstruct</code> is one of them (<code>CommonAnnotationBeanPostProcessor</code>), and proxies are born one step later.</li>
+<li>The red CI build naming its own law — <em>"ADR-002: singleton beans hold no mutable state"</em> → a fitness function asserts a property of the architecture, not a behavior of the code.</li>
+</ul>
+<p><strong>Interview ammo</strong></p>
+<ul>
+<li><em>Kill-shot #2 — walk the bean lifecycle; where do BPPs run; how is <code>@PostConstruct</code> implemented?</em> Instantiate → populate → <code>*Aware</code> → BPP.before → <code>@PostConstruct</code>/init → BPP.after → ready → destroy callbacks; <code>@PostConstruct</code> is executed by <code>CommonAnnotationBeanPostProcessor</code> in before-init, and AOP proxies are minted in after-init.</li>
+<li><em>Kill-shot #3 — how does Spring resolve a circular dependency, and when can't it?</em> Setter/field cycles between singletons resolve via the three-level cache — a factory in <code>singletonFactories</code> mints an early reference, promoted through <code>earlySingletonObjects</code> into <code>singletonObjects</code> — but constructor cycles can't, because each object must exist before the other's constructor runs; since Boot 2.6 even resolvable cycles fail fast unless you opt back in.</li>
+<li><em>Follow-up — why did Boot turn circular-reference resolution off by default?</em> The early reference escapes before initialization completes — the neighbor holds a bean whose <code>@PostConstruct</code> hasn't run — and post-init wrapping makes the early and final references diverge (Spring detects this and aborts); failing at startup beats debugging a half-initialized object, and the honest fix is extracting the third collaborator both sides need.</li>
+<li><em>Follow-up — how do you safely use a prototype or request-scoped bean inside a singleton?</em> Injection happens exactly once at startup, so a plain reference freezes the first instance forever; inject an <code>ObjectProvider&lt;T&gt;</code> (or use a scoped proxy) so resolution happens per use instead of per wiring.</li>
+<li><em>Architect follow-up — how do you keep architectural rules alive after the architect leaves the room?</em> Make them executable: fitness functions (ArchUnit, module verification) that fail the build with rule and reason named — vigilance decays with headcount, a red build argues back at every commit; the cost is rule maintenance and adjudicating exceptions.</li>
+</ul>
+<p><strong>Pointers</strong> → Playbook Ch.1 · <code>examples/ch01_core/</code> (<code>BeanLifecycleAndPostProcessors.java</code>, <code>ScopesAndCircularDeps.java</code>)</p>
+<hr></hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="part-02.html" class="navigation navigation-prev " aria-label="Previous page: Part II — The Container">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch-03.html" class="navigation navigation-next " aria-label="Next page: Chapter 3 — Smoke and Mirrors">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 2 — The Container","level":"1.5","depth":1,"next":{"title":"Chapter 3 — Smoke and Mirrors","level":"1.6","depth":1,"path":"ch-03.md","ref":"ch-03.md","articles":[]},"previous":{"title":"Part II — The Container","level":"1.4","depth":1,"path":"part-02.md","ref":"part-02.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Otmane Omry","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The Spring Boot Mastery Book","language":"en","gitbook":"*"},"file":{"path":"ch-02.md","mtime":"2026-06-14T00:07:18.906Z","type":"markdown"},"gitbook":{"version":"6.2.1","time":"2026-06-14T00:07:44.741Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
