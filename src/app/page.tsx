@@ -16,8 +16,8 @@ export default function Home() {
                 <Navbar/>
                 <div className="px-6 lg:px-12">
                     <About/>
-                    <Projects/>
                     <BookFeature/>
+                    <Projects/>
                     <Skills/>
                     <AboutSec/>
                     <Contact/>
