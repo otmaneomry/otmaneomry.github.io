@@ -30,6 +30,11 @@ const Navbar = () => {
                     <span className="text-[#C778DD] font-medium">#</span>work
                   </li>
                 </Link>
+                <a href="/book/">
+                  <li className="text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4">
+                    <span className="text-[#C778DD] font-medium">#</span>book
+                  </li>
+                </a>
                 <Link href="#aboutsec">
                   <li className="text-[#ABB2BF] text-[32px] my-4 md:my-auto md:text-base list-none mx-4">
                     <span className="text-[#C778DD] font-medium">#</span>about-me
