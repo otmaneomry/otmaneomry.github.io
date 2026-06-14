@@ -1,0 +1,778 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter 13 — The Cascade · The Spring Boot Mastery Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.1">
+        <meta name="author" content="Otmane Omry">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="part-06.html" />
+    
+    
+    <link rel="prev" href="ch-12.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    The Spring Boot Mastery Book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="part-01.html">
+            
+                <a href="part-01.html">
+            
+                    
+                    Part I — The Craft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch-01.html">
+            
+                <a href="ch-01.html">
+            
+                    
+                    Chapter 1 — The Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-02.html">
+            
+                <a href="part-02.html">
+            
+                    
+                    Part II — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch-02.html">
+            
+                <a href="ch-02.html">
+            
+                    
+                    Chapter 2 — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch-03.html">
+            
+                <a href="ch-03.html">
+            
+                    
+                    Chapter 3 — Smoke and Mirrors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch-04.html">
+            
+                <a href="ch-04.html">
+            
+                    
+                    Chapter 4 — The Magic Show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="part-03.html">
+            
+                <a href="part-03.html">
+            
+                    
+                    Part III — The Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch-05.html">
+            
+                <a href="ch-05.html">
+            
+                    
+                    Chapter 5 — The Front Door
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch-06.html">
+            
+                <a href="ch-06.html">
+            
+                    
+                    Chapter 6 — The Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="part-04.html">
+            
+                <a href="part-04.html">
+            
+                    
+                    Part IV — The Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch-07.html">
+            
+                <a href="ch-07.html">
+            
+                    
+                    Chapter 7 — The Thousand Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch-08.html">
+            
+                <a href="ch-08.html">
+            
+                    
+                    Chapter 8 — The Silent Commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch-09.html">
+            
+                <a href="ch-09.html">
+            
+                    
+                    Chapter 9 — The Proxy You Didn't Write
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="part-05.html">
+            
+                <a href="part-05.html">
+            
+                    
+                    Part V — Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ch-10.html">
+            
+                <a href="ch-10.html">
+            
+                    
+                    Chapter 10 — The Breach That Wasn't
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="ch-11.html">
+            
+                <a href="ch-11.html">
+            
+                    
+                    Chapter 11 — Forty Minutes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="ch-12.html">
+            
+                <a href="ch-12.html">
+            
+                    
+                    Chapter 12 — Three A.M.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.19" data-path="ch-13.html">
+            
+                <a href="ch-13.html">
+            
+                    
+                    Chapter 13 — The Cascade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="part-06.html">
+            
+                <a href="part-06.html">
+            
+                    
+                    Part VI — The Architect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="ch-14.html">
+            
+                <a href="ch-14.html">
+            
+                    
+                    Chapter 14 — The Split
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="ch-15.html">
+            
+                <a href="ch-15.html">
+            
+                    
+                    Chapter 15 — Faster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="ch-16.html">
+            
+                <a href="ch-16.html">
+            
+                    
+                    Chapter 16 — The Architect's Chair
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="part-07.html">
+            
+                <a href="part-07.html">
+            
+                    
+                    Capstone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="ch-17.html">
+            
+                <a href="ch-17.html">
+            
+                    
+                    Chapter 17 — The Hostile Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="appendices.html">
+            
+                <a href="appendices.html">
+            
+                    
+                    Appendices — The map behind the story
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 13 — The Cascade</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-13-—-the-cascade">Chapter 13 — The Cascade</h1>
+<p>The first thing Maya noticed, at 2:14 on a Tuesday afternoon in late September, was that she could <em>see</em> it.</p>
+<p>The Grafana board — built out of the 3 a.m. postmortem's shame — showed submission p99 climbing like a fever chart, and outbound calls to Cortexa, the CVE-enrichment vendor, timing out in red stripes. Their synthetics had alerted eleven minutes before the first researcher tweet. After nine months of debugging by flashlight, the lights were on.</p>
+<p>Elias was on planned leave — a cabin, a lake, deliberately no signal. Whatever happened next was Maya's.</p>
+<p>On the war-room screen, Idris overlaid two graphs: Cortexa's status page — <em>investigating elevated load in EU region</em> — and Glasshouse's outbound rate to <code>cortexa.io</code>.</p>
+<p>"Their status page says elevated load," he said. "We are the elevated load. We're sending them three times our organic traffic."</p>
+<p>Maya found it in four minutes. April — when the whole site 503'd waiting on this vendor — ended with timeouts on every outbound call and a decision note in her handwriting: <em>someday this call gets a circuit breaker.</em> Someday never came. The sentence had ridden into ADR-006's margin as a promissory note; today it came due, with interest. What came instead, in a commit labeled <code>temporary</code>, was this:</p>
+<pre><code class="lang-java"><span class="hljs-comment">// EnrichmentService — "temporary" since April</span>
+CveEnrichment <span class="hljs-title function_">enrich</span><span class="hljs-params">(String cveId)</span> {
+    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">attempt</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span>; attempt &lt;= <span class="hljs-number">3</span>; attempt++) {
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">return</span> cortexaClient.fetch(cveId);   <span class="hljs-comment">// connect 1s / read 2s</span>
+        } <span class="hljs-keyword">catch</span> (RestClientException e) {
+            log.warn(<span class="hljs-string">"Cortexa attempt {} failed"</span>, attempt, e);
+        }
+    }
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">EnrichmentUnavailableException</span>(cveId);
+}
+</code></pre>
+<p>Three attempts, back to back: no backoff, no jitter, no budget. Every failing call became three, so a regional outage tripled Glasshouse's outbound traffic against a vendor already failing. Inside Atrium, each enrichment tied up a thread for nine seconds of stacked timeouts instead of three — Little's law again: in-flight equals arrival rate times residence, so tripling residence tripled the threads held. Pools filled, and the backlog spread into unrelated paths until the tracker itself slowed. It was April's pool exhaustion wearing a distributed coat — Cortexa, already drowning, held underwater by its own customer.</p>
+<p>"First move is triage, not architecture," Maya said, steadier than she felt. "Kill the retries behind the feature flag. Right now we are part of their DDoS. We stop being that, then we design under calm."</p>
+<p>The flag flipped; within minutes the outbound graph dropped to organic levels and Cortexa's status page began, slowly, to recover.</p>
+<h2 id="the-investigation">The investigation</h2>
+<p>The retry storm explained the cascade's <em>force</em>, not its <em>reach</em>. Submission was supposed to survive Cortexa entirely — April's other fix, <em>submit now, enrich later</em>, an <code>@Async</code> hand-off to a background executor. So why was the report-detail page, a pure read path, timing out?</p>
+<p>Priya asked the fatal question. "Wait. Isn't enrichment <em>cached</em>? Why are we calling them at all on the detail page?"</p>
+<p>She pulled up her own cache panel: <code>cve-enrichment</code> hit rate, a flatline at zero — flat since the day the dashboards went up. The bug was older than the measurement: her refactor, mid-August.</p>
+<blockquote>
+<p>⏸ <strong>Your call.</strong> A <code>@Cacheable</code> that compiles, runs, and returns correct data — hit rate flat at zero since an August refactor. Commit before Priya scrolls: what's wrong, and which -ility has been quietly uninsured?</p>
+</blockquote>
+<p>The room went quiet the way it had in February, when it was Maya's own name on the commit. Priya scrolled to the code and found it:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">EnrichmentService</span> {
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> CortexaClient cortexaClient;   <span class="hljs-comment">// constructor-injected</span>
+
+    <span class="hljs-keyword">public</span> ReportEnrichment <span class="hljs-title function_">enrichmentFor</span><span class="hljs-params">(Report report)</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.fetchEnrichment(report.cveId());      <span class="hljs-comment">// ← the bug</span>
+    }
+
+    <span class="hljs-meta">@Cacheable(cacheNames = "cve-enrichment")</span>
+    <span class="hljs-keyword">public</span> ReportEnrichment <span class="hljs-title function_">fetchEnrichment</span><span class="hljs-params">(String cveId)</span> {
+        <span class="hljs-keyword">return</span> cortexaClient.fetch(cveId);
+    }
+}
+</code></pre>
+<p>"It compiles," Priya said slowly. "It runs. It returns the right data. It has just… never cached anything. Every detail view, straight to the vendor — and nobody noticed because Cortexa is fast when it's healthy."</p>
+<p>(If you called it at the pause: the mechanism is February's — a <code>this.</code> call that never crosses the proxy — but the -ility isn't performance: the cache was <em>availability</em> insurance against exactly this afternoon, its premium lapsed without a test going red.)</p>
+<p>Maya fetched a printed postmortem from her desk — February, her own name in the author line. PM-32: <em>Half-saved triage states. Root cause: <code>@Transactional</code> method invoked via <code>this.</code>, bypassing the proxy.</em> Same mechanism: the annotation's behavior lives in the proxy the container hands your callers, and a <code>this.</code> call dispatches on the raw object behind it, so the interceptor never runs. ADR-003 had made this a named review finding; the August review read past the line. February's ghost, back in a new coat.</p>
+<p>"I shipped this exact bug in February," she said, handing it over. "Different annotation, same mirror. Let me show you the smoke cloud." In January it had been a printed diff in green ink on Maya's desk; now a printed postmortem on Priya's — the same treatment, passed down.</p>
+<p>February's proxy drawing was still on the Wall — the smoke cloud in front of a box labeled <em>your actual object</em>, the caption faded but legible: <strong><em>this. goes around the mirror.</em></strong> Maya re-inked every line and added a list underneath: <code>@Transactional · @Cacheable · @Async · @PreAuthorize — same mirror, same trap.</code> Elias had said that as a warning; it took seven months to come true.</p>
+<p><em>At Meridian a retry was a for-loop you could see,</em> the old voice observed. <em>Crude, and wrong in three other ways — no backoff, no budget, no breaker — but impossible to walk around. Here, the annotation is a promise only the proxy keeps.</em></p>
+<h2 id="what-the-senior-sees">What the senior sees</h2>
+<p>"Say the mechanism back to me," Maya said — and heard, mid-sentence, whose cadence she was borrowing.</p>
+<p>"Spring's annotation-driven features aren't compiled into my class," Priya said. "At startup, a <code>BeanPostProcessor</code> sees the annotation and wraps my bean in a proxy — a CGLIB subclass, here. The <em>proxy</em> holds the interceptor: check the cache, open the transaction, dispatch to the executor, <em>then</em> call my code. External callers get the proxy from the container. But inside my own class, <code>this</code> is the raw object. The call never crosses the proxy boundary, so the interceptor never runs. It's not broken — it's bypassed."</p>
+<p>"And that's the scary part," Maya said. "It fails <em>silently and correctly</em>. The unit test passes — the method returns the right value. Only a hit-rate graph could catch it. Yours did; code review didn't."</p>
+<p>She sketched the incident as a stack of absences:</p>
+<p><strong>Timeouts were the foundation — and the only layer that existed.</strong> Without April's timeouts — ADR-006, the latency budget — every request thread would have blocked on the unanswering vendor until none remained: the thread-pool funeral, rerun. But a timeout bounds <em>one</em> call. It says nothing about <em>how many</em> you make.</p>
+<p><strong>Retries without a budget multiply load on a struggling dependency.</strong> A retry is a bet that the failure was transient. It needs exponential backoff so attempts spread out, and jitter so a thousand clients don't synchronize into waves. Three immediate retries against a regional outage aren't a bet — they're a weapon pointed at something already failing.</p>
+<p><strong>Nothing remembered that Cortexa was down.</strong> Every request rediscovered the outage from scratch and paid the full timeout each time. That's the circuit breaker's job. Maya drew the state machine next to the smoke cloud. <em>Closed:</em> calls flow, failures counted in a sliding window. Past a failure-rate threshold it <em>opens:</em> calls fail fast — no thread consumed, no vendor touched. After a wait, <em>half-open</em> admits a few probes — heal and it closes, fail and it snaps open. The breaker is the system's memory of recent pain.</p>
+<p><strong>Nothing isolated the blast.</strong> Enrichment and core tracker work drew from the same pools, so a sick optional feature starved a healthy critical one. A bulkhead — a hard cap on concurrent enrichment calls — turns "Cortexa is down" into "enrichment is down," and nothing more.</p>
+<p>"Fourth tool in that kit," Idris said. "Rate limiter." Maya added it. A rate limiter is a ceiling on outbound rate, enforced even when everything is green: the breaker reacts to their failures, the bulkhead caps our concurrent calls, and the rate limiter bounds what we send in the first place. "This morning's flag was a rate limiter set to zero, by hand." She penciled the numbers beside it:</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">resilience4j:</span>
+  <span class="hljs-attr">ratelimiter:</span>
+    <span class="hljs-attr">instances:</span>
+      <span class="hljs-attr">cortexa:</span>
+        <span class="hljs-attr">limit-for-period:</span> <span class="hljs-number">50</span>
+        <span class="hljs-attr">limit-refresh-period:</span> <span class="hljs-string">1s</span>
+        <span class="hljs-attr">timeout-duration:</span> <span class="hljs-number">0</span>
+</code></pre>
+<p>Fifty permits per one-second window. <code>timeout-duration: 0</code> means the fifty-first call fails fast instead of queueing up to dogpile the next refresh. The breaker protects <em>you</em> from a failing dependency — the rate limiter protects <em>them</em>, and your contract, from you, which is why it holds even when every graph is green.</p>
+<p><strong>And the async path lied about its own health.</strong> The <code>@Async</code> enrichment executor had an unbounded queue. Under the storm it accumulated forty thousand pending tasks while showing eight busy threads and no errors. <em>Meridian's hand-rolled executor hid its backlog exactly this way — same lie, older clothes,</em> Maya thought. An unbounded queue converts overload into silent latency and creeping memory instead of a signal.</p>
+<p>"One more," Idris said. "Retries mean some calls land twice — they process our request, die before answering, we send it again. Anything that retries is at-least-once; the far side has to absorb duplicates."</p>
+<p>"Idempotency key on every enrichment call," Maya agreed. "Keyed by the CVE, same as the cache — the same request twice is a no-op on their side. And write the rule down: at-least-once arrives with your first retry, not with a broker someday — idempotency is the precondition for every retry-shaped tool on this Wall. The durable version — write the intent in the same transaction as the data, deliver later, dedupe on the consumer — is the outbox pattern. We'll need it the day anything splits out of Atrium." She underlined it twice, not knowing how soon.</p>
+<h2 id="the-fix">The fix</h2>
+<p>They designed under calm. The fix was February's pattern reused verbatim — when an annotation needs a proxy boundary, <em>extract the bean</em>. The vendor boundary became one small class whose only job was to be called from outside itself:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Component</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">CortexaGateway</span> {   <span class="hljs-comment">// the resilience boundary</span>
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> RestClient cortexa;   <span class="hljs-comment">// connect 1s, read 2s</span>
+
+    <span class="hljs-keyword">public</span> <span class="hljs-title function_">CortexaGateway</span><span class="hljs-params">(RestClient cortexaRestClient)</span> {
+        <span class="hljs-built_in">this</span>.cortexa = cortexaRestClient;
+    }
+
+    <span class="hljs-meta">@Retry(name = "cortexa")</span>
+    <span class="hljs-meta">@CircuitBreaker(name = "cortexa")</span>
+    <span class="hljs-meta">@Bulkhead(name = "cortexa")</span>
+    <span class="hljs-keyword">public</span> ReportEnrichment <span class="hljs-title function_">fetch</span><span class="hljs-params">(String cveId)</span> {
+        <span class="hljs-keyword">return</span> cortexa.post().uri(<span class="hljs-string">"/v1/enrich"</span>)
+                .header(<span class="hljs-string">"Idempotency-Key"</span>, <span class="hljs-string">"enrich-"</span> + cveId)
+                .body(<span class="hljs-keyword">new</span> <span class="hljs-title class_">EnrichmentRequest</span>(cveId))
+                .retrieve()
+                .body(ReportEnrichment.class);
+    }
+}
+</code></pre>
+<p>The verb was April's, unchanged — Cortexa enriched by POST, so the method offered no idempotency for free; the key had to build it. The key is what makes this POST safe to repeat, and that construction — not the verb — is what licenses the <code>@Retry</code> stacked above it. A GET wouldn't have needed the header; every retried write on this Wall does. Maya spelled it out in the PR description, because "retry only idempotent calls" gets read as a scavenger hunt when it's a construction project.</p>
+<p>In front of it: <code>EnrichmentCache</code>, fifteen lines, constructor-injected, its single method wearing <code>@Cacheable(cacheNames = "cve-enrichment", sync = true)</code> and delegating straight through. Two beans, two proxies, every call crossing both. The hit-rate graph moved within an hour.</p>
+<p>Priya asked the sharp review question: why not a <code>fallbackMethod</code> on the breaker, returning the pending badge? Maya pointed one layer up. "Anything returned <em>underneath</em> the <code>@Cacheable</code> gets cached. Breaker opens, fallback says pending, cache stores pending — and we serve 'pending' for a full TTL after Cortexa heals. The fallback lives above the cache, or the cache launders the lie." So <code>EnrichmentService</code> caught the failure above the cache and returned <code>ReportEnrichment.pending(cveId)</code> — explicit, visible, never stored. A load that throws caches nothing.</p>
+<p>The numbers lived in configuration, tunable without a deploy:</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">resilience4j:</span>
+  <span class="hljs-attr">retry:</span>
+    <span class="hljs-attr">instances:</span>
+      <span class="hljs-attr">cortexa:</span>
+        <span class="hljs-attr">max-attempts:</span> <span class="hljs-number">3</span>
+        <span class="hljs-attr">wait-duration:</span> <span class="hljs-string">500ms</span>
+        <span class="hljs-attr">enable-exponential-backoff:</span> <span class="hljs-literal">true</span>
+        <span class="hljs-attr">exponential-backoff-multiplier:</span> <span class="hljs-number">2.0</span>
+        <span class="hljs-attr">ignore-exceptions:</span>
+          <span class="hljs-bullet">-</span> <span class="hljs-string">io.github.resilience4j.circuitbreaker.CallNotPermittedException</span>
+  <span class="hljs-attr">circuitbreaker:</span>
+    <span class="hljs-attr">instances:</span>
+      <span class="hljs-attr">cortexa:</span>
+        <span class="hljs-attr">sliding-window-size:</span> <span class="hljs-number">50</span>
+        <span class="hljs-attr">minimum-number-of-calls:</span> <span class="hljs-number">20</span>
+        <span class="hljs-attr">failure-rate-threshold:</span> <span class="hljs-number">50</span>
+        <span class="hljs-attr">slow-call-duration-threshold:</span> <span class="hljs-string">2s</span>
+        <span class="hljs-attr">slow-call-rate-threshold:</span> <span class="hljs-number">50</span>
+        <span class="hljs-attr">wait-duration-in-open-state:</span> <span class="hljs-string">30s</span>
+        <span class="hljs-attr">permitted-number-of-calls-in-half-open-state:</span> <span class="hljs-number">5</span>
+  <span class="hljs-attr">bulkhead:</span>
+    <span class="hljs-attr">instances:</span>
+      <span class="hljs-attr">cortexa:</span>
+        <span class="hljs-attr">max-concurrent-calls:</span> <span class="hljs-number">16</span>
+</code></pre>
+<p>Jitter rode along as a review note — a randomization factor on each wait, via Resilience4j's interval functions — so a fleet of pods doesn't retry in synchronized waves. Slow calls counted as failures on purpose: a timeout that "succeeds" is still pain.</p>
+<p>Ordering got its own Wall sketch, because Maya nearly got it wrong. By Resilience4j's default aspect order, Retry sits <em>outside</em> the breaker. Each attempt passes through the breaker and is counted. Once the breaker opens, remaining attempts fail instantly with <code>CallNotPermittedException</code> — which the retry <em>ignores</em>, so an open breaker ends the storm instead of feeding it. Flip the nesting and three attempts look like one call. The storm hides inside the breaker's statistics. "Same annotations, opposite system," she wrote. "Ordering is semantics, not style." She drew the composition on the Wall:</p>
+<p class="diagram"><img src="assets/diag-5e0aad269862b269.svg" alt="diagram"></img></p>
+
+<p>They kept the default order on purpose, the why written underneath: the bulkhead takes a permit <em>per attempt</em>, so the cap holds mid-storm; ADR-006's timeout prices one attempt's worst case.</p>
+<p>The cache triggered the afternoon's best argument. Priya wanted Redis — shared, durable, one cache for all pods. Maya made her argue both sides. Caffeine is in-process: nanosecond reads, no network hop, nothing new to fail — but every pod warms its own copy and there's no shared eviction. Redis buys sharing at the price of a round-trip, serialization, and one more thing on the 3 a.m. dashboard. For CVE enrichment — slow-changing, harmless to duplicate, fine to lose — Caffeine with a TTL won; Redis the day they needed shared eviction. Refreshes went through <code>@CachePut</code>, which executes the method and overwrites the entry. A manual re-run hit <code>@CacheEvict</code>. And <code>sync = true</code> earned its one-breath defense: a hot key expiring makes every concurrent request miss at once and stampede the backend; <code>sync</code> lets one caller per key load while the rest wait — per pod.</p>
+<p>The executor got bounds and a name:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Bean(name = "enrichmentExecutor")</span>
+TaskExecutor <span class="hljs-title function_">enrichmentExecutor</span><span class="hljs-params">()</span> {
+    <span class="hljs-type">var</span> <span class="hljs-variable">executor</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ThreadPoolTaskExecutor</span>();
+    executor.setThreadNamePrefix(<span class="hljs-string">"enrich-"</span>);
+    executor.setCorePoolSize(<span class="hljs-number">8</span>);
+    executor.setMaxPoolSize(<span class="hljs-number">16</span>);
+    executor.setQueueCapacity(<span class="hljs-number">200</span>);   <span class="hljs-comment">// bounded: overload becomes a signal, not a secret</span>
+    executor.setRejectedExecutionHandler(<span class="hljs-keyword">new</span> <span class="hljs-title class_">ThreadPoolExecutor</span>.AbortPolicy());
+    <span class="hljs-keyword">return</span> executor;
+}
+</code></pre>
+<p>They argued the rejection policy aloud. <code>CallerRunsPolicy</code> was tempting — backpressure for free — until Maya traced it: under overload, the <em>request</em> thread runs the enrichment, synchronously, against a sick vendor. April, reinvented by a constructor argument. <code>AbortPolicy</code> won. The <code>@Async("enrichmentExecutor")</code> submission point catches the rejection, the report keeps its pending badge, and a <code>@Scheduled</code> sweeper re-enqueues once the breaker closes. One caveat went on the PR: Boot's default scheduler is single-threaded unless you size it, so a slow sweep delays every other job. An <code>AsyncUncaughtExceptionHandler</code> went in beside it: a <code>void</code> <code>@Async</code> method that throws never reaches its caller — by default it's merely logged by a handler nobody watches. Theirs fired an alert.</p>
+<p>Maya capped the marker on a line written under the smoke cloud: <strong><em>backpressure is a system property, not a queue setting.</em></strong> "Every bound — pool, queue, retries, bulkhead — is the system saying <em>no</em> while <em>no</em> is still cheap," she said. "Unbounded anything is deferred failure. Availability isn't surviving load; it's refusing the load you can't survive."</p>
+<p>Which left the badge. Lena fought it, because that was her job. "Researchers see 'severity pending enrichment' and read 'broken.' Synthesize a medium severity while Cortexa's down. Smooth it over."</p>
+<p>"A fallback that lies is an incident you've scheduled for later," Maya said. "Severity drives bounty math. The day our invented 'medium' turns out to be a critical, we're explaining money, not a badge. The fallback degrades <em>honestly</em>: what we know, what's coming, nothing invented. What a user sees while we're failing isn't an accident — it's a contract, and product co-signs it." Lena held the stare, then nodded — the same nod she'd given on timeouts in April. The badge shipped; researchers barely noticed; trust held. Fallbacks that degrade honestly entered the house style that week.</p>
+<h3 id="⚖-your-move-architect">⚖ Your move, architect</h3>
+<p>The badge settled new, never-enriched reports. The harder question outlived the incident: what should the detail page show for reports enriched <em>weeks ago</em>, when Cortexa goes dark and cache entries age out? Lena brought renewal numbers — an hour of erroring detail pages reads as "the platform is down." Marisol brought trust: her triagers <em>act</em> on severity and must know how far to trust the page. Three policies went up on the Wall. Commit before reading on.</p>
+<ul>
+<li><strong>A — Fail fast, visibly.</strong> Breaker open → the panel says so. Honest, simple, nearly free — and triage stops entirely for the duration.</li>
+<li><strong>B — Queue-and-drain.</strong> Accept everything, enrich eventually, show pending meanwhile — build the durable queue now.</li>
+<li><strong>C — Serve the last known enrichment, marked <code>STALE</code> with its age.</strong> <em>"Enriched 41h ago · vendor degraded."</em> The cache becomes history, not just an accelerator.</li>
+</ul>
+<p><strong>The trade-offs, since you've committed:</strong> <strong>A</strong> spends <em>availability</em> to buy simplicity and perfect honesty; Lena's renewal argument killed it on the record — a vendor's bad hour promoted to a triage outage is the cascade re-implemented as product policy. <strong>B</strong> is the right shape — for <em>writes</em>: it's the outbox pattern Chapter 14 builds. Mid-incident it's a redesign, not a fix, and reads can't queue — a triager looking at a report <em>now</em> can't be handed a ticket number. <strong>C</strong> shipped, buying <em>availability</em> with a named <em>freshness</em> tax: the cache kept entries past their freshness window, anything stale carried an age stamp, and the failure mode was decided in advance — stale under 48 hours is actionable, older escalates to manual; first-contact CVEs keep the pending badge. Lena's renewals and Marisol's trust resolved <em>on the record</em>, which is the point: the degraded view is a designed product contract, not whatever the exception handler left on screen.</p>
+<p>The record went into the binder before the week was out — the longest entry yet, with the most scars to cite:</p>
+<blockquote>
+<p><strong>ADR-013 — Resilience composition.</strong>
+<strong>Context:</strong> A Cortexa regional outage met an unbudgeted retry loop ("temporary" since April); our outbound tripled, pools filled, and the cascade reached unrelated paths — while an August <code>@Cacheable</code> had never cached once (self-invocation, again). <strong>Decision:</strong> The composition order is law — timeouts under everything (ADR-006 is the floor); bounded, jittered retry only on idempotent calls, every attempt crossing the breaker so an open breaker ends the storm; a bulkhead caps concurrent calls per dependency; a rate limiter wherever the contract demands one; every external call carries an idempotency key; fallbacks degrade honestly — pending or stale-marked with age, never fabricated; async work rides bounded, named executors. <strong>Consequences:</strong> A failing dependency now costs its feature, not the site; the price is configuration that must be load-tested rather than guessed — and a review rule: a bare retry loop is a finding.</p>
+</blockquote>
+<h2 id="the-closed-incident">The closed incident</h2>
+<p>Elias came back Thursday, sunburned and unhurried, to a folder on his desk: timeline, postmortem, ADR-013, Wall photos, and the minutes of a review Maya had run <em>with Cortexa's engineers</em> — both companies' graphs on one screen, both sides' retries on the table. A closed incident, end to end, commanded by someone else.</p>
+<p>He read it all, walked to her desk, and said only: "Who flipped the flag?"</p>
+<p>"I did. Triage first. Architecture after."</p>
+<p>He nodded once — the smallest nod she'd ever seen carry that much weight — and went to study the re-inked smoke cloud.</p>
+<p>The only shadow: the CTO had read the postmortem, come away glowing about one word — <em>resilience</em> — and had a conference to attend in October. Next month's problem.</p>
+<h2 id="the-debrief-—-ch13-the-cascade">The debrief — Ch.13, The Cascade</h2>
+<blockquote>
+<p><strong>Why did the <code>@Cacheable</code> never cache — and why didn't anything fail?</strong> <strong>Claim:</strong> <code>@Cacheable</code>, like <code>@Transactional</code>, <code>@Async</code>, and <code>@PreAuthorize</code>, is implemented by a proxy, so calling the annotated method through <code>this.</code> silently bypasses it. <strong>Mechanism:</strong> at startup a <code>BeanPostProcessor</code> wraps the bean in a proxy — here a CGLIB subclass — whose interceptor does the cache lookup before delegating; external callers hold the proxy, but a self-invocation dispatches directly on the raw object, so the interceptor never runs. <strong>Trade-off:</strong> annotation-driven behavior keeps business code declarative, but the behavior lives <em>around</em> your object, not in it — only calls that cross the proxy boundary get it. <strong>Failure mode:</strong> the method still returns correct results, so tests pass; the feature no-ops invisibly until an outage or a flatlined hit-rate graph exposes weeks of misses — the fix is extracting the annotated method into its own injected bean so every call crosses the proxy.</p>
+</blockquote>
+<p><strong>THE ARCHITECT'S LENS</strong></p>
+<ul>
+<li><strong>-ilities at stake:</strong> <strong>Availability under dependency failure</strong> — resilience is availability on somebody else's worst day, <em>composed</em>, not installed: backpressure decides what the system refuses, idempotency what it may safely retry, honest degradation what users see while it fails. Taxes paid knowingly: <strong>operability</strong> (tunables that must be load-tested, one more 3 a.m. dashboard) and <strong>cost</strong> (per-pod caches, idle bulkhead permits).</li>
+<li><strong>The ADR:</strong> ADR-013 — resilience composition: timeouts under everything (ADR-006 the floor), bounded jittered retry only on idempotent calls with every attempt crossing the breaker, bulkhead per dependency, rate limiter where the contract demands it, idempotency keys, honest fallbacks, bounded executors.</li>
+<li><strong>Rejected alternatives:</strong> the bare three-attempt loop (a multiplier aimed at a drowning vendor); <code>fallbackMethod</code> beneath the cache (the cache launders the lie for a full TTL); <code>CallerRunsPolicy</code> (April reinvented — a sick vendor's latency on request threads); synthesized severity (an incident scheduled for later); queue-and-drain mid-incident (Ch.14's outbox bought early — reads can't queue).</li>
+<li><strong>Fight or lean:</strong> <em>Lean</em> on Resilience4j's annotations and default aspect order at a dedicated gateway bean — proxy wrapping is why the container is worth inhabiting, and Retry-outside-breaker is the correct semantics. <em>Fight</em> every default that hides failure: the unbounded executor queue, the logged-and-forgotten <code>AsyncUncaughtExceptionHandler</code>, any annotation whose effect you haven't seen on a graph.</li>
+</ul>
+<p><strong>Story anchors</strong></p>
+<ul>
+<li>Priya's flatlined hit-rate graph → <code>@Cacheable</code> behind a <code>this.</code> call: the proxy trap generalizes to every annotation-driven feature</li>
+<li>"We are the elevated load" QPS overlay → retry storms: retries without backoff, jitter, and a budget are a self-inflicted DDoS on a struggling dependency</li>
+<li>The "severity pending enrichment" badge → fallbacks must degrade honestly; a fallback that invents data is an incident scheduled for later</li>
+<li>Lena's renewals vs Marisol's trust, resolved on the record → the degraded view is a designed product contract; ADR-013 made stale-marked truth house law</li>
+</ul>
+<p><strong>Interview ammo</strong></p>
+<ul>
+<li><em>Kill-shot: Why do <code>@Cacheable</code>/<code>@Async</code> silently no-op on self-invocation?</em> Same mechanism as <code>@Transactional</code>: the behavior lives in a proxy interceptor created at <code>postProcessAfterInitialization</code>, and <code>this.</code> never crosses the proxy — extract the annotated method into a separate injected bean.</li>
+<li><em>Follow-up: Retry inside or outside the circuit breaker — what changes?</em> Resilience4j's default puts Retry outermost: the breaker counts every attempt and, once open, fails the rest fast (have the retry ignore <code>CallNotPermittedException</code>); inverted, the breaker sees three attempts as one call and the storm hides from its statistics.</li>
+<li><em>Follow-up: Why is an unbounded <code>@Async</code> executor queue dangerous?</em> It turns overload into silent latency and memory growth instead of backpressure — bound the queue, pick the rejection policy deliberately (caller-runs pushes a sick dependency's latency onto request threads), graph the depth, and register an <code>AsyncUncaughtExceptionHandler</code> so <code>void</code> async failures alert instead of just logging.</li>
+<li><em>Architect follow-up — Compose timeout, retry, breaker, bulkhead, and rate limiter for one flaky vendor: what order, and why?</em> Timeouts under everything to price one attempt; bounded jittered retry only on idempotent calls, each attempt crossing the breaker (open = storm over); bulkhead caps what you'll spend waiting; rate limiter protects their contract even when green. Flip the nesting and the storm hides inside the breaker's statistics.</li>
+</ul>
+<p><strong>Pointers</strong> → Playbook Ch.12 · <code>examples/ch12_extensions/AopAnnotationTraps.java</code>, <code>examples/ch09_microservices/CircuitBreakerSelfInvocationTrap.java</code></p>
+<hr></hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch-12.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 12 — Three A.M.">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="part-06.html" class="navigation navigation-next " aria-label="Next page: Part VI — The Architect">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 13 — The Cascade","level":"1.19","depth":1,"next":{"title":"Part VI — The Architect","level":"1.20","depth":1,"path":"part-06.md","ref":"part-06.md","articles":[]},"previous":{"title":"Chapter 12 — Three A.M.","level":"1.18","depth":1,"path":"ch-12.md","ref":"ch-12.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Otmane Omry","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The Spring Boot Mastery Book","language":"en","gitbook":"*"},"file":{"path":"ch-13.md","mtime":"2026-06-14T00:07:34.247Z","type":"markdown"},"gitbook":{"version":"6.2.1","time":"2026-06-14T00:07:44.741Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

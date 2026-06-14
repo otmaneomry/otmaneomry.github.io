@@ -1,0 +1,741 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter 9 — The Proxy You Didn't Write · The Spring Boot Mastery Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.1">
+        <meta name="author" content="Otmane Omry">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="part-05.html" />
+    
+    
+    <link rel="prev" href="ch-08.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    The Spring Boot Mastery Book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="part-01.html">
+            
+                <a href="part-01.html">
+            
+                    
+                    Part I — The Craft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch-01.html">
+            
+                <a href="ch-01.html">
+            
+                    
+                    Chapter 1 — The Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-02.html">
+            
+                <a href="part-02.html">
+            
+                    
+                    Part II — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch-02.html">
+            
+                <a href="ch-02.html">
+            
+                    
+                    Chapter 2 — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch-03.html">
+            
+                <a href="ch-03.html">
+            
+                    
+                    Chapter 3 — Smoke and Mirrors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch-04.html">
+            
+                <a href="ch-04.html">
+            
+                    
+                    Chapter 4 — The Magic Show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="part-03.html">
+            
+                <a href="part-03.html">
+            
+                    
+                    Part III — The Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch-05.html">
+            
+                <a href="ch-05.html">
+            
+                    
+                    Chapter 5 — The Front Door
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch-06.html">
+            
+                <a href="ch-06.html">
+            
+                    
+                    Chapter 6 — The Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="part-04.html">
+            
+                <a href="part-04.html">
+            
+                    
+                    Part IV — The Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch-07.html">
+            
+                <a href="ch-07.html">
+            
+                    
+                    Chapter 7 — The Thousand Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch-08.html">
+            
+                <a href="ch-08.html">
+            
+                    
+                    Chapter 8 — The Silent Commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="ch-09.html">
+            
+                <a href="ch-09.html">
+            
+                    
+                    Chapter 9 — The Proxy You Didn't Write
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="part-05.html">
+            
+                <a href="part-05.html">
+            
+                    
+                    Part V — Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ch-10.html">
+            
+                <a href="ch-10.html">
+            
+                    
+                    Chapter 10 — The Breach That Wasn't
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="ch-11.html">
+            
+                <a href="ch-11.html">
+            
+                    
+                    Chapter 11 — Forty Minutes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="ch-12.html">
+            
+                <a href="ch-12.html">
+            
+                    
+                    Chapter 12 — Three A.M.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="ch-13.html">
+            
+                <a href="ch-13.html">
+            
+                    
+                    Chapter 13 — The Cascade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="part-06.html">
+            
+                <a href="part-06.html">
+            
+                    
+                    Part VI — The Architect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="ch-14.html">
+            
+                <a href="ch-14.html">
+            
+                    
+                    Chapter 14 — The Split
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="ch-15.html">
+            
+                <a href="ch-15.html">
+            
+                    
+                    Chapter 15 — Faster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="ch-16.html">
+            
+                <a href="ch-16.html">
+            
+                    
+                    Chapter 16 — The Architect's Chair
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="part-07.html">
+            
+                <a href="part-07.html">
+            
+                    
+                    Capstone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="ch-17.html">
+            
+                <a href="ch-17.html">
+            
+                    
+                    Chapter 17 — The Hostile Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="appendices.html">
+            
+                <a href="appendices.html">
+            
+                    
+                    Appendices — The map behind the story
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 9 — The Proxy You Didn't Write</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-9-—-the-proxy-you-didnt-write">Chapter 9 — The Proxy You Didn't Write</h1>
+<p>Priya Sharma had been at Glasshouse for exactly one day and four hours when she stopped standup dead.</p>
+<p>"Quick one," she said, in the tone of someone who assumed it would be. "I've been reading the triage flow. <code>ReportRepository</code> is an interface. Where's the implementation? I've been looking for an hour, and I'd like to know what I'm doing wrong before I spend a second one."</p>
+<p>Silence. Eight engineers around a kanban board, seven years of accumulated folklore, and not one of them could point to a class. Marisol's entire triage queue ran through that repository. Half a year of incidents had been debugged on top of it. Nobody had ever opened its implementation, because there wasn't one to open.</p>
+<p>Maya opened her mouth — and caught Elias's eye across the room. A small shake of the head. Afterward, by the kettle, he was explicit. "Don't tell her. Show her how to find out." A pause. "She's yours, by the way. Onboarding buddy. I've already updated the doc."</p>
+<p><em>Eight years of Java and one year of Spring, and my first official act as a mentor is a question I would have flunked in January.</em> At Meridian, the data layer was the one place "where's the implementation?" always had an answer: every query a string of SQL she'd typed, every row-to-object mapping a loop with her name on the commit. Here, apparently, the repository <em>was</em> the magic — and Maya realized she'd been trusting it the way she'd once trusted Boot's startup wiring — auto-configuration conjuring beans off the classpath — politely, and without evidence.</p>
+<h2 id="the-investigation">The investigation</h2>
+<p>They did it the honest way: a breakpoint and a debugger, Priya driving.</p>
+<p>Inside <code>TriageWorkflow</code>, where <code>ReportRepository</code> arrived through the constructor, Priya evaluated <code>reportRepository.getClass()</code>.</p>
+<p>"<code>jdk.proxy3.$Proxy187</code>," she read. "That's not a class. That's an apology."</p>
+<p>"It's a JDK dynamic proxy," Maya said. "Spring Data registered a factory bean for your interface at startup. The bean it produces is a proxy that <em>implements</em> <code>ReportRepository</code> — nobody wrote it, it was generated. Step into <code>findById</code> and keep going past the interceptors."</p>
+<p>Priya stepped. Three frames of plumbing, and then a real class with real code: <code>SimpleJpaRepository</code>, calling <code>EntityManager.find</code>. "Okay. So <em>that's</em> the implementation. For <code>findById</code>, <code>save</code>, the CRUD set."</p>
+<p>"For the methods Spring Data ships. Now the interesting half." Maya scrolled to the methods that existed nowhere at all:</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">ReportRepository</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">JpaRepository</span>&lt;Report, UUID&gt; {
+
+    <span class="hljs-comment">// The "latest activity" widget. Compiles. Passed its test.</span>
+    Optional&lt;Report&gt; <span class="hljs-title function_">findTopByProgramIdOrderByCreatedAt</span><span class="hljs-params">(UUID programId)</span>;
+
+    <span class="hljs-comment">// The reports list. Every page of the infinite scroll pays for this.</span>
+    Page&lt;Report&gt; <span class="hljs-title function_">findByProgramIdAndStatus</span><span class="hljs-params">(UUID programId,
+                                          ReportStatus status,
+                                          Pageable pageable)</span>;
+}
+</code></pre>
+<p>"There's no <code>SimpleJpaRepository</code> method called <code>findTopByProgramIdOrderByCreatedAt</code>," Maya said. "At startup, Spring Data <em>parsed the method name</em>." She dropped a breakpoint in the framework's <code>PartTree</code> constructor and restarted the app. They watched the string go in and a parse tree come out: find, top one, by programId, order by createdAt. Every property was checked against the entity metamodel. The whole thing was compiled into JPQL before the first request ever arrived. "The method name is the query. It's not magic. Let me show you the mechanism."</p>
+<p>She heard the sentence as it left her mouth, and stopped. Six months of Elias's green ink, and the catchphrase had changed hands without asking either of them.</p>
+<p>Priya, mercifully, was already squinting at the widget code. "Wait. Order by <code>createdAt</code>... which direction?"</p>
+<blockquote>
+<p>⏸ <strong>Your call.</strong> The build is green and the one-row test has passed for months — before Maya answers: what is <code>findTopByProgramIdOrderByCreatedAt</code> actually returning, why has no test objected, and which -ility got sold when a query became a sentence the compiler doesn't speak?</p>
+</blockquote>
+<p>Which is how, on day four, Priya found the bug everyone senior had missed. The "latest activity" widget on every program dashboard had been showing a report from 2019 for months. <code>OrderByCreatedAt</code> with no <code>Desc</code> is valid in Spring Data's grammar, and the default direction is ascending. Top one of ascending is the <em>oldest</em>. The unit test had a single-row fixture, and one row passes any <code>ORDER BY</code> ever written.</p>
+<p>"The method name compiles," Priya said slowly. "It just answers a different question."</p>
+<p><em>That</em> was the part that itched at Maya's hand-wired instincts. The Java compiler only checks that the method name is legal Java; it knows nothing about what the name means. The startup parser does validate the pieces — misspell a property as <code>findByTtile</code> and the context fails fast at boot — but it cannot catch a name that parses cleanly and means the wrong thing. At Meridian a query was a string of SQL the compiler never vouched for, so nobody expected it to: you read the <code>ORDER BY</code> with your own eyes and ran it against real rows before you trusted it. Here the green build had felt like proof, and that reflex was the trap — a derived query is a sentence in a language the Java compiler doesn't speak.</p>
+<p>(If you committed at the pause: ascending, so the <em>oldest</em>; one row blesses every sort. The -ility is the deeper cut — Maya names it at the Wall.)</p>
+<p>While they were in the logs with <code>show-sql</code> on, Priya asked the second question. "Why does the reports list run <em>two</em> queries per page?"</p>
+<p>There it was, under every <code>Page&lt;Report&gt;</code>: the <code>SELECT</code> they asked for, and a <code>SELECT count(*)</code> over the whole filtered set that nobody had. The count exists so <code>Page</code> can report <code>totalElements</code> and <code>totalPages</code>, and it runs on every request. On the researcher-facing infinite scroll, nothing ever displayed a total. They were paying for a number they threw away, on every scroll event, against the platform's biggest table.</p>
+<h2 id="what-the-senior-sees">What the senior sees</h2>
+<p>At the Wall, under the smoke-cloud proxy drawing with its caption — <em>this. goes around the mirror</em> — Maya gave Priya the stack, top to bottom — "one breath per layer," she promised.</p>
+<p>Priya had stopped under the cloud first — she'd read the February postmortem the way new hires read ghost stories. "That's the transaction proxy. The one the bean walked around by calling itself."</p>
+<p>"February's ghost in a new coat," Maya said. "That one was CGLIB around a class we <em>wrote</em>, and a <code>this.</code> call never crosses the wrapper — the advice silently never runs. Today's coat has nobody inside it at all. Atrium is full of objects nobody wrote; same lesson, new machinery."</p>
+<p>A Spring Data repository is three dispatch rules behind one proxy. CRUD methods route to <code>SimpleJpaRepository</code>. Methods carrying <code>@Query</code> run exactly what you declared — JPQL usually, native SQL when you genuinely need Postgres-specific reach — with named parameters bound by <code>@Param</code>, not by position. Everything else goes through name derivation: parsed once at startup, validated against entity properties, compiled to JPQL. The boot-time validation is the trade you're making — property names are checked, <em>intent</em> is not.</p>
+<p>So the team needed a ladder, not a ban. Derived names for the trivial cases. Past that, write the query:</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">ReportRepository</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">JpaRepository</span>&lt;Report, UUID&gt; {
+
+    Optional&lt;ReportSummary&gt; <span class="hljs-title function_">findTopByProgramIdOrderByCreatedAtDesc</span><span class="hljs-params">(UUID programId)</span>;
+
+    <span class="hljs-comment">// Infinite scroll: Slice fetches size + 1 and answers hasNext — no COUNT.</span>
+    Slice&lt;ReportSummary&gt; <span class="hljs-title function_">findByProgramIdAndStatus</span><span class="hljs-params">(UUID programId,
+                                                  ReportStatus status,
+                                                  Pageable pageable)</span>;
+
+    <span class="hljs-comment">// House rule: past two predicates the query is written, not derived.</span>
+    <span class="hljs-comment">// Ordering is pinned here; the Pageable only supplies the window.</span>
+    <span class="hljs-meta">@Query("""
+        select new com.glasshouse.atrium.report.ReportSummary(
+            r.id, r.title, r.severity, r.status, r.createdAt)
+        from Report r
+        where r.program.id = :programId
+          and r.status = :status
+          and r.createdAt &gt;= :since
+        order by r.createdAt desc
+        """)</span>
+    Slice&lt;ReportSummary&gt; <span class="hljs-title function_">findRecentForTriage</span><span class="hljs-params">(<span class="hljs-meta">@Param("programId")</span> UUID programId,
+                                             <span class="hljs-meta">@Param("status")</span> ReportStatus status,
+                                             <span class="hljs-meta">@Param("since")</span> Instant since,
+                                             Pageable pageable)</span>;
+}
+</code></pre>
+<p><code>ReportSummary</code> was a record — five fields, constructed straight from the <code>select</code> clause. "A projection," Maya said. "The query returns exactly these columns, the database does the narrowing, and there's no entity in sight. No entity means no lazy fields waiting to detonate after the session closes, and no over-fetching forty columns to show five. Remember the thousand tiny queries in May? Projections close off that whole family at the boundary." (May, if you skipped it: a loop touched a lazy association on every row — one extra <code>SELECT</code> apiece, a thousand queries for one screen.)</p>
+<p>"There are interface projections too," she added, "where Spring generates — yes, another proxy — backed by just the selected columns. Closed ones, where every getter maps to a property, stay efficient. <em>Open</em> ones, with <code>@Value</code> SpEL expressions, quietly fetch the whole entity to evaluate the expression, which un-fixes everything you fixed. We use records. They can't lie."</p>
+<p>Priya pointed at the triage search screen spec — severity, status, program, researcher, date range, any combination. "Derived name for that would be a paragraph."</p>
+<p>"That's where derivation stops being clever and starts being a hostage note. Dynamic predicates get a custom repository <em>fragment</em> — you write an interface, an <code>Impl</code> class, and Spring Data composes it into the same proxy — built on Specifications or Querydsl, both of which are just composable <code>where</code>-clauses as objects." One breath, as promised.</p>
+<p>"And why does any of this need a persistence context underneath?" Priya asked. "Why not just... SQL?"</p>
+<p>"Because we chose this engine, and it's worth knowing we chose it. Spring Data JPA rides Hibernate: persistence context, dirty checking, lazy loading — all the power, and all the traps that come with a session. Spring Data <em>JDBC</em> is the same repository grammar with that whole layer deleted — no session, no lazy anything; you load and save whole aggregates, and what you fetched is all you have. For a module with small aggregates and no appetite for surprises, that honesty is a feature. Spring Data Mongo is the grammar again over documents — no joins, so the document has to <em>be</em> the aggregate, modeled for the access pattern, or you suffer. Same interfaces, three engines; the grammar being identical is exactly why you have to know which one you're holding. Atrium's core is relational and shared — it stays JPA."</p>
+<h2 id="the-architecture-under-the-repositories">The architecture under the repositories</h2>
+<p>Before they left the Wall, Priya pointed at the project tree. "Eleven repositories. Nine tables. Smell, or coincidence?"</p>
+<p>"Autopsy," Maya said. "They grew one per table, and per-table repositories are how the graph wins: every query starts anywhere, reaches anything — the soil May's thousand queries grew in. Nobody ever decided what the <em>unit</em> was — and the unit we keep consistent, and change, isn't a table." She took the marker and drew three boxes where there had only ever been entity arrows:</p>
+<p class="diagram"><img src="assets/diag-4201c50be0ea93da.svg" alt="diagram"></img></p>
+
+<p>"<code>Report</code> owns its <code>Activity</code> rows. There's an invariant between them — a report's status has to agree with its latest activity — and the lost-update week taught us what guards an invariant: <em>one</em> transaction. So they share a boundary, loaded and committed together; the aggregate is the transaction's natural span. <code>Program</code> and <code>Researcher</code> are other aggregates: a <code>Report</code> carries a <code>programId</code>, never a <code>Program</code> — the <code>@ManyToOne</code> stays mapped, that's just how the foreign key gets written and why <code>findRecentForTriage</code> can say <code>r.program.id</code>, but the rule governs <em>navigation</em>: no code outside a declared read-model query traverses that association across an aggregate line, and domain logic sees only the ID. Inside a boundary, invariants and one transaction; between boundaries, IDs — and, when it matters, eventual consistency."</p>
+<p>(The lost-update week, for late joiners: two transactions read the same row, both wrote, and the second silently won — until a <code>@Version</code> check made the race loud.)</p>
+<p>"That's DDD," Priya said, in the tone of someone identifying a diet.</p>
+<p>"The ten percent that pays rent here: aggregates, and the words. <code>Report</code>, <code>Triage</code>, <code>Disclosure</code> — the vocabulary on this wall <em>is</em> the API of the domain; the day the code says <code>SubmissionRecordDTO</code> and Marisol says <em>report</em>, every meeting pays a translation tax. And Spring Data JDBC? It's this picture <em>enforced</em> — whole aggregates in and out, no lazy graph, because it refuses to believe in one. Who polices the boundary — the framework, or the review — is an architectural choice, not a library preference. We keep the engine and adopt the worldview: repositories per aggregate <em>root</em>, three, not eleven, and reads across a line become projections on purpose. The -ility this week has been circling: <strong>evolvability of the data model</strong> — the aggregate as the unit of consistency <em>and</em> of change."</p>
+<p>Elias drifted past with a teabag and looked at the three boxes considerably longer than the tea required. "Leave those lines up," was all he said. Nobody had a name yet for the map the Wall had just started drawing. (Chapter 14 does.)</p>
+<h2 id="migration-day">Migration day</h2>
+<p>Friday, 4:55 p.m., the deploy pipeline went red:</p>
+<pre><code class="lang-text">Migration checksum mismatch for migration version 41
+-&gt; Applied to database : 1486912852
+-&gt; Resolved locally    :   89004127
+Either revert the changes to the migration, or run repair to update the schema history.
+</code></pre>
+<p>Someone — in fairness, someone moving fast in a team that was suddenly bigger and shipping faster — had "fixed a typo" in <code>V41__add_report_indexes.sql</code>. An index name, cosmetic, already applied to production weeks ago. Flyway records a checksum in <code>flyway_schema_history</code> the moment a versioned migration is applied. From that point the file stops being code and becomes a historical record. Edit history, and validation calls you a liar.</p>
+<p>"<code>flyway repair</code> takes thirty seconds," somebody offered, eyeing the clock.</p>
+<blockquote>
+<p>⏸ <strong>Your call.</strong> 4:55 p.m., pipeline red, <code>flyway repair</code> is thirty seconds away and so is the weekend. Repair now or investigate first — and name the one thing <code>repair</code> can never tell you. Commit.</p>
+</blockquote>
+<p>Idris put the brick on the table. "We can repair the checksum in thirty seconds, or we can know what we're repairing in thirty minutes. One of those happens again at 3 a.m."</p>
+<p>Thirty minutes, then: confirm the edit was genuinely cosmetic by diffing the applied SQL against the file, revert the file to match history exactly, and ship the rename as <code>V42</code> — forward, versioned, boring. The rules went in the runbook before anyone went home: never edit an applied migration; fixes roll forward as new versions; views and functions live in <code>R__</code> repeatable scripts, which re-run when their checksum changes by design. ("Liquibase, if you're wondering," Maya told Priya, "is the same discipline with a changelog abstraction and rollback choreography — we run Flyway because plain SQL is what we'd be reading at 3 a.m. anyway.")</p>
+<p>"Append-only," Idris said, underlining it, "because a versioned migration is a one-way door — walk through, it locks; want something different, take the <em>next</em> door." Then he made it arithmetic. Eight pods, one schema, no maintenance window, every environment replaying the same history in order. Schema evolvability under continuous deploy depends on every database having run the identical sequence of files — which means never rewriting the past. Edit an applied migration and you haven't fixed history — you've <em>forked</em> it: a checksum mismatch if you're lucky, silent staging-production drift if you're not.</p>
+<p>And since everyone was already in a room being honest, Maya pulled up the scaling plan and finally did the arithmetic nobody had done in seven years. Each Atrium pod ran Tomcat's 200 worker threads over Hikari's default pool of ten connections. Eight pods × 10 = 80 of Postgres's <code>max_connections = 100</code>. The autoscaling proposal said twelve pods. 120 &gt; 100. The new pods wouldn't make the platform faster; they'd make Postgres start refusing connections — <em>sorry, too many clients already</em> — for everyone, including the healthy pods.</p>
+<p><em>At Meridian there had been no pool to size — <code>DriverManager.getConnection</code>, used, closed, a fresh handshake per query — and nobody ever counted connections, because freight traffic never made anyone.</em> The per-pod story was worse. Under burst, 200 threads contend for ten connections. The losers queue at the pool, time out after Hikari's default thirty seconds, and throw <code>SQLTransientConnectionException</code> — while the database sits at 4% CPU. The pool is sized by the database's limits and the contention in front of it, not by anybody's CPU count. Pool exhaustion is an outage that <em>impersonates</em> a slow database.</p>
+<p>It was launch day's equation one layer down — the 503s with idle CPUs, every Tomcat worker parked on one slow vendor. The same math applied here: 200 threads, a query or three behind each <code>Page</code>, funneling into ten connections under a ceiling of a hundred. The queue hadn't gone away; it had simply moved from the connector to Hikari.</p>
+<h2 id="the-fix">The fix</h2>
+<pre><code class="lang-yaml"><span class="hljs-attr">spring:</span>
+  <span class="hljs-attr">datasource:</span>
+    <span class="hljs-attr">hikari:</span>
+      <span class="hljs-attr">maximum-pool-size:</span> <span class="hljs-number">10</span>      <span class="hljs-comment"># 8 pods x 10 = 80; Postgres max_connections = 100,</span>
+                                 <span class="hljs-comment"># minus headroom for migrations, ops psql, and one emergency</span>
+      <span class="hljs-attr">connection-timeout:</span> <span class="hljs-number">3000</span>   <span class="hljs-comment"># starve fast and visibly, not at 30s in silence</span>
+  <span class="hljs-attr">jpa:</span>
+    <span class="hljs-attr">open-in-view:</span> <span class="hljs-literal">false</span>          <span class="hljs-comment"># still false; projections made it painless</span>
+</code></pre>
+<p>The pull request that closed the week carried more documentation than code. The derived-query rule: explicit <code>@Query</code> past two predicates, and every <code>OrderBy</code> names its direction. Any test of ordering needs at least two rows, out of order — one-row fixtures bless every sort ever written. List endpoints return <code>Slice</code> unless the UI genuinely shows a total; <code>Page</code> costs a <code>COUNT</code>, so it has to be a choice, not a default. Read paths return projections; entities don't cross the service boundary — the last clause of a lesson Maya had been learning since her first green-ink review. Flyway discipline, written down. Hikari, sized by arithmetic instead of superstition, with the scaling plan corrected before it became somebody's 3 a.m. page.</p>
+<p>On top sat half a page in <code>docs/adr/</code> — the week's real decision, made durable:</p>
+<blockquote>
+<p><strong>ADR-009 — Aggregate boundaries.</strong>
+<strong>Context:</strong> Repositories had grown one-per-table, queries reached across the object graph from anywhere to anywhere, and pagination and pool sizing both fell over when real data arrived. <strong>Decision:</strong> Repositories exist per aggregate root — <code>Program</code>, <code>Report</code> (owning <code>Activity</code>), <code>Researcher</code> — never per table; cross-aggregate reads go through projections and read models, never object-graph traversal; references between aggregates are by ID; Flyway migrations are append-only; the Hikari pool is sized from Postgres's <code>max_connections</code> and the launch-day thread math, arithmetic recorded here rather than in folklore. <strong>Consequences:</strong> The aggregate becomes the transaction's natural boundary — the invariant unit ADR-008 demanded — and a candidate border for whatever Atrium grows into next; the accepted cost: convenient cross-aggregate <code>JOIN</code>s stop being free and become deliberate read-model decisions.</p>
+</blockquote>
+<p>The widget fix itself was one word — <code>Desc</code> — and a two-row test. Priya shipped it, four days into the job, with a commit message Maya didn't edit: "Top of ascending is the oldest. Ask me how I know."</p>
+<h3 id="⚖-your-move-architect">⚖ Your move, architect</h3>
+<p>The lines on the Wall created an immediate problem: the program dashboard reads across all three boxes — reports, researcher names, severity rollups. Yesterday that was one cheerful <code>JOIN</code> through the object graph. Commit before reading on: how do dashboards read across aggregates now?</p>
+<ul>
+<li><strong>A — A projection per view.</strong> Each dashboard gets its own record read model: one query, exactly its columns, owned by the view.</li>
+<li><strong>B — Entity-graph traversal with clever fetching.</strong> Keep the object graph for reads; <code>JOIN FETCH</code> and <code>@EntityGraph</code> the exact path each dashboard needs.</li>
+<li><strong>C — A separate read database, full CQRS.</strong> Writes hit the aggregates; a synchronized read store serves dashboards, shaped purely for reading.</li>
+</ul>
+<p><strong>The trade-offs, since you've committed:</strong> <strong>B</strong> re-couples every dashboard to the write model: each new widget needs its own fetch plan against entities whose job is guarding invariants, not rendering — and May already paid that bill: the thousand queries were graph-reads doing a view's job. <strong>A</strong> is what the team chose: one <code>@Query</code> and one record per view, cheap to add, cheap to delete, the write model free to evolve underneath — the <strong>evolvability</strong> the aggregates bought, actually spent. <strong>C</strong> buys the same separation with heavier machinery: synchronization, eventual-consistency UX, a second store to operate and page on — an <strong>operability</strong> tax. It becomes defensible when reads run orders of magnitude past writes — think 100×, a saturated replica, rollup queries throttling triage; until that signal arrives, C is a door A keeps purchasable. Lena's version went in the notes: "We buy the second database when a customer's dashboard is slow, not when a conference talk was good."</p>
+<p>The following Wednesday, Priya gave the Wall tour — the onboarding rite, socket to database and back, every hop named out loud. When she reached the repository she added a hop the diagram hadn't had before: "...and the repository is a proxy nobody wrote, which is fine, because now we know who did." Elias watched Maya watch Priya, and wrote nothing down.</p>
+<p>The team was bigger now, and faster. New <code>v2</code> routes were landing weekly, quicker than any one person was reading them. That would matter soon. Not yet.</p>
+<h2 id="the-debrief-—-ch9-the-proxy-you-didnt-write">The debrief — Ch.9, The Proxy You Didn't Write</h2>
+<blockquote>
+<p><strong>Where is the implementation of a Spring Data repository, and how does it execute your queries?</strong> <strong>Claim:</strong> There is no implementation class — Spring Data generates a proxy bean from the interface at runtime. <strong>Mechanism:</strong> A repository factory registers a JDK dynamic proxy implementing your interface; calls dispatch by rule — CRUD methods to <code>SimpleJpaRepository</code>, <code>@Query</code> methods to your declared JPQL or native SQL, and everything else through method-name derivation, parsed at startup into a query tree, validated against entity property names, and compiled to JPQL. <strong>Trade-off:</strong> Zero boilerplate and fail-fast validation of property <em>names</em> at boot — but the query lives in a method name, so the compiler checks Java grammar while nobody checks intent, and past two or three predicates the name becomes unreadable. <strong>Failure mode:</strong> A name that parses but means the wrong thing — <code>OrderByCreatedAt</code> without <code>Desc</code> — compiles, passes a one-row test, and silently returns wrong data for months; the cure is explicit <code>@Query</code> past two predicates and fixtures that can actually fail.</p>
+</blockquote>
+<p><strong>THE ARCHITECT'S LENS</strong></p>
+<ul>
+<li><strong>-ilities at stake:</strong> <strong>Evolvability of the data model</strong> — the aggregate as the unit of consistency <em>and</em> change: invariants inside one boundary, references by ID, read models keeping dashboards from freezing the write schema. Append-only migrations are the same -ility at the schema layer; the Hikari arithmetic is <strong>availability</strong>, bought with division instead of superstition.</li>
+<li><strong>The ADR:</strong> ADR-009 — aggregate boundaries: repositories per aggregate root (<code>Program</code>, <code>Report</code>+<code>Activity</code>, <code>Researcher</code>); cross-aggregate reads via projections, never graph traversal; references by ID; Flyway append-only; the pool sized from <code>max_connections</code> and the thread math.</li>
+<li><strong>Rejected alternatives:</strong> per-table repositories with free graph reach (the default that grew — coupling nobody decided); entity-graph dashboards (May's bill, paid twice); full CQRS now (kept purchasable, its 100×-reads signal named in advance); wholesale Spring Data JDBC (boundary <em>enforcement</em> at the price of remapping the platform's core — the worldview was adoptable without the migration).</li>
+<li><strong>Fight or lean:</strong> <em>Lean</em> on the generated machinery — derivation for trivial queries, <code>SimpleJpaRepository</code> for CRUD, Flyway's checksum as the guardian of history: when it calls you a liar, believe it. <em>Fight</em> the graph — JPA will cheerfully let every entity reach every other forever; the aggregate boundary is discipline the framework never enforces, which is why it lives in review and ADR-009, not in an annotation.</li>
+</ul>
+<p><strong>Story anchors</strong></p>
+<ul>
+<li>Priya's hour-long hunt for a class that doesn't exist → the repository is a runtime-generated proxy: interface in, JDK proxy out, <code>SimpleJpaRepository</code> behind it.</li>
+<li>The 2019 report on the "latest activity" widget → derived-query names compile and parse, but nobody checks intent; missing <code>Desc</code> means top-of-ascending = oldest.</li>
+<li>The 4:55 p.m. checksum standoff → applied migrations are history, not code: never edit one; roll forward with a new version, and <code>repair</code> only when you can explain what you're repairing.</li>
+<li>Three chalk boxes on the Wall, arrows carrying only IDs → the aggregate is the unit of consistency (invariants inside, one transaction) and of change; cross-aggregate reads are read models, not graph reach — the first lines of what Chapter 14 will call a context map.</li>
+</ul>
+<p><strong>Interview ammo</strong></p>
+<ul>
+<li><em>Kill-shot: You write a Spring Data repository interface with no implementation — what actually runs when you call <code>findByStatus(...)</code>, end to end?</em> A startup-built JDK dynamic proxy dispatches the call: derivation parsed the method name into a query tree at boot, validated properties against the metamodel, and compiled JPQL that executes through the shared <code>EntityManager</code> — CRUD methods route to <code>SimpleJpaRepository</code> instead.</li>
+<li><em>Follow-up: Why is <code>Page</code> the wrong return type for infinite scroll, and what do you use?</em> Every <code>Page</code> runs a hidden <code>COUNT(*)</code> over the full filtered set to populate totals; <code>Slice</code> fetches <code>size + 1</code> rows and answers only <code>hasNext</code>, so you skip the count you weren't displaying anyway.</li>
+<li><em>Follow-up: How do you size a HikariCP pool, and what does exhaustion look like?</em> By database arithmetic — pods × pool size + headroom ≤ <code>max_connections</code>, contention measured, never by app CPU count; exhaustion presents as <code>SQLTransientConnectionException</code> after <code>connection-timeout</code> while the DB idles — an outage impersonating a slow database.</li>
+<li><em>Architect follow-up — Repositories: one per table, or one per what?</em> One per aggregate root — the span of one transaction's invariants and the unit the model evolves by; cross-aggregate reads are explicit projections, references cross by ID — which makes today's aggregate tomorrow's candidate context, or service, boundary.</li>
+</ul>
+<p><strong>Pointers</strong> → Playbook Ch.8 · <code>examples/ch08_data/</code></p>
+<hr></hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch-08.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 8 — The Silent Commit">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="part-05.html" class="navigation navigation-next " aria-label="Next page: Part V — Production">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 9 — The Proxy You Didn't Write","level":"1.14","depth":1,"next":{"title":"Part V — Production","level":"1.15","depth":1,"path":"part-05.md","ref":"part-05.md","articles":[]},"previous":{"title":"Chapter 8 — The Silent Commit","level":"1.13","depth":1,"path":"ch-08.md","ref":"ch-08.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Otmane Omry","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The Spring Boot Mastery Book","language":"en","gitbook":"*"},"file":{"path":"ch-09.md","mtime":"2026-06-14T00:07:29.189Z","type":"markdown"},"gitbook":{"version":"6.2.1","time":"2026-06-14T00:07:44.741Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

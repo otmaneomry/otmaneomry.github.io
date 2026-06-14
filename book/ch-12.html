@@ -1,0 +1,784 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter 12 — Three A.M. · The Spring Boot Mastery Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.1">
+        <meta name="author" content="Otmane Omry">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch-13.html" />
+    
+    
+    <link rel="prev" href="ch-11.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    The Spring Boot Mastery Book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="part-01.html">
+            
+                <a href="part-01.html">
+            
+                    
+                    Part I — The Craft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch-01.html">
+            
+                <a href="ch-01.html">
+            
+                    
+                    Chapter 1 — The Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-02.html">
+            
+                <a href="part-02.html">
+            
+                    
+                    Part II — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch-02.html">
+            
+                <a href="ch-02.html">
+            
+                    
+                    Chapter 2 — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch-03.html">
+            
+                <a href="ch-03.html">
+            
+                    
+                    Chapter 3 — Smoke and Mirrors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch-04.html">
+            
+                <a href="ch-04.html">
+            
+                    
+                    Chapter 4 — The Magic Show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="part-03.html">
+            
+                <a href="part-03.html">
+            
+                    
+                    Part III — The Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch-05.html">
+            
+                <a href="ch-05.html">
+            
+                    
+                    Chapter 5 — The Front Door
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch-06.html">
+            
+                <a href="ch-06.html">
+            
+                    
+                    Chapter 6 — The Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="part-04.html">
+            
+                <a href="part-04.html">
+            
+                    
+                    Part IV — The Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch-07.html">
+            
+                <a href="ch-07.html">
+            
+                    
+                    Chapter 7 — The Thousand Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch-08.html">
+            
+                <a href="ch-08.html">
+            
+                    
+                    Chapter 8 — The Silent Commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch-09.html">
+            
+                <a href="ch-09.html">
+            
+                    
+                    Chapter 9 — The Proxy You Didn't Write
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="part-05.html">
+            
+                <a href="part-05.html">
+            
+                    
+                    Part V — Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ch-10.html">
+            
+                <a href="ch-10.html">
+            
+                    
+                    Chapter 10 — The Breach That Wasn't
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="ch-11.html">
+            
+                <a href="ch-11.html">
+            
+                    
+                    Chapter 11 — Forty Minutes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.18" data-path="ch-12.html">
+            
+                <a href="ch-12.html">
+            
+                    
+                    Chapter 12 — Three A.M.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="ch-13.html">
+            
+                <a href="ch-13.html">
+            
+                    
+                    Chapter 13 — The Cascade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="part-06.html">
+            
+                <a href="part-06.html">
+            
+                    
+                    Part VI — The Architect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="ch-14.html">
+            
+                <a href="ch-14.html">
+            
+                    
+                    Chapter 14 — The Split
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="ch-15.html">
+            
+                <a href="ch-15.html">
+            
+                    
+                    Chapter 15 — Faster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="ch-16.html">
+            
+                <a href="ch-16.html">
+            
+                    
+                    Chapter 16 — The Architect's Chair
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="part-07.html">
+            
+                <a href="part-07.html">
+            
+                    
+                    Capstone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="ch-17.html">
+            
+                <a href="ch-17.html">
+            
+                    
+                    Chapter 17 — The Hostile Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="appendices.html">
+            
+                <a href="appendices.html">
+            
+                    
+                    Appendices — The map behind the story
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 12 — Three A.M.</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-12-—-three-am">Chapter 12 — Three A.M.</h1>
+<p>The brick went off at 3:04 a.m. with the sound of a smoke detector being murdered.</p>
+<p>Maya was awake before she understood why, phone in hand, reading the page in the blue dark of her kitchen: <code>SYNTHETIC CHECK: glasshouse.io p95 &gt; 8s (threshold 2s)</code>. Below it, forwarded by the overnight support rota, a screenshot of a researcher's post: <em>is @glasshouse down or just thinking about it.</em></p>
+<p>She opened three terminals at the kitchen table and started looking for the system.</p>
+<p><code>kubectl get pods</code> said everything was <code>Running</code> and <code>Ready</code> — eight Atrium pods, green across the board, lying by omission. The logs were a firehose: eight pods' worth of interleaved lines, no request IDs, no way to tell which line belonged to which user's eight-second page load. She pulled a thread dump through <code>kubectl exec</code> and <code>jcmd</code> and found a couple of dozen threads waiting on socket reads toward Postgres — suspicious, except she had no idea what <em>normal</em> looked like at 3 a.m., because nothing recorded it. Was the connection pool exhausted? There was no gauge to ask. Was latency bad everywhere or only on the dashboard? There were no percentiles. There were no dashboards at all.</p>
+<p><em>At Meridian I'd have pulled up the metrics page I hand-rolled myself — crude, but I knew what normal looked like on it,</em> she thought. <em>Here I have <code>kubectl</code>, a thread dump, and vibes.</em></p>
+<p>The Canary sat on the table. House rules were house rules, even alone, even at 3:40 a.m. She explained the symptoms to it out loud, in full, calm sentences: site slow, pods healthy, logs uncorrelated, threads waiting on the database, no evidence for or against anything. The Canary, dented and yellow, declined to escalate.</p>
+<p>At 4:40 the synthetic checker went green. No deploy, no restart, no action taken. Maya watched it stay green for forty minutes, then typed the worst sentence an engineer can put in an incident channel: <code>resolved — cause unknown</code>.</p>
+<p>She did not go back to sleep.</p>
+<h2 id="the-investigation">The investigation</h2>
+<p>The postmortem was at ten. Elias let her walk the timeline — page, terminals, dump, recovery — without interrupting once. Then he asked his only question.</p>
+<p>"What did you know, and when did you know it?"</p>
+<p>"Nothing," Maya said. "And too late."</p>
+<p>He nodded slowly, like she'd passed a test she'd rather have failed. "Then the incident isn't the finding. Write that down as finding number one: <em>the system recovered and we cannot say why.</em> Everything else is decoration."</p>
+<p>Idris had brought a prop. He read it aloud: backlog ticket <code>ATR-1207</code>, <em>"Real application metrics,"</em> filed the afternoon of the promo-day meltdown — the day two hundred parked threads took the site down while CPU idled and the only evidence was a thread dump. He read the subtitle too, slower — that postmortem's most brutal line, true again overnight: <em>"— we graphed the LB because we had nothing else."</em> "Five months old," he said. "For the record: I have been making this joke since April, and it has stopped being funny."</p>
+<p>"Then let's stop promising 'monitoring,'" Elias said. "Monitoring is a stack — what you install after you've failed to design. Observability is a <em>property</em>: for every user-facing flow, what will 3 a.m. ask, and is the answer already being recorded? Last night the question was <em>slow everywhere, or slow somewhere</em>, and the answer was recorded nowhere."</p>
+<p>"And the contract that makes it negotiable," Maya said, the shape arriving as she spoke, "is an SLO per flow, not per server: <em>99.9 percent of submissions complete inside two seconds, over thirty days.</em> A sentence Lena can hand Northbeam — and an error budget for us: forty-three minutes a month. While it's healthy we ship features; when it burns, reliability jumps the queue, because a number we all signed says so."</p>
+<p>Lena wrote the figures down without being asked. "I have spent two years arguing about reliability in adjectives. Give me arithmetic and I'll sign it." She did — submission, triage, payouts, one objective each. Her business case still fit in one line: "Northbeam's security team asked me, in writing, <em>how would you know if this happened during business hours?</em> I need an answer that isn't 'Twitter.'"</p>
+<p>Three days later the cloud provider's graphs supplied the cause they couldn't see: a storage latency spike on one Postgres node, 03:01 to 04:38, overlaying the checker's red window almost perfectly. Everything waiting on that node had been slow. The storage healed, and Glasshouse healed with it. Recovery without understanding — the worst kind there is.</p>
+<p>The roadmap moved. Observability stopped being a backlog ticket and became the sprint.</p>
+<h2 id="the-cluster-kills-the-truth-tellers">The cluster kills the truth-tellers</h2>
+<p>Three weeks into the buildout, the universe supplied a second lesson, free of charge.</p>
+<p>The team had restored the database <code>HealthIndicator</code> — the one that had famously vanished under the prod profile back in March, when a dependency bump moved a class and <code>@ConditionalOnClass</code> backed off without a sound — and it dutifully reported <code>DOWN</code> whenever Postgres misbehaved. Somewhere in the enthusiasm, a well-meaning commit wired the full health endpoint into the Kubernetes <em>liveness</em> probe:</p>
+<pre><code class="lang-yaml"><span class="hljs-comment"># deployment.yaml — the well-meaning commit</span>
+<span class="hljs-attr">livenessProbe:</span>
+  <span class="hljs-attr">httpGet:</span>
+    <span class="hljs-attr">path:</span> <span class="hljs-string">/actuator/health</span>   <span class="hljs-comment"># the aggregate — includes the database indicator</span>
+    <span class="hljs-attr">port:</span> <span class="hljs-number">8080</span>
+  <span class="hljs-attr">periodSeconds:</span> <span class="hljs-number">10</span>
+  <span class="hljs-attr">failureThreshold:</span> <span class="hljs-number">3</span>        <span class="hljs-comment"># three misses × 10s → the kubelet kills the pod</span>
+</code></pre>
+<blockquote>
+<p>⏸ <strong>Your call.</strong> The indicator is honest and the YAML is idiomatic — so walk it forward: what happens to eight healthy pods the next time Postgres stumbles for ninety seconds, and which -ility is about to be destroyed by its own safety machinery?</p>
+</blockquote>
+<p>At 12:51 on a Tuesday, Postgres had a ninety-second blip — a failover hiccup, self-healing, the kind of thing a mature system shrugs off. Every Atrium pod truthfully reported <code>DOWN</code>. Thirty seconds later the kubelets, following orders, executed all eight of them.</p>
+<p>The blip had passed before the first replacement pod finished starting. But now eight cold JVMs were warming at once, and eight Hikari pools were refilling against a database still recovering. New pods answered their first health checks slowly. Some were killed <em>again</em>, mid-warmup, because no startup probe shielded them. A ninety-second database hiccup became a twenty-two-minute restart storm. The health checks weren't reporting the outage anymore. They <em>were</em> the outage.</p>
+<p>Idris watched pods cycle on the war-room screen and delivered the line that would end up in the handbook: "The cluster is killing pods for telling the truth."</p>
+<p>(If you ran the ledger at the pause: Postgres spent ninety seconds of availability; the probe wiring spent twenty-two minutes. That gap is an <strong>operability</strong> failure — machinery making decisions nobody had designed.)</p>
+<h2 id="what-the-senior-sees">What the senior sees</h2>
+<p>Back in March, reviewing the restored indicator, Idris had asked where Kubernetes should point at it — <em>liveness, readiness, we should fight about that properly someday</em> — and nobody had picked the fight up. It was September now, and the invoice ran to twenty-two minutes.</p>
+<p>Idris took a whiteboard marker and wrote two questions, far apart.</p>
+<p>"Liveness asks: <em>should I be restarted?</em> The only honest reasons to say yes are about <em>me</em> — I'm deadlocked, I'm wedged, my state is unrecoverable. Things a restart fixes." He tapped the second question. "Readiness asks: <em>should traffic be routed to me?</em> That's where dependencies live. If the database is down, the correct move is to stop sending me requests and <em>wait</em> — not to shoot me. Restarting a pod has never once fixed a remote database. It just adds a stampede of cold starts to the recovery."</p>
+<p>"So liveness must never include a dependency," Maya said. "Because the kubelet's only remedy is the one remedy that can't help."</p>
+<p>"And makes it worse," Idris said. "Failure handling that amplifies the failure."</p>
+<p>He drew the doctrine between his two questions, the well-meaning commit's wiring dashed across it like a crime-scene outline:</p>
+<p class="diagram"><img src="assets/diag-fb310106dd68eaa8.svg" alt="diagram"></img></p>
+
+<p>The fight, six months deferred, lasted about four minutes. Probe doctrine is only debatable before you've watched a kubelet execute eight pods for honesty. The drawing stayed on the Wall, beside the Request Journey — the team's socket-to-DB map of a single request.</p>
+<p>Elias, from the doorway: "Show me the mechanism on Boot's side."</p>
+<p>Maya had read it the night before. "Boot has modeled this since 2.3 — the application publishes its own <code>LivenessState</code> and <code>ReadinessState</code>, and Actuator exposes them as health <em>groups</em>: <code>/actuator/health/liveness</code> and <code>/actuator/health/readiness</code>. Each group is configurable, so you decide which indicators feed which probe: liveness gets the process's own state and nothing else; readiness is where our database indicator belongs. Our mistake wasn't the indicator — it was pointing the wrong probe at the aggregate."</p>
+<p><em>That was the trap in my hand-wired instinct,</em> she realized. <em>At Meridian the health check was a servlet I typed myself — I chose every probe it ran because I'd written every line of it. Here the indicator was auto-discovered into an aggregate I'd never read — convenience, billing me later.</em></p>
+<p>The same Wall session covered what Actuator actually was: not one endpoint but a family — <code>/health</code>, <code>/info</code>, <code>/metrics</code>, <code>/env</code>, <code>/beans</code>. Each is an <code>@Endpoint</code> bean, and almost all of them are unexposed over HTTP by default, opted in through <code>management.endpoints.web.exposure.include</code>. The default is deliberate: <code>/env</code> reveals your entire configuration surface — values masked by default in current Boot, but the keys alone tell an attacker exactly what to probe for — and <code>/heapdump</code> serves the contents of memory. On a security platform, an exposed actuator wasn't an oversight. It was a Stonethrow submission waiting for Sable's byline — Glasshouse's bounty program pointed at itself, and the researcher it had already paid once for one leaky error page.</p>
+<p>Then Micrometer. "It's a facade," Maya explained at the Wall, Priya taking notes. "You record against a <code>MeterRegistry</code>; the registry implementation decides the backend. Three meter types do ninety percent of the work: a <strong>counter</strong> only goes up — events, like reports submitted. A <strong>timer</strong> records durations <em>and</em> counts, and can publish percentile histograms — that's where p99 comes from. A <strong>gauge</strong> samples a value that goes up and down — active connections in the Hikari pool. Prometheus <em>pulls</em>: it scrapes <code>/actuator/prometheus</code> on a fifteen-second interval and stores the time series. We don't push anything; we hold the meters in memory and answer the door."</p>
+<h2 id="the-fix">The fix</h2>
+<p>The configuration came first — a policy, not a snippet, argued in review and recorded in an ADR:</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">management:</span>
+  <span class="hljs-attr">server:</span>
+    <span class="hljs-attr">port:</span> <span class="hljs-number">8081</span>                <span class="hljs-comment"># management on its own port; the ingress never</span>
+  <span class="hljs-attr">endpoints:</span>                  <span class="hljs-comment"># routes it — cluster-internal only</span>
+    <span class="hljs-attr">web:</span>
+      <span class="hljs-attr">exposure:</span>
+        <span class="hljs-attr">include:</span> <span class="hljs-string">health,</span> <span class="hljs-string">info,</span> <span class="hljs-string">prometheus</span>   <span class="hljs-comment"># /env, /beans, /heapdump stay dark</span>
+  <span class="hljs-attr">endpoint:</span>
+    <span class="hljs-attr">health:</span>
+      <span class="hljs-attr">show-details:</span> <span class="hljs-string">when-authorized</span>
+      <span class="hljs-attr">probes:</span>
+        <span class="hljs-attr">enabled:</span> <span class="hljs-literal">true</span>         <span class="hljs-comment"># /actuator/health/liveness + /readiness</span>
+      <span class="hljs-attr">group:</span>
+        <span class="hljs-attr">readiness:</span>
+          <span class="hljs-attr">include:</span> <span class="hljs-string">readinessState,</span> <span class="hljs-string">db</span>   <span class="hljs-comment"># dependencies live HERE, not in liveness</span>
+<span class="hljs-attr">server:</span>
+  <span class="hljs-attr">shutdown:</span> <span class="hljs-string">graceful</span>          <span class="hljs-comment"># Boot's default since 3.4 — pinned explicitly anyway</span>
+<span class="hljs-attr">spring:</span>
+  <span class="hljs-attr">lifecycle:</span>
+    <span class="hljs-attr">timeout-per-shutdown-phase:</span> <span class="hljs-string">20s</span>
+</code></pre>
+<p>The deployment's liveness probe moved to <code>/actuator/health/liveness</code> on the management port — process-only, dependency-free. Readiness got <code>/actuator/health/readiness</code>, database indicator included. A Postgres blip now meant pods quietly stepped out of rotation, then back in when the storm passed. The database indicator completed its strange little arc: vanished in March, restored, mis-wired into the wrong probe, and finally — correctly placed.</p>
+<p>The indicator itself was the sprint's smallest artifact — a dozen lines against the read replica, returning the one number Maya had wanted at her kitchen table:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Component("dbHealthIndicator")</span>   <span class="hljs-comment">// claims the "db" slot in the readiness group</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ReplicaHealthIndicator</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">HealthIndicator</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> JdbcTemplate jdbc;
+    ReplicaHealthIndicator(JdbcTemplate jdbc) { <span class="hljs-built_in">this</span>.jdbc = jdbc; }
+    <span class="hljs-keyword">public</span> Health <span class="hljs-title function_">health</span><span class="hljs-params">()</span> {
+        <span class="hljs-keyword">try</span> {   <span class="hljs-comment">// one cheap row — probes fire constantly, so this must cost ~nothing</span>
+            <span class="hljs-type">Long</span> <span class="hljs-variable">lag</span> <span class="hljs-operator">=</span> jdbc.queryForObject(
+                <span class="hljs-string">"SELECT extract(epoch FROM now() - pg_last_xact_replay_timestamp())"</span>, Long.class);
+            <span class="hljs-keyword">return</span> Health.up().withDetail(<span class="hljs-string">"replicaLagSeconds"</span>, lag);
+        } <span class="hljs-keyword">catch</span> (Exception e) {
+            <span class="hljs-keyword">return</span> Health.down(e);   <span class="hljs-comment">// readiness DOWN → out of rotation, not executed</span>
+        }
+    }
+}
+</code></pre>
+<p>Graceful shutdown was verified rather than assumed — it's Boot's default these days, which is exactly why nobody had ever watched it work. Idris drew the failure mode: Kubernetes sends <code>SIGTERM</code> and removes the pod from the Service's endpoints <em>concurrently</em>. The removal can lose the race, steering fresh requests at a pod already shutting down. A five-second <code>preStop</code> sleep let the routing layer catch up. Graceful shutdown let in-flight requests finish, up to the timeout. They killed a pod under load and watched zero requests fail. Then they did it again, because the first time felt like luck.</p>
+<p>Metrics came next, with a rule: business metrics ship alongside system metrics, because "the site is slow" is a symptom but "triage latency tripled" is a finding:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Component</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TriageMetrics</span> {
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Counter reportsSubmitted;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Timer triageLatency;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-title function_">TriageMetrics</span><span class="hljs-params">(MeterRegistry registry)</span> {
+        <span class="hljs-built_in">this</span>.reportsSubmitted = Counter.builder(<span class="hljs-string">"glasshouse.reports.submitted"</span>)
+                .tag(<span class="hljs-string">"channel"</span>, <span class="hljs-string">"api"</span>)
+                .register(registry);
+        <span class="hljs-built_in">this</span>.triageLatency = Timer.builder(<span class="hljs-string">"glasshouse.triage.latency"</span>)
+                .description(<span class="hljs-string">"submission to triage decision"</span>)
+                .publishPercentileHistogram()
+                .register(registry);
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">reportSubmitted</span><span class="hljs-params">()</span> { reportsSubmitted.increment(); }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">triaged</span><span class="hljs-params">(Duration timeToDecision)</span> { triageLatency.record(timeToDecision); }
+}
+</code></pre>
+<p>Each signed flow got one board: the golden signals — latency, traffic, errors, saturation — beside the business meters that priced them; an SLO you can't watch burning is a contract you can't keep.</p>
+<p>In a week the Grafana boards became the thing Maya had ached for at her kitchen table: request latency percentiles per endpoint, JVM memory, and — five months after the ticket was filed — the Hikari gauges, <code>active</code>, <code>idle</code>, and <code>pending</code>. Beside them sat the Postgres lock-wait panel Idris had demanded the day <code>@Version</code> shipped (optimistic locking — stale writers get a conflict exception instead of holding row locks). "Next time someone proposes <code>SELECT FOR UPDATE</code>," he said, "I will be watching." He delivered it mildly, over the battered enamel lunch tin he brought from home every day — Tuesdays were jollof, his mother's recipe, not up for discussion.</p>
+<p>Priya's own enthusiasm produced the chapter's last bug. Her dashboard PR included a refinement:</p>
+<pre><code class="lang-java">Counter.builder(<span class="hljs-string">"glasshouse.reports.submitted"</span>)
+       .tag(<span class="hljs-string">"researcher"</span>, report.researcherId())   <span class="hljs-comment">// one time series PER RESEARCHER</span>
+       .register(registry)
+       .increment();
+</code></pre>
+<p>Maya caught it in review with the new checklist; staging supplied the proof. Every distinct researcher ID created a new time series, held in the app's registry and scraped forever. Thousands of researchers meant thousands of series, and Prometheus memory climbed a staircase as they accumulated. "Metrics are aggregates," Maya wrote in the review. "The moment one can identify a user, you've built a worse database. IDs go in logs and traces; tags are for low-cardinality categories — status, severity, endpoint." The team rule went on the Wall in block letters: <strong>no user-id tags — Prometheus is not a database.</strong> Priya fixed it in an hour, then added the rule to the checklist herself. The teaching loop, Maya noticed, was now running without her pushing it.</p>
+<p>Elias's only addition to the review thread was a cost model, green even in plain text: <em>Cardinality is multiplication, not addition — a metric's series count is the product of its tag dimensions. <code>endpoint(40) × status(5)</code> is 200 series; multiply by <code>researcher(30,000)</code> and it's six million — each one RAM in the registry, storage in Prometheus, latency in every query. A tag dimension is a multiplier, which is why the budget gets a name in the ADR instead of living in taste.</em></p>
+<p>Last came the thing that would have saved her night entirely: correlation. Micrometer Tracing went in with an OTLP exporter, and the mechanism got drawn onto the Wall's Request Journey. A tracing filter sits at the very front of the chain, before the <code>DispatcherServlet</code>. It opens a span per request and copies <code>traceId</code> and <code>spanId</code> into the <strong>MDC</strong>, the thread-local map the logging pattern reads. The export and the log format were pure configuration — which stung a little, considering the night they would have saved:</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">management:</span>
+  <span class="hljs-attr">otlp:</span>
+    <span class="hljs-attr">tracing:</span>
+      <span class="hljs-attr">endpoint:</span> <span class="hljs-string">http://otel-collector:4318/v1/traces</span>  <span class="hljs-comment"># spans ship to the collector</span>
+  <span class="hljs-attr">tracing:</span>
+    <span class="hljs-attr">sampling:</span>
+      <span class="hljs-attr">probability:</span> <span class="hljs-number">0.1</span>   <span class="hljs-comment"># export 10% of traces — every request still gets its IDs</span>
+<span class="hljs-attr">logging:</span>
+  <span class="hljs-attr">structured:</span>
+    <span class="hljs-attr">format:</span>
+      <span class="hljs-attr">console:</span> <span class="hljs-string">ecs</span>       <span class="hljs-comment"># structured JSON; traceId/spanId ride each line via MDC</span>
+</code></pre>
+<p>Every log line now carried the IDs. The trace ID was also returned on every response as an <code>X-Trace-Id</code> header, so support could ask a researcher for the ID and find the exact request — the hand-rolled correlation filter every postmortem had wished for, now standing on a real tracer. The echo was the buildout's only custom code:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Component</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">TraceIdResponseFilter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">OncePerRequestFilter</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Tracer tracer;
+    TraceIdResponseFilter(Tracer tracer) { <span class="hljs-built_in">this</span>.tracer = tracer; }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">doFilterInternal</span><span class="hljs-params">(HttpServletRequest req, HttpServletResponse res,
+            FilterChain chain)</span> <span class="hljs-keyword">throws</span> ServletException, IOException {
+        <span class="hljs-type">var</span> <span class="hljs-variable">span</span> <span class="hljs-operator">=</span> tracer.currentSpan();   <span class="hljs-comment">// the ID support asks researchers for</span>
+        <span class="hljs-keyword">if</span> (span != <span class="hljs-literal">null</span>) res.setHeader(<span class="hljs-string">"X-Trace-Id"</span>, span.context().traceId());
+        chain.doFilter(req, res);
+    }
+}
+</code></pre>
+<p>The logs themselves switched to Boot's structured JSON output — the <code>ecs</code> line above — so they could be queried instead of grepped. <em>MDC is the <code>ThreadLocal</code> request-ID filter I hand-rolled at Meridian, standardized,</em> Maya thought, <em>and it keeps the filter's exact flaw — a thread-local map doesn't follow you across an executor unless you carry it.</em> That caveat went on the Wall too.</p>
+<p>Even <code>/actuator/info</code> earned its keep: build-info and git commit wired in through the Maven plugin, plus a small <code>InfoContributor</code> listing active feature flags. At 3:09 a.m. Maya had been unable to answer <em>what exact code is running right now</em>, and that was never happening again.</p>
+<p>She spent a weekend writing it all into an on-call handbook — where the dashboards live, what normal looks like at 3 a.m., the first five queries to run. The Monday brick ceremony — the week's on-call handoff — grew a new ritual: the outgoing engineer gives the incoming one a dashboard tour. And postmortems changed shape permanently. The template's first question, in Elias's green ink, was his: <em>What did you know, and when did you know it?</em> House doctrine followed: <strong>if the dashboards said nothing, that's finding #1.</strong></p>
+<h3 id="⚖-your-move-architect">⚖ Your move, architect</h3>
+<p>The sprint's last argument wasn't about code. Idris had Alertmanager wired and a blank routing file, and on the table sat the question every on-call rotation eventually answers with its resignations: <em>what pages a human at 3 a.m.?</em> Commit before reading on — this fork has no compiler.</p>
+<ul>
+<li><strong>A — Page on causes.</strong> CPU, Hikari <code>pending</code>, error-log spikes, GC pauses — every gauge that could precede user pain gets a threshold and a pager entry.</li>
+<li><strong>B — Page on SLO burn only.</strong> A page means a signed objective is bleeding; every causal gauge lives on dashboards the responder opens <em>after</em> the page, to explain it.</li>
+<li><strong>C — Page on nothing.</strong> Synthetic checks, business-hours triage, an inbox instead of a brick.</li>
+</ul>
+<p><strong>The trade-offs, since you've committed:</strong> <strong>A</strong> wakes humans for things users never felt — a CPU spike the autoscaler absorbs. Alert fatigue is an <strong>operability</strong> failure mode: the rotation mutes the noisy channel, and the mute eats the one page that mattered. Causes also can't be enumerated in advance — the storage spike that opened this chapter sat under no threshold anyone would have set. <strong>B</strong> is what went in the routing file: <em>symptoms page, causes explain.</em> Every page means user-visible pain — <strong>availability</strong> burning against a number somebody signed — so every page is actionable, and the burn rate sets the urgency. Its price: it only works because Lena signed SLOs, and only while the dashboards stay cause-rich enough to walk a symptom back to its cause. <strong>C</strong> is an honest <strong>cost</strong> call for an internal tool whose users sleep when you do; for a paid platform holding other companies' undisclosed vulnerabilities it's indefensible in one sentence — Northbeam asked, in writing, <em>how would you know</em>, and C's answer is <em>Monday.</em></p>
+<p>The decision went into the binder as the ADR the sprint's first YAML had promised, the buildout distilled to half a page:</p>
+<blockquote>
+<p><strong>ADR-012 — Observability by design.</strong>
+<strong>Context:</strong> A 3 a.m. page arrived with zero data and ended in <code>resolved — cause unknown</code>; three weeks later the cluster restart-looped healthy pods because a database check sat in the liveness probe. <strong>Decision:</strong> Probe doctrine — liveness is process-only, dependencies live in readiness. Every user-facing flow carries an SLO the business has signed, with golden signals and its business metrics (reports submitted, triage latency) shipped together; correlation IDs propagate from the edge filter through logs (MDC) and traces; metric tags are bounded by a named cardinality budget — never IDs. Alerts page on symptoms (SLO burn); dashboards carry causes. <strong>Consequences:</strong> The next incident starts with data, and the postmortem's first question has an answer. The cost: a metrics review joins every feature's definition of done — observability is designed in, or the feature isn't done.</p>
+</blockquote>
+<p>"We can finally see the system," Maya told the Canary, back on her desk where it belonged.</p>
+<p>Two weeks later, something worth seeing arrived. But that is its own story.</p>
+<h2 id="the-debrief-—-ch12-three-am">The debrief — Ch.12, Three A.M.</h2>
+<blockquote>
+<p><strong>How should liveness and readiness probes be wired for a Spring Boot service — and what happens if you get it wrong?</strong> <strong>Claim:</strong> Liveness and readiness answer different questions — <em>restart me</em> versus <em>route traffic to me</em> — and dependency checks belong only in readiness. <strong>Mechanism:</strong> the kubelet's response to a failed liveness probe is to kill and recreate the container, while a failed readiness probe merely removes the pod from the Service's endpoints until it recovers; Boot models this with <code>LivenessState</code>/<code>ReadinessState</code> and exposes configurable health groups at <code>/actuator/health/liveness</code> and <code>/readiness</code>, so you choose which <code>HealthIndicator</code>s feed which probe — liveness gets process-state only, readiness gets the database and friends. <strong>Trade-off:</strong> a process-only liveness probe won't catch every wedged-but-breathing app, so you backstop it with metrics and alerts; a dependency-aware readiness probe will drain the whole fleet from the load balancer during a shared outage — correct behavior, but alarming if you don't expect it. <strong>Failure mode:</strong> wire a dependency indicator into liveness and a ninety-second database blip becomes a cluster-wide restart loop — the kubelet executes healthy pods for honestly reporting <code>DOWN</code>, and the thundering herd of cold starts hammers the recovering dependency, turning the health check itself into the outage.</p>
+</blockquote>
+<p><strong>THE ARCHITECT'S LENS</strong></p>
+<ul>
+<li><strong>-ilities at stake:</strong> <strong>Operability</strong> — observability as a property you <em>design</em> (what will 3 a.m. ask, and is the answer already recorded?), never a stack you install after the outage. <strong>Availability</strong> paid twice for the deferral: a blind hour at the kitchen table, then ninety seconds of database trouble amplified to twenty-two minutes by probe wiring nobody designed. <strong>Cost</strong> runs underneath — cardinality as a multiplier on storage and query time, the error budget turning reliability arguments into arithmetic the business can sign.</li>
+<li><strong>The ADR:</strong> ADR-012 — observability by design: liveness process-only, dependencies in readiness; an SLO per flow with golden signals and business metrics; correlation IDs from edge filter through MDC and traces; cardinality budgeted, never IDs; pages on SLO burn, dashboards carry causes; metrics review in the definition of done.</li>
+<li><strong>Rejected alternatives:</strong> dependency checks in liveness (a restart has never fixed a remote database — it just stampedes it with cold starts); paging on causes (unenumerable, and fatigue mutes the rotation); paging on nothing (honest for internal tools, indefensible for a paid platform); per-user metric tags (Prometheus is not a database); observability as a backlog ticket (ATR-1207 aged five months and collected an outage as interest).</li>
+<li><strong>Fight or lean:</strong> <em>Lean</em> hard on Boot's machinery — health groups, <code>LivenessState</code>/<code>ReadinessState</code>, Micrometer's facade, the tracing filter and MDC plumbing, graceful shutdown: undifferentiated plumbing the framework should own. <em>Fight</em> the defaults wherever the app meets the cluster and the org — which indicators feed which probe, which endpoints are exposed, which tags are legal, what pages a human. Those are decisions the framework cannot make for you, and the well-meaning commit is what it looks like when nobody makes them.</li>
+</ul>
+<p><strong>Story anchors</strong></p>
+<ul>
+<li>The Canary on the kitchen table at 3 a.m., hearing a calm description of nothing → recovery without understanding; observability debt comes due all at once.</li>
+<li>Pods restart-looping <em>after</em> the database blip had already passed → a dependency check wired into the liveness probe; "the cluster is killing pods for telling the truth."</li>
+<li>Prometheus memory climbing a staircase under Priya's per-researcher tag → metric cardinality discipline; IDs belong in logs and traces, never in tags.</li>
+<li>Lena writing the SLO figures down unasked — "give me arithmetic and I'll sign it" → SLOs as the architecture's contract with the business; the error budget (forty-three minutes a month at 99.9%) decides by signature, not mood, when reliability outranks features.</li>
+</ul>
+<p><strong>Interview ammo</strong></p>
+<ul>
+<li><em>Your pods restart-loop after a brief DB outage — why, and how should the probes be wired?</em> A database <code>HealthIndicator</code> is feeding the liveness probe; restarts can't fix a remote dependency, so move dependency checks to the readiness health group and keep liveness process-only.</li>
+<li><em>Why exactly do user-id metric tags blow up Prometheus?</em> Every distinct tag value mints a new time series held in the app's registry and stored forever in Prometheus — unbounded IDs mean unbounded series, a slow OOM of the metrics backend.</li>
+<li><em>How does one trace ID end up in every log line of a request?</em> A tracing filter at the front of the chain opens a span and copies trace/span IDs into the MDC — a thread-local map the log pattern renders — cleared on completion and explicitly propagated across thread-pool boundaries, since thread-locals don't follow work onto other threads.</li>
+<li><em>Architect follow-up — After the outage, the VP asks for "more monitoring." What do you propose instead?</em> A design rule, not a stack: an SLO the business signs per flow, golden signals plus business metrics, correlation IDs from the edge through logs and traces, paging on SLO burn only — and a metrics review in the definition of done, so 3 a.m.'s question is answered before it's asked.</li>
+</ul>
+<p><strong>Pointers</strong> → Playbook Ch.5 · <code>examples/ch05_actuator/</code></p>
+<hr></hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch-11.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 11 — Forty Minutes">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch-13.html" class="navigation navigation-next " aria-label="Next page: Chapter 13 — The Cascade">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 12 — Three A.M.","level":"1.18","depth":1,"next":{"title":"Chapter 13 — The Cascade","level":"1.19","depth":1,"path":"ch-13.md","ref":"ch-13.md","articles":[]},"previous":{"title":"Chapter 11 — Forty Minutes","level":"1.17","depth":1,"path":"ch-11.md","ref":"ch-11.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Otmane Omry","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The Spring Boot Mastery Book","language":"en","gitbook":"*"},"file":{"path":"ch-12.md","mtime":"2026-06-14T00:07:32.957Z","type":"markdown"},"gitbook":{"version":"6.2.1","time":"2026-06-14T00:07:44.741Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

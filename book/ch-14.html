@@ -1,0 +1,780 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter 14 — The Split · The Spring Boot Mastery Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.1">
+        <meta name="author" content="Otmane Omry">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch-15.html" />
+    
+    
+    <link rel="prev" href="part-06.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    The Spring Boot Mastery Book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="part-01.html">
+            
+                <a href="part-01.html">
+            
+                    
+                    Part I — The Craft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch-01.html">
+            
+                <a href="ch-01.html">
+            
+                    
+                    Chapter 1 — The Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-02.html">
+            
+                <a href="part-02.html">
+            
+                    
+                    Part II — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch-02.html">
+            
+                <a href="ch-02.html">
+            
+                    
+                    Chapter 2 — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch-03.html">
+            
+                <a href="ch-03.html">
+            
+                    
+                    Chapter 3 — Smoke and Mirrors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch-04.html">
+            
+                <a href="ch-04.html">
+            
+                    
+                    Chapter 4 — The Magic Show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="part-03.html">
+            
+                <a href="part-03.html">
+            
+                    
+                    Part III — The Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch-05.html">
+            
+                <a href="ch-05.html">
+            
+                    
+                    Chapter 5 — The Front Door
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch-06.html">
+            
+                <a href="ch-06.html">
+            
+                    
+                    Chapter 6 — The Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="part-04.html">
+            
+                <a href="part-04.html">
+            
+                    
+                    Part IV — The Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch-07.html">
+            
+                <a href="ch-07.html">
+            
+                    
+                    Chapter 7 — The Thousand Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch-08.html">
+            
+                <a href="ch-08.html">
+            
+                    
+                    Chapter 8 — The Silent Commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch-09.html">
+            
+                <a href="ch-09.html">
+            
+                    
+                    Chapter 9 — The Proxy You Didn't Write
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="part-05.html">
+            
+                <a href="part-05.html">
+            
+                    
+                    Part V — Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ch-10.html">
+            
+                <a href="ch-10.html">
+            
+                    
+                    Chapter 10 — The Breach That Wasn't
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="ch-11.html">
+            
+                <a href="ch-11.html">
+            
+                    
+                    Chapter 11 — Forty Minutes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="ch-12.html">
+            
+                <a href="ch-12.html">
+            
+                    
+                    Chapter 12 — Three A.M.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="ch-13.html">
+            
+                <a href="ch-13.html">
+            
+                    
+                    Chapter 13 — The Cascade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="part-06.html">
+            
+                <a href="part-06.html">
+            
+                    
+                    Part VI — The Architect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.21" data-path="ch-14.html">
+            
+                <a href="ch-14.html">
+            
+                    
+                    Chapter 14 — The Split
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="ch-15.html">
+            
+                <a href="ch-15.html">
+            
+                    
+                    Chapter 15 — Faster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="ch-16.html">
+            
+                <a href="ch-16.html">
+            
+                    
+                    Chapter 16 — The Architect's Chair
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="part-07.html">
+            
+                <a href="part-07.html">
+            
+                    
+                    Capstone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="ch-17.html">
+            
+                <a href="ch-17.html">
+            
+                    
+                    Chapter 17 — The Hostile Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="appendices.html">
+            
+                <a href="appendices.html">
+            
+                    
+                    Appendices — The map behind the story
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 14 — The Split</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-14-—-the-split">Chapter 14 — The Split</h1>
+<p>The October all-hands had two slides nobody forgot. The first made the room go still: <em>Elias Brandt — transitioning to advisory role, effective January.</em> Most of engineering had heard the rumor; seeing it in 48-point font was different. The second slide arrived twenty minutes later, fresh from the CTO's conference in Lisbon: a constellation of hexagons connected by arrows, and beneath it, <strong>EVENT-DRIVEN MICROSERVICES — TARGET: Q3</strong>.</p>
+<p>"Industry's moving," the CTO said. "Netflix runs hundreds of services. We run one. I want a plan."</p>
+<p>Maya watched Elias not react. He had eleven weeks of opinions left and was visibly rationing them. That afternoon a calendar invite appeared on her screen — <em>Architecture session: the split. Friday. Whole team.</em> — with a note from Elias underneath: "You argue both sides. For, then against, each at full strength. No verdict until someone demands one."</p>
+<p>She understood immediately what it was. Everyone would. The org had spent two weeks openly wondering who inherited the whiteboard chair, and Elias had just scheduled the audition in public.</p>
+<p><em>In my old life this meeting happened too,</em> she thought, <em>except the deck won and we spent two years untangling an "order service" that couldn't take an order without four network calls.</em> She started building two decks of her own.</p>
+<h2 id="the-investigation">The investigation</h2>
+<p>Friday. The Wall on her left, a year of ink on it, the CTO front-row.</p>
+<p>Maya argued the split first, honestly, the way the conference would have. Notifications had a scaling profile nothing else shared: a bounty award triggered email bursts, the Monday digest was a thundering herd, and all of it ran on Atrium's threads next to report submission. Blast radius was real — last month's cascade (one slow vendor call drained the threads every endpoint shared) had proved an enrichment vendor could reach the tracker itself, and isolation is the only fence that holds at 3 a.m. Team autonomy was real: eleven engineers stepping on one deploy pipeline. She made it sound inevitable. The CTO nodded along.</p>
+<blockquote>
+<p>⏸ <strong>Your call.</strong> Before Maya rotates the deck: where exactly does the split break against Atrium's actual schema, and which -ility does the Q3 slide quietly spend? Commit.</p>
+</blockquote>
+<p>Then she rotated the deck and demolished her own case.</p>
+<p>"Triage and payout share a transaction," she said. "One commit moves a report to Awarded, writes the payout, writes the audit row. Atomically. Split those into services and that atomicity is gone — not weakened, <em>gone</em>. Two-phase commit exists; banks run it — but it buys atomicity by blocking: every participant holds its locks in-doubt until a coordinator that just died comes back with the verdict, and none of that is even on offer across HTTP and Kafka. Nobody in this room is signing up to operate a coordinator."</p>
+<p><em>Her hand-wired instinct whispered the Meridian move — one connection, one try block, both writes inside, commit at the bottom. That instinct was the trap: there is no shared connection across a network. There never was; a single process had just let her pretend.</em></p>
+<p>(If you committed at the pause: the break is the shared transaction — triage, payout, audit row, one fact in one commit — and the slide spends <strong>operability and cost</strong>.)</p>
+<p>"What replaces it is a saga: a chain of local transactions with compensating actions. Payments commits, publishes an event, Reports reacts; if Reports fails, you don't roll back — you <em>compensate</em>, with another transaction that semantically undoes the first, in front of users who saw the intermediate state. Choreography means every service reacts to events and the workflow exists nowhere — try debugging control flow that has no source file. Orchestration means you build an explicit state machine to command and compensate — visible, at least, but now you've written a distributed transaction monitor by hand. Either way, partial failure stops being an ops problem and becomes the UX. And we are eleven people. Every boundary we create needs timeouts, breakers, retries with budgets, dashboards, an on-call story. We just spent a month giving our <em>one</em> external vendor that treatment."</p>
+<p>Silence. The CTO leaned back. "So which is it?"</p>
+<p>"The seam decides, not the conference," Maya said. "Most of Atrium has no seam — triage, payouts, programs share transactions and a chatty domain. One piece does: Notifications. Async by nature — nobody waits for an email. No shared transactions — fire and forget. Its own scaling shape. We extract exactly that, behind a gateway, and I'll write down why the rest stays whole."</p>
+<p>Elias asked his only question of the day, from the back row. "What would have to be true for the split to be <em>wrong</em>?"</p>
+<p>"If the seam crossed a transaction," Maya answered. "If two services ever had to agree on one fact in the same instant. If we couldn't staff two on-call rotations. If a researcher mid-submission could ever see the partial failure." She paused. "None of those are true for Notifications. All of them are true for everything else."</p>
+<p>That answer convinced the room more than any verdict could have. The CTO bought it — one service, a gateway, a design doc.</p>
+<h2 id="the-architecture-under-the-slide">The architecture under the slide</h2>
+<p>Monday, before the doc, the Wall. June's three chalk boxes were still up — <code>Program</code>, <code>Report</code>-owning-<code>Activity</code>, <code>Researcher</code>, arrows carrying only IDs — from back when the map had no name. Maya gave it one, and drew the borders one size up.</p>
+<p>"The aggregates were the dress rehearsal," she told Priya. "An aggregate is one consistency boundary — one transaction, by-ID references across the line. A <strong>bounded context</strong> is the next size up: it owns its <em>model</em> and its <em>language</em> — inside Triage a report is a status machine with an SLA clock; inside Notifications it's an address and a sentence. Decompose by context — never by entity, which builds my old life's four-call order service; never by layer, which builds a distributed three-tier: all of the network, none of the autonomy."</p>
+<p class="diagram"><img src="assets/diag-f3c10ae3b7cf901d.svg" alt="diagram"></img></p>
+
+<p>Priya pointed at the box on Notifications' border. "And the translator?"</p>
+<p>"Anti-corruption layer — the embassy translator. Events arrive speaking Atrium's language and are translated at the door, so one context's schema never becomes another's dependency. Skip it and the payload re-couples the two models — the monolith's coupling with a network in the middle."</p>
+<p>One more force went up because the Lisbon slide had left it off: Conway's law. Boundaries drift toward the communication structures of the org that builds them, so every service border is also a team border and an on-call rotation. Team shape is an <em>input</em> to the map, not an afterthought: eleven engineers could staff two rotations, not seven. The org chart ships. Beneath it went the ledger: <strong>evolvability</strong> and, someday, <strong>organizational scalability</strong> bought; <strong>operability</strong> and <strong>cost</strong> paid — Idris's column and Lena's.</p>
+<p>A week shy of November, January's sentence came due: <em>"every boundary you respect in January is an option you still own in November,"</em> Elias had said over ADR-001 — and the context map ran along exactly the seams that record had cut, feature packages and contracts-not-schema, the options exercised instead of sold. Elias drifted past and spent none of his rationed opinions. The map was the opinion.</p>
+<h2 id="what-the-senior-sees">What the senior sees</h2>
+<p>The design doc was titled <strong>"Why Atrium Stays Whole (Mostly)"</strong> and its first section worked through the twelve factors as a plain checklist. Config in the environment. Backing services as attached resources. Stateless, disposable processes. Logs as streams. Atrium already passed most of it — a year of scar tissue had seen to that — which was itself an argument that the monolith wasn't the problem the slide deck claimed.</p>
+<p>Then the infrastructure decisions, each recorded with its rejected alternative.</p>
+<p><strong>Discovery: Eureka, evaluated and declined.</strong> Eureka is a registry — services heartbeat in, clients pull the roster and load-balance client-side. Essential when you deploy to raw VMs and addresses churn. "But we're on Kubernetes," Maya wrote. "A k8s Service <em>is</em> a registry with a DNS name; kube-proxy <em>is</em> the load balancer; readiness probes <em>are</em> the health-based eviction — doctrine this team has already paid for once. Running Eureka here means operating a second discovery system to disagree with the first." Decision: <code>notifications.glasshouse.svc.cluster.local</code>, and nothing else to patch at 3 a.m.</p>
+<p><strong>Config: Spring Cloud Config, evaluated and declined.</strong> Centralized config with a git backend and runtime refresh via <code>/actuator/refresh</code> is genuinely good — if you have forty services and config that must change without redeploys. They had two services and ConfigMaps. The one feature they'd miss — broadcast refresh across instances — they didn't need yet. "Platform primitives win until they don't," the doc said. "Revisit at five services."</p>
+<p><strong>The edge: Spring Cloud Gateway, adopted.</strong> One entry point: routing by predicate, cross-cutting filters, rate limiting before traffic touches a business thread. The limiter was the Redis-backed token bucket — tokens refill at the replenish rate, and burst capacity caps the spike a client can spend before requests are rejected. Sized for the Stonethrow crowd's leaderboard-scraping habits — scripts polling the leaderboard hard enough to crowd out real traffic — because the edge is where those habits should be answered.</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">spring:</span>
+  <span class="hljs-attr">cloud:</span>
+    <span class="hljs-attr">gateway:</span>
+      <span class="hljs-attr">server:</span>
+        <span class="hljs-attr">webflux:</span>
+          <span class="hljs-attr">routes:</span>
+            <span class="hljs-bullet">-</span> <span class="hljs-attr">id:</span> <span class="hljs-string">notifications</span>
+              <span class="hljs-attr">uri:</span> <span class="hljs-string">http://notifications.glasshouse.svc.cluster.local:8080</span>
+              <span class="hljs-attr">predicates:</span>
+                <span class="hljs-bullet">-</span> <span class="hljs-string">Path=/api/v2/notifications/**</span>
+              <span class="hljs-attr">filters:</span>
+                <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">RequestRateLimiter</span>
+                  <span class="hljs-attr">args:</span>
+                    <span class="hljs-attr">redis-rate-limiter.replenishRate:</span> <span class="hljs-number">50</span>
+                    <span class="hljs-attr">redis-rate-limiter.burstCapacity:</span> <span class="hljs-number">100</span>
+            <span class="hljs-bullet">-</span> <span class="hljs-attr">id:</span> <span class="hljs-string">atrium</span>
+              <span class="hljs-attr">uri:</span> <span class="hljs-string">http://atrium.glasshouse.svc.cluster.local:8080</span>
+              <span class="hljs-attr">predicates:</span>
+                <span class="hljs-bullet">-</span> <span class="hljs-string">Path=/api/**</span>
+</code></pre>
+<p><em>So Gateway is Meridian's hand-rolled routing servlet with the route table promoted to configuration,</em> Maya thought, <em>and the rate limiter is middleware that someone else already debugged.</em></p>
+<p>The doc gave the migration its proper name — a <strong>strangler fig</strong> — because the route table <em>was</em> the mechanism. Route a slice of traffic at the edge to the new service, grow it under live load, and delete the old code once nothing arrives there; the <code>/api/v2/notifications/**</code> predicate was the first slice. Reversibility was built in: at every stage the old path sat one predicate flip away, so the migration could be abandoned on any bad Tuesday. The failure mode went in too: the fig only works if the old path is <em>frozen</em> — keep feeding Atrium's notification code and you aren't strangling, you're raising twins.</p>
+<p><strong>The one synchronous edge.</strong> Notifications needed researcher email preferences, which lived in Atrium. Two choices: carry the data on the events themselves, or call back. They chose a small synchronous call for preferences — low volume, tolerable staleness — and wrote it as an OpenFeign client: a declarative Java interface, the implementation generated at runtime as a proxy. Priya grinned when Maya showed her — another implementation class that didn't exist, the repository trick again: declare the interface, let the container build the proxy. The contract was explicit: connect and read timeouts, a Resilience4j breaker, a retry budget with backoff. The doc carried two footnotes. First, load balancing: Feign normally pairs with Spring Cloud LoadBalancer to pick an instance client-side from a registry, but the k8s Service name already resolves to a balanced backend, so they pointed it at DNS and deleted a moving part. Second, a version note written conservatively: as of Boot 4, Spring's own HTTP interface clients — an <code>@HttpExchange</code> interface over <code>RestClient</code> — give the same declarative shape natively, and OpenFeign upstream is feature-complete rather than growing; the migration path was named so the decision could be re-made on purpose, not by archaeology.</p>
+<p>"The moment we split," Maya told the room, "we became our own third-party vendor. Atrium gets the full Cortexa treatment from its own children. No exceptions because 'it's us' — the network doesn't know we're friends."</p>
+<p>That sentence was ADR-013 reporting for duty at a boundary that hadn't existed when it was written. September's cascade — Cortexa, the enrichment vendor, slowing until everything queued behind it — had taught the composition: a retry without a budget piles load onto a dependency already failing, and the breaker is the system's memory of recent pain. A split multiplies the addresses where that composition belongs. Every arrow on the new map was one.</p>
+<p><strong>And no distributed transactions.</strong> The report-event flow would be asynchronous: Kafka, chosen over RabbitMQ mostly for the replayable log and consumer groups. The doc was blunt that the broker mattered less than the contract: <em>at-least-once delivery, ordering per key at best, and consumers that survive duplicates.</em> Which left one mechanism to get exactly right.</p>
+<h2 id="the-fix">The fix</h2>
+<p>The dangerous shortcut was obvious and Maya named it in review before anyone shipped it: save the report, then publish to Kafka from the same method. Two systems, no shared transaction. Commit-then-crash loses the event; publish-then-rollback invents one. Each side stays locally consistent while the pair disagrees about what happened — the dual-write lie in its purest form.</p>
+<p>The outbox pattern closes the gap by refusing to write to two systems at all. The event is written to a Postgres table <em>inside</em> the business transaction — one system, one commit, atomic by construction. A relay then reads unpublished rows, publishes them to Kafka, and marks them sent.</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">create table</span> outbox_event (
+    id             uuid <span class="hljs-keyword">primary key</span>,
+    aggregate_type text        <span class="hljs-keyword">not null</span>,
+    aggregate_id   uuid        <span class="hljs-keyword">not null</span>,
+    event_type     text        <span class="hljs-keyword">not null</span>,
+    payload        jsonb       <span class="hljs-keyword">not null</span>,
+    created_at     timestamptz <span class="hljs-keyword">not null</span> <span class="hljs-keyword">default</span> now(),
+    published_at   timestamptz
+);
+</code></pre>
+<p>The relay was the other half of the pattern — the half the Lisbon slide never drew — and Maya wrote it herself, because every line was a decision about ordering or loss. The doc's <em>ordering per key at best</em> got earned here. Events were keyed by <code>aggregate_id</code>, so one report's history lands on one partition, in order, drained oldest-first. The poll used <code>skip locked</code>, so eight pods could read the same table without double-claiming a batch. The producer was idempotent, so a broker retry couldn't reorder what the table had so carefully lined up.</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Component</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">OutboxRelay</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> JdbcClient jdbc;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> KafkaTemplate&lt;String, String&gt; kafka; <span class="hljs-comment">// enable.idempotence=true: retries can't reorder</span>
+    OutboxRelay(JdbcClient jdbc, KafkaTemplate&lt;String, String&gt; kafka) { <span class="hljs-built_in">this</span>.jdbc = jdbc; <span class="hljs-built_in">this</span>.kafka = kafka; }
+    <span class="hljs-meta">@Scheduled(fixedDelay = 500)</span> <span class="hljs-meta">@Transactional</span>
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">relay</span><span class="hljs-params">()</span> {
+        <span class="hljs-type">var</span> <span class="hljs-variable">rows</span> <span class="hljs-operator">=</span> jdbc.sql(<span class="hljs-string">"""
+                select id, aggregate_id, payload from outbox_event
+                where published_at is null order by created_at
+                limit 100 for update skip locked"""</span>)      <span class="hljs-comment">// eight pods, no double-claim</span>
+            .query(OutboxRow.class).list();
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> row : rows) {
+            kafka.send(<span class="hljs-string">"report-events"</span>, row.aggregateId().toString(), row.payload())
+                 .join();  <span class="hljs-comment">// keyed by aggregate: one partition, per-key order — and publish BEFORE mark</span>
+            jdbc.sql(<span class="hljs-string">"update outbox_event set published_at = now() where id = :id"</span>)
+                .param(<span class="hljs-string">"id"</span>, row.id()).update();          <span class="hljs-comment">// crash before this line = redelivery, never loss</span>
+        }
+    }
+}
+</code></pre>
+<p>The fine print: the relay can publish, then crash before marking the row. On restart it publishes again. At-least-once is not a bug in the outbox; it is the contract. It surfaced in staging within a week, addressed to Priya personally: a test researcher received two identical "Your report has been triaged" emails. Her consumer had been written the innocent way:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@KafkaListener(topics = "report-events", groupId = "notifications")</span>
+<span class="hljs-keyword">void</span> <span class="hljs-title function_">onReportEvent</span><span class="hljs-params">(ReportEvent event)</span> {
+    <span class="hljs-keyword">if</span> (event.type() == ReportEventType.TRIAGED) {
+        mailer.sendTriagedEmail(event.reportId(), event.researcherId());
+    }
+    <span class="hljs-comment">// Looks correct. Redelivery makes it a duplicate-email generator.</span>
+}
+</code></pre>
+<p>"Can't Kafka just... deliver it once?" Priya asked.</p>
+<p>"Exactly-once is a bedtime story," Idris said. "Idempotency is the alarm clock that actually wakes you."</p>
+<p>Maya walked her to the fix. The outbox row's UUID rides in the event, and the consumer claims it before acting: an insert into a <code>processed_event</code> table with <code>ON CONFLICT DO NOTHING</code>. The dedup and the side-effect bookkeeping commit in one local transaction. The table lived in Notifications' own schema, in Notifications' own database — reaching back into Atrium's tables would have rebuilt the coupling they had just paid to remove.</p>
+<pre><code class="lang-java"><span class="hljs-meta">@KafkaListener(topics = "report-events", groupId = "notifications")</span>
+<span class="hljs-meta">@Transactional</span>
+<span class="hljs-keyword">void</span> <span class="hljs-title function_">onReportEvent</span><span class="hljs-params">(ReportEvent event)</span> {
+    <span class="hljs-type">boolean</span> <span class="hljs-variable">firstDelivery</span> <span class="hljs-operator">=</span> processedEvents.claim(event.eventId());
+    <span class="hljs-keyword">if</span> (!firstDelivery) {
+        log.debug(<span class="hljs-string">"Duplicate delivery of {} ignored"</span>, event.eventId());
+        <span class="hljs-keyword">return</span>; <span class="hljs-comment">// at-least-once upstream; duplicates become no-ops here</span>
+    }
+    <span class="hljs-keyword">if</span> (event.type() == ReportEventType.TRIAGED) {
+        mailer.sendTriagedEmail(event.reportId(), event.researcherId());
+    }
+}
+</code></pre>
+<p>And <code>claim()</code> itself — the consumer's single load-bearing line — fit on the sticky note Priya stuck to her monitor afterward:</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">create table</span> processed_event (
+    event_id     uuid <span class="hljs-keyword">primary key</span>,
+    processed_at timestamptz <span class="hljs-keyword">not null</span> <span class="hljs-keyword">default</span> now()
+);
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-comment">// joins the listener's @Transactional — dedup and the handler's writes commit together, or neither does</span>
+<span class="hljs-type">boolean</span> <span class="hljs-title function_">claim</span><span class="hljs-params">(UUID eventId)</span> {
+    <span class="hljs-keyword">return</span> jdbc.sql(<span class="hljs-string">"insert into processed_event (event_id) values (:id) on conflict do nothing"</span>)
+               .param(<span class="hljs-string">"id"</span>, eventId).update() == <span class="hljs-number">1</span>;  <span class="hljs-comment">// affected-row count as the boolean:</span>
+}                                                    <span class="hljs-comment">// 1 = first delivery, 0 = duplicate</span>
+</code></pre>
+<p>"The duplicate still arrives," Maya said. "It just bounces off. You don't prevent redelivery — you make redelivery boring."</p>
+<p>One honest footnote went into the doc anyway: the email send itself isn't transactional. A crash in the sliver between the send and the commit can still double one — the claim doesn't abolish the window, it shrinks it from <em>every redelivery</em> to <em>one unlucky instant</em>. For side effects that live in the database, where the claim and the effect commit together, the same pattern really is exactly-once.</p>
+<p>Lena had listened to the walkthrough while folding her agenda into smaller and smaller squares, content to let the jargon wash past her. Then she asked the only product question in the room: "What does a researcher <em>see</em> in the gap?" The honest answer: a report flips to Awarded and its email lands seconds later — a minute, if the relay is catching up. "Then the award banner says the email's on its way," she said, and wrote it down. Eventual consistency is a product decision wearing infrastructure clothes: the architecture decides <em>that</em> the gap exists; whoever owns the user decides what it looks like.</p>
+<p>The last piece was the one Maya had been quietly worried about. With one service, a confused engineer greps one log. With two services and a broker between them, a lost email could have failed in any of four places, and correlation stops being nice-to-have: "which system dropped it" becomes an interrogation with no witness. The Micrometer tracing they'd built into Atrium propagated almost for free. The gateway forwarded the W3C <code>traceparent</code> header, and Atrium's instrumented web stack continued the trace. The <code>KafkaTemplate</code> carried the context in record headers — once Priya flipped the properties that enable observations on the template and the listener, because Boot instruments the web stack out of the box and waits to be asked about messaging. The Notifications listener picked it up on the far side — same trace ID in every log line's MDC, all four hops.</p>
+<p>Demo day, Maya put one researcher's submission on the big screen in Grafana: a single trace ID hopping gateway → Atrium → Kafka → Notifications, the broker's hand-off visible as a gap between spans.</p>
+<p>"Six months ago we couldn't see one service," Idris said. "Now we can see two."</p>
+<p>The design doc outlived its demo as half a page in the binder:</p>
+<blockquote>
+<p><strong>ADR-014 — The split decision.</strong>
+<strong>Context:</strong> Leadership set "event-driven microservices by Q3"; the session argued both sides at full strength against Atrium's actual transaction map. <strong>Decision:</strong> Atrium stays a modular monolith. Notifications — a real bounded context, async by nature, sharing no invariants — extracts by strangler fig behind the gateway; integration is event-driven through the outbox (at-least-once, idempotent consumers), saga-coordinated where a flow spans contexts; an anti-corruption layer guards Notifications' border; discovery is platform DNS, not Eureka — one discovery system; no further cut before its context is mapped on the Wall. <strong>Consequences:</strong> one seam pays distribution's full tax — contracts, partial failure, tracing, a second pager — and proves the pattern; everything else keeps its options. A future seam clears three gates — no shared transaction, own scaling profile, staffable on-call — and the reopening signals are named: team contention at deploy time, divergent scaling, independent compliance.</p>
+</blockquote>
+<h3 id="⚖-your-move-architect">⚖ Your move, architect</h3>
+<p>Strip away the Friday theater and the fork had three prongs. Commit before reading on — the CTO is in the room, holding a slide:</p>
+<ul>
+<li><strong>A — No split.</strong> The modular monolith, defended on the record, indefinitely.</li>
+<li><strong>B — Extract Notifications only.</strong> Strangler fig behind the gateway; prove the pattern; record the signals for the next cut.</li>
+<li><strong>C — Domain-wide decomposition by Q3.</strong> The slide as drawn, every box its own hexagon.</li>
+</ul>
+<p><strong>The trade-offs, since you've committed:</strong> <strong>A</strong> holds every transactional argument and keeps <strong>operability</strong> and <strong>cost</strong> at their floor — but it answers the slide, not the concerns under it: deploy-time contention and orthogonal notification spikes return next year wearing a consultant. <strong>C</strong> spends <strong>operability</strong> and <strong>cost</strong> at scale: every failure mode this year billed for — April's pool math through September's cascade — multiplied by service count, on a team still learning to run <em>one</em> distributed seam: a distributed monolith by default. <strong>B</strong> buys the <strong>evolvability</strong> and <strong>organizational scalability</strong> actually at issue, at a tax scoped to one seam, and writes down what would justify the next. The sub-fork inside B: <em>orchestration</em> (a coordinator commands steps and compensations — traceable, a coupling point) versus <em>choreography</em> (services react to events; the workflow exists nowhere — loose, scalable, emergently complex). Notifications chose choreography because the flow is a <strong>broadcast, not a workflow</strong> — nothing compensates an email, no step orders another. Orchestration wins the day a flow carries multi-step compensation with ordering — award, ledger, transfer, each undoing the last — because you want the state machine to have a source file. The shape of that file, the day a flow earns it:</p>
+<pre><code class="lang-java"><span class="hljs-comment">// orchestration, the day ADR-014's signals fire:</span>
+<span class="hljs-keyword">void</span> <span class="hljs-title function_">run</span><span class="hljs-params">(AwardCommand cmd)</span> {
+    ledger.debit(cmd);                       <span class="hljs-comment">// local tx 1</span>
+    <span class="hljs-keyword">try</span> {
+        transfers.initiate(cmd);             <span class="hljs-comment">// local tx 2, another service</span>
+    } <span class="hljs-keyword">catch</span> (TransferFailedException e) {
+        ledger.credit(cmd.compensation());   <span class="hljs-comment">// compensate: semantically undo —</span>
+        reports.reopen(cmd.reportId());      <span class="hljs-comment">// in public; users saw the middle state</span>
+        <span class="hljs-keyword">throw</span> e;
+    }
+}
+</code></pre>
+<p>In the back row, Elias watched the whole demo and wrote nothing down. There was nothing to correct. The following Monday, the recurring design-review meeting on his calendar had a new owner, and the CTO's next architecture question went to Maya first — a hallway reflex now, not a decision anyone announced. The only cloud was an email from finance, who had noticed that two services meant two cost lines, and had questions about why so many CPUs spent their lives waiting.</p>
+<p>December could have that one.</p>
+<h2 id="the-debrief-—-ch14-the-split">The debrief — Ch.14, The Split</h2>
+<blockquote>
+<p><strong>Should we split the monolith into microservices?</strong> <strong>Claim:</strong> Split along seams, not slogans — extract a service only where the boundary is real (independent scaling, no shared transactions, separable ownership) and defend the modular monolith everywhere else. <strong>Mechanism:</strong> a true seam needs no distributed transaction: the producer writes business state <em>and</em> an outbox row in one local commit, a relay publishes to the broker at-least-once, and consumers make duplicates harmless by claiming each event ID idempotently; synchronous edges get a gateway, declarative clients, timeouts, breakers, and propagated trace context. <strong>Trade-off:</strong> you buy independent deploys, isolated blast radius, and per-service scaling at the price of network latency, eventual consistency, partial failure surfacing in the UX, and an observability-and-on-call tax levied on every new boundary. <strong>Failure mode:</strong> split a chatty, transactional domain and you build a distributed monolith — sagas and compensating actions doing badly, in public, what one ACID commit did silently for free, debugged across four logs by a team too small to staff the pager.</p>
+</blockquote>
+<p><strong>THE ARCHITECT'S LENS</strong></p>
+<ul>
+<li><strong>-ilities at stake:</strong> <strong>Evolvability</strong> and <strong>organizational scalability</strong> bought (independent deploys, isolated blast radius, two teams off one pipeline) versus <strong>operability</strong> and <strong>cost</strong> spent (a second pager, versioned contracts, four-hop tracing, finance's second line). The discipline: the purchase was argued <em>on the record</em> — a decision that can't show its losing argument is a fashion choice.</li>
+<li><strong>The ADR:</strong> ADR-014 — the monolith stays; Notifications out by strangler fig behind the gateway; outbox + idempotent consumers; ACL at the border; platform DNS over Eureka; three gates and three reopening signals for any next seam — contention, divergent scaling, independent compliance.</li>
+<li><strong>Rejected alternatives:</strong> domain-wide decomposition and no-split (both argued at full strength above); Eureka + Cloud Config on Kubernetes (a second discovery system to disagree with the first); an orchestrated saga for notifications (a coordinator for a broadcast — nothing to command).</li>
+<li><strong>Fight or lean:</strong> <em>Lean</em> on the platform — k8s DNS, ConfigMaps until five services, Gateway's token bucket, Micrometer's <code>traceparent</code> propagation. <em>Fight</em> the catalog reflex: Spring Cloud will hand you a registry, a config server, a bus, forty hexagons — each a 3 a.m. system; the seam decides what you adopt, not the conference.</li>
+</ul>
+<p><strong>Story anchors</strong></p>
+<ul>
+<li>The rotated slide deck — <em>"the seam decides, not the conference"</em> → monolith-first: split criteria vs. shared transactions, tiny team, chatty domain.</li>
+<li>Priya's two "report triaged" emails → outbox + at-least-once delivery; idempotent consumers dedup by event ID.</li>
+<li>One trace ID hopping four systems on the big screen → Micrometer trace propagation; correlation becomes existential after a split.</li>
+<li>June's three chalk boxes growing borders into the context map → bounded contexts (a model <em>and its language</em>) as the unit of decomposition; the ACL as embassy translator; January's options, finally exercised.</li>
+</ul>
+<p><strong>Interview ammo</strong></p>
+<ul>
+<li><em>Kill-shot: Argue both sides of "should this be microservices?" and explain saga-based consistency.</em> — For: independent scaling, blast-radius isolation, team autonomy; against: shared transactions, partial-failure UX, headcount; where you must split across a transaction, a saga chains local commits with compensating actions instead of rollback — choreography (reactive events, invisible control flow) for short flows, orchestration (explicit state machine) when steps and compensations multiply.</li>
+<li><em>Follow-up: How do you publish an event if-and-only-if the database transaction commits?</em> — You can't atomically span DB and broker, so don't: write the event to an outbox table inside the business transaction, relay it after commit, and accept at-least-once with consumer-side dedup.</li>
+<li><em>Follow-up: Why not Eureka and Spring Cloud Config on Kubernetes?</em> — A k8s Service already gives DNS-based discovery, load balancing, and readiness-driven eviction, and ConfigMaps cover externalized config — platform primitives win until you have enough services to need runtime refresh and a richer registry, and that decision should be recorded, not defaulted.</li>
+<li><em>Architect follow-up — Leadership mandates "microservices by Q3"; what's your first move?</em> — Map bounded contexts first; extract the one seam that crosses no transaction, strangler-fig, behind the gateway; make it pay distribution's full tax — outbox, idempotent consumers, traces — to prove the pattern; and record the gates and signals that justify the next cut.</li>
+</ul>
+<p><strong>Pointers</strong> → Playbook Ch.9 · <code>examples/ch09_microservices/</code></p>
+<hr></hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="part-06.html" class="navigation navigation-prev " aria-label="Previous page: Part VI — The Architect">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch-15.html" class="navigation navigation-next " aria-label="Next page: Chapter 15 — Faster">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 14 — The Split","level":"1.21","depth":1,"next":{"title":"Chapter 15 — Faster","level":"1.22","depth":1,"path":"ch-15.md","ref":"ch-15.md","articles":[]},"previous":{"title":"Part VI — The Architect","level":"1.20","depth":1,"path":"part-06.md","ref":"part-06.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Otmane Omry","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The Spring Boot Mastery Book","language":"en","gitbook":"*"},"file":{"path":"ch-14.md","mtime":"2026-06-14T00:07:35.527Z","type":"markdown"},"gitbook":{"version":"6.2.1","time":"2026-06-14T00:07:44.741Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

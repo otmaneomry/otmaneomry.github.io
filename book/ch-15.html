@@ -1,0 +1,742 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter 15 — Faster · The Spring Boot Mastery Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.1">
+        <meta name="author" content="Otmane Omry">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch-16.html" />
+    
+    
+    <link rel="prev" href="ch-14.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    The Spring Boot Mastery Book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="part-01.html">
+            
+                <a href="part-01.html">
+            
+                    
+                    Part I — The Craft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch-01.html">
+            
+                <a href="ch-01.html">
+            
+                    
+                    Chapter 1 — The Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-02.html">
+            
+                <a href="part-02.html">
+            
+                    
+                    Part II — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch-02.html">
+            
+                <a href="ch-02.html">
+            
+                    
+                    Chapter 2 — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch-03.html">
+            
+                <a href="ch-03.html">
+            
+                    
+                    Chapter 3 — Smoke and Mirrors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch-04.html">
+            
+                <a href="ch-04.html">
+            
+                    
+                    Chapter 4 — The Magic Show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="part-03.html">
+            
+                <a href="part-03.html">
+            
+                    
+                    Part III — The Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch-05.html">
+            
+                <a href="ch-05.html">
+            
+                    
+                    Chapter 5 — The Front Door
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch-06.html">
+            
+                <a href="ch-06.html">
+            
+                    
+                    Chapter 6 — The Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="part-04.html">
+            
+                <a href="part-04.html">
+            
+                    
+                    Part IV — The Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch-07.html">
+            
+                <a href="ch-07.html">
+            
+                    
+                    Chapter 7 — The Thousand Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch-08.html">
+            
+                <a href="ch-08.html">
+            
+                    
+                    Chapter 8 — The Silent Commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch-09.html">
+            
+                <a href="ch-09.html">
+            
+                    
+                    Chapter 9 — The Proxy You Didn't Write
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="part-05.html">
+            
+                <a href="part-05.html">
+            
+                    
+                    Part V — Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ch-10.html">
+            
+                <a href="ch-10.html">
+            
+                    
+                    Chapter 10 — The Breach That Wasn't
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="ch-11.html">
+            
+                <a href="ch-11.html">
+            
+                    
+                    Chapter 11 — Forty Minutes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="ch-12.html">
+            
+                <a href="ch-12.html">
+            
+                    
+                    Chapter 12 — Three A.M.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="ch-13.html">
+            
+                <a href="ch-13.html">
+            
+                    
+                    Chapter 13 — The Cascade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="part-06.html">
+            
+                <a href="part-06.html">
+            
+                    
+                    Part VI — The Architect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="ch-14.html">
+            
+                <a href="ch-14.html">
+            
+                    
+                    Chapter 14 — The Split
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.22" data-path="ch-15.html">
+            
+                <a href="ch-15.html">
+            
+                    
+                    Chapter 15 — Faster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="ch-16.html">
+            
+                <a href="ch-16.html">
+            
+                    
+                    Chapter 16 — The Architect's Chair
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="part-07.html">
+            
+                <a href="part-07.html">
+            
+                    
+                    Capstone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="ch-17.html">
+            
+                <a href="ch-17.html">
+            
+                    
+                    Chapter 17 — The Hostile Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="appendices.html">
+            
+                <a href="appendices.html">
+            
+                    
+                    Appendices — The map behind the story
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 15 — Faster</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-15-—-faster">Chapter 15 — Faster</h1>
+<p>The November cost review had a spreadsheet, and the spreadsheet had a row that hurt: <em>Atrium — 14 pods × 8 vCPU. Average CPU utilization: 9%.</em></p>
+<p>"Nine percent," the finance controller repeated, in the tone of a man reading a parking ticket aloud. "What is the other ninety-one percent doing?"</p>
+<p>"Waiting," Idris said. "Professionally."</p>
+<p>It was true, and Maya knew exactly why. After the April outage — the one where two hundred Tomcat threads had parked in <code>socketRead0</code> and the whole site 503'd while CPU idled — the team had sized the pools by trauma. Big pods, big pools, enough patience tokens that they'd never run out again. The structural fixes had come since: timeouts on every outbound call, a circuit breaker and bulkhead on the Cortexa boundary, the enrichment call made deferrable. The threads almost never all parked anymore. They just sat there, allocated and idle, while Glasshouse paid rent on them. The spreadsheet, Maya thought, was April's napkin corner — <em>virtual threads — later</em> — arriving with an invoice attached.</p>
+<p>Then Lena slid the Northbeam renewal rider across the table. "There's a new clause. p99 latency on report submission, five hundred milliseconds, measured monthly. Misses convert to service credits." She tapped the page. "So we need to be cheaper <em>and</em> faster. I'm told that's not how anything works."</p>
+<p>Two camps formed by lunch. Priya, freshly WebFlux-curious, had a branch and a gleam: "Event loops. A handful of threads doing all the work, nothing ever blocks, this is what reactive was <em>built</em> for." The other camp was one line of YAML. Maya took both to Elias's office, and Elias — weeks from his last day, and acting like it — held up a hand before she finished the question.</p>
+<p>"This one's yours. Show me the numbers."</p>
+<h2 id="the-investigation">The investigation</h2>
+<p>The bake-off ran in staging against a Cortexa stub tuned to realistic latency: 180 milliseconds per enrichment call. The path under test was submission-plus-enrichment as it had actually run since the cascade (September's failure, when a slow synchronous enrichment call held request threads until the whole site queued behind it) — the JPA write answering the researcher straight away, the enrichment call following on its bounded, named executor. A Gatling rig drove it at 1×, 1.5×, and 2× of peak production load, with the Northbeam p99 measured at the submission endpoint. Three contenders.</p>
+<p><strong>Baseline:</strong> platform threads, the pools they had. <strong>Contender two:</strong> the flag.</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">spring:</span>
+  <span class="hljs-attr">threads:</span>
+    <span class="hljs-attr">virtual:</span>
+      <span class="hljs-attr">enabled:</span> <span class="hljs-literal">true</span>   <span class="hljs-comment"># since Boot 3.2; flips Tomcat workers, @Async,</span>
+                      <span class="hljs-comment"># @Scheduled and listeners onto virtual threads</span>
+</code></pre>
+<p><strong>Contender three:</strong> Priya's WebFlux spike — one endpoint, rebuilt reactive end to end:</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> Mono&lt;SubmissionReceipt&gt; <span class="hljs-title function_">submit</span><span class="hljs-params">(SubmissionRequest req)</span> {
+    <span class="hljs-keyword">return</span> reportRepository.save(toEntity(req))        <span class="hljs-comment">// R2DBC, not JPA —</span>
+        .flatMap(saved -&gt; enrichment.score(saved.id()) <span class="hljs-comment">// JPA would block the loop</span>
+            .timeout(Duration.ofSeconds(<span class="hljs-number">2</span>))
+            .onErrorResume(e -&gt; Mono.just(Score.pending())))  <span class="hljs-comment">// the honest badge</span>
+        .map(SubmissionReceipt::from);
+}
+</code></pre>
+<p>Maya stared at that snippet longer than the others. <em>Eight years of hand-sized Jetty pools had trained her that scale meant threads — count them, size them, watch them. This thing rewrote every signature on the way down and turned control flow into a pipeline she couldn't step through in a debugger.</em> Her instinct voted against Priya's camp on reflex. She made a note of that, the way Elias had taught her to note any opinion she'd held before seeing evidence.</p>
+<p>The numbers came back Tuesday. The WebFlux spike won the synthetic throughput test — clearly, on that one endpoint, a fraction of the threads at three times the load. Maya put that result at the top of the readout, in bold, before anyone could accuse her of burying it. <em>The numbers don't care about my preference.</em></p>
+<p>Virtual threads matched it almost exactly at 1× and 1.5×, with the existing blocking code untouched. p99 sat at 240 milliseconds. Then the rig ramped to 2×, and the virtual-thread run fell off a cliff: p99 went from 240 milliseconds to eleven seconds in ninety seconds of ramp. CPU stayed near idle. Throughput flatlined. It looked as if someone had reinstalled the old thread pool when nobody was looking.</p>
+<blockquote>
+<p>⏸ <strong>Your call.</strong> CPU bored, throughput flat at 2× — the old pool's exact signature, on a runtime with no pool. Before the tracer goes on: what ceiling just got reinstalled, by what mechanism — and why do the SLO and the spreadsheet fail together?</p>
+</blockquote>
+<p>Someone effectively had. Maya reran the load with <code>-Djdk.tracePinnedThreads=full</code>. The war-room screen filled with stack traces: virtual threads blocking <em>without unmounting</em>, each trace annotated at the frame that held a monitor.</p>
+<p>Priya found it first: <code>java.net.Socket.read</code> at the top, and a dozen frames down, <code>com.cortexa.sdk.transport.PooledConnection.checkout</code> — flagged <code>&lt;== monitors:1</code>. The vendor SDK checked connections out of its internal pool inside a <code>synchronized</code> method, then did blocking socket I/O while still holding the monitor. It did this from inside their nice bulkheaded wrapper.</p>
+<p>She read it twice. "It's not even our code."</p>
+<p>"It's our process," Maya said. "Keep looking."</p>
+<p>A JFR recording — <code>jdk.VirtualThreadPinned</code> events, sorted by count — found the second one, and this one <em>was</em> their code. A utility class from 2018, faithfully signing every outbound Cortexa request:</p>
+<pre><code class="lang-java"><span class="hljs-comment">// glasshouse-common, last meaningful commit: 2018</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">RequestSigner</span> {
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> MessageDigest digest;   <span class="hljs-comment">// MessageDigest isn't thread-safe,</span>
+
+    RequestSigner(MessageDigest digest) {
+        <span class="hljs-built_in">this</span>.digest = digest;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">synchronized</span> String <span class="hljs-title function_">sign</span><span class="hljs-params">(<span class="hljs-type">byte</span>[] payload)</span> {  <span class="hljs-comment">// ...so: this</span>
+        digest.reset();
+        <span class="hljs-keyword">return</span> HexFormat.of().formatHex(digest.digest(payload));
+    }
+}
+</code></pre>
+<p>One shared signer bean. One monitor. Every outbound request in the company funneling through it.</p>
+<p>(If you called pinning at the pause: full credit only if you priced it — <em>every block under a held monitor costs a carrier, of eight</em>.)</p>
+<h2 id="what-the-senior-sees">What the senior sees</h2>
+<p>Elias didn't come to the whiteboard session. He sent Priya instead — "ask Maya, she owns this" — so Maya drew it on the Wall, next to the connector box where the Request Journey — the wall-length trace of one request from socket to database and back — began.</p>
+<p>"A virtual thread isn't an OS thread," she said. "It's a stack the JVM keeps on the heap. It runs by <em>mounting</em> onto a carrier — a small pool of platform threads, by default one per core, so eight carriers on these pods. When the virtual thread hits blocking I/O, the JVM unmounts it: stack saved to the heap, carrier freed for the next one. You keep writing thread-per-request blocking code; the ceiling on threads just stops existing — a million concurrent virtual threads is unremarkable. Fourteen pods of two hundred precious threads becomes six pods of as many cheap ones as the work needs."</p>
+<p>She tapped the connector box where April's napkin math had never been erased. Concurrency in flight equals arrival rate times residence time. Two hundred threads at thirty seconds of residence had once priced a whole pod at six point six requests a second. "Little's law didn't change," she said. "Re-run it with the ceiling removed: residence still costs a heap stack, just no longer a scarce thread. April's arithmetic gets its structural answer — the one filed in the napkin's corner under <em>later</em>."</p>
+<p>"It's later," Idris said from the doorway, sounding satisfied.</p>
+<p>"So why the cliff?" Priya asked.</p>
+<p>"Pinning. On Java 21, a virtual thread inside a <code>synchronized</code> block can't unmount — the JVM can't release the carrier while a monitor is held, and a thread blocked trying to <em>enter</em> a contended monitor pins its carrier too. Eight carriers. The SDK blocks on a socket read <em>while holding</em> its pool monitor: that's one carrier gone for 180 milliseconds, doing nothing. Our signer is worse in the other direction — the work inside is microseconds, but at 2× load every thread in the building queues for that one monitor, and the queue itself eats carriers. A few pinned carriers out of eight, and the whole application is back to standing in line. Enrichment doesn't even run on the request path anymore — it didn't matter. Carriers are a process-wide resource; the pinning taxed everyone, submissions included. We didn't remove the thread-pool ceiling. We lowered it to eight and hid it."</p>
+<p>She drew the trap and its exit, in the do-not-erase corner:</p>
+<p class="diagram"><img src="assets/diag-af6aa4525ba2517c.svg" alt="diagram"></img></p>
+
+<p>The classic offender, she told Priya, was JDBC drivers, historically full of <code>synchronized</code>. The PostgreSQL driver had already migrated its hot paths to <code>java.util.concurrent</code> locks; that was why the database calls came back clean. Vendor SDKs were the new frontier. And the fix had a name and a date — <strong>JEP 491</strong>, delivered in JDK 24, taught the JVM to track monitor ownership per virtual thread, so <code>synchronized</code> no longer pins there — but Atrium ran the 21 LTS, where it still did. You verify the fix on <em>your</em> runtime when you upgrade; you don't assume it. <em><code>synchronized</code> had always been free at Meridian,</em> Maya thought. <em>A platform thread didn't care what it blocked inside — the pool just got slower. A virtual thread cared: the monitor quietly nailed it to its carrier and let you find out under load.</em></p>
+<p>"And WebFlux?" Priya asked, a little mournfully.</p>
+<p>"WebFlux solves this by never blocking at all — an event loop with a few threads, work expressed as <code>Mono</code> and <code>Flux</code> pipelines, and backpressure so a fast producer can't drown a slow consumer. When you genuinely need that — hundreds of thousands of concurrent connections, streaming, flow control as a first-class concept — nothing else does it. But the costs are structural: the reactive types spread through every signature they touch; a stack trace becomes a tour of Reactor operators; and one blocking call on the event loop — one innocent JPA query — is the cardinal sin that stalls the whole loop. Your spike was honest because it went R2DBC end to end. The real Atrium has seven years of JPA and eleven imperative programmers."</p>
+<p>"One more thing," Maya added, tapping the Cortexa box with its September scars — the breaker that remembers <em>their</em> pain (it opens after a failure threshold and fails fast instead of queueing), the bulkhead capping what <em>we'll</em> spend waiting (a hard ceiling on concurrent calls into the SDK). "Virtual threads remove the <em>thread</em> ceiling, not Hikari's connections or Cortexa's tolerance. ADR-013 governs more than before: a million cheap threads crowd a scarce resource faster than two hundred precious ones ever did. The old pool was an accidental bulkhead for everything behind it; now the bulkheads we <em>chose</em> are the only ones left."</p>
+<p>Elias appeared in the doorway just long enough to hear the summary, nodded once, and said, "Every free lunch has a coat check." Then he left.</p>
+<h3 id="⚖-your-move-architect">⚖ Your move, architect</h3>
+<p>Rewind to Tuesday's readout: three sets of numbers, no verdict, a recommendation due Friday. This chapter <em>is</em> the memo — write yours before reading Maya's: your option, its price in dollars, risk, and team, and the trigger that reopens the decision.</p>
+<ul>
+<li><strong>A — Status quo plus autoscaling.</strong> No engineering decision; the HPA adds pods when traffic climbs, and the cloud bill absorbs what the architecture won't.</li>
+<li><strong>B — Virtual threads plus the pinning audit.</strong> One flag, semantics preserved, ceiling removed; the audit is the standing price.</li>
+<li><strong>C — The WebFlux rewrite.</strong> The highest ceiling and the only true backpressure, paid across seven years of JPA and eleven imperative debuggers.</li>
+</ul>
+<p><strong>The grading, not the answer:</strong> your memo passes if it (1) prices each option in dollars, risk, <em>and</em> team; (2) names the question each one actually answers — "cheaper concurrency?" is not "backpressure?"; (3) ends with the trigger that reopens it. Maya's memo is ADR-015, three pages on — grade yourself against it. One analysis you may not skip: why A is a decision-shaped absence of one.</p>
+<h2 id="the-fix">The fix</h2>
+<p>The purge came in three moves, smallest blast radius first.</p>
+<p>Their own code: <code>synchronized</code> became <code>ReentrantLock</code>, because a virtual thread blocking on a <code>java.util.concurrent</code> lock parks cleanly — it unmounts, and the carrier moves on.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">RequestSigner</span> {
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> <span class="hljs-type">ReentrantLock</span> <span class="hljs-variable">lock</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ReentrantLock</span>();
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> MessageDigest digest;
+
+    RequestSigner(MessageDigest digest) {
+        <span class="hljs-built_in">this</span>.digest = digest;
+    }
+
+    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">sign</span><span class="hljs-params">(<span class="hljs-type">byte</span>[] payload)</span> {
+        lock.lock();          <span class="hljs-comment">// a virtual thread waiting here unmounts;</span>
+        <span class="hljs-keyword">try</span> {                 <span class="hljs-comment">// the carrier is free to run someone else</span>
+            digest.reset();
+            <span class="hljs-keyword">return</span> HexFormat.of().formatHex(digest.digest(payload));
+        } <span class="hljs-keyword">finally</span> {
+            lock.unlock();
+        }
+    }
+}
+</code></pre>
+<p>Priya asked the right follow-up — why share one digest at all? A fresh <code>MessageDigest</code> per call would delete the lock entirely. They filed it; the lock shipped the same afternoon, because the cliff was the pinning, not the hashing.</p>
+<p>The vendor SDK they couldn't edit, so they contained it: the existing Cortexa wrapper gained a small, dedicated <em>platform</em>-thread executor — sixteen named threads — and every SDK call ran there. Maya wrote the bean herself and commented it the way you label a live wire. The flag they were about to ship had made the obvious construction wrong:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Bean("cortexaSdkExecutor")</span>              <span class="hljs-comment">// PLATFORM threads, on purpose — under the</span>
+ExecutorService <span class="hljs-title function_">cortexaSdkExecutor</span><span class="hljs-params">()</span> {   <span class="hljs-comment">// virtual-threads flag, a casually built</span>
+    <span class="hljs-keyword">return</span> Executors.newFixedThreadPool( <span class="hljs-comment">// executor would hand the pinning SDK</span>
+        <span class="hljs-number">16</span>,                              <span class="hljs-comment">// virtual threads: a quarantine of nothing</span>
+        Thread.ofPlatform().name(<span class="hljs-string">"cortexa-sdk-"</span>, <span class="hljs-number">0</span>).factory());
+}
+</code></pre>
+<p>A platform thread that blocks is a cost you've budgeted; a pinned carrier is a tax on everyone else in the JVM. A vendor ticket went out the same day with the stack trace attached. Then JFR again, same load profile: <code>jdk.VirtualThreadPinned</code> events down from thousands per minute to single digits, p99 at 2× load holding at 310 milliseconds. The before/after histograms went up on the Wall, taped under the connector box.</p>
+<p>The flag shipped to production behind a canary. Two weeks later Idris decommissioned pods with visible pleasure: fourteen down to six, heaps re-sized for the smaller pods, G1 kept as the collector — they discussed ZGC for the latency tail and wrote down <em>not yet, revisit if the SLO tightens</em> — and a low-overhead JFR recording left always-on. The pinning hunt had made converts of everyone. <code>RestClient</code> was confirmed as house standard for outbound calls: blocking, fluent, perfect over virtual threads. <code>WebClient</code> stayed legal only inside genuinely reactive code, and <code>RestTemplate</code> was declared what it was — maintenance mode, not for new code.</p>
+<p>Then Idris wired the recording into alerting: a <code>jdk.VirtualThreadPinned</code> events-per-minute threshold that pages like an SLO breach, the Gatling rig kept warm in staging. January's move — the red build that names its own law (an executable architecture rule that fails CI and prints the law it enforces) — aimed at a runtime instead of a package diagram: a fitness function for the concurrency model. Reversible because measured; when the histograms move, the memo reopens.</p>
+<p>One experiment remained, because the cost review had two rows. Notifications — small, simple, bursty, idle most of the night — was everything Atrium wasn't. Priya ran it through Spring AOT and GraalVM: <code>./mvnw -Pnative native:compile</code>, nine minutes of build time, one library needing explicit <code>RuntimeHints</code>. Native image is a closed world: no reflection, no proxies, no classpath scanning at runtime unless declared at build time. <em>You trade away the dynamism you weren't using,</em> Maya thought, <em>and declare the reflection you were.</em> The result: 80-millisecond startup against 3.2 seconds on the JVM, a third of the memory. With startup that cheap, Notifications could scale to zero overnight and cold-start on the first morning event. The same arithmetic, Maya noted in the memo, made native image the natural choice for CLI tools — instant start, no JVM warm-up to amortize before the command exits — and for serverless functions, where billing lives and dies on the cold start. A long-running, JIT-warmed monolith like Atrium sat at the opposite end of that curve.</p>
+<p>Atrium, they decided, stays on the JVM — and the memo said why: nine-minute builds on every CI run for a service that deploys daily; seven years of reflection-rich code to audit; and a long-running hot service is exactly where JIT-compiled peak throughput beats an AOT binary. They took the cheap startup wins instead: layered images, so the fat dependency layers stayed cached and an ordinary code change shipped as a thin top layer. They also took a hard look at <code>spring.main.lazy-initialization</code>. Maya rejected it for production in one line: it moves failures from startup to first request, and a startup crash is the system doing you a favor.</p>
+<p>Maya wrote the memo — the real deliverable, Elias would later call it — with Lena at the table, because Lena owned the column engineers pretend not to see. The memo priced every option in dollars, risk, and team: whose debugging instincts the runtime matches at 3 a.m. "Cost is an -ility," she said when Priya raised an eyebrow. "It scales, it degrades, it just acquired a contract. Architecture is capital allocation with stack traces."</p>
+<p>The decision memo closed with the rule, boxed:</p>
+<blockquote>
+<p><strong>I/O-bound workload + imperative team → virtual threads. Genuine streaming or backpressure needs → reactive, end to end or not at all. Revisit pinning assumptions on every JDK upgrade.</strong></p>
+</blockquote>
+<p>By Friday the memo wore a number in the binder:</p>
+<blockquote>
+<p><strong>ADR-015 — Runtime selection.</strong>
+<strong>Context:</strong> A cost review (fourteen pods at 9% CPU) met a contractual latency SLO; the I/O-bound monolith paid rent on parked platform threads sized by April's trauma. <strong>Decision:</strong> Virtual threads on Atrium — thread-per-request semantics kept, pool ceiling removed — after a load-tested bake-off and a pinning audit (<code>synchronized</code> hotspots → <code>ReentrantLock</code>; vendor code quarantined on a platform pool); WebFlux declined (rewrite cost across seven years of JPA, team-model mismatch), the genuine streaming/backpressure case named; GraalVM native image for Notifications only, where scale-to-zero pays its build and closed-world tax; the JIT-warmed monolith stays on the JVM. <strong>Consequences:</strong> Throughput per pod rises with imperative code intact (fourteen pods → six); accepted costs: the pinning audit as a permanent review item on JDK 21, native image's build/reflection tax confined to one small service. <strong>Re-evaluate on:</strong> JDK releases that relax <code>synchronized</code> pinning, traffic that turns streaming, an SLO tighter than carriers can serve.</p>
+</blockquote>
+<h2 id="one-green-line">One green line</h2>
+<p>Priya archived her WebFlux spike herself, with a writeup titled "What Reactive Would Cost Us, With Numbers" — prouder of the analysis than she'd been of the branch. "The process convinced me more than the verdict did," she admitted, and Maya heard a sentence she might have said in February.</p>
+<p>The memo came back from Elias on paper, as everything did. No margin notes. No questions. One line of green ink at the bottom:</p>
+<p><em>Ship it. And the day this stops being true, write the next one.</em></p>
+<p>It took Maya a moment to place the sentence: ADR-015's re-evaluation clause, in green. He'd been writing decisions with expiry dates all along.</p>
+<p>He slid the pen back into his pocket more slowly than usual, and nobody in the room pretended not to understand what had just happened. December was four days away — his last month. Somewhere upstairs, an exec was already composing a hallway request.</p>
+<h2 id="the-debrief-—-ch15-faster">The debrief — Ch.15, Faster</h2>
+<blockquote>
+<p><strong>Virtual threads vs WebFlux for an I/O-bound service — when do you pick each, and what's the catch with virtual threads?</strong> <strong>Claim:</strong> for an I/O-bound service with an imperative codebase, virtual threads are the right default; WebFlux is for genuine streaming and backpressure needs. <strong>Mechanism:</strong> virtual threads are JVM-managed stacks that mount onto a small carrier pool and unmount on blocking I/O — thread-per-request semantics without the pool ceiling, with zero code rewrite (<code>spring.threads.virtual.enabled=true</code>, since Boot 3.2); WebFlux instead removes blocking entirely via an event loop and <code>Mono</code>/<code>Flux</code> pipelines with backpressure. <strong>Trade-off:</strong> virtual threads keep blocking-style code, debugging, and stack traces, but offer no flow control; reactive gives backpressure and extreme concurrency at the price of contagious types, operator-soup stack traces, and a hard ban on blocking the loop (JDBC is the cardinal sin). <strong>Failure mode:</strong> pinning — on Java 21 a virtual thread blocking inside <code>synchronized</code> (or native frames) can't unmount and holds its carrier; a few pinned carriers out of ~one-per-core and the app silently reacquires a tiny thread-pool ceiling. Detect with <code>-Djdk.tracePinnedThreads</code> and JFR's <code>jdk.VirtualThreadPinned</code>; fix with <code>ReentrantLock</code> and by quarantining <code>synchronized</code>-heavy vendor code on a dedicated platform pool.</p>
+</blockquote>
+<p><strong>THE ARCHITECT'S LENS</strong></p>
+<ul>
+<li><strong>-ilities at stake:</strong> <strong>Cost</strong>, promoted to first class — the memo prices every option in dollars, risk, and team capability; runtime selection is capital allocation with stack traces — and <strong>performance</strong> (the contractual p99), which usually trades <em>against</em> cost; virtual threads are the rare move serving both. The bake-off and the pinning tracer are fitness functions — evidence, not vibes — keeping the decision reversible.</li>
+<li><strong>The ADR:</strong> ADR-015 — runtime selection: virtual threads on Atrium after a bake-off and a pinning audit; WebFlux declined, its genuine case named; native image for Notifications only, the monolith staying on the JVM; re-evaluation triggers (JDK pinning fixes, traffic-shape changes, a tighter SLO) written into the record — a decision with an expiry date.</li>
+<li><strong>Rejected alternatives:</strong> autoscaling the status quo (a linear cloud bill standing in for a decision); the WebFlux rewrite (a backpressure answer to a question Atrium never asked, at rewrite prices); native image for the monolith (nine-minute builds, a reflection audit, and JIT beats AOT where hot services live); ZGC and <code>lazy-initialization</code> (<em>not yet</em> and <em>no</em>, with reasons — recording non-decisions is also architecture).</li>
+<li><strong>Fight or lean:</strong> <em>Lean</em> on the platform — one flag flips Tomcat workers, <code>@Async</code>, and <code>@Scheduled</code> onto virtual threads; <code>RestClient</code> over virtual threads is the house's outbound story. <em>Fight</em> the monitors — <code>synchronized</code> in 2018 utility code and vendor SDKs silently re-installs the ceiling; the audit, the tracer, and the quarantine pool are permanent disciplines, not a one-time purge.</li>
+</ul>
+<p><strong>Story anchors</strong></p>
+<ul>
+<li>Fourteen pods at 9% CPU → blocking-I/O economics: thread-per-request means paying rent on parked threads, sized by trauma instead of arithmetic.</li>
+<li><code>&lt;== monitors:1</code> on the war-room screen and Priya's "it's not even our code" → pinning: <code>synchronized</code> plus blocking I/O nails the virtual thread to its carrier; vendor SDKs and old JDBC drivers are the classic source.</li>
+<li>Notifications starting in 80 milliseconds after a nine-minute build → GraalVM native image: startup and memory bought with build time and a closed world — worth it for scale-to-zero, wrong for the hot monolith.</li>
+<li>The memo written with Lena — dollars, risk, team, an expiry clause → cost as a first-class -ility: runtime selection as a priced decision, kept honest by ADR-015's re-evaluation triggers.</li>
+</ul>
+<p><strong>Interview ammo</strong></p>
+<ul>
+<li><em>Kill-shot #10 — virtual threads vs WebFlux for I/O-bound work, and the virtual-threads catch?</em> Virtual threads for I/O-bound imperative codebases (blocking model kept, pool ceiling gone via carrier mount/unmount); WebFlux only for real streaming/backpressure needs; the catch is pinning — on Java 21, <code>synchronized</code> around blocking calls holds the carrier and silently restores a tiny ceiling.</li>
+<li><em>Follow-up: would you ever pool virtual threads?</em> Never — they're cheap and disposable by design, and pooling reinstates the very ceiling they remove; if a downstream resource is scarce, bound concurrency with a <code>Semaphore</code>, not a pool.</li>
+<li><em>Follow-up: if virtual threads make blocking free, why does WebFlux still exist?</em> Because backpressure is a semantic, not a throughput hack — when a consumer must slow a producer or you're streaming unbounded data, <code>Flux</code>'s flow control is the feature, and no amount of cheap threads provides it.</li>
+<li><em>Architect follow-up — a team lead asks "should we rewrite this service reactive?" What's your first move?</em> Reframe before pricing: "reactive?" usually means "cheaper concurrency?", which virtual threads answer for one flag plus a pinning audit; reserve WebFlux for the question it answers — backpressure, extreme fan-out streaming — and settle it with a bake-off and a pinning detector, not conviction.</li>
+</ul>
+<p><strong>Pointers</strong> → Playbook Ch.12 · <code>examples/ch12_extensions/ReactiveStackAndClients.java</code>, <code>examples/ch12_extensions/NativeImageAndAot.java</code>, <code>examples/ch06_server/VirtualThreadPinningTrap.java</code></p>
+<hr></hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch-14.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 14 — The Split">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch-16.html" class="navigation navigation-next " aria-label="Next page: Chapter 16 — The Architect's Chair">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 15 — Faster","level":"1.22","depth":1,"next":{"title":"Chapter 16 — The Architect's Chair","level":"1.23","depth":1,"path":"ch-16.md","ref":"ch-16.md","articles":[]},"previous":{"title":"Chapter 14 — The Split","level":"1.21","depth":1,"path":"ch-14.md","ref":"ch-14.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Otmane Omry","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The Spring Boot Mastery Book","language":"en","gitbook":"*"},"file":{"path":"ch-15.md","mtime":"2026-06-14T00:07:36.849Z","type":"markdown"},"gitbook":{"version":"6.2.1","time":"2026-06-14T00:07:44.741Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

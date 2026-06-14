@@ -1,0 +1,794 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter 8 — The Silent Commit · The Spring Boot Mastery Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.1">
+        <meta name="author" content="Otmane Omry">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch-09.html" />
+    
+    
+    <link rel="prev" href="ch-07.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    The Spring Boot Mastery Book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="part-01.html">
+            
+                <a href="part-01.html">
+            
+                    
+                    Part I — The Craft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch-01.html">
+            
+                <a href="ch-01.html">
+            
+                    
+                    Chapter 1 — The Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-02.html">
+            
+                <a href="part-02.html">
+            
+                    
+                    Part II — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch-02.html">
+            
+                <a href="ch-02.html">
+            
+                    
+                    Chapter 2 — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch-03.html">
+            
+                <a href="ch-03.html">
+            
+                    
+                    Chapter 3 — Smoke and Mirrors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch-04.html">
+            
+                <a href="ch-04.html">
+            
+                    
+                    Chapter 4 — The Magic Show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="part-03.html">
+            
+                <a href="part-03.html">
+            
+                    
+                    Part III — The Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch-05.html">
+            
+                <a href="ch-05.html">
+            
+                    
+                    Chapter 5 — The Front Door
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch-06.html">
+            
+                <a href="ch-06.html">
+            
+                    
+                    Chapter 6 — The Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="part-04.html">
+            
+                <a href="part-04.html">
+            
+                    
+                    Part IV — The Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch-07.html">
+            
+                <a href="ch-07.html">
+            
+                    
+                    Chapter 7 — The Thousand Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="ch-08.html">
+            
+                <a href="ch-08.html">
+            
+                    
+                    Chapter 8 — The Silent Commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch-09.html">
+            
+                <a href="ch-09.html">
+            
+                    
+                    Chapter 9 — The Proxy You Didn't Write
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="part-05.html">
+            
+                <a href="part-05.html">
+            
+                    
+                    Part V — Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ch-10.html">
+            
+                <a href="ch-10.html">
+            
+                    
+                    Chapter 10 — The Breach That Wasn't
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="ch-11.html">
+            
+                <a href="ch-11.html">
+            
+                    
+                    Chapter 11 — Forty Minutes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="ch-12.html">
+            
+                <a href="ch-12.html">
+            
+                    
+                    Chapter 12 — Three A.M.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="ch-13.html">
+            
+                <a href="ch-13.html">
+            
+                    
+                    Chapter 13 — The Cascade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="part-06.html">
+            
+                <a href="part-06.html">
+            
+                    
+                    Part VI — The Architect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="ch-14.html">
+            
+                <a href="ch-14.html">
+            
+                    
+                    Chapter 14 — The Split
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="ch-15.html">
+            
+                <a href="ch-15.html">
+            
+                    
+                    Chapter 15 — Faster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="ch-16.html">
+            
+                <a href="ch-16.html">
+            
+                    
+                    Chapter 16 — The Architect's Chair
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="part-07.html">
+            
+                <a href="part-07.html">
+            
+                    
+                    Capstone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="ch-17.html">
+            
+                <a href="ch-17.html">
+            
+                    
+                    Chapter 17 — The Hostile Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="appendices.html">
+            
+                <a href="appendices.html">
+            
+                    
+                    Appendices — The map behind the story
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 8 — The Silent Commit</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-8-—-the-silent-commit">Chapter 8 — The Silent Commit</h1>
+<p>The spreadsheet had three columns and one impossible row.</p>
+<p>Late May, a conference room with the blinds half down, and the controller from finance turning her laptop around with the careful neutrality of someone presenting evidence. Report #5817: an authentication bypass in a customer program, validated, severity Critical, bounty five thousand dollars. The Atrium database said the report was <strong>Awarded</strong>. The payouts table held a payout row, timestamped, complete. The audit log said <code>AWARD reportId=5817 amount=5000.00 status=OK</code>. The payment provider's portal, fourth column, hand-typed: <em>no such transfer</em>.</p>
+<p>"The database says we paid," the controller said, "the bank says we didn't, and the log says <em>handled</em>."</p>
+<p>Lena had her arms folded. "The researcher has been politely asking about their bounty for nine days. Researchers talk to each other, Maya. On day ten, politeness becomes a screenshot."</p>
+<p>Maya was already scrolling the audit log, a cold familiarity settling in. While chasing the thousand queries earlier that month she'd noticed triage writes committing in odd little bursts, transactions ending in places she couldn't predict. She'd written <em>triage commit boundaries?</em> on a sticky note, stuck it to the brick, and buried the question under the N+1 work. The sticky note had just invoiced her for five thousand dollars.</p>
+<p>"I've seen the edge of this," she said. "Give me the morning."</p>
+<p>From the doorway — he had apparently been standing there a while — Elias said, "A caught exception is a decision. Most people make it by accident." He left before anyone could ask him to elaborate: his way, Maya had learned, of assigning homework.</p>
+<h2 id="the-investigation">The investigation</h2>
+<p>The award path lived in <code>BountyService.award()</code>, and the method looked respectable — annotated, tidy, reviewed. The rot was one call down, in a helper that <code>git blame</code> dated to 2021 with the commit message <em>temporary: don't let provider blips fail awards</em>.</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">BountyService</span> {
+
+    <span class="hljs-meta">@Transactional</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">award</span><span class="hljs-params">(<span class="hljs-type">long</span> reportId, BigDecimal amount)</span> {
+        <span class="hljs-type">Report</span> <span class="hljs-variable">report</span> <span class="hljs-operator">=</span> reports.findById(reportId).orElseThrow();
+        report.setStatus(ReportStatus.AWARDED);            <span class="hljs-comment">// write 1: dirty-checked</span>
+        payouts.save(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Payout</span>(report, amount));          <span class="hljs-comment">// write 2</span>
+        auditLog.record(<span class="hljs-string">"AWARD"</span>, reportId, amount, <span class="hljs-string">"OK"</span>);  <span class="hljs-comment">// write 3: same transaction</span>
+        paymentGateway.transferSafely(report.getResearcherId(), amount);
+    }
+}
+
+<span class="hljs-comment">// PaymentGatewayHelper.java — "temporary", 2021</span>
+<span class="hljs-keyword">void</span> <span class="hljs-title function_">transferSafely</span><span class="hljs-params">(UUID researcherId, BigDecimal amount)</span> {
+    <span class="hljs-keyword">try</span> {
+        client.initiateTransfer(researcherId, amount);     <span class="hljs-comment">// throws PaymentProviderException (checked)</span>
+    } <span class="hljs-keyword">catch</span> (PaymentProviderException e) {
+        log.warn(<span class="hljs-string">"transfer failed — handled, will reconcile later"</span>, e);
+    }
+}
+</code></pre>
+<blockquote>
+<p>⏸ <strong>Your call.</strong> Annotated, tidy, reviewed — and the bank is empty. Where exactly does the rollback signal die, and which -ility has already failed by the time the proxy decides?</p>
+</blockquote>
+<p>She reconstructed the night of the award. The provider had a four-minute API outage. <code>initiateTransfer</code> threw its checked <code>PaymentProviderException</code>; the helper caught it, logged the word <em>handled</em>, and returned normally. Control passed back up to <code>award()</code>, which also completed normally. The proxy saw a normal return and committed. Status durable. Payout row durable. Audit row confirming success, durable. The only thing that hadn't happened was the money.</p>
+<p><em>Her raw-JDBC instinct said the transaction should have noticed — at Meridian she'd written the rollback herself, a <code>conn.rollback()</code> in the very <code>catch</code> that saw the failure. The instinct was the trap. Spring's transaction isn't ambient awareness; it's a proxy that inspects how the method exits, watching for exactly one signal. And the signal had been eaten two stack frames down.</em></p>
+<p>(If you committed at the pause: the signal dies in the 2021 <code>catch</code> — the proxy reads only what crosses the method boundary, and nothing exceptional ever did. The -ility is integrity. Its price list arrives at the Wall.)</p>
+<p>It was February's proxy bug in a new form (annotations live on the container's wrapper; a <code>this.</code> call dispatches on the raw object behind it). February's self-invoked call never <em>entered</em> the proxy, so no transaction wrapped it at all; tonight's exception never <em>exited</em> through it. The rollback signal travels out through the same proxy, and a <code>catch</code> two frames down meant it never arrived. The persistence context from the thousand-queries week (the N+1 — one lazy load per row) had done its job correctly: dirty checking decided <em>what</em> to flush — snapshot-diff at commit. Nobody in seven years had decided <em>whether</em> it should commit.</p>
+<p>She was still writing it up when Marisol appeared with the sprint's second gift. That morning, two triagers had been working the same hot report on Northbeam's program. Marisol had raised the severity to Critical with a justification note; a colleague, reading it at the same moment, had lowered it to Medium. Both saves succeeded. Both got green toasts. The severity was whatever the second click said, the first click's reasoning was gone, and a researcher whose bounty rode on that number had opened a dispute.</p>
+<p>"No error," Marisol said. "It just… picked one of us. We'd like to know the rules of the game we're apparently playing against each other."</p>
+<p>Two failures in one sprint, one truth underneath: nobody at Glasshouse had ever decided what a write boundary promised. Maya grepped the codebase and winced: <code>@Transactional</code> on controllers, on repository fragments, on helpers. Sprinkled like salt, by feel.</p>
+<h2 id="what-the-senior-sees">What the senior sees</h2>
+<p>At the Wall, Elias handed her the marker instead of taking it. "Walk me through what the annotation does. Not what it means. What it <em>does</em>."</p>
+<p>She drew it under the smoke-cloud proxy from February, which still said <em>this. goes around the mirror</em> in her own handwriting — shorthand for a self-call landing on the raw object behind the annotated wrapper. "The call hits the CGLIB proxy. The transaction interceptor asks the <code>PlatformTransactionManager</code> to begin: a connection comes out of Hikari, a database transaction opens, and the connection and the <code>EntityManager</code> get bound to the current thread — <code>TransactionSynchronizationManager</code>, ThreadLocals. That's why every repository call inside the method lands in the same transaction without being told: they look up the thread's bindings."</p>
+<p>"Name the propagation that makes that work."</p>
+<p>"<code>REQUIRED</code> — the default. Join the caller's transaction if one exists, start one if not. It's why three repositories and a helper all wrote into one transaction without knowing it."</p>
+<p>"And on the way out?"</p>
+<p>"The interceptor looks at <em>how the method ended</em>. Normal return: commit. Exception: it consults the rollback rules — <code>RuntimeException</code> or <code>Error</code>, roll back; checked exception, <em>commit anyway</em>." She stopped, hearing it. "And a caught exception isn't an ending at all. The method returned normally. The proxy never knew."</p>
+<p>"So where did your rollback die?"</p>
+<p>"In a <code>catch</code> block in 2021. The proxy can only see what crosses the method boundary."</p>
+<p>She wrote it on the Request Journey diagram, to the right of the service layer, where it has stayed ever since: <strong>commit/rollback happens on the way out.</strong></p>
+<p>"Why is the default unchecked-only?" she asked. "That's the part that feels like a trap."</p>
+<p>"History, not law," Elias said. "EJB decided last century that checked exceptions were <em>business conditions</em> the caller would handle — order rejected, file missing — and unchecked ones were system failures. Spring inherited the convention. You may overrule it per method: <code>rollbackFor = Exception.class</code>. What you may not do is fail to choose."</p>
+<p>Then he tapped the audit line in her drawing. "Now the harder question. Your audit log participates in the very transaction it's supposed to witness. Tonight it confirmed a lie. What does it do when a legitimate award <em>fails</em> and rolls back?"</p>
+<p>Maya followed it through. "The audit row rolls back with it. We'd have no record the attempt ever happened. The witness dies with the defendant."</p>
+<p>"So?"</p>
+<p>"So the audit needs its own transaction. <code>REQUIRES_NEW</code> — the interceptor suspends the outer transaction, takes a <em>second</em> connection, runs the audit write, commits it independently, then resumes the outer. The audit survives whatever the business logic decides." She paused, because the four-beat skeleton on her index card demanded it. "Cost: every <code>REQUIRES_NEW</code> call holds two pool connections at once, so under load it can double our Hikari draw. And the inner transaction can deadlock against rows the outer one still holds."</p>
+<p>She drew it before he could ask — two lifelines, the suspension explicit:</p>
+<p class="diagram"><img src="assets/diag-e6b0de52f8745344.svg" alt="diagram"></img></p>
+
+<p>"And <code>NESTED</code>?"</p>
+<p>"Savepoints inside one physical transaction — partial rollback without abandoning the whole. But savepoints are a JDBC affair; JPA has no savepoint API, so our <code>JpaTransactionManager</code> would refuse <code>NESTED</code> at runtime anyway. And we don't want a <em>partial</em> anything here — we want an independent witness." Elias nodded, and she understood she'd just passed something.</p>
+<p>The lost update came last. Maya had arrived assuming it was an isolation problem; Postgres runs <code>READ_COMMITTED</code> by default, and surely some stricter level would have caught it. Elias just waited while she argued herself out of it. Marisol's read and Marisol's write were <em>two different transactions</em>, separated by forty seconds of human thinking across stateless HTTP requests. Isolation governs what concurrent transactions see of each other, and these two never overlapped; the bug lived between requests, where no transaction existed. Raising the level to <code>SERIALIZABLE</code> would add contention on the hot tables without touching it. No isolation level on earth spans think time.</p>
+<p>"Say the diagnosis precisely," Elias said. "Most people reach for an isolation level here — the bug smells like the database's fault."</p>
+<p>"It's not an isolation problem," Maya said slowly. "It's an application-level versioning problem. The two transactions never overlap, so isolation has nothing to referee — the version has to live in the data and travel with the request."</p>
+<p>"That sentence is a tell. Recite the ladder anyway — you'll be asked." She did, marker up: <code>READ_UNCOMMITTED</code> allows dirty reads — data another transaction may yet roll back. <code>READ_COMMITTED</code> rules those out, but a re-read can differ — the non-repeatable read. <code>REPEATABLE_READ</code> pins rows already read; new rows can still appear — phantoms. <code>SERIALIZABLE</code> rules out all three. "And Postgres?" "Refuses to do dirty reads — ask for <code>READ_UNCOMMITTED</code>, you silently get <code>READ_COMMITTED</code>. Its <code>REPEATABLE_READ</code> is snapshot isolation, so no phantoms either. And <code>SERIALIZABLE</code> is serializable-snapshot — SSI — fast because it lets transactions run, then aborts any it can't order. Whatever asks for it must retry."</p>
+<p>Elias drew one long horizontal line beneath her ladder and labeled the ends. "The architect's version of this chapter. Consistency is a spectrum, and somebody has to <em>price</em> it. This end: the invariant — status, payout, version — one transaction or it's corruption. That end: the eventual — the notification email; arguably the transfer itself, if we ever commit <em>intent</em> and reconcile. Between them, your audit: durable, not simultaneous. Integrity is tonight's -ility, and its currency is throughput — every guarantee you strengthen holds a lock longer, draws a second connection, or retries under load. Nobody upstairs priced it, so the defaults did — and defaults don't know which row is the money."</p>
+<p>She copied the line into her notebook before the marker dried:</p>
+<p class="diagram"><img src="assets/diag-b6ea7d48103a3838.svg" alt="diagram"></img></p>
+
+<p><em>Consistency priced per write — every step rightward buys throughput and sells simultaneity.</em></p>
+<p>"Version your data, or lock it and hold," Elias said. "Choose by contention and hold time. Now go let Marisol break it on purpose."</p>
+<h2 id="the-reenactment">The reenactment</h2>
+<p>Staging, Thursday: Marisol on one laptop, a fellow triager on another, both with report #5817's staging twin open. Marisol had brought her own split keyboard — she swam open water before dawn and refused to lose a race, even a staged one, on laptop keys. Maya counted down from three; both clicked <strong>Save</strong>. Green toast, green toast, and the database quietly kept the second write and discarded the first — the lost update, reproduced in one take.</p>
+<p>Then she deployed her branch and they did it again.</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Entity</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Report</span> {
+    <span class="hljs-meta">@Id</span> <span class="hljs-meta">@GeneratedValue</span> <span class="hljs-keyword">private</span> Long id;
+
+    <span class="hljs-meta">@Version</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-type">long</span> version;   <span class="hljs-comment">// UPDATE report SET severity=?, version=2</span>
+                            <span class="hljs-comment">//   WHERE id=? AND version=1  → 0 rows = someone got there first</span>
+    <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-meta">@RestControllerAdvice</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ConcurrencyAdvice</span> {
+    <span class="hljs-meta">@ExceptionHandler(OptimisticLockingFailureException.class)</span>
+    ProblemDetail <span class="hljs-title function_">conflict</span><span class="hljs-params">(OptimisticLockingFailureException e)</span> {
+        <span class="hljs-type">var</span> <span class="hljs-variable">pd</span> <span class="hljs-operator">=</span> ProblemDetail.forStatus(HttpStatus.CONFLICT);
+        pd.setTitle(<span class="hljs-string">"Report changed while you were editing"</span>);
+        pd.setDetail(<span class="hljs-string">"Another triager updated this report. Review their change, then re-apply yours."</span>);
+        <span class="hljs-keyword">return</span> pd;
+    }
+}
+</code></pre>
+<p>This time the second save came back as a 409. The merge flow Maya had sketched with Lena showed the colleague what Marisol had changed and offered to re-apply his edit on top. Hibernate did the actual work with one <code>WHERE</code> clause: update the row <em>only if</em> the version you read is still on disk. Zero rows updated meant somebody got there first, and the exception said so out loud.</p>
+<p><em>She had hand-rolled this handshake once at Meridian — a hot dispatch table, an <code>UPDATE … WHERE id = ? AND version = ?</code>, a check that <code>executeUpdate()</code> came back zero rows, a homemade exception to say someone got there first. <code>@Version</code> was the same column wearing a JPA annotation, the <code>WHERE</code> clause written for her, and for once the hand-wired instinct was a head start instead of a trap.</em></p>
+<p>"Why not just lock the row?" the colleague asked. "Make my screen wait until hers commits?"</p>
+<p>"Contention and hold time," Maya said. "Two triagers editing the same report in the same minute happens — what, weekly? Optimistic costs nothing until the rare collision, then costs one polite retry. Pessimistic — <code>PESSIMISTIC_WRITE</code>, a <code>SELECT FOR UPDATE</code> — means holding a real database lock across human think time. You go to lunch mid-edit and the row is hostage — and a pooled connection under it, the same Hikari math that took the site down at six percent CPU. We'll reserve pessimistic for short, machine-paced contention, like the payout ledger rollups. A machine writer doesn't get a 409 — it catches the optimistic failure, re-reads, and retries with a cap."</p>
+<p>Idris, passing with coffee, did not slow down. "Great. Show me the lock-wait dashboard before you ship it."</p>
+<p>There wasn't one. Maya filed the ticket next to April's still-open <em>real application metrics</em> ticket — opened when the site drowned at six percent CPU, pool exhausted — where the operational debt quietly continued to age.</p>
+<h2 id="the-fix">The fix</h2>
+<p>The pull request was small. The ADR attached to it was not, and it was the part Elias read first.</p>
+<blockquote>
+<p><strong>ADR-008 — The consistency model.</strong>
+<strong>Context:</strong> A caught checked exception half-committed an award — database, bank, and audit log telling three different stories — and two triagers silently overwrote each other across forty seconds of think time. <strong>Decision:</strong> Service-boundary methods declare <code>rollbackFor = Exception.class</code> (we opt out of the EJB inheritance); optimistic locking via <code>@Version</code> is the default concurrency model, with a retry-or-surface policy named per workflow; pessimistic locks are reserved for short, hot, machine-paced contention; audit writes ride <code>REQUIRES_NEW</code>. <strong>Consequences:</strong> Lost updates surface as conflicts users can resolve instead of corruption nobody sees; the cost is conflict UX and the discipline that isolation levels are named, not defaulted, in review.</p>
+</blockquote>
+<p>The operative clauses below were design decisions, the first being where the transaction boundary sits. One: transactions begin and end at the service layer. Not controllers, which speak HTTP and would hold a pooled connection through response serialization. Not repositories, where five writes become five autonomous commits and a mid-flight failure leaves half of them saved. Two: any boundary a checked exception can cross declares <code>rollbackFor = Exception.class</code>; catching inside a boundary requires either rethrowing or explicitly calling <code>setRollbackOnly()</code> — <em>handled</em> is no longer a log message, it's a design review question. Three: the audit log records on <code>REQUIRES_NEW</code> — the attempt before, the outcome after — so the record survives any rollback of the business transaction. Four: <code>@Version</code> on <code>Report</code>, 409-plus-merge as the standard UX. Five: query-only service methods get <code>readOnly = true</code>. Hibernate skips dirty-checking snapshots and sets flush mode to <code>MANUAL</code>, and where the driver supports it the connection gets a read-only hint. It is an optimization, not a security boundary; it will not make a bad query good.</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">BountyService</span> {
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> ReportRepository reports;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> PayoutRepository payouts;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> PaymentClient paymentClient;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> AuditService audit;
+
+    BountyService(ReportRepository reports, PayoutRepository payouts,
+                  PaymentClient paymentClient, AuditService audit) {
+        <span class="hljs-built_in">this</span>.reports = reports; <span class="hljs-built_in">this</span>.payouts = payouts;
+        <span class="hljs-built_in">this</span>.paymentClient = paymentClient; <span class="hljs-built_in">this</span>.audit = audit;
+    }
+
+    <span class="hljs-meta">@Transactional(rollbackFor = Exception.class)</span>            <span class="hljs-comment">// ADR-008 §2</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">award</span><span class="hljs-params">(<span class="hljs-type">long</span> reportId, BigDecimal amount)</span> <span class="hljs-keyword">throws</span> PaymentProviderException {
+        audit.record(AuditEvent.attempt(<span class="hljs-string">"AWARD"</span>, reportId, amount)); <span class="hljs-comment">// §3 — survives any rollback</span>
+        <span class="hljs-type">Report</span> <span class="hljs-variable">report</span> <span class="hljs-operator">=</span> reports.findById(reportId).orElseThrow();
+        report.setStatus(ReportStatus.AWARDED);
+        payouts.save(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Payout</span>(report, amount));
+        paymentClient.initiateTransfer(report.getResearcherId(), amount); <span class="hljs-comment">// last — allowed to fail loudly</span>
+    }
+}
+</code></pre>
+<p>The attempt was now recorded up front on its own transaction, the outcome recorded after, and the word <em>handled</em> appeared nowhere. The audit no longer testified before the verdict.</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AuditService</span> {
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> AuditRepository auditRepository;
+
+    AuditService(AuditRepository auditRepository) {
+        <span class="hljs-built_in">this</span>.auditRepository = auditRepository;
+    }
+
+    <span class="hljs-meta">@Transactional(propagation = Propagation.REQUIRES_NEW)</span>   <span class="hljs-comment">// ADR-008 §3</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">record</span><span class="hljs-params">(AuditEvent event)</span> {
+        <span class="hljs-comment">// second connection, independent commit:</span>
+        <span class="hljs-comment">// the witness survives the business transaction's verdict</span>
+        auditRepository.save(AuditRecord.from(event));
+    }
+}
+</code></pre>
+<p>The last file in the diff was §4's machine half. Humans got the 409 and the merge screen; the automated triage writers got a wrapper. The wrapper got the one review comment Maya addressed to herself, because her first draft had looped <em>inside</em> the workflow's own <code>@Transactional</code> method. That transaction was already dead by the time the exception surfaced. A <code>this.</code>-retry would never have opened a new one: February's mirror, re-firing (the retry dispatches on the raw object, invisible to the transaction-opening proxy).</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Component</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TriageRetry</span> {                       <span class="hljs-comment">// the machine path — ADR-008 §4</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> TriageWorkflow workflow;       <span class="hljs-comment">// separate bean: every attempt</span>
+    TriageRetry(TriageWorkflow workflow) { <span class="hljs-built_in">this</span>.workflow = workflow; }   <span class="hljs-comment">// crosses the proxy</span>
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">apply</span><span class="hljs-params">(TriageDecision decision)</span> {
+        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">attempt</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span>; ; attempt++) {
+            <span class="hljs-keyword">try</span> {
+                workflow.apply(decision);        <span class="hljs-comment">// fresh tx, fresh read, fresh version</span>
+                <span class="hljs-keyword">return</span>;
+            } <span class="hljs-keyword">catch</span> (OptimisticLockingFailureException e) {
+                <span class="hljs-keyword">if</span> (attempt == <span class="hljs-number">3</span>) <span class="hljs-keyword">throw</span> e;       <span class="hljs-comment">// capped: surface, don't spin</span>
+            }   <span class="hljs-comment">// NB: never loop INSIDE the failed @Transactional — that context is dead,</span>
+        }       <span class="hljs-comment">//     and a this.-retry never opens a new one (February's mirror)</span>
+    }
+}
+</code></pre>
+<p>She presented the postmortem — <em>The Silent Commit</em> — to all of engineering the following Wednesday, walking the room down the same line she'd drawn on the Wall: proxy opens the transaction, method runs, catch swallows the rollback signal, proxy sees a normal return, <strong>COMMIT</strong>. When the CTO asked why a network call to a payment provider had been inside a database transaction at all, Elias — in the second row, green pen capped — simply turned his head and said, "Maya?"</p>
+<p>"It shouldn't be," she said. "Today's fix puts the call last and lets failure roll everything back — honest, but it couples our transaction to their uptime. The real pattern is to commit our <em>intent</em> to pay and reconcile the transfer separately. That's a bigger conversation." The Wall's spectrum line, recited upward. The CTO wrote something down. So, she noticed, did Elias.</p>
+<h3 id="⚖-your-move-architect">⚖ Your move, architect</h3>
+<p>ADR-008 §4 was one line in the diff and an hour in the review: three defensible ways to stop the silent overwrite, argued rather than assumed. Commit to one before reading on.</p>
+<ul>
+<li><strong>A — Optimistic: <code>@Version</code>, surface the conflict.</strong> A stale write updates zero rows and becomes a 409 with a merge flow for humans, a capped retry for machines.</li>
+<li><strong>B — Pessimistic: <code>SELECT FOR UPDATE</code> on open.</strong> The first triager locks the row; the second waits. No conflict ever happens, because no concurrency ever happens.</li>
+<li><strong>C — <code>SERIALIZABLE</code> isolation on triage transactions.</strong> The database referees everything: any interleaving it can't order as serial aborts, and the application retries.</li>
+</ul>
+<p><strong>The trade-offs, since you've committed:</strong> all three buy the same <strong>integrity</strong>; the question is which -ility each one spends. <strong>A</strong> — Maya's choice — spends almost nothing: contention is weekly, per Marisol, conflicts are human-resolvable, and nothing holds a lock across think time; the price is conflict UX and a retry-or-surface policy named per workflow, the discipline ADR-008 imposes. <strong>B</strong> reads like the balanced choice — real locks, no retries, no conflict UX — and is simply <em>wrong</em> here, because the hold time is human think-time: a pessimistic lock across a coffee break serializes the whole triage team behind one open browser tab, each lock pinning a pooled Hikari connection — Chapter 6's arithmetic, at site-wide cost. The books recommending it assume machine hold times — milliseconds, not lunch. The balanced-looking option is the trap. <strong>C</strong> spends <strong>throughput</strong> under load: Postgres SSI referees by <em>aborting</em> whatever it can't order, so you inherit retry storms and still write the retry handling A would have demanded — A's cost without A's precision, worth it only where the invariant truly spans rows no version column can guard, and named in review, per the ADR.</p>
+<p>The choice is a <strong>one-way door</strong>: the commitment is not a locking annotation but a consistency <em>contract</em>. Once Marisol's triagers build their workflow around conflict semantics — the 409, the refreshed view, the someone-got-there-first muscle memory — and the merge UI, retraining, and audit trail assume it, switching concurrency models is a rebuild of the human workflow, not a code change. "Pick something now, revisit the locking next quarter" is the documented trap: next quarter the workflow is load-bearing and the revisit costs ten times more, decided under worse information. One-way door — commit to the conflict contract deliberately, on day one, with the UX built for it.</p>
+<p>The next morning there was a hiring req in her inbox, approved, with a note from Elias: <em>The team is about to grow. First candidate interviews Tuesday. You're on the panel — you're the one who'll be teaching them.</em></p>
+<h2 id="the-debrief-—-ch8-the-silent-commit">The debrief — Ch.8, The Silent Commit</h2>
+<blockquote>
+<p><strong>Why does <code>@Transactional</code> only roll back on unchecked exceptions by default — and what's the trap with caught ones?</strong> <strong>Claim:</strong> Spring commits on checked exceptions and rolls back only on <code>RuntimeException</code>/<code>Error</code>, and any exception you catch inside the method triggers neither. <strong>Mechanism:</strong> the transaction is opened by the AOP proxy's interceptor, which binds the connection and <code>EntityManager</code> to the thread; on the way out it inspects how the method ended and consults rollback rules inherited from EJB's "checked = business condition, unchecked = system failure" convention — a <code>catch</code> inside the method means the proxy sees a normal return and commits. <strong>Trade-off:</strong> the default keeps recoverable business exceptions from nuking whole transactions, and <code>rollbackFor = Exception.class</code> overrides it per boundary; explicit <code>setRollbackOnly()</code> covers the must-catch cases. <strong>Failure mode:</strong> a helper catches a checked provider exception, logs "handled," and the transaction durably commits a payout that never happened — the database, the bank, and the log all telling different stories.</p>
+</blockquote>
+<p><strong>THE ARCHITECT'S LENS</strong></p>
+<ul>
+<li><strong>-ilities at stake:</strong> <strong>Consistency/integrity</strong> — chosen on purpose and priced against <strong>throughput</strong>: every guarantee strengthened holds a lock longer, draws a second pooled connection (<code>REQUIRES_NEW</code> doubles Hikari draw — Chapter 6's arithmetic), or retries under load. The pricing is per write: the invariant (status + payout + version) transactional; the audit durable-but-independent; the money and the email candidates for eventual — the seed of the outbox conversation. <strong>Operability</strong> rides shotgun: the lock-wait dashboard is still a ticket, aging.</li>
+<li><strong>The ADR:</strong> ADR-008 — the consistency model: <code>rollbackFor = Exception.class</code> at service boundaries (opting out of the EJB inheritance); <code>@Version</code> optimistic locking as the default, retry-or-surface named per workflow; pessimistic locks only for short, hot, machine-paced sections; audit on <code>REQUIRES_NEW</code>; isolation levels named, not defaulted, in review.</li>
+<li><strong>Rejected alternatives:</strong> pessimistic locking as the default (holds connections across human think time — Chapter 6's math says no); <code>SERIALIZABLE</code> everywhere (SSI aborts under contention; you pay the retry logic anyway); the EJB rollback default (the 2021 <code>catch</code> is where that ends); the audit inside the business transaction (the witness dies with the defendant).</li>
+<li><strong>Fight or lean:</strong> <em>Lean</em> on declarative demarcation — the proxy, <code>REQUIRED</code> joining every repository call beneath the boundary, dirty checking flushing for you; that machinery keeps the service layer business-shaped. <em>Fight</em> the inherited rollback default — <code>rollbackFor = Exception.class</code> is a recorded refusal of a 1990s convention — and any review that asks an isolation level to solve a versioning problem.</li>
+</ul>
+<p><strong>Story anchors</strong></p>
+<ul>
+<li>The spreadsheet that disagreed with the bank → a caught checked exception inside <code>@Transactional</code> commits everything around it.</li>
+<li>The audit row that confirmed the lie → audit logging on <code>REQUIRES_NEW</code>, so the witness survives the verdict.</li>
+<li>Marisol's simultaneous clicks → the lost update; <code>@Version</code> turns the silent overwrite into a 409 with a merge.</li>
+<li>The spectrum line under the isolation ladder → consistency is priced, not defaulted: invariant transactional, witness independent, money eventual — and the think-time lost update is a <em>versioning</em> problem, not an isolation one: the architect's tell.</li>
+</ul>
+<p><strong>Interview ammo</strong></p>
+<ul>
+<li><em>Default rollback only covers <code>RuntimeException</code> — why, how do you change it, and what's the trap with caught exceptions?</em> EJB-inherited convention (checked = handleable business condition); override with <code>rollbackFor</code>; a <code>catch</code> swallows the signal entirely, so the proxy commits — rethrow or <code>setRollbackOnly()</code>.</li>
+<li><em>Your audit log must survive a business rollback — how, and at what cost?</em> <code>REQUIRES_NEW</code>: suspend the outer transaction, open a second physical connection, commit independently — costing double pool draw per call and a deadlock risk against rows the outer transaction holds.</li>
+<li><em>Why doesn't raising the isolation level fix the two-triagers lost update?</em> The read and the write are separate transactions separated by human think time; isolation only governs concurrent transactions, so you need version-checked writes (<code>@Version</code>: 409-plus-merge for humans, retry-with-cap for machines) or <code>PESSIMISTIC_WRITE</code> (high contention, short machine-paced holds).</li>
+<li><em>Architect follow-up — An award writes status, payout, and audit, then sends money and an email: which belong in one transaction?</em> Only the invariant — status, payout, version; the audit rides <code>REQUIRES_NEW</code>, and the transfer and email go eventual with reconciliation — consistency is a spectrum you price per write, not a default you inherit.</li>
+</ul>
+<p><strong>Pointers</strong> → Playbook Ch.7 · <code>examples/ch07_jpa/TransactionalRollbackAndPropagation.java</code>, <code>OptimisticLockingAndCascade.java</code></p>
+<hr></hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch-07.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 7 — The Thousand Queries">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch-09.html" class="navigation navigation-next " aria-label="Next page: Chapter 9 — The Proxy You Didn't Write">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 8 — The Silent Commit","level":"1.13","depth":1,"next":{"title":"Chapter 9 — The Proxy You Didn't Write","level":"1.14","depth":1,"path":"ch-09.md","ref":"ch-09.md","articles":[]},"previous":{"title":"Chapter 7 — The Thousand Queries","level":"1.12","depth":1,"path":"ch-07.md","ref":"ch-07.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Otmane Omry","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The Spring Boot Mastery Book","language":"en","gitbook":"*"},"file":{"path":"ch-08.md","mtime":"2026-06-14T00:07:27.932Z","type":"markdown"},"gitbook":{"version":"6.2.1","time":"2026-06-14T00:07:44.741Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

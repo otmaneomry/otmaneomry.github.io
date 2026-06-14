@@ -1,0 +1,774 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter 11 — Forty Minutes · The Spring Boot Mastery Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.1">
+        <meta name="author" content="Otmane Omry">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch-12.html" />
+    
+    
+    <link rel="prev" href="ch-10.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    The Spring Boot Mastery Book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="part-01.html">
+            
+                <a href="part-01.html">
+            
+                    
+                    Part I — The Craft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch-01.html">
+            
+                <a href="ch-01.html">
+            
+                    
+                    Chapter 1 — The Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-02.html">
+            
+                <a href="part-02.html">
+            
+                    
+                    Part II — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch-02.html">
+            
+                <a href="ch-02.html">
+            
+                    
+                    Chapter 2 — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch-03.html">
+            
+                <a href="ch-03.html">
+            
+                    
+                    Chapter 3 — Smoke and Mirrors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch-04.html">
+            
+                <a href="ch-04.html">
+            
+                    
+                    Chapter 4 — The Magic Show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="part-03.html">
+            
+                <a href="part-03.html">
+            
+                    
+                    Part III — The Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch-05.html">
+            
+                <a href="ch-05.html">
+            
+                    
+                    Chapter 5 — The Front Door
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch-06.html">
+            
+                <a href="ch-06.html">
+            
+                    
+                    Chapter 6 — The Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="part-04.html">
+            
+                <a href="part-04.html">
+            
+                    
+                    Part IV — The Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch-07.html">
+            
+                <a href="ch-07.html">
+            
+                    
+                    Chapter 7 — The Thousand Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch-08.html">
+            
+                <a href="ch-08.html">
+            
+                    
+                    Chapter 8 — The Silent Commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch-09.html">
+            
+                <a href="ch-09.html">
+            
+                    
+                    Chapter 9 — The Proxy You Didn't Write
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="part-05.html">
+            
+                <a href="part-05.html">
+            
+                    
+                    Part V — Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ch-10.html">
+            
+                <a href="ch-10.html">
+            
+                    
+                    Chapter 10 — The Breach That Wasn't
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="ch-11.html">
+            
+                <a href="ch-11.html">
+            
+                    
+                    Chapter 11 — Forty Minutes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="ch-12.html">
+            
+                <a href="ch-12.html">
+            
+                    
+                    Chapter 12 — Three A.M.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="ch-13.html">
+            
+                <a href="ch-13.html">
+            
+                    
+                    Chapter 13 — The Cascade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="part-06.html">
+            
+                <a href="part-06.html">
+            
+                    
+                    Part VI — The Architect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="ch-14.html">
+            
+                <a href="ch-14.html">
+            
+                    
+                    Chapter 14 — The Split
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="ch-15.html">
+            
+                <a href="ch-15.html">
+            
+                    
+                    Chapter 15 — Faster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="ch-16.html">
+            
+                <a href="ch-16.html">
+            
+                    
+                    Chapter 16 — The Architect's Chair
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="part-07.html">
+            
+                <a href="part-07.html">
+            
+                    
+                    Capstone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="ch-17.html">
+            
+                <a href="ch-17.html">
+            
+                    
+                    Chapter 17 — The Hostile Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="appendices.html">
+            
+                <a href="appendices.html">
+            
+                    
+                    Appendices — The map behind the story
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 11 — Forty Minutes</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-11-—-forty-minutes">Chapter 11 — Forty Minutes</h1>
+<p>August at Glasshouse was the month of the merge queue. Maya noticed it the way you notice a limp — not the injury, but how everyone had rearranged their walk around it. Priya scheduled lunch by the pipeline: push at 11:50, eat, return to a verdict. Newer hires batched unrelated changes into one PR "to save a run," so every red build was a murder mystery with four suspects. CI took forty minutes, and the team had stopped being angry about it, which was worse.</p>
+<p>Idris had priced this month back in July — <em>a few hundred new test classes on a CI already creeping past twenty minutes</em> — and nobody had heard him. August was everyone hearing him at once.</p>
+<p>Then, one Friday night, the leaderboard froze.</p>
+<p>It took until Wednesday for anyone to notice, because the nightly reputation job had no metric, no alert, and the dignity to die quietly. A researcher posted a screenshot — <em>my points haven't moved since Friday</em> — Lena forwarded it with a single eyebrow of a sentence ("the leaderboard is researcher currency; please advise"), and Maya found the stack trace in twenty minutes: Friday afternoon's migration had tightened the leaderboard's unique constraint to <code>(researcher_id, program_id)</code> so researchers could rank per program, and the nightly job's native upsert had failed every run since — correctly, loudly, into a log nobody read.</p>
+<pre><code class="lang-java"><span class="hljs-comment">// LeaderboardRepository — the nightly reputation upsert</span>
+<span class="hljs-meta">@Modifying</span>
+<span class="hljs-meta">@Query(value = """
+    INSERT INTO researcher_reputation (researcher_id, program_id, points)
+    VALUES (:researcherId, :programId, :points)
+    ON CONFLICT (researcher_id) DO UPDATE    -- constraint is now (researcher_id, program_id)
+      SET points = researcher_reputation.points + EXCLUDED.points
+    """, nativeQuery = true)</span>
+<span class="hljs-keyword">void</span> <span class="hljs-title function_">upsertReputation</span><span class="hljs-params">(UUID researcherId, UUID programId, <span class="hljs-type">long</span> points)</span>;
+</code></pre>
+<p>Postgres, finding no unique constraint matching <code>ON CONFLICT (researcher_id)</code>, refused the statement. The fix was one line, the conflict target widened to match the constraint, and it shipped before lunch.</p>
+<p>The horror was the test.</p>
+<pre><code class="lang-java"><span class="hljs-meta">@SpringBootTest</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">LeaderboardRepositoryTest</span> {
+
+    <span class="hljs-meta">@Autowired</span> LeaderboardRepository repo;
+    <span class="hljs-meta">@MockitoBean</span> CortexaClient cortexa;            <span class="hljs-comment">// copied from another test; unused here</span>
+    <span class="hljs-meta">@MockitoBean</span> NotificationPublisher notifications;
+
+    <span class="hljs-meta">@Disabled("H2 doesn't support ON CONFLICT — TODO: revisit")</span>
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">upsertReputation_accumulatesPoints</span><span class="hljs-params">()</span> {
+        <span class="hljs-comment">// would have gone red the moment the constraint changed</span>
+    }
+}
+</code></pre>
+<p>In the war room, Elias asked for the file on the big screen. He had spent the summer mostly watching Maya run things — he attended standup the way a lighthouse attends shipping — but now he stood, put on his glasses, and read the annotation aloud, slowly.</p>
+<p>"<em>H2 doesn't support this. TODO: revisit.</em> Dated June." He looked over his glasses. "Of <em>last</em> year."</p>
+<p>Silence.</p>
+<p>"Your test suite has been lying to you politely for fourteen months," he said. "It told you what H2 thinks. H2 doesn't take production traffic."</p>
+<h2 id="the-investigation">The investigation</h2>
+<p>The disabled test was one symptom; Maya wanted the cause. She pulled the suite's CI log that afternoon and read it the way Elias had taught her — not for <em>what failed</em> but for <em>what is actually happening</em>. What was actually happening was banners. The Spring Boot ASCII art scrolled past again. And again. And again.</p>
+<p>Priya, radicalized by a summer of forty-minute waits, had already gone further. She appeared at Maya's desk with a spreadsheet. "I audited one CI run," she said. "I grepped for context startups. Want to guess?"</p>
+<p>"Six?"</p>
+<p>"Seventeen. Seventeen separate Spring contexts boot in one run. Each one is eighty to ninety seconds — full component scan, every auto-configuration, a Hikari pool it mostly doesn't use, Flyway migrating an H2 database that isn't our database, and the scheduler, so the digest job actually <em>fires</em> mid-suite, filling CI logs with failed email sends. Twenty-five minutes of our forty is just turning the application on and off."</p>
+<p><em>Boot the whole app and test through it,</em> Maya thought. <em>At Meridian that was a hand-rolled <code>@BeforeAll</code> that started Jetty and prayed — once per test class, because nobody had ever thought to share the fixture. Same tax, fancier collector.</em> "Why seventeen?" she asked. "Spring caches test contexts across the suite. It should boot once and reuse it."</p>
+<p>"That's the thing," Priya said. "It <em>would</em>. Almost nothing hits the cache."</p>
+<blockquote>
+<p>⏸ <strong>Your call.</strong> Two test classes boot the same app with the same profile — and mint two separate contexts. Before the TestContext source opens: what could possibly make Spring treat them as <em>different applications</em>, what does that mean for forty-one classes' creative mock fields, and which -ility is bleeding out at twenty-five minutes a run? Commit.</p>
+</blockquote>
+<p>They took it to the Wall. Maya drew a box and labeled it <strong>the context cache key</strong>, because she'd spent an evening in the TestContext framework source and the answer was right there. The cache is a map. The key is the merged configuration fingerprint — the configuration classes, the active profiles, the test properties, the context initializers, the web environment, <em>and every bean override</em>. <code>@MockitoBean</code> — the annotation that replaced Boot's old <code>@MockBean</code> when Spring Framework pulled bean overriding into core — doesn't just hand you a Mockito mock. It registers a bean-override definition, and that definition is part of the key. Same key, cached context, free. Different key — any difference — full boot.</p>
+<p>Under it she drew what the audit had been measuring — two classes paying nothing, one paying ninety seconds for a clock:</p>
+<p class="diagram"><img src="assets/diag-72505400b8906c14.svg" alt="diagram"></img></p>
+
+<p>"So every test class that sprinkles its own creative combination of mocks," Maya said, tapping Priya's spreadsheet, "is paying ninety seconds for the privilege of being unique."</p>
+<p>The audit had it all: forty-one test classes, every one <code>@SpringBootTest</code>, copy-pasted from whichever class the author had open, each mutating the mock set just enough — this one mocks <code>CortexaClient</code>, that one mocks <code>CortexaClient</code> <em>and</em> the clock, a third adds a <code>@TestPropertySource</code> for one assertion. Seventeen distinct fingerprints. Seventeen boots. And the cache itself is an LRU with a default size of 32 — they weren't even close to evicting; they simply never collided. (If your pause answer was "the bean-override set is part of the key," you had the mechanism; the -ility takes the rest of the chapter to earn its name.)</p>
+<p>"And the bugs still get through," Priya said, "because all seventeen of those contexts run on H2."</p>
+<h2 id="what-the-senior-sees">What the senior sees</h2>
+<p>Maya wrote the standard that week, and the first page was a drawing of a pyramid. Atrium's suite had the opposite shape: every test in the heaviest, slowest tier — a column. Thanks to H2, the column wasn't even load-bearing.</p>
+<p>The senior reading goes like this. <code>@SpringBootTest</code> boots your <em>entire</em> <code>ApplicationContext</code> — every bean, every auto-configuration, security filter chains, schedulers. By default it runs against a mock servlet environment; a real port arrives only if you ask for <code>RANDOM_PORT</code>. That's right for a handful of end-to-end smoke tests, and wrong as the default unit of testing, because you pay whole-application startup to verify one controller's status code. It is the honest nuclear option.</p>
+<p>The slices exist to load <em>just enough</em>, and the discipline is knowing what each one deliberately leaves out. <code>@WebMvcTest</code> boots the <code>DispatcherServlet</code>'s world — controllers, Jackson converters, validation, <code>@ControllerAdvice</code>, plus Boot's MockMvc security setup. Nothing below it loads: no services, no repositories, no database. Collaborators arrive at the boundary as mocks.</p>
+<p>Priya had hit the slice's sharp edge firsthand on Tuesday: her first <code>@WebMvcTest</code> security test sent a researcher token at an admin route and came back 200, where production says 403.</p>
+<blockquote>
+<p>⏸ <strong>Your call.</strong> The slice booted, MockMvc ran, the route exists — what didn't load, and why is that the slice working exactly as designed? Commit.</p>
+</blockquote>
+<p>A slice tests a <em>layer</em>, not your wiring. <code>@WebMvcTest</code> does not load regular <code>@Configuration</code> classes, so her custom <code>SecurityFilterChain</code> was simply absent, and Boot's slice default — any authenticated request is allowed — let the researcher in. The rules came back the moment she <code>@Import</code>ed the config, which is why the standard's example would carry <code>@Import(SecurityConfig.class)</code> like a load-bearing wall.</p>
+<p><code>@DataJpaTest</code> boots the opposite end — repositories, the <code>EntityManager</code>, a <code>DataSource</code> — and wraps each test in a transaction it rolls back at the end, so tests can't pollute each other. The rollback is also the slice's own failure mode. Every assertion runs inside one open persistence context, so lazy loading that would fail in production succeeds quietly in the test. Maya, owner of a 2 a.m. lazy-loading scar, wrote that warning herself. (May's thousand-query dashboard had taught her the mechanism: lazy loads only work while the persistence context is open; the slice's open-to-the-last-assertion transaction is the same amnesty in a test runner.) <code>@JsonTest</code> boots Jackson alone, for the serialization contracts.</p>
+<p>The heuristic went in bold: <strong>test behavior at the narrowest slice that exercises it — and don't test the framework at all.</strong> Half the suite's "coverage" was asserting that Spring Data could parse a method name or that Jackson could serialize a string. Spring's own tests already pass. Delete them; spend the budget on <em>your</em> behavior — like, say, an upsert's conflict target.</p>
+<p>Elias read the draft at the Wall that evening, green pen hovering. "Forty minutes, seventeen boots. Which -ility was paying?"</p>
+<p>"Speed —" Maya started, and stopped, because that was the developer answer. "Evolvability. The suite is what makes change cheap. Slow, and people batch changes; lying, and people stop believing red. Either way Atrium stops being safely changeable — the only thing tests are <em>for</em>."</p>
+<p>"And the part nobody writes down," he said, tapping the pyramid, "is that this drawing is an architecture artifact, not a testing one. Slice boundaries mirror system boundaries — ADR-001's seams, audited for free. Priya tried the payout controller in a web slice on Tuesday; it dragged half the service layer in through a static helper. That's not a test problem. If you cannot slice-test a feature, the feature's seams are lies." He wrote that sentence under the pyramid and initialed it. ADR-001's seams were the ones he meant — package-by-feature, dependencies pointing one direction, the boundary speaking contracts — and a slice has to cut along exactly those lines.</p>
+<p>And the H2 problem deserved its own page. H2's Postgres compatibility mode mimics syntax, not semantics: no <code>ON CONFLICT … DO UPDATE</code>, no real <code>JSONB</code>, different locking, different type behavior. A suite that runs on H2 verifies a database you don't ship. Maya had a scar in this exact shape. <em>Meridian did this to itself — HSQLDB standing in for the real database to make the suite fast, green for a year, dead on the first vendor-specific MERGE in production. The instinct that an in-memory database is "close enough" is the trap, and the trap doesn't care whose SQL you hand-wrote.</em></p>
+<h2 id="the-fix">The fix</h2>
+<p>The redesign landed in three moves, and Maya ran it as the first engineering-practice change with her name on it instead of Elias's.</p>
+<p><strong>Move one: push everything down a layer.</strong> Controller tests became <code>@WebMvcTest</code>. That also paid off the per-route security-test mandate from the breach-that-wasn't (a stale matcher had let admin routes fall through to plain <code>authenticated()</code>, so any researcher token walked in; the post-mortem demanded a 401/403 test per route) — because a 403 that costs ninety seconds to verify gets skipped, and a 403 that costs two hundred milliseconds gets written:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@WebMvcTest</span>   <span class="hljs-comment">// all controllers, one shared slice context</span>
+<span class="hljs-meta">@Import({SecurityConfig.class, SharedMocks.class})</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">AdminRouteSecurityTest</span> {
+
+    <span class="hljs-meta">@Autowired</span> MockMvc mvc;
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">researcher_cannot_read_payout_settings</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
+        mvc.perform(get(<span class="hljs-string">"/api/v2/admin/programs/77/payout-settings"</span>)
+                .with(jwt().authorities(<span class="hljs-keyword">new</span> <span class="hljs-title class_">SimpleGrantedAuthority</span>(<span class="hljs-string">"ROLE_RESEARCHER"</span>))))
+           .andExpect(status().isForbidden())
+           <span class="hljs-comment">// ProblemDetail comes from the AccessDeniedHandler wired in SecurityConfig —</span>
+           <span class="hljs-comment">// a 403 thrown in the filter chain never reaches @ControllerAdvice</span>
+           .andExpect(jsonPath(<span class="hljs-string">"$.title"</span>).value(<span class="hljs-string">"Forbidden"</span>));
+    }
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">anonymous_gets_401_not_a_stack_trace</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception {
+        mvc.perform(get(<span class="hljs-string">"/api/v2/admin/programs/77/payout-settings"</span>))
+           .andExpect(status().isUnauthorized());
+    }
+}
+</code></pre>
+<p><code>MockMvc</code> drives the request through the mock servlet stack — no socket, no Tomcat. That's why it's fast, and enough for almost everything. The dozen true end-to-end smokes that survived as <code>@SpringBootTest(webEnvironment = RANDOM_PORT)</code> used <code>WebTestClient</code> instead, because those <em>should</em> speak real HTTP over a real port.</p>
+<p><strong>Move two: one fingerprint to rule them out.</strong> The seventeen creative mock combinations collapsed into <code>SharedMocks</code> — a single <code>@TestConfiguration</code> of Mockito <code>@Bean</code> factories that every test in a tier imports identically:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@TestConfiguration(proxyBeanMethods = false)</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">SharedMocks</span> {
+
+    <span class="hljs-meta">@Bean</span> TriageWorkflow <span class="hljs-title function_">triageWorkflow</span><span class="hljs-params">()</span> { <span class="hljs-keyword">return</span> Mockito.mock(TriageWorkflow.class); }
+
+    <span class="hljs-meta">@Bean</span> CortexaClient <span class="hljs-title function_">cortexaClient</span><span class="hljs-params">()</span> { <span class="hljs-keyword">return</span> Mockito.mock(CortexaClient.class); }
+
+    <span class="hljs-meta">@Bean</span> Clock <span class="hljs-title function_">clock</span><span class="hljs-params">()</span> {
+        <span class="hljs-keyword">return</span> Clock.fixed(Instant.parse(<span class="hljs-string">"2026-08-17T10:00:00Z"</span>), ZoneOffset.UTC);
+    }
+    <span class="hljs-comment">// …and the rest of the canonical set: every collaborator a controller touches, mocked once</span>
+}
+</code></pre>
+<p>A web slice doesn't load services at all, so these aren't overrides — they're the missing collaborators, supplied identically. The config class sits in the cache key the same way for every test that imports it. Scattered <code>@MockitoBean</code> fields would each have minted a fresh fingerprint. <em>The oldest rule in testing,</em> Maya thought. <em>Share the expensive thing, or buy it once per class — Meridian's suite had bought Jetty seventeen times a run for years and called it thoroughness.</em> One more deliberate trade-off: the web slice loads <em>all</em> controllers rather than one per test class, because <code>@WebMvcTest(SomeController.class)</code> puts the controller selection in the cache key — twelve scoped slices is twelve boots; one slightly fatter slice is one. A side effect nobody mourned: slices don't boot the scheduler, so the digest job stopped spamming CI with failed emails.</p>
+<p>The standard drew the mock line as governance, not taste: doubles for the <em>ports</em> — clocks, vendor clients, workflows, anything Atrium talks <strong>to</strong>; real for the <em>dialect</em> — the engine Atrium ships <strong>on</strong>. A mocked-away Postgres is a different production; the leaderboard had spent fourteen months proving it.</p>
+<p><strong>Move three: test the database you ship.</strong> The data tier moved to real Postgres via Testcontainers, one shared base class, one container for the whole suite:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@DataJpaTest</span>
+<span class="hljs-keyword">abstract</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">PostgresDataTest</span> {
+
+    <span class="hljs-meta">@ServiceConnection</span>   <span class="hljs-comment">// Boot reads host/port/credentials straight off the container</span>
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> PostgreSQLContainer&lt;?&gt; POSTGRES =
+            <span class="hljs-keyword">new</span> <span class="hljs-title class_">PostgreSQLContainer</span>&lt;&gt;(<span class="hljs-string">"postgres:17-alpine"</span>);
+
+    <span class="hljs-keyword">static</span> { POSTGRES.start(); }   <span class="hljs-comment">// started once per JVM, shared by every subclass</span>
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">LeaderboardRepositoryTest</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">PostgresDataTest</span> {
+
+    <span class="hljs-meta">@Autowired</span> LeaderboardRepository repo;
+
+    <span class="hljs-meta">@Test</span>  <span class="hljs-comment">// un-disabled after fourteen months</span>
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">upsertReputation_accumulatesPoints_perProgram</span><span class="hljs-params">()</span> {
+        repo.upsertReputation(RESEARCHER, PROGRAM, <span class="hljs-number">50</span>);
+        repo.upsertReputation(RESEARCHER, PROGRAM, <span class="hljs-number">25</span>);
+        assertThat(repo.pointsFor(RESEARCHER, PROGRAM)).isEqualTo(<span class="hljs-number">75</span>);
+    }
+}
+</code></pre>
+<p><code>@ServiceConnection</code> — in Boot since 3.1 — does the wiring that once took a hand-rolled <code>@DynamicPropertySource</code>. The container's coordinates flow into the <code>Environment</code>. As of Boot 4, the slice's embedded-database replacement recognizes a Testcontainers-backed connection and leaves it alone. Flyway runs the real migrations against the real engine. Each test still rolls back, so the container stays clean. One refinement stayed strictly local: <code>.withReuse(true)</code> on the container, paired with <code>testcontainers.reuse.enable=true</code> in <code>~/.testcontainers.properties</code>, lets the container outlive the JVM itself — the next run finds it instead of starting fresh. Priya flipped it on for her laptop and left it off in CI, where environments are throwaway and a container that survives between runs is just stale state with a name.</p>
+<p>The first run pulled the Postgres image — and then Maya allowed herself one piece of theater. The hotfix had shipped weeks ago, but CI deserved its rematch: she checked out the revision that had frozen the leaderboard and ran the resurrected <code>ON CONFLICT</code> test against it. Red — the escaped prod bug, caught by the suite at last. Idris watched the failure scroll by with something close to affection. "First time the suite has disagreed with H2 and been right." On main: green.</p>
+<p>That Friday, the team gathered around one laptop while Maya deleted the H2 dependency from the <code>pom.xml</code>. The commit message entered team lore on contact: <strong>"Remove H2. It was never Postgres."</strong></p>
+<p>The standard needed a number, Elias said, or it would stay an opinion — opinions get re-litigated; binders don't. Maya condensed the week to half a page and dated it:</p>
+<blockquote>
+<p><strong>ADR-011 — Test architecture.</strong>
+<strong>Context:</strong> Forty-minute CI; every test class <code>@SpringBootTest</code>; seventeen context fingerprints minted by scattered <code>@MockitoBean</code> fields; H2 masking Postgres truths — a suite that was slow <em>and</em> untrustworthy. <strong>Decision:</strong> Test behavior at the narrowest slice that exercises it (<code>@WebMvcTest</code> / <code>@DataJpaTest</code> / <code>@JsonTest</code>); shared test-config classes so context fingerprints converge, under a cache-hit budget tracked in CI; Testcontainers Postgres for anything SQL-shaped; a handful of full <code>@SpringBootTest</code> journeys; security's 401/403 paths tested at the web slice. <strong>Consequences:</strong> CI in minutes and failures that mean something; the accepted cost is slice literacy — knowing what each slice loads and pointedly does not — as a team skill.</p>
+</blockquote>
+<h3 id="⚖-your-move-architect">⚖ Your move, architect</h3>
+<p>The standard was written; the question was how to land it on a living codebase — forty-one legacy test classes, a roadmap that wasn't pausing, a team mid-limp. Commit before reading on:</p>
+<ul>
+<li><strong>A — The big-bang sprint.</strong> Two weeks, zero features: rewrite all forty-one classes in one push; the team relearns testing in one bite.</li>
+<li><strong>B — The ratchet.</strong> Every <em>new</em> test follows ADR-011 starting today; the CI dashboard graphs context count and cache hits; old tests migrate opportunistically, as PRs touch them.</li>
+<li><strong>C — Freeze, then contracts first.</strong> Moratorium on new <code>@SpringBootTest</code>, and build a consumer-driven contract-test layer before touching internals.</li>
+</ul>
+<p><strong>The trade-offs, since you've committed:</strong> <strong>A</strong> buys a clean break at maximum <strong>cost</strong> — two weeks of zero features in one lump, every open branch rebasing against a moving test tree, the lesson one indigestible bite. <strong>B</strong> is what Maya chose, the <strong>evolvability</strong> play applied to the suite itself: the fitness function makes regression impossible to commit quietly while the debt drains at the rate the code is touched; its tax is a bilingual suite for months and slice literacy taught PR by PR — forty-one small lessons instead of one lecture. (Week one attacked the seventeen fingerprints — mostly deletions of creative mock fields — hence numbers within days.) <strong>C</strong> spends today protecting a <strong>compatibility</strong> nobody consumes yet: contracts-first is right when external consumers make the API the asset to protect; Atrium's consumers are mostly its own SPA, so a contract layer is scaffolding for clients that don't exist. The signal that flips the answer: the day Glasshouse ships a partner API with versioned consumers Maya doesn't employ — a day Chapter 14 starts arguing about.</p>
+<p>The numbers came in over the next week: four context boots instead of seventeen — one E2E, one web slice, one data slice, one <code>@JsonTest</code> — and CI at nine minutes. Priya built a CI-duration panel and announced she'd be treating it like an SLO; any PR that added a fifth fingerprint would hear from her — not through vigilance, through two artifacts she wired in that same afternoon. The first made the cache testify:</p>
+<pre><code class="lang-properties"><span class="hljs-comment"># src/test/resources/application-test.properties — make the cache testify</span>
+<span class="hljs-attr">logging.level.org.springframework.test.context.cache</span>=<span class="hljs-string">DEBUG</span>
+<span class="hljs-comment"># every run now logs: "...DefaultContextCache... size = 4, hitCount = 312, missCount = 4"</span>
+</code></pre>
+<p>The second made ADR-011's budget executable — three lines of CI standing where a code-review opinion used to:</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># CI step — the context budget with teeth (ADR-011: target 4)</span>
+BOOTS=$(grep -c <span class="hljs-string">":: Spring Boot ::"</span> build/test.log)   <span class="hljs-comment"># one banner per boot — Priya's audit grep, promoted to a gate</span>
+[ <span class="hljs-string">"<span class="hljs-variable">$BOOTS</span>"</span> -le 4 ] || { <span class="hljs-built_in">echo</span> <span class="hljs-string">"context budget blown: <span class="hljs-variable">$BOOTS</span> boots"</span>; <span class="hljs-built_in">exit</span> 1; }
+</code></pre>
+<p>The <code>@Disabled</code>-with-TODO pattern was replaced in the standard by one sentence Elias approved without a single green mark: <em>if you can't test it, you can't ship it.</em></p>
+<p>A fitness function asserts a property of the architecture, not a behavior of the code — ADR-002's whole move — and a slow suite is a signal that the boundaries leak. Beside the panel went the cache-hit budget, contexts-per-run, target four: CI minutes are a cost line, capacity planning for the dev loop. The panel was January's red build naming its own law, pointed at a clock. Lena did the only arithmetic she ever needed: "Thirty-one minutes a run, forty runs a day. You found us a hire."</p>
+<p>"Nine minutes," Idris said at the brick handover, in the tone he reserved for compliments he intended to weaponize. "So now the tests can see Postgres. Shame nobody can see <em>prod</em>. That metrics ticket from the spring turns five months old soon — I'd bake it a cake, but we have no dashboard to put the candles on. And I'm still waiting on my lock-wait graphs from May." Maya laughed, and wrote both down, and did not yet know she would remember the sentence at 3:04 one September morning, at her kitchen table, in the dark.</p>
+<h2 id="the-debrief-—-ch11-forty-minutes">The debrief — Ch.11, Forty Minutes</h2>
+<blockquote>
+<p><strong><code>@WebMvcTest</code> vs <code>@SpringBootTest</code> — what loads, what doesn't, and why does context caching matter at scale?</strong> <strong>Claim:</strong> Prefer the narrowest slice; reserve <code>@SpringBootTest</code> for a handful of end-to-end smokes. <strong>Mechanism:</strong> <code>@SpringBootTest</code> boots the entire <code>ApplicationContext</code> — full component scan, all auto-configuration, security, schedulers — while <code>@WebMvcTest</code> boots only the MVC layer (controllers, converters, validation, advice, MockMvc security) with collaborators mocked, and <code>@DataJpaTest</code> boots only repositories plus a rollback-per-test transaction. The TestContext framework caches contexts across the suite, keyed on the merged configuration fingerprint: config classes, profiles, properties, initializers, web environment, and the full set of bean overrides (<code>@MockitoBean</code>). <strong>Trade-off:</strong> Slices are fast and isolated but can't catch cross-layer wiring bugs — you keep a few full-boot tests precisely for those. <strong>Failure mode:</strong> A 2,000-test suite where every class is <code>@SpringBootTest</code> with its own creative mock combination produces dozens of unique fingerprints; almost nothing hits the cache, and CI spends most of its runtime booting and shutting down the same application — forty minutes of pipeline for nine minutes of tests.</p>
+</blockquote>
+<p><strong>THE ARCHITECT'S LENS</strong></p>
+<ul>
+<li><strong>-ilities at stake:</strong> <strong>Evolvability</strong>, via its enabler — the suite is the system's <em>second architecture</em>, the one that makes changing the first cheap: slow, it taxes every change (people batch); lying, it taxes every belief (people ship on H2's word). And <strong>cost</strong>, named out loud: CI minutes are money and attention; the cache-hit budget is the dev loop's capacity plan.</li>
+<li><strong>The ADR:</strong> ADR-011 — test architecture: the narrowest slice that exercises the behavior; shared test-config so fingerprints converge under a CI-tracked cache-hit budget; Testcontainers Postgres for anything SQL-shaped; a few full <code>@SpringBootTest</code> journeys; 401/403 at the slice.</li>
+<li><strong>Rejected alternatives:</strong> H2 in Postgres compatibility mode (syntax, not semantics — it verifies a database you don't ship); bigger CI runners (pays for seventeen boots instead of deleting thirteen); mocking repositories in data tests (the dialect is the one thing that must stay real — the doubles policy is governance, not taste); the big-bang rewrite sprint (two weeks of zero features, one indigestible lesson).</li>
+<li><strong>Fight or lean:</strong> <em>Lean</em> on the TestContext cache, the slices, and <code>@ServiceConnection</code> — Boot's test machinery is built to be cheap if you stop being creative; uniform configuration is the cache's asking price. <em>Fight</em> the comfortable lies: H2-as-Postgres, <code>@Disabled</code>-with-TODO, copy-pasted mock sets — each a convenience spending an -ility nobody approved.</li>
+</ul>
+<p><strong>Story anchors</strong></p>
+<ul>
+<li>The fourteen-month-old TODO read aloud → a <code>@Disabled</code> test isn't a deferral, it's a standing decision not to know; H2-vs-Postgres divergence is exactly what it chose not to know.</li>
+<li>Priya's spreadsheet of seventeen boots → the context cache key: config classes + properties + profiles + every bean override; one shared mock config is the speed lever.</li>
+<li>"Remove H2. It was never Postgres." → Testcontainers + <code>@ServiceConnection</code>: test against the engine that takes production traffic, and the resurrected test catches the escaped bug.</li>
+<li>Priya's payout controller that wouldn't fit a web slice → slice boundaries mirror system boundaries; a feature you can't slice-test has lying seams — the suite audits ADR-001 for free.</li>
+</ul>
+<p><strong>Interview ammo</strong></p>
+<ul>
+<li><em>Kill-shot #8: <code>@WebMvcTest</code> vs <code>@SpringBootTest</code> — what loads, what doesn't, and why does context caching matter for a 2,000-test suite?</em> — Slice loads only MVC infrastructure with mocked collaborators; full boot loads everything; the cache keys on the configuration fingerprint including the mock set, so uniform test configuration is the difference between four boots and seventeen.</li>
+<li><em>Follow-up: what exactly makes the test-context cache miss or evict?</em> — Any change to the merged configuration — classes, active profiles, test properties, initializers, web environment, or the bean-override set — is a new key and a fresh boot; <code>@DirtiesContext</code> evicts outright, and the cache is LRU with a default size of 32.</li>
+<li><em>Follow-up: why not just run H2 in Postgres compatibility mode?</em> — Compatibility mode mimics syntax, not semantics — <code>ON CONFLICT … DO UPDATE</code>, <code>JSONB</code>, locking, and type behavior all diverge — so green on H2 verifies a database you don't ship; a Testcontainers Postgres shared across the suite costs seconds after the first image pull.</li>
+<li><em>Architect follow-up — CI takes forty minutes and the org offers to buy faster runners; what's the architecture answer?</em> — Hardware pays for the boots, design deletes them: converge fingerprints, test at the narrowest slice, track cache hits as a budgeted fitness function, and only then spend money — CI minutes are a cost -ility; don't buy hardware to subsidize a leaking architecture.</li>
+</ul>
+<p><strong>Pointers</strong> → Playbook Ch.11 · <code>examples/ch11_testing/</code></p>
+<hr></hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch-10.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 10 — The Breach That Wasn't">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch-12.html" class="navigation navigation-next " aria-label="Next page: Chapter 12 — Three A.M.">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 11 — Forty Minutes","level":"1.17","depth":1,"next":{"title":"Chapter 12 — Three A.M.","level":"1.18","depth":1,"path":"ch-12.md","ref":"ch-12.md","articles":[]},"previous":{"title":"Chapter 10 — The Breach That Wasn't","level":"1.16","depth":1,"path":"ch-10.md","ref":"ch-10.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Otmane Omry","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The Spring Boot Mastery Book","language":"en","gitbook":"*"},"file":{"path":"ch-11.md","mtime":"2026-06-14T00:07:31.696Z","type":"markdown"},"gitbook":{"version":"6.2.1","time":"2026-06-14T00:07:44.741Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

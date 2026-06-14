@@ -1,0 +1,756 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter 6 — The Pool · The Spring Boot Mastery Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.1">
+        <meta name="author" content="Otmane Omry">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="part-04.html" />
+    
+    
+    <link rel="prev" href="ch-05.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    The Spring Boot Mastery Book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="part-01.html">
+            
+                <a href="part-01.html">
+            
+                    
+                    Part I — The Craft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch-01.html">
+            
+                <a href="ch-01.html">
+            
+                    
+                    Chapter 1 — The Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-02.html">
+            
+                <a href="part-02.html">
+            
+                    
+                    Part II — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch-02.html">
+            
+                <a href="ch-02.html">
+            
+                    
+                    Chapter 2 — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch-03.html">
+            
+                <a href="ch-03.html">
+            
+                    
+                    Chapter 3 — Smoke and Mirrors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch-04.html">
+            
+                <a href="ch-04.html">
+            
+                    
+                    Chapter 4 — The Magic Show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="part-03.html">
+            
+                <a href="part-03.html">
+            
+                    
+                    Part III — The Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch-05.html">
+            
+                <a href="ch-05.html">
+            
+                    
+                    Chapter 5 — The Front Door
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="ch-06.html">
+            
+                <a href="ch-06.html">
+            
+                    
+                    Chapter 6 — The Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="part-04.html">
+            
+                <a href="part-04.html">
+            
+                    
+                    Part IV — The Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch-07.html">
+            
+                <a href="ch-07.html">
+            
+                    
+                    Chapter 7 — The Thousand Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch-08.html">
+            
+                <a href="ch-08.html">
+            
+                    
+                    Chapter 8 — The Silent Commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch-09.html">
+            
+                <a href="ch-09.html">
+            
+                    
+                    Chapter 9 — The Proxy You Didn't Write
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="part-05.html">
+            
+                <a href="part-05.html">
+            
+                    
+                    Part V — Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ch-10.html">
+            
+                <a href="ch-10.html">
+            
+                    
+                    Chapter 10 — The Breach That Wasn't
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="ch-11.html">
+            
+                <a href="ch-11.html">
+            
+                    
+                    Chapter 11 — Forty Minutes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="ch-12.html">
+            
+                <a href="ch-12.html">
+            
+                    
+                    Chapter 12 — Three A.M.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="ch-13.html">
+            
+                <a href="ch-13.html">
+            
+                    
+                    Chapter 13 — The Cascade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="part-06.html">
+            
+                <a href="part-06.html">
+            
+                    
+                    Part VI — The Architect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="ch-14.html">
+            
+                <a href="ch-14.html">
+            
+                    
+                    Chapter 14 — The Split
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="ch-15.html">
+            
+                <a href="ch-15.html">
+            
+                    
+                    Chapter 15 — Faster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="ch-16.html">
+            
+                <a href="ch-16.html">
+            
+                    
+                    Chapter 16 — The Architect's Chair
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="part-07.html">
+            
+                <a href="part-07.html">
+            
+                    
+                    Capstone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="ch-17.html">
+            
+                <a href="ch-17.html">
+            
+                    
+                    Chapter 17 — The Hostile Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="appendices.html">
+            
+                <a href="appendices.html">
+            
+                    
+                    Appendices — The map behind the story
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 6 — The Pool</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-6-—-the-pool">Chapter 6 — The Pool</h1>
+<p>The "Spring into Security" banner went live at ten o'clock on a Tuesday, and for twenty glorious minutes it worked as promised: sign-ups tripled. Lena stood at the back of the exec room watching the only graph Atrium had — the load balancer's traffic line, climbing like a good quarterly slide.</p>
+<p>At 10:31, Cortexa — the third-party CVE-enrichment vendor that Atrium called synchronously inside every report submission — began answering in thirty seconds instead of three hundred milliseconds. Their status page would later say <em>elevated latency in one region</em>. Glasshouse's status page said nothing, because at 10:43 Glasshouse stopped saying anything at all.</p>
+<p>The whole site 503'd. Not the submission form — everything. Login. The leaderboard. The static marketing page the promo pointed at, served through the same app. The brick screamed on the desk of whoever held it that week, and Idris appeared at Maya's shoulder, already having checked the obvious things.</p>
+<p>"CPU?" Maya asked.</p>
+<p>"Six percent." He turned his laptop around: six healthy-looking pods, idling. "Memory's fine. Disk's fine. Postgres is bored. The site is down and every machine involved is having a restful morning."</p>
+<p>In the war room, an exec said the sentence execs say: "Can we add more pods?" Idris added more pods — six became twelve became eighteen — and the traffic graph didn't move. The new pods came up green, accepted connections, and went exactly as silent as the old ones.</p>
+<p>"We just bought more chairs," Idris said, "in front of the same locked door."</p>
+<p>Lena was on the bridge, watching launch conversions flatline in a window two executives could also see. "Someone tell me what the door is."</p>
+<blockquote>
+<p>⏸ <strong>Your call.</strong> Idle CPUs, eighteen green pods, a site answering 503 — before the thread dump: name the exhausted resource, what's holding it, and which -ility is failing. Commit.</p>
+</blockquote>
+<h2 id="the-investigation">The investigation</h2>
+<p>Eight years of production Java at Meridian Freight said: find the exhausted resource, because something always is. CPU, memory, and database connections all checked out, so Maya went looking for the resource nobody graphs.</p>
+<p>She picked a pod and took a thread dump.</p>
+<pre><code class="lang-text">"http-nio-8080-exec-117" #341 daemon prio=5 RUNNABLE
+   java.lang.Thread.State: RUNNABLE
+        at sun.nio.ch.SocketDispatcher.read0(java.base/Native Method)
+        at sun.nio.ch.NioSocketImpl.read(java.base)
+        ...
+        at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.body
+        at com.glasshouse.atrium.enrichment.EnrichmentService.enrich
+        at com.glasshouse.atrium.report.ReportSubmissionService.submit
+</code></pre>
+<p>She grepped the dump. One hundred and ninety-six threads named <code>http-nio-8080-exec-*</code>, all in the same native socket read, all waiting on <code>api.cortexa.io</code>. Not crashed, not erroring. The JVM reports a thread blocked in a native read as <code>RUNNABLE</code> — its idea of a joke. Four workers were doing actual work. The rest were parked, each holding open a request the load balancer had long since abandoned.</p>
+<p>(If you called the worker pool: right resource, right -ility — <strong>availability</strong>. Hold your fix; the napkin math is about to price it.)</p>
+<p>She pulled up the code she'd walked past a dozen times without seeing:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">EnrichmentService</span> {
+
+    <span class="hljs-comment">// Built ad hoc years ago. No timeouts configured anywhere.</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> <span class="hljs-type">RestClient</span> <span class="hljs-variable">cortexa</span> <span class="hljs-operator">=</span> RestClient.create(<span class="hljs-string">"https://api.cortexa.io"</span>);
+
+    <span class="hljs-keyword">public</span> CveEnrichment <span class="hljs-title function_">enrich</span><span class="hljs-params">(SubmittedReport report)</span> {
+        <span class="hljs-comment">// Called synchronously from ReportSubmissionService.submit(...)</span>
+        <span class="hljs-keyword">return</span> cortexa.post()
+                .uri(<span class="hljs-string">"/v1/enrich"</span>)
+                .body(EnrichmentRequest.from(report))
+                .retrieve()
+                .body(CveEnrichment.class); <span class="hljs-comment">// parks this Tomcat worker as long as Cortexa pleases</span>
+    }
+}
+</code></pre>
+<p><em>A read blocks until it returns — that's just the network,</em> she thought — the Meridian reflex, eight years of raw sockets behind a hand-configured Jetty where a blocking read had never once cost more than its own wait. The model itself held no surprises. In Tomcat's default model, exactly as in the Jetty pool she had sized by hand, the thread <em>is</em> the request: one worker carries it from connector to filter chain to controller to this socket read and back. While Cortexa held the socket, that worker could do nothing else, and everything it carried waited with it. She had never set a timeout at Meridian either — no library had set one on her behalf, and the freight traffic had never made her pay for the omission. The habit hadn't been wrong back then; it had been unpriced. This morning, Cortexa sent the invoice.</p>
+<p>On the bridge, Idris was explaining why the site hung instead of failing fast. "Tomcat's NIO connector keeps accepting sockets after the workers are gone — up to <code>max-connections</code>, eight thousand-odd by default. They sit with the poller, queued for a worker that's never coming back. Past that there's <code>accept-count</code>, a backlog of about a hundred. Past <em>that</em>, connection refused. And the probes and ingress health checks are HTTP requests too — they queue behind the same dead pool, time out, the pod drops from the Service, and the front door answers 503: no healthy upstream. Eighteen pods, declared dead for telling the truth too slowly."</p>
+<p>Elias had been silent in the corner of the war room. Now he spoke, mostly to the exec.</p>
+<p>"The server didn't run out of CPU. It ran out of patience tokens. It has two hundred of them per pod, every request borrows one for its whole lifetime, and a vendor in another region is holding a hundred and ninety-six of them hostage — per pod. Maya. Show them the math."</p>
+<h2 id="what-the-senior-sees">What the senior sees</h2>
+<p>Maya took a napkin — the Wall was three rooms away and the bridge was waiting.</p>
+<p>"Little's law, informally: requests in flight equals arrival rate times how long each one takes. Each pod is taking about seven submissions a second right now — that's the promo working. Normally a submission takes three hundred milliseconds, so seven times zero point three is about two threads busy per pod. Trivial.</p>
+<p>"Cortexa goes to thirty seconds. Same arrivals, hundred-times duration: seven times thirty is two hundred and ten concurrent — and the pool is two hundred. <code>server.tomcat.threads.max</code>, the default, untouched since this repo was created. The submission endpoint alone now demands more than the whole pool, so it absorbs all of it, and login and the leaderboard starve behind it. One slow downstream doesn't slow down one feature. In thread-per-request, it confiscates the threads every feature shares."</p>
+<p>"And the pods?" the exec asked. "Eighteen is triple the capacity."</p>
+<p>"It would be, if arrival rate were a constant. It isn't — it's a crowd. Every user staring at a spinner hits refresh, the load balancer re-sends what timed out, and demand climbs to meet whatever capacity we add. And every new pod opens hundreds more concurrent calls into a vendor that's already drowning — we're making Cortexa slower by scaling at it."</p>
+<p>One mercy was January's: the eighteen pods had at least come up <em>interchangeable</em>. The whiteboard-bolted-to-the-kitchen-wall bug — the singleton stashing a draft on a field every thread shared — was the kind of state that breaks scale-out, because identical pods stop being identical. Statelessness buys the right to scale out. The pool is just the next bottleneck up.</p>
+<p>She drew the connector where it sat on the Request Journey — <em>left</em> of everything they'd traced on the Wall in March, when the team had walked one HTTP request from socket to database and back. Socket → <strong>connector</strong> → filter chain → <code>DispatcherServlet</code> → onward. Nothing on March's line was failing: the filters were idle and the <code>DispatcherServlet</code> barely entered, because a request only reaches them on a worker thread, and no workers were free. The outage lived in the Journey's <em>first box</em>, drawn as a single word and never opened. "Everything we traced last month happens <em>on</em> a worker thread. The connector is the toll booth where the thread gets assigned, and we've never once looked at it, because Boot embedded it and it worked."</p>
+<p>She sketched the rest on a second napkin — transcribed that evening onto the Wall, under the Journey's far-left box:</p>
+<p class="diagram"><img src="assets/diag-dd18bb5d1305e744.svg" alt="diagram"></img></p>
+
+<p>Under it, the law in one line: <strong>in-flight = arrival rate × residence time</strong>.</p>
+<p>"Run it backwards," Elias said from the doorway.</p>
+<p>Maya flipped the napkin. "Pool fixed at two hundred, residence thirty seconds — two hundred divided by thirty. Six point six requests a second. Per pod. For <em>everything</em>."</p>
+<p>"That's the postmortem's first line. Availability stopped being a feeling this morning; it's division. And division forces a design question: how much of the pool may one dependency hold? Today, all of it. A bulkhead — a small pool per dependency — makes that a number somebody chose. Size it stingy and it rejects honest traffic; the number is a negotiation. Blast radius is a design property. We never designed ours."</p>
+<p><em>The server inside the app</em> — at Meridian she had built that by hand, an embedded Jetty wired line by line in <code>main()</code>, so Boot's fat jar — <code>java -jar</code> and the server comes up with the code — was the one part of Spring she had trusted from day one. Atrium's <code>pom.xml</code> even had a <code>&lt;packaging&gt;war&lt;/packaging&gt;</code> profile from the years when it deployed into a standalone Tomcat — the old order, where the server owned the app instead of the app carrying its server. It had been dead since the move to Kubernetes, kept around like an appendix.</p>
+<p>Someone on the bridge asked the perennial question: "Is Tomcat the problem? I've read Jetty is faster."</p>
+<p>Elias looked at Maya. She shook her head. "Swapping is one starter exclusion — drop <code>spring-boot-starter-tomcat</code>, add <code>spring-boot-starter-jetty</code>; Boot's <code>ServletWebServerFactory</code> auto-configuration wires whichever container is on the classpath. Undertow used to be the third door — off the menu as of Boot 4.0; it never caught up to the Servlet baseline. And it would change nothing: the servlet model is the model — one thread per in-flight request, bounded pool. We'd be renaming the pool, not draining it. The problem isn't the brand of container. It's that we let a thirty-second stranger borrow our threads with no return date."</p>
+<p>"There <em>is</em> a structural answer," Elias added quietly. "The JVM grew threads that stop being precious — cheap enough that blocking one is nearly free. That conversation is worth having. Not at" — he checked his watch — "eleven twenty, mid-incident, in front of finance." He wrote <code>virtual threads — later</code> in the napkin's corner; that corner would wait until November.</p>
+<h2 id="two-seconds-or-thirty">Two seconds or thirty</h2>
+<p>Mitigation came first: Idris flipped Cortexa enrichment off behind a config property, the parked threads drained as their socket reads finally returned, and the site came back in ninety seconds. The exec left. Then came the argument about what <em>normal</em> should be.</p>
+<p>Maya proposed timeouts: one second to connect, two seconds to read, on every outbound call Atrium made — starting with Cortexa.</p>
+<p>Lena pushed back hard, and she wasn't wrong to. "Researchers <em>wait</em> for those scores — enrichment is half of why submission feels smart. So if Cortexa has a slow afternoon, we just... fail it?"</p>
+<p>"Today Cortexa had a slow afternoon and we failed <em>everything</em> — login, leaderboard, your launch. The trade-off isn't enrichment-works versus enrichment-fails; it's one feature degrading honestly versus the whole site degrading dishonestly. A timeout is us deciding in advance how much of our capacity a vendor may hold."</p>
+<p>"Then don't make the researcher wait at all," Lena said — and that, everyone agreed afterward, was the actual fix. If enrichment could fail without failing the submission, it shouldn't be <em>inside</em> the submission. Accept the report, commit it, return 201, and enrich afterward — the score appears when it appears.</p>
+<p>Lena lost the argument she'd started and won the one that mattered — which, Maya was learning, is what a good trade-off discussion looks like.</p>
+<h2 id="the-fix">The fix</h2>
+<p>The timeouts went in as policy, not as a patch. As of Boot 4.0, the <code>spring.http.clients.*</code> properties set connect and read timeouts for every client built through Boot's auto-configured <code>RestClient.Builder</code> — a global floor, committed to <code>application.yml</code> before any named client got its own numbers:</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">spring:</span>
+  <span class="hljs-attr">http:</span>
+    <span class="hljs-attr">clients:</span>
+      <span class="hljs-attr">connect-timeout:</span> <span class="hljs-string">2s</span>   <span class="hljs-comment"># the global floor — a forgotten client may be slow,</span>
+      <span class="hljs-attr">read-timeout:</span> <span class="hljs-string">5s</span>      <span class="hljs-comment"># never unbounded; named clients override stricter</span>
+</code></pre>
+<p>The Cortexa client then chose stricter numbers, with a name attached:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Configuration</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">CortexaClientConfig</span> {
+
+    <span class="hljs-meta">@Bean</span>
+    RestClient <span class="hljs-title function_">cortexaClient</span><span class="hljs-params">(RestClient.Builder builder)</span> {
+        <span class="hljs-type">var</span> <span class="hljs-variable">settings</span> <span class="hljs-operator">=</span> ClientHttpRequestFactorySettings.defaults()
+                .withConnectTimeout(Duration.ofSeconds(<span class="hljs-number">1</span>))
+                .withReadTimeout(Duration.ofSeconds(<span class="hljs-number">2</span>));
+        <span class="hljs-keyword">return</span> builder
+                .baseUrl(<span class="hljs-string">"https://api.cortexa.io"</span>)
+                .requestFactory(ClientHttpRequestFactoryBuilder.detect().build(settings))
+                .build();
+    }
+}
+</code></pre>
+<p>The numbers had a derivation, because Elias asked for one. "Where does two seconds come from?"</p>
+<p>"The submission route promises four seconds at p99," Maya said. "Our own work — Postgres, serialization, the filter chain — spends about a second and a half. What's left is what guests may borrow. Two seconds is Cortexa's share of a budget, not a mood."</p>
+<p>"Then the budget goes next to the route," Elias said. "Budgets nobody can see get spent twice. And when Lena wants the timeout raised — she will — that's not a config change, that's a product negotiation over who gets the missing second." The Request Journey, it turned out, was also a ledger — every hop spending from the same four seconds.</p>
+<p>By evening the ledger entry sat where reviewers would trip over it, two comment lines above the mapping — the convention ADR-006 would make house style:</p>
+<pre><code class="lang-java"><span class="hljs-comment">// Route budget (ADR-006): POST /api/v2/reports promises p99 4s</span>
+<span class="hljs-comment">//   = ours 1.5s + Cortexa 2s + headroom 0.5s — raising a share is a product call</span>
+<span class="hljs-meta">@PostMapping(version = "2")</span>
+ResponseEntity&lt;ReportCreatedResponse&gt; <span class="hljs-title function_">submit</span><span class="hljs-params">(
+        <span class="hljs-meta">@Valid</span> <span class="hljs-meta">@RequestBody</span> SubmitReportRequest request)</span> { <span class="hljs-comment">/* ... */</span> }
+</code></pre>
+<p>The enrichment call moved out of the request path. <code>submit()</code> now persisted the report and recorded enrichment as pending. A background worker on a small, bounded, <em>named</em> executor called Cortexa afterward and filled in the score. A two-second timeout on a deferred call costs a retry. A missing timeout on an inline call had cost a launch.</p>
+<p>Then the connector itself, configured deliberately for the first time in seven years — mostly the same numbers, but now decisions instead of dust:</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">server:</span>
+  <span class="hljs-attr">shutdown:</span> <span class="hljs-string">graceful</span>           <span class="hljs-comment"># the default since Boot 3.4 — pinned explicitly</span>
+  <span class="hljs-attr">http2:</span>
+    <span class="hljs-attr">enabled:</span> <span class="hljs-literal">true</span>              <span class="hljs-comment"># multiplexes streams; NOT more workers</span>
+  <span class="hljs-attr">tomcat:</span>
+    <span class="hljs-attr">threads:</span>
+      <span class="hljs-attr">max:</span> <span class="hljs-number">200</span>                 <span class="hljs-comment"># the pool: hard ceiling on concurrent requests</span>
+      <span class="hljs-attr">min-spare:</span> <span class="hljs-number">10</span>
+    <span class="hljs-attr">max-connections:</span> <span class="hljs-number">8192</span>      <span class="hljs-comment"># sockets the NIO poller will hold open</span>
+    <span class="hljs-attr">accept-count:</span> <span class="hljs-number">100</span>          <span class="hljs-comment"># backlog once max-connections is full</span>
+    <span class="hljs-attr">connection-timeout:</span> <span class="hljs-string">5s</span>     <span class="hljs-comment"># slow/idle clients can't squat on a connection</span>
+<span class="hljs-attr">spring:</span>
+  <span class="hljs-attr">lifecycle:</span>
+    <span class="hljs-attr">timeout-per-shutdown-phase:</span> <span class="hljs-string">30s</span>   <span class="hljs-comment"># the drain window: how long "finish" gets</span>
+</code></pre>
+<p>Graceful shutdown hadn't needed enabling — Boot's default since 3.4 — yet the mid-incident rolling restarts had still killed in-flight requests, an error spike on top of the outage. Graceful only waits out the drain window before abandoning what's left. Threads parked thirty seconds on Cortexa outlived it. The genuinely new decision was that window, <code>timeout-per-shutdown-phase</code>, now a number somebody owned. SIGTERM still meant <em>stop accepting, finish what you hold, then die</em>. Idris scheduled a drill against the cluster's <code>preStop</code> hooks, because he does not believe YAML until he has watched it. HTTP/2 got a one-line caveat in the commit message: <em>multiplexing reduces connection pressure, not thread pressure — every request still borrows a worker.</em></p>
+<p>"Deploys are availability events," Idris said, taping the drill date to the Wall. "One real outage a year, forty deploys a quarter — get the drain window wrong and the deploys <em>are</em> the outage, sliced thin." The runbook gained one line in Maya's hand: <em>the drain window must outlive your slowest in-flight request, or graceful is a longer word for kill.</em></p>
+<p>The deploys got faster too. Every image build had been shipping the 200-megabyte fat jar as one Docker layer. The Dockerfile now ran <code>java -Djarmode=tools -jar atrium.jar extract --layers --launcher</code>, splitting dependencies, loader, and application code into separate layers — a one-line change shipped kilobytes instead of the world, and mid-incident that difference is minutes.</p>
+<p>Maya wrote the decision note that afternoon, three sentences long: <em>Every outbound call gets a timeout. Every timeout gets a named owner who chose the number. Someday this call gets a circuit breaker — a timeout decides how long one request waits; something still needs to decide when to stop sending requests at all.</em> That last sentence was a promissory note that came due in September. By the time it reached the binder, the note had grown a number:</p>
+<blockquote>
+<p><strong>ADR-006 — The latency budget.</strong>
+<strong>Context:</strong> One slow vendor consumed every worker thread in a bounded pool; the whole site 503'd with CPUs idle. <strong>Decision:</strong> Every outbound call carries an explicit timeout derived from a per-endpoint latency budget; budgets sum along the Request Journey and are recorded next to the route; no unbounded waits anywhere, with <code>spring.http.clients.*</code> as the global floor. <strong>Consequences:</strong> Slow dependencies now fail fast and partially instead of globally, and degraded modes become explicit product negotiations — the Lena conversation, institutionalized: every new dependency starts with an argument about its share of the budget.</p>
+</blockquote>
+<h3 id="⚖-your-move-architect">⚖ Your move, architect</h3>
+<p>Rewind to 11:20 — site down, finance in the room, the mitigation flag not yet found. The capacity question had three honest answers; commit to one before reading on:</p>
+<ul>
+<li><strong>A — Raise <code>threads.max</code> and keep adding pods.</strong> No code change, visible action, the exec is already nodding.</li>
+<li><strong>B — Queue-and-async the vendor call.</strong> Enrichment never belonged in the request path; accept, commit, return 201, enrich later.</li>
+<li><strong>C — Timeouts plus a per-dependency bulkhead, now.</strong> Cap how long any request may wait on Cortexa and how many may wait at once; config and one small bean.</li>
+</ul>
+<p><strong>The trade-offs, since you've committed:</strong> <strong>A</strong> spends <strong>cost</strong> to buy minutes, not availability. Eight hundred threads at 30 s residence are just eight hundred parked threads; retries raise the arrival rate to meet whatever capacity you add; and every new pod ships its own Hikari pool, opening fresh connections against a Postgres that had no part in this outage (that bill arrives in Chapter 9). <strong>B</strong> is the right shape long-term — Chapter 13 builds it properly, with a durable queue, retries, and idempotency — but mid-incident it spends <strong>operability</strong> exactly when the team has none to spare: a redesign wearing a fix's clothes. The deferred worker shipped that week was a first step toward B, affordable once C had made failure cheap. <strong>C</strong> is what the team chose: it buys <strong>availability</strong> by capping blast radius <em>at the slow dependency</em>, so Cortexa's worst afternoon now costs an enrichment outage, not a site outage. The price is hard conversations with Lena about what "degraded" shows users — and that conversation is a feature, not a tax. C is a bridge, not an end-state: the structural answer to the economics of blocking a thread arrives in November as ADR-015's virtual threads — this fork buys the quarter, not the architecture.</p>
+<p>Two other things happened quietly. A backlog ticket appeared, titled <strong>"Real application metrics — we graphed the LB because we had nothing else,"</strong> filed with no sprint attached, where it began to age. And Maya walked over to Idris's desk and put her name on the on-call rotation.</p>
+<p>"You sure?" he said. "The brick doesn't care what you were doing at three a.m."</p>
+<p>"I stood in a war room today and the only person with evidence was me. I'd rather be the person with evidence."</p>
+<p>Idris considered the thread dump still open on her laptop — the first time, he told Elias later, a developer had brought him evidence instead of vibes — and slid the rotation spreadsheet across.</p>
+<h2 id="the-debrief-—-ch6-the-pool">The debrief — Ch.6, The Pool</h2>
+<blockquote>
+<p><strong>How does the thread-per-request model work, and how does one slow downstream take a whole Spring Boot service offline?</strong> <strong>Claim:</strong> Boot's default embedded Tomcat is thread-per-request — a bounded worker pool (200 by default) where each request occupies one thread for its entire lifetime, so the pool, not CPU, is the real concurrency ceiling. <strong>Mechanism:</strong> The NIO connector accepts sockets (up to <code>max-connections</code>, with an <code>accept-count</code> backlog behind that) and hands each ready request to a worker; every blocking operation in the handler — JDBC, a synchronous <code>RestClient</code> call — parks that worker until it returns, and Little's law prices it: threads needed ≈ arrival rate × request duration. <strong>Trade-off:</strong> The model is simple and debuggable — real stack traces, no async contagion — and the bounded pool is a crude built-in load shed; but request duration is partly controlled by <em>other people's systems</em>, so your capacity is hostage to your slowest dependency. <strong>Failure mode:</strong> One downstream going from 300 ms to 30 s multiplies one endpoint's thread demand a hundredfold and consumes the entire pool; health probes starve in the same queue, pods get marked down, the whole site 503s while CPU idles; adding pods just parks more threads against the same dependency. First defense: timeouts on every outbound call; structural fixes: circuit breakers or virtual threads.</p>
+</blockquote>
+<p><strong>THE ARCHITECT'S LENS</strong></p>
+<ul>
+<li><strong>-ilities at stake:</strong> <strong>Availability</strong>, revealed as arithmetic: a bounded pool divided by residence time <em>is</em> the throughput ceiling, and residence belongs to your slowest dependency until a timeout takes it back. Blast radius sits on top: bulkheads exist so one dependency's failure buys a feature outage, never a site outage. <strong>Operability</strong> rides along — the drain window is availability at the <em>end</em> of the lifecycle, because deploys are the most frequent availability events a system has.</li>
+<li><strong>The ADR:</strong> ADR-006 — the latency budget: every outbound call carries a timeout derived from a per-endpoint budget; budgets sum along the Request Journey and live next to the route; no unbounded waits anywhere.</li>
+<li><strong>Rejected alternatives:</strong> scale-out under fire (multiplies parked threads, vendor pressure, and — Chapter 9 — DB connections); swapping Tomcat for Jetty (renames the pool, keeps the model); full queue-and-async mid-incident (the right shape at the wrong hour; Chapter 13 builds it properly).</li>
+<li><strong>Fight or lean:</strong> <em>Lean</em> on Boot's connector defaults and the <code>spring.http.clients.*</code> global floor — sane numbers, and the floor catches the client somebody forgot. <em>Fight</em> the silence around defaults: a default nobody has read is a decision nobody has made — how <code>threads.max: 200</code> sat as dust for seven years until a vendor priced it.</li>
+</ul>
+<p><strong>Story anchors</strong></p>
+<ul>
+<li>196 of 200 threads parked in the same socket read on <code>cortexa.io</code> → thread-per-request exhaustion: the scarce resource is workers, not CPU.</li>
+<li>"More chairs in front of the same locked door" → horizontal scaling can't outrun a slow dependency: new pods' threads park too, and retries raise the arrival rate.</li>
+<li>The napkin: 7/s × 30 s = 210 &gt; 200 → Little's law: concurrency demanded = arrival rate × duration, and the pool is the ceiling.</li>
+<li>The flipped napkin: 200 threads ÷ 30 s ≈ 6.6 req/s → availability run backwards: pool divided by residence time is the pod's throughput ceiling, whoever owns the residence.</li>
+</ul>
+<p><strong>Interview ammo</strong></p>
+<ul>
+<li><em>Kill-shot #10 (first half): Explain how a single slow third-party API can 503 your entire Spring Boot service while CPU sits idle.</em> Each request holds one of ~200 Tomcat workers for its full duration; when a downstream stretches duration to 30 s, arrival rate × duration exceeds the pool, every worker parks in a socket read, new connections queue at the poller until health checks fail and the load balancer drops the pods — thread exhaustion, not CPU exhaustion.</li>
+<li><em>Follow-up: Would swapping Tomcat for Jetty, or adding pods, help?</em> No — the swap (exclude <code>spring-boot-starter-tomcat</code>, add the Jetty starter; Boot wires whichever <code>ServletWebServerFactory</code> is on the classpath — Undertow is gone as of Boot 4.0) changes the container, not the blocking servlet thread model, and more pods just multiply parked threads against the struggling vendor; real fixes are outbound timeouts, deferring the call, circuit breakers, or virtual threads.</li>
+<li><em>Follow-up: What do <code>threads.max</code>, <code>max-connections</code>, and <code>accept-count</code> each bound?</em> <code>threads.max</code> caps concurrent in-flight request processing; <code>max-connections</code> caps sockets the NIO poller holds open (cheap while idle — keep-alive connections don't hold workers); <code>accept-count</code> is the listen-backlog once connections are full — beyond it, refusals.</li>
+<li><em>Architect follow-up — How do you pick a timeout that isn't a guess?</em> Derive it from a latency budget: the route promises a p99, subtract what your own hops spend, and the remainder is the most any dependency may borrow — recorded next to the route, owned by a name, renegotiated as product when someone wants it raised.</li>
+</ul>
+<p><strong>Pointers</strong> → Playbook Ch.6 · <code>examples/ch06_server/ThreadPoolSaturationTrap.java</code></p>
+<hr></hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch-05.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 5 — The Front Door">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="part-04.html" class="navigation navigation-next " aria-label="Next page: Part IV — The Data">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 6 — The Pool","level":"1.10","depth":1,"next":{"title":"Part IV — The Data","level":"1.11","depth":1,"path":"part-04.md","ref":"part-04.md","articles":[]},"previous":{"title":"Chapter 5 — The Front Door","level":"1.9","depth":1,"path":"ch-05.md","ref":"ch-05.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Otmane Omry","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The Spring Boot Mastery Book","language":"en","gitbook":"*"},"file":{"path":"ch-06.md","mtime":"2026-06-14T00:07:24.110Z","type":"markdown"},"gitbook":{"version":"6.2.1","time":"2026-06-14T00:07:44.741Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

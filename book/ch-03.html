@@ -1,0 +1,770 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter 3 — Smoke and Mirrors · The Spring Boot Mastery Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.1">
+        <meta name="author" content="Otmane Omry">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch-04.html" />
+    
+    
+    <link rel="prev" href="ch-02.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    The Spring Boot Mastery Book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="part-01.html">
+            
+                <a href="part-01.html">
+            
+                    
+                    Part I — The Craft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch-01.html">
+            
+                <a href="ch-01.html">
+            
+                    
+                    Chapter 1 — The Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-02.html">
+            
+                <a href="part-02.html">
+            
+                    
+                    Part II — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch-02.html">
+            
+                <a href="ch-02.html">
+            
+                    
+                    Chapter 2 — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="ch-03.html">
+            
+                <a href="ch-03.html">
+            
+                    
+                    Chapter 3 — Smoke and Mirrors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch-04.html">
+            
+                <a href="ch-04.html">
+            
+                    
+                    Chapter 4 — The Magic Show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="part-03.html">
+            
+                <a href="part-03.html">
+            
+                    
+                    Part III — The Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch-05.html">
+            
+                <a href="ch-05.html">
+            
+                    
+                    Chapter 5 — The Front Door
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch-06.html">
+            
+                <a href="ch-06.html">
+            
+                    
+                    Chapter 6 — The Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="part-04.html">
+            
+                <a href="part-04.html">
+            
+                    
+                    Part IV — The Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch-07.html">
+            
+                <a href="ch-07.html">
+            
+                    
+                    Chapter 7 — The Thousand Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch-08.html">
+            
+                <a href="ch-08.html">
+            
+                    
+                    Chapter 8 — The Silent Commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch-09.html">
+            
+                <a href="ch-09.html">
+            
+                    
+                    Chapter 9 — The Proxy You Didn't Write
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="part-05.html">
+            
+                <a href="part-05.html">
+            
+                    
+                    Part V — Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ch-10.html">
+            
+                <a href="ch-10.html">
+            
+                    
+                    Chapter 10 — The Breach That Wasn't
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="ch-11.html">
+            
+                <a href="ch-11.html">
+            
+                    
+                    Chapter 11 — Forty Minutes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="ch-12.html">
+            
+                <a href="ch-12.html">
+            
+                    
+                    Chapter 12 — Three A.M.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="ch-13.html">
+            
+                <a href="ch-13.html">
+            
+                    
+                    Chapter 13 — The Cascade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="part-06.html">
+            
+                <a href="part-06.html">
+            
+                    
+                    Part VI — The Architect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="ch-14.html">
+            
+                <a href="ch-14.html">
+            
+                    
+                    Chapter 14 — The Split
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="ch-15.html">
+            
+                <a href="ch-15.html">
+            
+                    
+                    Chapter 15 — Faster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="ch-16.html">
+            
+                <a href="ch-16.html">
+            
+                    
+                    Chapter 16 — The Architect's Chair
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="part-07.html">
+            
+                <a href="part-07.html">
+            
+                    
+                    Capstone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="ch-17.html">
+            
+                <a href="ch-17.html">
+            
+                    
+                    Chapter 17 — The Hostile Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="appendices.html">
+            
+                <a href="appendices.html">
+            
+                    
+                    Appendices — The map behind the story
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 3 — Smoke and Mirrors</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-3-—-smoke-and-mirrors">Chapter 3 — Smoke and Mirrors</h1>
+<p>Marisol Vega did not believe in ghosts, which made it worse that she had brought printouts of three.</p>
+<p>"GH-4112," she said, laying the first page on Maya's desk like evidence at a trial. "Tuesday. I moved it to Triaged and bumped severity to Critical. The severity stuck. The status didn't. It's been sitting in New for two days with a Critical badge on it, and the researcher thinks we're stalling his payout."</p>
+<p>The second page was the same haunting on a different report: severity raised to High on Monday, status still New. "And I know I moved that one, because I remember it. You don't forget a hardcoded AWS key."</p>
+<p>The third was the strangest. "The audit log says I triaged this one at 14:06. I believe the audit log, because I remember doing it. The report itself says nobody ever touched it."</p>
+<p>"An audit row for a change that never happened," Maya said slowly.</p>
+<p>"Severity drives the bounty math," Marisol said. "When severity and status disagree, the payout calculator picks one and the researcher disputes it. Lena has nine disputes in her queue. They're not angry yet. They're <em>confused</em>, which on a trust product is the step before angry."</p>
+<p>Maya pulled the production timeline. The first ghost was dated four weeks back — and her stomach dropped before her eyes finished confirming it. Four weeks back was the day her decomposition of the digest god service had merged. Her refactor. Her clean, lifecycle-literate, postmortem-hardened refactor.</p>
+<p><em>In eight years at Meridian I never once shipped a bug that corrupted data politely,</em> she thought. <em>They crashed. This one is filing paperwork.</em></p>
+<h2 id="the-investigation">The investigation</h2>
+<p>She reproduced it in staging by lunchtime: queue a bulk triage of twenty reports, make the fourteenth contain an invalid status transition, run it. The batch threw, as expected. What was not expected: thirteen reports fully updated, the fourteenth <em>half</em> updated — severity saved, status not, audit row present — and six untouched.</p>
+<p>Half updated. Inside a <code>@Transactional</code> method.</p>
+<p>The code was hers. Before her refactor, the triage controller had called <code>updateStatus</code> directly on the injected service. Her decomposition had added a bulk entry point in the same class:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ReportServiceImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">ReportService</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> ReportRepository reports;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> AuditLogRepository auditLog;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-title function_">ReportServiceImpl</span><span class="hljs-params">(ReportRepository reports, AuditLogRepository auditLog)</span> {
+        <span class="hljs-built_in">this</span>.reports = reports;
+        <span class="hljs-built_in">this</span>.auditLog = auditLog;
+    }
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">bulkTriage</span><span class="hljs-params">(List&lt;TriageDecision&gt; decisions)</span> {
+        <span class="hljs-keyword">for</span> (TriageDecision d : decisions) {
+            updateStatus(d.reportId(), d.status(), d.severity()); <span class="hljs-comment">// == this.updateStatus(...)</span>
+        }
+    }
+
+    <span class="hljs-meta">@Transactional</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">updateStatus</span><span class="hljs-params">(<span class="hljs-type">long</span> reportId, ReportStatus status, Severity severity)</span> {
+        <span class="hljs-type">Report</span> <span class="hljs-variable">report</span> <span class="hljs-operator">=</span> reports.findById(reportId).orElseThrow();
+        auditLog.save(AuditEntry.of(report, status, severity));
+        report.applySeverity(severity);
+        reports.save(report);
+        report.transitionTo(status); <span class="hljs-comment">// throws on an illegal transition</span>
+        reports.save(report);
+    }
+}
+</code></pre>
+<blockquote>
+<p>⏸ <strong>Your call.</strong> Thirteen committed, one half-saved, six untouched — inside a method that says <code>@Transactional</code> two lines up. Before the breakpoint speaks: what is <code>this.updateStatus(...)</code> really calling, why did the same annotation work for the controller, and which -ility is failing without a single exception? Commit.</p>
+</blockquote>
+<p>She set a breakpoint inside <code>updateStatus</code> and evaluated <code>TransactionSynchronizationManager.isActualTransactionActive()</code>.</p>
+<p><code>false</code>.</p>
+<p>The annotation was sitting right there, two lines above the breakpoint, doing nothing. <em>So <code>@Transactional</code> isn't ambient,</em> she thought. <em>At Meridian a transaction was the <code>Connection</code> in my hand — <code>setAutoCommit(false)</code>, and everything I ran on it was inside, no matter which method did the running. I assumed the annotation was that with the plumbing hidden — paint it on the method and the transaction is just… present.</em> The instinct had felt so safe she'd never examined it. The instinct was the bug.</p>
+<p>Without an active transaction, every repository call ran in its own. <code>SimpleJpaRepository</code>'s methods carry their own <code>@Transactional</code>, so each <code>save()</code> opened a transaction, committed, and closed. The audit row committed first — that was Marisol's third ghost. Then severity. Then, if <code>transitionTo</code> threw, nothing rolled back, because there was nothing left to roll back: every earlier commit was already permanent. Her "atomic" method was three independent commits in a trench coat.</p>
+<p>But <em>why</em> was the annotation inert? It had worked when the controller called <code>updateStatus</code>. It died when <code>bulkTriage</code> did. Same method. Same annotation.</p>
+<p>She did the thing she should have done an hour earlier. In the debugger, paused in the controller, she evaluated the injected reference. Then, paused inside <code>bulkTriage</code>, she evaluated <code>this</code>.</p>
+<pre><code class="lang-java"><span class="hljs-comment">// Debugger &gt; Evaluate Expression — Tuesday, 16:40</span>
+reportService.getClass()
+<span class="hljs-comment">// =&gt; class com.glasshouse.atrium.triage.ReportServiceImpl$$SpringCGLIB$$0</span>
+
+<span class="hljs-built_in">this</span>.getClass()   <span class="hljs-comment">// evaluated inside bulkTriage()</span>
+<span class="hljs-comment">// =&gt; class com.glasshouse.atrium.triage.ReportServiceImpl</span>
+</code></pre>
+<p>Two different classes. Two different <em>objects</em>. The controller had never once held her object. It held something Spring had built. The subclass with the machine-generated name wrapped her object, and the wrapper — not the original — was what had been injected everywhere. It stood in front of <code>ReportServiceImpl</code> like a body double.</p>
+<p>Transactions, security, and caching live on the wrapper, so they apply only to calls that arrive through it. Every <code>new</code> opts out. So, she now saw, does every <code>this.</code> January surfaced whole — Elias at the Wall in her first week: <em>the container reserves the right to hand back something wrapped.</em> She had filed that, at the time, under philosophy. It was a spec, and her loop had spent four weeks walking around the wrapping from the inside.</p>
+<p>Elias appeared at her shoulder with the timing he always seemed to have. She pointed at the screen.</p>
+<p>"I've been calling methods on a ghost."</p>
+<p>"No," Elias said. "You've been <em>bypassing</em> the ghost. The ghost is the only one doing real work."</p>
+<p>(If you committed at the pause: self-invocation, around the proxy. Notice what almost nobody commits to — <em>nothing threw</em>. Atomicity didn't fail; it dissolved. Elias names the silence after the fix.)</p>
+<h2 id="what-the-senior-sees">What the senior sees</h2>
+<p>They took it to the Wall, where the bean lifecycle column from the singleton-leak postmortem (one instance app-wide; a mutable draft field leaking between researchers) still ran down the left edge in Maya's own handwriting — instantiate, populate, the post-processor sandwich. Elias's February invite — <strong>The proxy talk</strong>, <em>bring the lifecycle column</em> — was still pending; production had set an earlier date. Elias uncapped the green marker and tapped one line near the bottom: <code>BeanPostProcessor.postProcessAfterInitialization</code>.</p>
+<p>"Last month I told you to remember this spot," he said. "Something important is born here. You've just met it. So — what is it, mechanically? Not 'a proxy.' Show me the mechanism."</p>
+<p>Maya took the marker. "There's a <code>BeanPostProcessor</code> — " she checked the notes from her source dive — "<code>AnnotationAwareAspectJAutoProxyCreator</code>, one of the <code>AbstractAutoProxyCreator</code> family. After my bean finishes initializing, it inspects it. Mine has a <code>@Transactional</code> method, which matches the transaction advisor's pointcut. So instead of handing the container my object, it hands back a wrapper. Every bean that asked for <code>ReportService</code> got the wrapper injected. The wrapper opens the transaction, delegates to my object, and commits or rolls back on the way out."</p>
+<p>"Vocabulary, so you can talk to other adults about it," Elias said. "The transaction concern is an <em>aspect</em>. The wrapping behavior — <code>TransactionInterceptor</code>, here — is <em>advice</em>. The rule deciding which methods get it is a <em>pointcut</em>. And Spring applies all of it by <em>weaving at runtime, with proxies</em> — not by rewriting your bytecode. That last clause is your whole bug. Why?"</p>
+<p>She stared at the loop in her head. <code>bulkTriage</code> calling <code>updateStatus</code>. Plain Java. An <code>invokevirtual</code> on <code>this</code>. "Because the advice lives on the proxy, and the proxy is only in the call path when the call comes through the reference <em>other beans hold</em>. Inside my object, <code>this</code> is just… me. The raw object. The call never leaves the building, so it never passes the front desk."</p>
+<p>Elias held out the marker. "Draw both call paths. Boxes, not metaphors — metaphors afterward."</p>
+<p>She drew it under the lifecycle column:</p>
+<p class="diagram"><img src="assets/diag-5fcb85ea174cc1fb.svg" alt="diagram"></img></p>
+
+<p>The drawing said it flatly. The advice lives on the proxy, so only calls arriving through the injected reference are intercepted. A call on <code>this</code> never enters the left half.</p>
+<p>It was the decorator pattern, applied by the container. She had hand-wrapped a logging decorator around a shipment service at Meridian once, and it had carried exactly this blind spot: the inner object, calling itself, never passes back out through the outer one. Meridian had never needed to warn her, because the object her <code>main()</code> built was the object everyone held — a call was a call, nothing in between to skip. <em>This wraps the object,</em> she thought. <em>And objects can call themselves.</em></p>
+<p>"Two more questions," Elias said. "Why is the proxy a subclass and not an interface?"</p>
+<p>"It could be either," Maya said. "A JDK dynamic proxy implements the bean's interfaces and routes every call through an <code>InvocationHandler</code>. CGLIB subclasses the class itself and overrides its methods. Mine has an interface, so a JDK proxy was possible — but Boot has shipped <code>spring.aop.proxy-target-class=true</code> for years, and still does as of Boot 4.0, so it builds CGLIB class proxies by default and injecting the concrete type keeps working." She paused, watching the consequence arrive. "Which means a <code>final</code> method can't be overridden. So a <code>final</code> method can't be advised. <code>@Transactional</code> on a <code>final</code> method just… silently doesn't."</p>
+<p>"Same failure shape as yours," Elias said. "No error, no transaction — at best a log line nobody reads. Last question. In your <code>@PostConstruct</code> last month, you stashed a reference to <code>this</code> in a registry. Suppose that bean had been transactional. What did you stash?"</p>
+<p>Maya looked at the lifecycle column and the answer was simply <em>there</em>, in the ordering she had memorized for entirely different reasons. "<code>@PostConstruct</code> runs in the <em>before</em>-initialization phase — <code>CommonAnnotationBeanPostProcessor</code> invokes it. The proxy isn't created until <em>after</em>-initialization. So <code>@PostConstruct</code> always sees the raw bean. If you leak <code>this</code> from there, you've published the unproxied object, and anyone calling through that reference skips every aspect, forever."</p>
+<p>Elias capped the marker. "The lifecycle wasn't trivia. It was load-bearing. It usually is."</p>
+<h2 id="the-fix">The fix</h2>
+<p>The three of them argued the fix at the Wall the next morning — Maya, Elias, and Idris, who arrived with coffee and an opinion.</p>
+<p>"Self-injection," Idris said. "Seen it work. The bean asks the container for its own proxy — <code>ObjectProvider&lt;ReportService&gt;</code>, call <code>getObject()</code>, invoke <code>updateStatus</code> through that. Three lines. Ships today."</p>
+<p>Elias looked at Maya. "Argue all three. Out loud."</p>
+<p>She took a breath. "Option one: move <code>@Transactional</code> up to <code>bulkTriage</code>, the entry method the proxy actually sees. Honest and simple — but it changes the semantics. The whole batch becomes one transaction, so one bad decision rolls back nineteen good ones, and Marisol's team loses a morning's work to a single typo. And since the controller still calls <code>updateStatus</code> directly, the annotation has to stay there too — which leaves a method that looks transactional and is still trap-armed for the next internal caller. We'd fix this bug and replant it.</p>
+<p>"Option two: Idris's self-injection. It genuinely works — you go back out through the proxy. But the class now injects itself, which reads like a riddle. Every future reader stops, frowns, and either cargo-cults it or 'simplifies' it back into the bug. It treats the symptom and preserves the bad shape: one class doing two jobs.</p>
+<p>"Option three: extract the per-report transaction into its own bean. The transaction boundary becomes a <em>bean</em> boundary — visible in the architecture instead of hidden in a calling convention. It costs a new class and a longer import list."</p>
+<p>"And which do you ship?"</p>
+<p>"Three. The class was doing two jobs anyway — orchestration and the unit of work. The bug was the design telling me that."</p>
+<p>Idris shrugged amiably. Elias nodded once. "Self-injection is clever," he said. "Clever is what you write <em>before</em> the postmortem."</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TriageWorkflow</span> {
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> ReportRepository reports;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> AuditLogRepository auditLog;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-title function_">TriageWorkflow</span><span class="hljs-params">(ReportRepository reports, AuditLogRepository auditLog)</span> {
+        <span class="hljs-built_in">this</span>.reports = reports;
+        <span class="hljs-built_in">this</span>.auditLog = auditLog;
+    }
+
+    <span class="hljs-meta">@Transactional</span>   <span class="hljs-comment">// entry method, reached through the proxy — always</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">apply</span><span class="hljs-params">(TriageDecision decision)</span> {
+        <span class="hljs-type">Report</span> <span class="hljs-variable">report</span> <span class="hljs-operator">=</span> reports.findById(decision.reportId()).orElseThrow();
+        report.applySeverity(decision.severity());
+        report.transitionTo(decision.status()); <span class="hljs-comment">// unchecked → the whole unit unwinds</span>
+        auditLog.save(AuditEntry.of(report, decision));
+        <span class="hljs-comment">// managed entity: dirty checking flushes at commit — all of it, or none of it</span>
+    }
+}
+</code></pre>
+<p><code>ReportServiceImpl.bulkTriage</code> shrank to a loop over <code>workflow.apply(d)</code> — every call crossing a bean boundary, every call through the proxy. Two details went in on purpose. There is no explicit <code>save()</code> for the report: inside the transaction the entity is managed, and dirty checking flushes the changes at commit. And <code>IllegalTransitionException</code> extends <code>RuntimeException</code> — deliberately, because the proxy's default rollback rule only watches unchecked exceptions; a checked one would have sailed straight through to a commit. Maya filed that detail away. It would come back for her in the spring.</p>
+<p>Per-decision atomicity was a decision too: one illegal transition fails one report, and the other nineteen land. That trade-off went into the ADR instead of into folklore.</p>
+<p>Then the test, because a fix without a regression test is just an apology:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@SpringBootTest</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">TriageAtomicityTest</span> {
+
+    <span class="hljs-meta">@Autowired</span> TriageWorkflow workflow;
+    <span class="hljs-meta">@Autowired</span> ReportRepository reports;
+    <span class="hljs-meta">@Autowired</span> AuditLogRepository auditLog;
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">failedTransitionLeavesNoPartialState</span><span class="hljs-params">()</span> {
+        <span class="hljs-type">Report</span> <span class="hljs-variable">r</span> <span class="hljs-operator">=</span> reports.save(TestData.report(ReportStatus.NEW, Severity.LOW));
+        <span class="hljs-type">var</span> <span class="hljs-variable">illegal</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">TriageDecision</span>(r.getId(), ReportStatus.AWARDED, Severity.CRITICAL);
+
+        assertThatThrownBy(() -&gt; workflow.apply(illegal))
+            .isInstanceOf(IllegalTransitionException.class);
+
+        <span class="hljs-type">Report</span> <span class="hljs-variable">reloaded</span> <span class="hljs-operator">=</span> reports.findById(r.getId()).orElseThrow();
+        assertThat(reloaded.getSeverity()).isEqualTo(Severity.LOW); <span class="hljs-comment">// severity didn't stick</span>
+        assertThat(auditLog.findByReportId(r.getId())).isEmpty();   <span class="hljs-comment">// no ghost audit row</span>
+    }
+}
+</code></pre>
+<p>She wrote it against the old path first, pointing the same assertions at <code>updateStatus</code>: ghost audit row, half-saved severity, red. Pointed at <code>TriageWorkflow.apply</code>: green. On the Wall, next to the lifecycle column, she drew her object as a small square and the proxy around it as a billowing cloud of marker smoke, with an arrow labeled <code>this.</code> curving around the outside of the cloud and a caption beneath: <strong><em>this. goes around the mirror.</em></strong></p>
+<p>PM-32 went out under Maya's name, with the timeline starting at her own merge commit. Owning it cost less than she'd feared and bought more than she'd expected; Marisol read it and sent back one line — <em>"Thank you for believing my ghosts."</em> Maya also wrote the team's first proxy-traps review note, a new section in the review checklist: <strong>any annotated method called via <code>this.</code> from inside its own class is a finding, not a style nit.</strong></p>
+<h2 id="the-architecture-under-the-silence">The architecture under the silence</h2>
+<p>She took the checklist line to Elias for sign-off and got a question instead. "Good line. Now tell me what actually failed this month. Not the transaction — the system."</p>
+<p>Maya thought of Marisol's printouts. "Nothing failed. That's the indictment. Thirteen commits, an audit row — no exception, no log, no alert. Atrium kept agreeing with itself, wrongly. Our only monitor was Marisol's memory."</p>
+<p>"A thrown exception is a gift," Elias said. "It carries a timestamp, a stack trace, a blast radius you can measure. A silent no-op has a blast radius too — you just can't see its edges until a triager brings you printouts. A failure mode that hides is an architecture problem, not a code problem, because architecture decides where failure is allowed to be invisible. The correct answer: nowhere you haven't signed for."</p>
+<p>He tapped the smoke cloud on the Wall. "Which makes the proxy a leaky abstraction, and a leak allows two honest responses. <em>Operationalize</em> it — your checklist line, boundaries on entry points only. Or <em>eliminate</em> it — real weaving, bytecode, no mirror to walk around. Both are defensible. The only wrong move is the one this codebase made for seven years: choosing by default. So name what the annotation buys, and what it spends."</p>
+<p>"Maintainability — cross-cutting concerns declared once instead of hand-rolled into every method. And it spends visibility: control flow I can't see in the file I'm reading."</p>
+<p>"Then it's a purchase," Elias said, "and purchases get receipts." The receipt went into <code>docs/adr/</code> that afternoon, half a page, dated:</p>
+<blockquote>
+<p><strong>ADR-003 — Declarative cross-cutting, with eyes open.</strong>
+<strong>Context:</strong> A self-invoked <code>@Transactional</code> method ran with no transaction at all; the failure was invisible — no exception, no log, atomicity dissolved into independent commits (PM-32). <strong>Decision:</strong> Keep annotation-driven transactions, caching, and security — the wrapping is why we inhabit the container — but adopt the proxy discipline: any annotated method invoked via <code>this.</code> is a review <em>finding</em>, and transaction boundaries live on service entry points only (per-decision atomicity for bulk triage rides with this record). <strong>Consequences:</strong> We lean on the framework where its behavior is observable and fight it where it hides control flow; the checklist line costs review attention forever — a tax paid knowingly, because the alternative was paid in silence.</p>
+</blockquote>
+<h3 id="⚖-your-move-architect">⚖ Your move, architect</h3>
+<p>ADR-003 settled the bug. It didn't settle the strategy — Atrium carries a couple hundred <code>@Transactional</code> methods. Before reading on, commit: what is the transaction strategy going forward?</p>
+<ul>
+<li><strong>A — Declarative <code>@Transactional</code> plus the proxy discipline.</strong> Keep the idiom; enforce the checklist — boundaries on service entry points, <code>this.</code>-invocations are review findings.</li>
+<li><strong>B — Programmatic <code>TransactionTemplate</code> in the hot paths.</strong> The boundary becomes a lambda you can see in the method body; no proxy in the call path, no trap.</li>
+<li><strong>C — AspectJ compile-time weaving.</strong> Advice woven into the bytecode itself, so self-invocation is intercepted like any other call; the trap ceases to exist.</li>
+</ul>
+<p><strong>The trade-offs, since you've committed:</strong> <strong>B</strong> makes the boundary visible, but the demarcation code moves into the business methods themselves and the codebase loses its one convention — a <strong>maintainability</strong> cost on every method that adopts it, which is exactly what the annotation exists to avoid. Right <em>surgically</em>, where a boundary deserves to be seen; wrong as a default. <strong>C</strong> genuinely kills the trap — woven advice rides inside the compiled method, so even <code>this.</code> calls are advised — but it adds the AspectJ compiler or agent to every build and hands every new hire bytecode nobody can debug: permanent <strong>cost</strong> and <strong>operability</strong> against an occasional, now-<em>named</em> trap. <strong>A</strong> is what they chose, and the reasoning is the architect's tell: it converts an invisible failure into a visible review category — <strong>operability</strong> bought with review attention forever — while keeping C purchasable if the findings recur. (They will. The checklist line meets its first real test late that summer, at the hands of a June hire who hasn't met the mirror yet.)</p>
+<p>Elias read the postmortem, signed it in green, and left a sentence hanging in the air on his way out that she would not fully understand until late September:</p>
+<p>"One more thing. <code>@Cacheable</code>, <code>@Async</code>, <code>@PreAuthorize</code> — same mirror, same trap. You'll meet it again."</p>
+<p>At standup the next day, someone joked that at least the <em>startup</em> side of Spring never pulled tricks like this — the auto-configuration just works. Everyone laughed, including Maya. Nobody wrote it down.</p>
+<h2 id="the-debrief-—-ch3-smoke-and-mirrors">The debrief — Ch.3, Smoke and Mirrors</h2>
+<blockquote>
+<p><strong>Why does <code>@Transactional</code> silently do nothing when a method calls another <code>@Transactional</code> method on the same bean?</strong>
+<strong>Claim:</strong> Because Spring's declarative transactions are applied by an AOP proxy, and a self-invocation never reaches the proxy. <strong>Mechanism:</strong> During bean creation, at <code>postProcessAfterInitialization</code>, an <code>AbstractAutoProxyCreator</code> wraps the bean in a proxy — a CGLIB subclass by default in Boot, a JDK dynamic proxy for interface-based setups — and the <code>TransactionInterceptor</code> advice lives on that proxy; other beans are injected with the proxy, but inside the class <code>this.method()</code> is a plain JVM call on the raw target, so the interceptor chain never runs. <strong>Trade-off:</strong> Proxy-based runtime weaving needs no bytecode manipulation, build step, or agent — which is why Spring defaults to it — at the cost of only intercepting calls that cross the bean boundary; full AspectJ weaving lifts that limit but brings the build/agent complexity back. <strong>Failure mode:</strong> The annotated method runs with no transaction at all; each repository call commits independently, so a mid-method exception leaves half-saved state — silent data corruption rather than an error. The same shape hits <code>final</code> methods (CGLIB can't override them) and anything published from <code>@PostConstruct</code>, which runs before the proxy exists.</p>
+</blockquote>
+<p><strong>THE ARCHITECT'S LENS</strong></p>
+<ul>
+<li><strong>-ilities at stake:</strong> <strong>Maintainability</strong> of invisible cross-cutting — declarative annotations buy clean business code and pay with control flow you can't see in the file you're reading. The deeper casualty is <strong>operability</strong>: a silent no-op has no alarm, no stack trace, no visible blast radius — a failure mode that hides is an architecture problem, not a code problem.</li>
+<li><strong>The ADR:</strong> ADR-003 — declarative cross-cutting, with eyes open: keep annotation-driven transactions, caching, and security; adopt the proxy discipline — <code>this.</code>-invoked annotated methods are review findings, transaction boundaries on service entry points only.</li>
+<li><strong>Rejected alternatives:</strong> self-injection (works, reads like a riddle, preserves the two-job class); <code>@Transactional</code> hoisted onto <code>bulkTriage</code> (changes batch semantics, leaves a trap-armed method behind); <code>TransactionTemplate</code> as default (explicit, but demarcation leaks into business code); AspectJ weaving (kills the trap, taxes every build — kept purchasable, not purchased).</li>
+<li><strong>Fight or lean:</strong> <em>Lean</em> on declarative cross-cutting — observable at bean boundaries, the reason the container is worth inhabiting. <em>Fight</em> it where it hides control flow: operationalize the leak with discipline rather than eliminate it with weaving — choosing by default is the only wrong move.</li>
+</ul>
+<p><strong>Story anchors</strong></p>
+<ul>
+<li>The debugger printing <code>ReportServiceImpl$$SpringCGLIB$$0</code> next to a plain <code>ReportServiceImpl</code> → callers hold the proxy; <code>this</code> is the raw, unadvised bean.</li>
+<li>The smoke cloud on the Wall — <em>"this. goes around the mirror"</em> → self-invocation bypasses every proxy-applied aspect, not just transactions: <code>@Cacheable</code>, <code>@Async</code>, <code>@PreAuthorize</code> share the trap.</li>
+<li>Marisol's audit row for a change that never happened → an inert <code>@Transactional</code> doesn't fail loudly; it dissolves one atomic unit into N independent commits.</li>
+<li>Elias tapping the smoke cloud — <em>"a thrown exception is a gift"</em> → silent no-ops have blast radii you can't see; ADR-003 is the receipt: operationalize the leak or eliminate it, never choose by default.</li>
+</ul>
+<p><strong>Interview ammo</strong></p>
+<ul>
+<li><em>Kill-shot: why does <code>@Transactional</code> silently do nothing on a self-invoked method?</em> — The advice lives on a runtime proxy that callers are injected with; <code>this.method()</code> is a direct call on the target object, so the interceptor chain is never in the call path and the method runs with whatever transaction (usually none) the caller had.</li>
+<li><em>Follow-up: couldn't Spring just intercept internal calls too?</em> — Only by abandoning proxies for real weaving: AspectJ compile-time or load-time weaving modifies the bytecode itself and does advise self-calls, but costs a build step or agent — Spring supports that mode and deliberately doesn't default to it.</li>
+<li><em>Follow-up: does the interface matter, and what about <code>final</code> methods?</em> — With an interface a JDK dynamic proxy is possible, though Boot defaults to CGLIB class proxies (<code>spring.aop.proxy-target-class=true</code>) so concrete-type injection keeps working; CGLIB advises by overriding, so <code>final</code> methods can't be advised and fail silently — the same failure shape as self-invocation.</li>
+<li><em>Architect follow-up — declarative <code>@Transactional</code>, programmatic <code>TransactionTemplate</code>, or AspectJ weaving as the codebase-wide strategy?</em> — Declarative as the default with the proxy discipline enforced in review, <code>TransactionTemplate</code> surgically where the boundary deserves to be visible, weaving only when recurring findings prove the discipline doesn't hold — the abstraction leaks either way; the architect chooses which tax to pay, on the record.</li>
+</ul>
+<p><strong>Pointers</strong> → Playbook Ch.1 (AOP) · <code>examples/ch01_core/SelfInvocationTrap.java</code> (the same trap generalizes: <code>examples/ch12_extensions/AopAnnotationTraps.java</code>)</p>
+<hr></hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch-02.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 2 — The Container">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch-04.html" class="navigation navigation-next " aria-label="Next page: Chapter 4 — The Magic Show">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 3 — Smoke and Mirrors","level":"1.6","depth":1,"next":{"title":"Chapter 4 — The Magic Show","level":"1.7","depth":1,"path":"ch-04.md","ref":"ch-04.md","articles":[]},"previous":{"title":"Chapter 2 — The Container","level":"1.5","depth":1,"path":"ch-02.md","ref":"ch-02.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Otmane Omry","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The Spring Boot Mastery Book","language":"en","gitbook":"*"},"file":{"path":"ch-03.md","mtime":"2026-06-14T00:07:20.190Z","type":"markdown"},"gitbook":{"version":"6.2.1","time":"2026-06-14T00:07:44.741Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

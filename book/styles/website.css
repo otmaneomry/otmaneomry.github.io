@@ -1,0 +1,19 @@
+/* IntelliJ "Light" code colours over Honkit's GitBook theme. */
+.markdown-section pre, .markdown-section pre > code { background:#fff; }
+.markdown-section pre { border:1px solid #e1e4e8; border-top:3px solid #5b8db0; border-radius:0; }
+.hljs-keyword, .hljs-built_in, .hljs-literal, .hljs-type { color:#0033b3; }
+.hljs-string, .hljs-meta-string { color:#067d17; }
+.hljs-number { color:#1750eb; }
+.hljs-comment, .hljs-quote { color:#8c8c8c; font-style:normal; }
+.hljs-meta { color:#9e880d; }                 /* @Annotations */
+.hljs-title, .hljs-title.function_, .hljs-function .hljs-title { color:#00627a; }
+.hljs-symbol, .hljs-attr { color:#871094; }
+/* Accent + niceties */
+.book .book-summary { font-size:14px; }
+.markdown-section blockquote { border-left:3px solid #2c6e9c; background:#f3f6f8; }
+.markdown-section h1, .markdown-section h2, .markdown-section h3 { color:#1f4f72; }
+.diagram { text-align:center; }
+.diagram img { max-width:100%; }
+.title-cover { text-align:center; margin:0 auto 1.5em; }
+.title-cover img { max-width:340px; width:60%; }
+.byline { text-align:center; color:#5b6670; }

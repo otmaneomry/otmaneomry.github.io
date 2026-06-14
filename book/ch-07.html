@@ -1,0 +1,766 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter 7 — The Thousand Queries · The Spring Boot Mastery Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.1">
+        <meta name="author" content="Otmane Omry">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch-08.html" />
+    
+    
+    <link rel="prev" href="part-04.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    The Spring Boot Mastery Book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="part-01.html">
+            
+                <a href="part-01.html">
+            
+                    
+                    Part I — The Craft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch-01.html">
+            
+                <a href="ch-01.html">
+            
+                    
+                    Chapter 1 — The Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-02.html">
+            
+                <a href="part-02.html">
+            
+                    
+                    Part II — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch-02.html">
+            
+                <a href="ch-02.html">
+            
+                    
+                    Chapter 2 — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch-03.html">
+            
+                <a href="ch-03.html">
+            
+                    
+                    Chapter 3 — Smoke and Mirrors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch-04.html">
+            
+                <a href="ch-04.html">
+            
+                    
+                    Chapter 4 — The Magic Show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="part-03.html">
+            
+                <a href="part-03.html">
+            
+                    
+                    Part III — The Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch-05.html">
+            
+                <a href="ch-05.html">
+            
+                    
+                    Chapter 5 — The Front Door
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch-06.html">
+            
+                <a href="ch-06.html">
+            
+                    
+                    Chapter 6 — The Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="part-04.html">
+            
+                <a href="part-04.html">
+            
+                    
+                    Part IV — The Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="ch-07.html">
+            
+                <a href="ch-07.html">
+            
+                    
+                    Chapter 7 — The Thousand Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch-08.html">
+            
+                <a href="ch-08.html">
+            
+                    
+                    Chapter 8 — The Silent Commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch-09.html">
+            
+                <a href="ch-09.html">
+            
+                    
+                    Chapter 9 — The Proxy You Didn't Write
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="part-05.html">
+            
+                <a href="part-05.html">
+            
+                    
+                    Part V — Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ch-10.html">
+            
+                <a href="ch-10.html">
+            
+                    
+                    Chapter 10 — The Breach That Wasn't
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="ch-11.html">
+            
+                <a href="ch-11.html">
+            
+                    
+                    Chapter 11 — Forty Minutes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="ch-12.html">
+            
+                <a href="ch-12.html">
+            
+                    
+                    Chapter 12 — Three A.M.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="ch-13.html">
+            
+                <a href="ch-13.html">
+            
+                    
+                    Chapter 13 — The Cascade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="part-06.html">
+            
+                <a href="part-06.html">
+            
+                    
+                    Part VI — The Architect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="ch-14.html">
+            
+                <a href="ch-14.html">
+            
+                    
+                    Chapter 14 — The Split
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="ch-15.html">
+            
+                <a href="ch-15.html">
+            
+                    
+                    Chapter 15 — Faster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="ch-16.html">
+            
+                <a href="ch-16.html">
+            
+                    
+                    Chapter 16 — The Architect's Chair
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="part-07.html">
+            
+                <a href="part-07.html">
+            
+                    
+                    Capstone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="ch-17.html">
+            
+                <a href="ch-17.html">
+            
+                    
+                    Chapter 17 — The Hostile Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="appendices.html">
+            
+                <a href="appendices.html">
+            
+                    
+                    Appendices — The map behind the story
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 7 — The Thousand Queries</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-7-—-the-thousand-queries">Chapter 7 — The Thousand Queries</h1>
+<p>The brick changed hands on the first Monday of May. Idris held it out in the kitchen — an ancient pager-shaped phone case, dented at one corner — with the ritual's outgoing wisdom: "Nothing here is slow until somebody important is watching."</p>
+<p>Maya took the brick. It was heavier than it looked. Everything here was.</p>
+<p>Somebody important was watching on Tuesday. Lena ran the demo for Northbeam Bank's CISO — the marquee renewal — a walkthrough of the program dashboard the deck called <em>real-time triage visibility</em>. Maya watched from the back as the page began, gently, to spin.</p>
+<p>It spun for twenty-eight seconds. Maya counted. Lena vamped — "while that loads: the severity model behind these numbers is, ah... it's... thorough" — and the CISO said nothing, which was worse. The page eventually arrived, complete, correct, and pointless.</p>
+<p>Afterward Lena found Maya by the kitchen, voice flat. "I can sell slow once. I can't sell slow twice. Tell me what it is by Thursday."</p>
+<p>Traffic was the villain everyone wanted — promo volumes were the new normal, and Northbeam's program held four times January's reports. But the page had always been this page; something had been waiting in it.</p>
+<blockquote>
+<p>⏸ <strong>Your call.</strong> The page is correct, complete, and twenty-eight seconds late — and dev has never felt it. Before Maya flips a flag: what lives inside those twenty-eight seconds, why was it invisible for years, and which -ility was never <em>designed</em>, only assumed? Commit.</p>
+</blockquote>
+<h2 id="the-investigation">The investigation</h2>
+<p>Maya restored a prod-sized snapshot into dev, flipped on the things nobody flipped on — <code>spring.jpa.show-sql=true</code> and <code>spring.jpa.properties.hibernate.generate_statistics=true</code> — and loaded the dashboard once.</p>
+<p>Her terminal scrolled for eleven seconds.</p>
+<p>The same <code>SELECT</code>, hundreds of times, differing only in the bound ID. At the bottom, Hibernate's session metrics showed <strong>401 JDBC statements executed</strong> for one page load. One query for the page of two hundred reports; one per report for its researcher; one more per report for the activity rollup. One plus two-N. Each round trip cost seventy-odd milliseconds, and they ran one after another. That was the twenty-eight seconds: hundreds of individually flawless queries.</p>
+<p>The shape lived in a service nobody had touched in years:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Entity</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Report</span> {
+    <span class="hljs-meta">@Id</span> <span class="hljs-meta">@GeneratedValue</span> <span class="hljs-keyword">private</span> Long id;
+    <span class="hljs-keyword">private</span> String title;
+
+    <span class="hljs-meta">@ManyToOne</span>                       <span class="hljs-comment">// FetchType.EAGER — the JPA default, crept back when a March</span>
+                                     <span class="hljs-comment">// cleanup dropped January's explicit fetch = LAZY. Nobody chose it.</span>
+    <span class="hljs-keyword">private</span> Researcher researcher;
+
+    <span class="hljs-meta">@OneToMany(mappedBy = "report",  // inverse side: a mirror, not a column
+               cascade = CascadeType.ALL, orphanRemoval = true)</span>
+    <span class="hljs-keyword">private</span> List&lt;Activity&gt; activities = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();
+}
+
+<span class="hljs-comment">// ProgramDashboardService — archaeology, untouched since the dashboard shipped</span>
+<span class="hljs-keyword">public</span> List&lt;ReportRow&gt; <span class="hljs-title function_">dashboard</span><span class="hljs-params">(Long programId, Pageable page)</span> {
+    <span class="hljs-keyword">return</span> reports.findByProgramId(programId, page).stream()
+        .map(r -&gt; <span class="hljs-keyword">new</span> <span class="hljs-title class_">ReportRow</span>(
+            r.getTitle(),
+            r.getResearcher().getHandle(),   <span class="hljs-comment">// EAGER: already cost one SELECT per row</span>
+            r.getActivities().size(),        <span class="hljs-comment">// LAZY: costs another, right now</span>
+            latest(r.getActivities())))
+        .toList();
+}
+</code></pre>
+<p>She brought the scroll to Elias.</p>
+<p>"Is this a Hibernate problem or a JPA problem?" she asked.</p>
+<p>"JPA is the contract. Hibernate is the contractor." He tapped the <code>@ManyToOne</code>. "The eager default on to-one associations is in the contract. How the contractor honors it is his business — and after a JPQL list query, his business is one follow-up <code>SELECT</code> per row he hasn't already met. Eager doesn't mean <em>joined</em>, Maya. It means <em>non-negotiable</em>."</p>
+<p>That was what had ambushed her. "At Meridian, a row was the columns I'd asked for," she said, because it deserved air. "If I wanted the researcher, I wrote the <code>JOIN</code> myself — forget it, and I'd have hit the null in dev on day one. Absence by default. Hibernate's default is presence. Non-negotiable, one <code>SELECT</code> per row, each one too small for dev to feel."</p>
+<p>"Both defaults are opinions," Elias said. "A senior knows whose opinion they're running."</p>
+<p>The collection was the other half. <code>getActivities()</code> was lazy — correctly lazy — but the mapping loop touched it inside the request, two hundred times, one <code>SELECT</code> each. And none of this had ever hurt in dev, because something in the web tier had been keeping the session open, so each lazy touch simply ran one more query. <em>Raw JDBC had no lazy anything — what came back in the <code>ResultSet</code> was all there was, and an object could never reach back to the database after the fact. Here, reaching back was routine.</em> She had never felt the draft. She wrote <code>open-in-view</code> on her hand. She would not need to ask.</p>
+<h2 id="207-am">2:07 a.m.</h2>
+<p>The brick went off at 2:07 on Friday morning, four days into her first rotation — not from a metric (Atrium had none worth the name) but from a years-old dead-man's check that paged if the digest hadn't left the building by 2:05. Once her heart had stopped doing pager-math, the stack trace was almost beautiful in its specificity:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Scheduled(cron = "0 0 2 * * *")</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">sendDisclosureDigest</span><span class="hljs-params">()</span> {
+    List&lt;Report&gt; reports = reportRepository.findDisclosedSince(cutoff());
+    <span class="hljs-comment">// ← the transaction ended here; the repository method was the boundary</span>
+    <span class="hljs-keyword">for</span> (Report r : reports) {
+        mailer.send(digestTemplate.render(r));  <span class="hljs-comment">// template walks r.getActivities()</span>
+    }   <span class="hljs-comment">// LazyInitializationException: failed to lazily initialize a collection</span>
+        <span class="hljs-comment">// of role Report.activities: could not initialize proxy — no Session</span>
+}
+</code></pre>
+<p>A teammate had shipped the digest job in March, copying the house's oldest style: load entities, hand them to a renderer, let it walk whatever it wants. It ran clean for weeks: the template printed only titles and severities, fields already loaded. On Wednesday someone added an activity timeline. The repository call had opened and closed its own transaction; the entities came back <em>detached</em>; at 2 a.m. the new section reached for a lazy collection and found no session behind it. There was no web request, so there was no open-session-in-view safety net. The scheduled thread had nothing holding the session open. The draft finally came through.</p>
+<p>The digest could be late. She disabled the schedule and went back to bed without dignity.</p>
+<p>At the morning postmortem, Elias slid a photocopied page across the table — a printed diff, green ink in the margin, dated January 16 — and asked her to read comment #1 into the record.</p>
+<p>"Works is not done," Maya read. "What happens when this entity meets Jackson after the session closes?"</p>
+<p>Below it sat the circle she had half-dismissed as pedantry in January: <em>This pattern pages someone at 2 a.m. Not necessarily you. Not necessarily here. — E.B., Jan 16.</em> The mechanism was exactly as the note described: an entity outlives its transaction and comes back detached, and whatever walks its lazy getters — Jackson then, a mail template now — finds no session left to load with. A prophecy with a postmark, four months of fuse.</p>
+<p>Her first review. He had circled the pattern, dated it, and predicted the 2 a.m. page. The code wasn't even hers — her version had been rewritten in January — but the <em>style</em> had survived, copied forward by someone who'd never seen the green ink. The lesson inside the lesson: a review fixes a file. Only a mechanism, taught, fixes a team.</p>
+<h2 id="what-the-senior-sees">What the senior sees</h2>
+<p>That afternoon the Wall gained a new panel, the Canary presiding from the marker tray — house rules: explain it out loud, in full sentences, before you escalate.</p>
+<p>Maya opened the panel herself, chalking it for the Canary — the shape as shipped, and beside it, a fetch plan finally written down:</p>
+<p class="diagram"><img src="assets/diag-b73470db90e29673.svg" alt="diagram"></img></p>
+
+<p>Elias drew a box and labeled it <strong>persistence context</strong>. "Tell the Canary what this is. Use your old words first."</p>
+<p><em>So the persistence context is the per-request <code>Map&lt;Long, Report&gt;</code> she'd hand-rolled at Meridian to spare the database repeat lookups — except hers only remembered objects, this one watches them, and hers lived as long as she chose; this one lives exactly as long as a session.</em> She said it nearly that way, and Elias wrote the line onto the panel, where it stays to this day: <strong>an identity map that watches what it holds — and it lives in a session, and the session closes.</strong></p>
+<p>Then the states, in a column: <strong>transient</strong> — <code>new</code>, unknown to the context. <strong>Managed</strong> — loaded or persisted inside it; held in the identity map; watched. <strong>Detached</strong> — the session closed; the object lives on, the watching stopped. <strong>Removed</strong> — scheduled for deletion at flush. The identity map was the first-level cache: <code>find()</code> the same ID twice in one session and you get one <code>SELECT</code> and the <em>same instance</em>, both times.</p>
+<p>"And managed means watched," Elias said, gesturing at the codebase. "Which is why nobody here ever calls a save method to update anything. Why does that work?"</p>
+<p>"Dirty checking. The context snapshots the entity at load. At flush it diffs every managed entity against its snapshot and writes <code>UPDATE</code> for the differences." <em>At Meridian an <code>UPDATE</code> existed because she had typed it; nothing ever wrote behind her back. Here the commit</em> is <em>the <code>UPDATE</code>.</em> "And flush happens at commit — or earlier, before a JPQL query that might need to see my pending changes."</p>
+<p>"Good." He tapped the <code>mappedBy</code>. "Two sides of this relationship. Which one does Hibernate believe?"</p>
+<p>"The owning side. <code>Activity.report</code> holds the foreign key — that column is the truth. <code>mappedBy</code> marks the <code>@OneToMany</code> as the inverse side: a mirror, not a column." While they were there, two more facts went onto the panel. <code>cascade = ALL</code> rippled persist and remove down to activities. <code>orphanRemoval = true</code> turned removal from the collection into a <code>DELETE</code> — correct on a true composition like an activity log, catastrophic if ever copy-pasted onto <code>researcher</code>.</p>
+<p>Last, the question she'd written on her hand. "Why was the dashboard's laziness invisible for years, and the digest job's fatal in one night?"</p>
+<p>"Because the web tier has been anesthetized. Open-session-in-view holds the session open through rendering, so a controller — or Jackson — touching a lazy field just quietly runs another query. Your scheduled job had no anesthetic. Three fixes for the exception. Three trade-offs. Tell the Canary, in order."</p>
+<p>She faced the bird. DTO projection: select exactly what the view needs, inside the transaction — the best fix, because <em>what this screen loads</em> gets answered once, in the query, where it's visible. Per-query fetching — <code>JOIN FETCH</code> or <code>@EntityGraph</code> — when you genuinely need the entity graph: precise, but you ship whole entities to a renderer that wanted four fields. And OSIV: zero code, global, and it doesn't fix the missing fetch plan — it hides it. The hidden N+1 ships to production, and every lazy load during serialization borrows a pooled connection after the transaction has ended: <em>a connection held hostage through rendering</em>.</p>
+<p>"One more," Elias said. "Why not just make everything eager and be done?"</p>
+<p>"Because you can make a lazy mapping eager for one query. You can't make an eager mapping lazy for one query. One of those is a decision. The other is a sentence."</p>
+<h2 id="the-fix">The fix</h2>
+<p>The rebuild took the rest of the sprint; the principle was the panel's last line: <strong>choose the fetch per view, in the query, where it's visible.</strong></p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">ReportRepository</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">JpaRepository</span>&lt;Report, Long&gt; {
+
+    <span class="hljs-comment">// List view — declarative, reusable fetch plan; survives pagination</span>
+    <span class="hljs-meta">@EntityGraph(attributePaths = "researcher")</span>
+    Page&lt;Report&gt; <span class="hljs-title function_">findByProgramId</span><span class="hljs-params">(Long programId, Pageable page)</span>;
+
+    <span class="hljs-comment">// Detail view — precise and query-local; one screen, one fetch plan</span>
+    <span class="hljs-meta">@Query("select r from Report r join fetch r.researcher " +
+           "left join fetch r.activities where r.id = :id")</span>
+    Optional&lt;Report&gt; <span class="hljs-title function_">findDetail</span><span class="hljs-params">(<span class="hljs-meta">@Param("id")</span> Long id)</span>;
+
+    <span class="hljs-comment">// Dashboard grid and digest job — fetch what you serialize, nothing else</span>
+    <span class="hljs-meta">@Query(value = """
+        select new com.glasshouse.atrium.report.ReportRow(
+            r.title, res.handle, count(a), max(a.createdAt))
+        from Report r join r.researcher res left join r.activities a
+        where r.program.id = :programId
+        group by r.id, r.title, res.handle
+        """,
+        countQuery = "select count(r) from Report r where r.program.id = :programId")</span>
+    Page&lt;ReportRow&gt; <span class="hljs-title function_">dashboardRows</span><span class="hljs-params">(<span class="hljs-meta">@Param("programId")</span> Long programId, Pageable page)</span>;
+}
+</code></pre>
+<p>Each tool earned its place by trade-off. <code>JOIN FETCH</code> for the detail view, where one report's full graph was the point. The review note named the risks. Join-fetch two <code>List</code> collections in one query and Hibernate refuses outright — a multiple-bag error. Join-fetch a collection under a <code>Pageable</code> and Hibernate pages <em>in memory</em>, logging a warning while it loads the world. <code>@EntityGraph</code> for the list view: declarative, reusable, safe alongside real pagination on a to-one path. DTO projection went to the grid and the rebuilt digest job — a constructor expression straight into a record, now selecting four columns instead of entity graphs. It carried an explicit count query, because a derived count over a <code>GROUP BY</code> counts the wrong thing. And <code>@ManyToOne</code> got <code>fetch = LAZY</code> across the codebase, with the line that anchored the day's ADR: <em>lazy everywhere; loading is the query's job.</em></p>
+<p>Then the real debate: Maya proposed <code>spring.jpa.open-in-view=false</code> — every latent lazy touch in every untested path would start throwing instead of quietly querying. Idris settled it with pool arithmetic: under OSIV, any lazy touch during rendering borrows a Hikari connection after the service method has returned. "We almost died in April because two hundred threads held things they didn't need. Now you want requests holding database connections to write JSON? Turn it off."</p>
+<p>It was April's napkin, aimed one layer down: in-flight equals arrival rate times residence, and OSIV adds rendering and serialization to a <em>connection's</em> residence. April had priced this pattern for request threads; here it was again, against their own database. "Open-in-view is the framework choosing your transaction boundary for you," Elias said. "It chose in 2019, and nobody was in the room. Take the boundary back."</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">spring:</span>
+  <span class="hljs-attr">jpa:</span>
+    <span class="hljs-attr">open-in-view:</span> <span class="hljs-literal">false</span>              <span class="hljs-comment"># ADR-007: fail loudly in the service, not slowly in the pool</span>
+    <span class="hljs-attr">properties:</span>
+      <span class="hljs-attr">hibernate:</span>
+        <span class="hljs-attr">default_batch_fetch_size:</span> <span class="hljs-number">32</span> <span class="hljs-comment"># safety net: a missed N+1 becomes N/32 IN-queries, not a fix</span>
+</code></pre>
+<p>The trade-off went into the ADR in plain language: <em>we accept loud <code>LazyInitializationException</code>s in staging as the price of never again shipping a silent N+1 that bills the connection pool through rendering.</em> The batch size was a global mitigation, not a fix: it collapses a missed N+1 into ceiling-of-N-over-32 <code>IN</code>-list queries. Better, never good — a smoke alarm, not a sprinkler.</p>
+<p>The PR carried one more thing, because Elias asked the question that turns a fix into a property: <em>"It's one query today. What keeps it one in November?"</em> Nothing did — so the hot paths got a guard: January's ADR-002 move (the constitution as a test suite — each architectural rule written as a test that fails the build when violated), reaching the data layer:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@DataJpaTest(properties = "spring.jpa.properties.hibernate.generate_statistics=true")</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">DashboardFetchPlanTest</span> {
+
+    <span class="hljs-meta">@Autowired</span> EntityManagerFactory emf;
+    <span class="hljs-meta">@Autowired</span> ReportRepository reports;
+    Statistics statistics;
+
+    <span class="hljs-meta">@BeforeEach</span>
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">unwrap</span><span class="hljs-params">()</span> { statistics = emf.unwrap(SessionFactory.class).getStatistics(); }
+
+    <span class="hljs-meta">@Test</span>
+    <span class="hljs-keyword">void</span> <span class="hljs-title function_">dashboardIsExactlyTwoStatements</span><span class="hljs-params">()</span> {     <span class="hljs-comment">// rows + count: the fetch plan, asserted</span>
+        statistics.clear();
+        reports.dashboardRows(NORTHBEAM, PageRequest.of(<span class="hljs-number">0</span>, <span class="hljs-number">200</span>));
+        assertThat(statistics.getPrepareStatementCount()).isEqualTo(<span class="hljs-number">2</span>);
+    }
+}
+</code></pre>
+<p>The slice flipped on the same <code>generate_statistics</code> flag her investigation had used, scoped to the test and never riding to production. It unwrapped past the JPA interface to Hibernate's native <code>Statistics</code> and ran against a prod-shaped seed. Drift the query back toward entities, or resurrect an eager default, and two becomes two-hundred-and-something — CI red, regression named. "Performance as a designed property," Elias said. "A fetch plan you haven't asserted is a fetch plan you're renting."</p>
+<p>He tapped <code>ReportRow</code> on his way out. "Notice what you built. The entity graph is your write model — cascades, orphan removal, dirty checking, shaped for <em>changing</em> things. <code>ReportRow</code> is a read model: flat, purpose-shaped, owing the entities nothing. Two models, starting to separate; the seam is load-bearing." She didn't know yet the seam had a name.</p>
+<p>Staging flipped that week; production waited out a quarter of archaeology — and the decision went into the binder under its real name:</p>
+<blockquote>
+<p><strong>ADR-007 — The fetch policy.</strong>
+<strong>Context:</strong> The dashboard ran 401 individually flawless statements per page; a 2 a.m. digest job died on <code>LazyInitializationException</code>; open-session-in-view had anesthetized the data boundary since 2019. <strong>Decision:</strong> All associations lazy; every read path declares its fetch plan — DTO projection by default, <code>JOIN FETCH</code>/<code>@EntityGraph</code> where the view needs entities; OSIV off behind a migration window, not a flag-flip; hot paths assert SQL statement counts in CI. <strong>Consequences:</strong> The data boundary is explicit — January's circled pattern can no longer reach serialization, because entities no longer reach it — at the cost of a projection type per view and a quarter of archaeology turning hidden N+1s into visible fetch plans.</p>
+</blockquote>
+<h3 id="⚖-your-move-architect">⚖ Your move, architect</h3>
+<p>Rewind to the table where Idris said "turn it off." One boolean, seven years of anesthesia, three honest positions. Commit before reading on:</p>
+<ul>
+<li><strong>A — Leave OSIV on.</strong> Every tutorial's default, and Atrium's since 2019; the dashboards keep working tomorrow, and there's a renewal to support.</li>
+<li><strong>B — Off everywhere, today.</strong> Honest. Every latent lazy touch in every untested path throws at once; you fix what screams.</li>
+<li><strong>C — Off behind a deprecation window.</strong> Dev and staging flip now; exceptions become an inventory; fixes land per feature seam; production flips when staging goes quiet.</li>
+</ul>
+<p><strong>The trade-offs, since you've committed:</strong> <strong>A</strong> is the only indefensible option for a team that just paid this invoice — the exception stays hidden until the next non-web path reaches through a detached entity, and every rendering-time lazy load keeps holding a pooled connection after its transaction ends: <strong>availability</strong> spent quietly, April's arithmetic, forever. <strong>B</strong> is honest, but it converts years of unknown N+1s into a week of production incidents: <strong>availability</strong> spent loudly, for a lesson staging would have taught cheaper. <strong>C</strong> is what the team chose: boring, staged, reversible — <strong>operability</strong> preserved. Staging screams for free; ADR-001's feature packages give the archaeology a unit of work and a definition of done; production flips when the inventory is empty. The flag is global. The migration never has to be.</p>
+<p>The dashboard came back at 180 milliseconds against the prod-sized snapshot. Lena re-demoed for Northbeam the following week and didn't have to say "thorough" once. By the retro, query-plan questions had started routing themselves to Maya's desk; the 2 a.m. page had cost her a night and bought her a specialty.</p>
+<p>One thing nagged. Profiling triage writes, she'd seen commits landing where she couldn't predict — small, separate, scattered through what looked like single operations, audit rows committing on their own schedule. It didn't smell like a fetch problem. She wrote <em>triage commit boundaries?</em> on a sticky note and stuck it to the brick.</p>
+<h2 id="the-debrief-—-ch7-the-thousand-queries">The debrief — Ch.7, The Thousand Queries</h2>
+<blockquote>
+<p><strong>What causes <code>LazyInitializationException</code>, and what are three different fixes with different trade-offs?</strong></p>
+<p><strong>Claim</strong> — <code>LazyInitializationException</code> means a lazy association was touched after its persistence context closed; the real fix is deciding where data loading <em>ends</em>, not silencing the exception. <strong>Mechanism</strong> — a lazy association is a Hibernate proxy (to-one) or an uninitialized persistent collection; touching it triggers a <code>SELECT</code> through the session that owns it, and that session dies when the transaction ends — so an entity that escapes the service boundary is <em>detached</em>, and when Jackson or a mail template reaches through it, there is no session left to load with. <strong>Trade-off</strong> — three fixes, three costs: DTO projection fetches exactly what the view needs inside the transaction (best: the fetch plan is visible in the query; cost, a type per view); per-query fetching via <code>JOIN FETCH</code> or <code>@EntityGraph</code> keeps real entities and loads precisely (but risks cartesian blowup on multiple collections and in-memory pagination); OSIV keeps the session open through rendering (zero code, but lazy loads during serialization borrow pooled connections after the transaction is gone, and every missing fetch plan ships as a hidden N+1). <strong>Failure mode</strong> — OSIV in production: the exception vanishes, the N+1 ships, and under load the connection pool drains while request threads serialize JSON with a database connection in their pocket.</p>
+</blockquote>
+<p><strong>THE ARCHITECT'S LENS</strong></p>
+<ul>
+<li><strong>-ilities at stake:</strong> <strong>Performance as a designed property</strong> — the fetch plan is part of the read model's contract, declared in the query and asserted in CI, not discovered in front of a CISO. <strong>Availability</strong> rides along: under OSIV, every missing fetch plan becomes rendering-time connection borrowing — Chapter 6's residence arithmetic aimed at the Hikari pool.</li>
+<li><strong>The ADR:</strong> ADR-007 — the fetch policy: all associations lazy; every read path declares its fetch plan (DTO projection by default, <code>JOIN FETCH</code>/<code>@EntityGraph</code> where entities are required); OSIV off behind a migration window; hot-path statement counts asserted in CI.</li>
+<li><strong>Rejected alternatives:</strong> eager-everywhere (a sentence, not a decision — lazy can go eager per query, never the reverse); OSIV left on (hides the missing fetch plan, bills the pool for the cover-up); an immediate production flag-flip (years of unknown N+1s as a week of incidents); <code>default_batch_fetch_size</code> as the fix (a smoke alarm, not a sprinkler).</li>
+<li><strong>Fight or lean:</strong> <em>Fight</em> OSIV — the framework choosing your transaction boundary, the warrant Chapter 1's lens signed; the architect takes it back. <em>Lean</em> on the persistence context inside it — dirty checking, the identity map, declarative fetch plans, the batch-size net: the machinery that makes the container worth inhabiting.</li>
+</ul>
+<p><strong>Story anchors</strong></p>
+<ul>
+<li>The 28-second spinner in front of Northbeam's CISO → N+1: one query for the page, then two per report — 401 perfect statements in the session metrics.</li>
+<li>The green-ink comment, dated in January and read into the May postmortem → <code>LazyInitializationException</code>: an entity that meets Jackson after the session closes is detached — no one is left to load for you.</li>
+<li>"A connection held hostage through rendering" on the Wall → OSIV: the trap dressed as a convenience — it hides the missing fetch plan and bills the connection pool for the cover-up.</li>
+<li>The statement-count test pinned at two → performance as a designed property: a fetch-plan regression fails the build, not the renewal demo.</li>
+</ul>
+<p><strong>Interview ammo</strong></p>
+<ul>
+<li><em>What causes <code>LazyInitializationException</code>, and what are three fixes with different trade-offs?</em> — The persistence context closed before a lazy load; fix with DTO projection inside the transaction (best), per-query fetching via <code>JOIN FETCH</code>/<code>@EntityGraph</code> (precise, entity-shaped), or OSIV (global anesthetic: trades the exception for held connections and hidden N+1).</li>
+<li><em>If OSIV makes the exception disappear, why turn it off?</em> — Because rendering-time lazy loads borrow pooled connections after the transaction has ended, and every missing fetch plan ships as a silent production N+1; off, fetch bugs fail loudly at the boundary instead of slowly in the pool.</li>
+<li><em>When does <code>JOIN FETCH</code> itself become the bug?</em> — Fetching two <code>List</code> collections in one query fails outright (multiple-bag fetch), and join-fetching a collection under <code>Pageable</code> forces Hibernate to paginate in memory after loading everything — use <code>@EntityGraph</code> on to-one paths, fetch IDs first, or batch-size the collection.</li>
+<li><em>Architect follow-up — How do you stop N+1 regressing once fixed?</em> — Make the fetch plan part of the read model's contract: hot paths pin SQL statement counts in slice tests via Hibernate <code>Statistics</code>, so a resurrected eager default or new lazy touch fails CI with the number named — ADR-002's fitness functions at the data layer.</li>
+</ul>
+<p><strong>Pointers</strong> → Playbook Ch.7 · <code>examples/ch07_jpa/NPlusOneAndLazyInitializationTrap.java</code>, <code>EntityLifecycleAndDirtyChecking.java</code></p>
+<hr></hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="part-04.html" class="navigation navigation-prev " aria-label="Previous page: Part IV — The Data">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch-08.html" class="navigation navigation-next " aria-label="Next page: Chapter 8 — The Silent Commit">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 7 — The Thousand Queries","level":"1.12","depth":1,"next":{"title":"Chapter 8 — The Silent Commit","level":"1.13","depth":1,"path":"ch-08.md","ref":"ch-08.md","articles":[]},"previous":{"title":"Part IV — The Data","level":"1.11","depth":1,"path":"part-04.md","ref":"part-04.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Otmane Omry","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The Spring Boot Mastery Book","language":"en","gitbook":"*"},"file":{"path":"ch-07.md","mtime":"2026-06-14T00:07:25.373Z","type":"markdown"},"gitbook":{"version":"6.2.1","time":"2026-06-14T00:07:44.741Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

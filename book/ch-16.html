@@ -1,0 +1,778 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter 16 — The Architect's Chair · The Spring Boot Mastery Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.1">
+        <meta name="author" content="Otmane Omry">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="part-07.html" />
+    
+    
+    <link rel="prev" href="ch-15.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    The Spring Boot Mastery Book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="part-01.html">
+            
+                <a href="part-01.html">
+            
+                    
+                    Part I — The Craft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch-01.html">
+            
+                <a href="ch-01.html">
+            
+                    
+                    Chapter 1 — The Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-02.html">
+            
+                <a href="part-02.html">
+            
+                    
+                    Part II — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch-02.html">
+            
+                <a href="ch-02.html">
+            
+                    
+                    Chapter 2 — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch-03.html">
+            
+                <a href="ch-03.html">
+            
+                    
+                    Chapter 3 — Smoke and Mirrors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch-04.html">
+            
+                <a href="ch-04.html">
+            
+                    
+                    Chapter 4 — The Magic Show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="part-03.html">
+            
+                <a href="part-03.html">
+            
+                    
+                    Part III — The Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch-05.html">
+            
+                <a href="ch-05.html">
+            
+                    
+                    Chapter 5 — The Front Door
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch-06.html">
+            
+                <a href="ch-06.html">
+            
+                    
+                    Chapter 6 — The Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="part-04.html">
+            
+                <a href="part-04.html">
+            
+                    
+                    Part IV — The Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch-07.html">
+            
+                <a href="ch-07.html">
+            
+                    
+                    Chapter 7 — The Thousand Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch-08.html">
+            
+                <a href="ch-08.html">
+            
+                    
+                    Chapter 8 — The Silent Commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch-09.html">
+            
+                <a href="ch-09.html">
+            
+                    
+                    Chapter 9 — The Proxy You Didn't Write
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="part-05.html">
+            
+                <a href="part-05.html">
+            
+                    
+                    Part V — Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ch-10.html">
+            
+                <a href="ch-10.html">
+            
+                    
+                    Chapter 10 — The Breach That Wasn't
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="ch-11.html">
+            
+                <a href="ch-11.html">
+            
+                    
+                    Chapter 11 — Forty Minutes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="ch-12.html">
+            
+                <a href="ch-12.html">
+            
+                    
+                    Chapter 12 — Three A.M.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="ch-13.html">
+            
+                <a href="ch-13.html">
+            
+                    
+                    Chapter 13 — The Cascade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="part-06.html">
+            
+                <a href="part-06.html">
+            
+                    
+                    Part VI — The Architect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="ch-14.html">
+            
+                <a href="ch-14.html">
+            
+                    
+                    Chapter 14 — The Split
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="ch-15.html">
+            
+                <a href="ch-15.html">
+            
+                    
+                    Chapter 15 — Faster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.23" data-path="ch-16.html">
+            
+                <a href="ch-16.html">
+            
+                    
+                    Chapter 16 — The Architect's Chair
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="part-07.html">
+            
+                <a href="part-07.html">
+            
+                    
+                    Capstone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="ch-17.html">
+            
+                <a href="ch-17.html">
+            
+                    
+                    Chapter 17 — The Hostile Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="appendices.html">
+            
+                <a href="appendices.html">
+            
+                    
+                    Appendices — The map behind the story
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 16 — The Architect's Chair</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-16-—-the-architects-chair">Chapter 16 — The Architect's Chair</h1>
+<p>The ask arrived the way the worst asks always do: in a hallway, between meetings, dressed as a small thing.</p>
+<p>"Maya — quick one." The CTO didn't break stride. "We need duplicate-report detection. Researchers keep filing the same vuln five times, triagers are drowning, and Northbeam brought it up at the QBR. Something by Q1?"</p>
+<p>Back at her desk, Elias had already forwarded the thread. His entire message was one line: <em>Design it out loud. The whole team. Friday.</em></p>
+<p>It was December. His last month. Nobody had said the word <em>exam</em>, which was how she knew it was one.</p>
+<p><em>The old instinct — open the IDE, scaffold a <code>DedupController</code>, let the design emerge from the typing — was muscle memory from her Meridian years, and it was the trap.</em> You didn't find out what a duplicate was by writing a loop over reports. So she spent Wednesday not designing; she spent it with Marisol.</p>
+<p>"What <em>is</em> a duplicate?" Maya asked. "Same root cause? Same endpoint? Same payload?"</p>
+<p>"Same root cause," Marisol said immediately. "Two XSS reports on different pages of the same template engine — that's one vuln. The engine will never know that. A human has to decide."</p>
+<p>"And what does a wrong answer cost?"</p>
+<p>Marisol thought about it. "A missed dupe wastes an hour of triage. A false merge buries a real vulnerability under a closed one." She paused. "One of those is annoying. The other one is the company."</p>
+<p>Maya wrote that sentence at the top of the design doc. Then five questions, answered in writing before any boxes: what is a duplicate, who decides, what does each wrong answer cost, what's the volume and latency budget — four hundred reports a week, thirty-ish dupes, suggestions worthless if they arrive after triage starts — and what number means success. Only then did she start drawing.</p>
+<h3 id="⚖-your-move-architect">⚖ Your move, architect</h3>
+<p>This time the fork comes before the room does. You have what Maya had on Wednesday night — Marisol's asymmetry, the numbers, the binder behind you. Design the shape before she speaks: where does similarity scoring run?</p>
+<ul>
+<li><strong>A — Synchronous check on the submit path.</strong> The scorer runs inline; suggestions exist the instant the report does. No pipeline to build.</li>
+<li><strong>B — Async pipeline, advisory suggestions.</strong> Submission commits and returns; scoring rides an event off the outbox; candidates surface seconds later, and only a human merges.</li>
+<li><strong>C — Nightly batch dedup.</strong> One job, off-peak, marks candidate pairs while everyone sleeps. The cheapest possible build.</li>
+</ul>
+<p><strong>The trade-offs, since you've committed:</strong> <strong>A</strong> couples submission <strong>availability</strong> and <strong>latency</strong> to the cost and uptime of a scoring engine — ADR-006 and ADR-013 violated on their face; when the scorer has a bad afternoon, <em>submissions</em> do. <strong>C</strong> wins on <strong>cost</strong> and fails the requirement: duplicates burn triager hours <em>same-day</em>, so the binding budget is the triagers' morning, not the API's p99. <strong>B</strong> is what Maya drew — her whiteboard walk is the answer key, and the grilling that follows is your pressure test; score yourself against the room.</p>
+<h2 id="the-investigation">The investigation</h2>
+<p>Friday, ten a.m., the whole team in front of the Wall. Maya opened not with boxes but with the five questions and Marisol's asymmetry, because every decision downstream hung off it: <em>the system suggests; a human merges; nothing auto-closes, ever.</em></p>
+<p>The sequence she walked was fixed: clarify the spec, then contract, data model, transaction and consistency boundaries, failure modes, observability, rollout. The room had watched it assemble all year without hearing it named — the architect's kata — and the proof sat in the repo: ADR-005 the contract step, ADR-008 the consistency step, ADR-013 the failure step. Friday would quote the trail, not relitigate it.</p>
+<p>She sorted the decisions before drawing any of them. "Most of this is a two-way door," she said. "The threshold, the scorer behind its port, the flags — if we're wrong, we walk back through. Cheap experiments, kept options." The API contract and the merge's consistency promise were not: those harden the moment other people build on them. ADR-005's v2 contract and ADR-008's consistency line had been the year's one-way doors, committed decisively and front-loaded, because deciding later means deciding under worse information, after others have built on your indecision. The architect's first skill was knowing which door you stood in before choosing a way to walk through it.</p>
+<p>Then the contract:</p>
+<pre><code class="lang-http">GET /api/v2/reports/9f3c.../duplicate-candidates
+<span class="hljs-attribute">Authorization</span><span class="hljs-punctuation">: </span>Bearer eyJ...        # triager role required
+
+<span class="hljs-meta">HTTP/1.1</span> <span class="hljs-number">200</span> OK
+<span class="hljs-attribute">Content-Type</span><span class="hljs-punctuation">: </span>application/json
+
+<span class="language-haskell">{ <span class="hljs-string">"candidates"</span>: [
+    { <span class="hljs-string">"reportId"</span>: <span class="hljs-string">"41ab..."</span>, <span class="hljs-string">"score"</span>: <span class="hljs-number">0.91</span>,
+      <span class="hljs-string">"title"</span>: <span class="hljs-string">"Stored XSS in program description"</span>, <span class="hljs-string">"status"</span>: <span class="hljs-string">"TRIAGED"</span> }
+  ],
+  <span class="hljs-string">"engineStatus"</span>: <span class="hljs-string">"LIVE"</span> }          # or <span class="hljs-string">"DEGRADED"</span> — honest absence, never invented <span class="hljs-class"><span class="hljs-keyword">data</span></span>
+</span></code></pre>
+<p>Then the data model — candidate pairs with scores and a human decision column, and a <code>merged_into</code> self-reference instead of deletion, because a false merge had to be reversible with full history:</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">create table</span> report_candidate_pair (
+    id            uuid <span class="hljs-keyword">primary key</span>,
+    report_id     uuid <span class="hljs-keyword">not null</span> <span class="hljs-keyword">references</span> report(id),
+    candidate_id  uuid <span class="hljs-keyword">not null</span> <span class="hljs-keyword">references</span> report(id),
+    score         <span class="hljs-type">numeric</span>(<span class="hljs-number">4</span>,<span class="hljs-number">3</span>) <span class="hljs-keyword">not null</span>,
+    decided_by    uuid <span class="hljs-keyword">references</span> users(id),
+    decision      text <span class="hljs-keyword">check</span> (decision <span class="hljs-keyword">in</span> (<span class="hljs-string">'CONFIRMED'</span>,<span class="hljs-string">'REJECTED'</span>)),
+    created_at    timestamptz <span class="hljs-keyword">not null</span> <span class="hljs-keyword">default</span> now(),
+    <span class="hljs-keyword">unique</span> (report_id, candidate_id)
+);
+
+<span class="hljs-keyword">alter table</span> report <span class="hljs-keyword">add</span> <span class="hljs-keyword">column</span> merged_into_id uuid <span class="hljs-keyword">references</span> report(id);
+<span class="hljs-comment">-- merged reports keep their rows, their audit trail, their researcher credit</span>
+</code></pre>
+<p>Transaction boundaries next. Candidate scoring was async and eventually consistent, because submission must never block on a similarity engine; it rode the report-submitted event off the outbox the Notifications split had already laid (the event row commits in the same transaction as the report; a relay publishes it afterward). The merge was the opposite: a small transactional core in the service layer, optimistic locking on both reports, a 409 if the version moved. The two halves sat at opposite ends of the Wall's consistency spectrum: the suggestion could lag by seconds, priced and signed for in advance; the merge could not lag at all — one commit or it's corruption.</p>
+<p>She drew the pipeline under the contract, the rejected road crossed out beside it:</p>
+<p class="diagram"><img src="assets/diag-8e805b6a4ae37064.svg" alt="diagram"></img></p>
+
+<p>The port on the diagram was load-bearing. The design doc carried the only code Friday needed — one interface, today's adapter behind it; the evolvability claim rested on the line between them:</p>
+<pre><code class="lang-java"><span class="hljs-comment">/** The port — ADR-016: accuracy evolves behind this line. */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">DuplicateScorer</span> {
+    List&lt;ScoredCandidate&gt; <span class="hljs-title function_">score</span><span class="hljs-params">(ReportFingerprint fresh, ProgramCorpus corpus)</span>;
+}
+
+<span class="hljs-meta">@Component</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">TrigramScorer</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">DuplicateScorer</span> {       <span class="hljs-comment">// today's adapter</span>
+    <span class="hljs-keyword">public</span> List&lt;ScoredCandidate&gt; <span class="hljs-title function_">score</span><span class="hljs-params">(ReportFingerprint fresh, ProgramCorpus corpus)</span> {
+        <span class="hljs-keyword">return</span> corpus.stream()
+                .map(c -&gt; <span class="hljs-keyword">new</span> <span class="hljs-title class_">ScoredCandidate</span>(c.reportId(), trigram(fresh, c)))
+                .filter(s -&gt; s.score() &gt;= <span class="hljs-number">0.65</span>).toList();
+    }
+}
+<span class="hljs-comment">// next year: EmbeddingScorer implements DuplicateScorer — same port, same merge</span>
+<span class="hljs-comment">// invariant, and shadow mode re-runs against the new engine for free</span>
+</code></pre>
+<p>The grilling started before the marker was capped.</p>
+<p>Idris, capacity: "Why async? Sync gives the triager suggestions the second the report lands."</p>
+<p>"Sync also couples submission latency to the scoring engine," Maya said. "We made that mistake with Cortexa and bought a site outage. Argue it the other way: async means a triager might open a fresh report and see no suggestions yet. That costs minutes. Sync failing costs submissions. I'll take minutes." And no, the engine didn't need its own runtime. Scoring was I/O-bound batch work on virtual threads: each blocking call parks the thread and frees its carrier. The pinning tax — a carrier stuck under a <code>synchronized</code> block — was already paid in November. Reactive would buy backpressure they didn't have a queue deep enough to need.</p>
+<p>Idris wasn't finished. "Then why isn't scoring its own service? We just split Notifications. The precedent's sitting right there."</p>
+<p>"The seam decides, not the precedent," Maya said. "Merge shares transactions and a schema with reports — cut there and every false merge becomes a saga run by eleven people. Scoring is the only async piece, and it already consumes outbox events, so the cut line is drawn if it ever needs its own scaling profile. Until then it's a module with a boundary, not a service with a network bill." And October's context map had already settled the placement: duplicate detection serves Marisol's queue, so it lives inside the Triage boundary — the same map that let Notifications leave, because nothing transactional held it there. ADR-014's exit criteria sat one tab back if scoring ever earned its own pager.</p>
+<p>Priya, data model: "Merge uses JPA, but the scoring path is <code>JdbcClient</code>. Why both?"</p>
+<p>"The merge is a write with invariants — versions, cascades, audit. That's what a persistence context is <em>for</em>. Scoring reads forty thousand rows to build pairs; dragging those through a session buys dirty-checking overhead and lazy-loading landmines for zero benefit. Different jobs, different tools — and the trade-off is two data-access idioms in one codebase, which we document."</p>
+<p>Lena, the user's side: "If a triager sees a 0.91 and trusts it blindly?"</p>
+<p>"Then the UI's job is to make trust expensive. Side-by-side diff before confirm, the score shown as evidence, not verdict. And the precision metric tells us if we're training them to rubber-stamp."</p>
+<p>Elias asked exactly three questions, each a layer deeper than the last. "What happens when the similarity engine returns garbage at p99?"</p>
+<p>"Degrade to nothing, honestly. <code>engineStatus: DEGRADED</code>, empty list — the severity-pending badge from the Cortexa cascade. A fallback that invents candidates is a false merge we've scheduled in advance."</p>
+<p>"Who notices the garbage before a triager does?"</p>
+<p>"Shadow mode does. Six weeks where the engine scores everything, shows nothing, and gets measured against the merges triagers make by hand. The metric gates the rollout: shadow, then triager-visible, then researcher-visible, each behind its own flag; rollback is turning one off."</p>
+<p>"And when two triagers merge the same pair in the same minute?"</p>
+<p>"<code>@Version</code> on the report, second writer gets a 409 and a refreshed view." <em>In eight years of hand-written UPDATEs she had never once shipped a version column — last write had always, silently, won. Here that had a body count: a five-thousand-dollar award the bank never saw, overwritten by a second writer.</em> "Optimistic, not <code>SELECT FOR UPDATE</code> — contention is rare and the hold time is human think-time. A pessimistic lock across a coffee break is a queue; a version check is one retry."</p>
+<p>Silence. Then Elias capped his pen — no green ink, nothing to correct — picked up his chair, and carried it to the back row. The chair at the whiteboard stayed empty behind her. It was simply hers.</p>
+<p>The design doc's last page went into the binder that afternoon, sixteenth on the trail. Lena initialed the consequences line herself — a trade-off product hasn't signed is a complaint scheduled for later.</p>
+<blockquote>
+<p><strong>ADR-016 — Duplicate-report detection.</strong>
+<strong>Context:</strong> An exec ask with unstated load, accuracy, and workflow expectations, clarified to: ~400 reports/week, ~30 true dupes, suggestions worthless once triage starts, and a brutal cost asymmetry — a missed dupe wastes an hour, a false merge buries a live vulnerability. <strong>Decision:</strong> Similarity scoring runs as an async pipeline — outbox event on submission → scorer → candidate-pair suggestions surfaced to triage — never as a synchronous gate on the submit path; suggestions are advisory and only a human merges, because the domain owns truth; the scorer is a port inside the Triage context, swappable from trigram to embeddings without moving the boundary. <strong>Consequences:</strong> Submission latency keeps ADR-006's budget; the feature degrades to honest absence when the engine is down, per ADR-013; accuracy can evolve behind the port without touching the merge invariant — at the price of eventual suggestions, seconds rather than instant, accepted by product on the record.</p>
+</blockquote>
+<h2 id="what-the-senior-sees">What the senior sees</h2>
+<p>Monday's brick ceremony came with the handbook she'd written after the three-a.m. incident (a missing timeout parking every request thread in <code>socketRead0</code>); the handbook ended with five drills. She ran Priya through them over coffee, rapid-fire, the way Elias had once run her.</p>
+<p>"Intermittent <code>LazyInitializationException</code> in a scheduled job."</p>
+<p>"No request, so no session to hide behind," Priya said. "Find where the persistence context closes, then ask who touches the entity after it. Fix the query — projection or fetch plan. Don't resurrect the session to comfort the bug."</p>
+<p>"Transaction that doesn't roll back."</p>
+<p>"Two suspects: a checked exception crossing the boundary under the unchecked-only default, or a <code>catch</code> swallowing the rollback signal before the proxy ever sees it. And before either — check the call actually crosses the proxy. Self-invocation walks around the mirror."</p>
+<p>"Endpoint slow under load, CPU idle."</p>
+<p>"Thread dump before theories. Count the stacks parked in <code>socketRead0</code>. The missing timeout is the bug; the pool size is just the blast radius."</p>
+<p>"Bean not created."</p>
+<p>"<code>--debug</code>, read the <code>ConditionEvaluationReport</code>, find the negative match. The bean didn't vanish — a condition told it not to exist, and the report names the condition."</p>
+<p>"401 on a route that should be open."</p>
+<p>"The verdict happened in front of the front door, before the <code>DispatcherServlet</code> saw it. List the <code>SecurityFilterChain</code> matchers in order — first match wins — and under deny-by-default, a missing allow is a bug you can grep for."</p>
+<p>Five symptoms, five chains, each running from the visible symptom to the mechanism behind it. Not once had Priya said <em>Spring just does that</em>. Somewhere around the third drill Maya realized the actual job now was not having answers but installing the shape of one in someone else: claim, mechanism, trade-off, failure mode. She no longer noticed herself using the four beats.</p>
+<p>She pushed one beat further than Elias ever had. "Again — and this time name the -ility each one threatened."</p>
+<p>"Operability, integrity, availability, evolvability, security," Priya said, barely pausing on the fourth. This was succession, Maya thought: the four beats plus a named -ility made a decision portable, able to outlive whoever made it. Architecture living in one head was a bus factor of one wearing a title.</p>
+<h2 id="the-fix">The fix</h2>
+<p>Priya's PR for the merge flow landed Tuesday. It worked. It demoed beautifully. Maya printed the diff.</p>
+<pre><code class="lang-java"><span class="hljs-meta">@RestController</span>
+<span class="hljs-meta">@RequestMapping("/api/v2/reports")</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">MergeController</span> {
+
+    <span class="hljs-meta">@Autowired</span> ReportRepository reports;     <span class="hljs-comment">// field injection</span>
+    <span class="hljs-meta">@Autowired</span> AuditLog auditLog;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-type">Logger</span> <span class="hljs-variable">log</span> <span class="hljs-operator">=</span> LoggerFactory.getLogger(MergeController.class);
+
+    <span class="hljs-meta">@PostMapping("/{id}/merge")</span>
+    Report <span class="hljs-title function_">merge</span><span class="hljs-params">(<span class="hljs-meta">@PathVariable</span> UUID id, <span class="hljs-meta">@RequestBody</span> MergeRequest req)</span> {
+        <span class="hljs-type">Report</span> <span class="hljs-variable">dupe</span> <span class="hljs-operator">=</span> reports.findById(id).orElseThrow();
+        <span class="hljs-type">Report</span> <span class="hljs-variable">canonical</span> <span class="hljs-operator">=</span> reports.findById(req.canonicalId()).orElseThrow();
+        dupe.setMergedInto(canonical);
+        dupe.setStatus(Status.DUPLICATE);
+        <span class="hljs-keyword">try</span> {
+            reports.save(dupe);
+            auditLog.record(dupe, canonical);
+        } <span class="hljs-keyword">catch</span> (Exception e) {
+            log.warn(<span class="hljs-string">"audit failed, continuing"</span>, e);   <span class="hljs-comment">// "handled"</span>
+        }
+        <span class="hljs-keyword">return</span> dupe;                                   <span class="hljs-comment">// entity, straight to Jackson</span>
+    }
+}
+</code></pre>
+<blockquote>
+<p>⏸ <strong>Your call.</strong> It demoed clean and the tests are green — before the pen moves: count what breaks here, <em>when</em> each one fires, and which -ility every line bleeds.</p>
+</blockquote>
+<p>Forty-one comments, all hanging off her review checklist: proxy traps, N+1, transaction boundaries, leaked entities, security gaps, untested branches. No transaction boundary, so the status write and the audit write committed independently — the silent commit again. No version check, so two triagers could repeat Marisol's lost update. No <code>@PreAuthorize</code>, so any researcher could merge a competitor's report closed. The candidate loader elsewhere in the PR fetched researchers one query per row — the thousand queries in miniature. The lazy <code>researcher</code> association would fault when Jackson serialized the entity after the session closed. The <code>catch</code> swallowed the audit failure — <em>a caught exception is a decision; make it on purpose.</em> The happy path was tested; the 409, the 403, and the degraded engine were not. The field injection would never have reached main — the ArchUnit rule from the February incident (field injection lets a bean be built with <code>new</code> and run with null dependencies) would have failed the build — but the comment went in anyway: the robot says <em>no</em>; the review teaches <em>why</em>. The only empty checklist line was proxy traps. Priya had met the smoke cloud in September — a <code>this.</code> call dispatches on the raw object, bypassing the proxy where the annotations take effect — and some lessons only need to cost you once.</p>
+<p>Comment #1, on a line that worked: <em>"Works is not done — what happens when this entity meets Jackson after the session closes?"</em></p>
+<p>She was halfway through writing it before she recognized the sentence. She let it stand.</p>
+<p>Priya's rewrite landed in two days — slim controller, a <code>MergeService</code> owning the <code>@Transactional</code> core, DTO records at the boundary, the audit on <code>REQUIRES_NEW</code>, all four failure paths tested. Her commit message entered team lore: <em>Done, not just working.</em></p>
+<p>Priya had one question left, at Maya's desk, test class open. "The Testcontainers Postgres. I never configure a URL anywhere. How does Boot even <em>know</em> to wire it?"</p>
+<p>A year ago Maya would have said <em>auto-configuration</em> and meant it as an answer. Instead she pulled up the framework source. <em>In eight years at Meridian there had been no framework to read — every line in production was theirs, and she'd assumed framework source was unreadable. Somewhere this year it had become conversation.</em></p>
+<pre><code class="lang-java"><span class="hljs-comment">// condensed from spring-boot-autoconfigure (Boot 4.0.x)</span>
+<span class="hljs-meta">@AutoConfiguration</span>
+<span class="hljs-meta">@ConditionalOnClass(DataSource.class)</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">DataSourceAutoConfiguration</span> {
+
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-meta">@ConditionalOnMissingBean(JdbcConnectionDetails.class)</span>
+    PropertiesJdbcConnectionDetails <span class="hljs-title function_">jdbcConnectionDetails</span><span class="hljs-params">(DataSourceProperties props)</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">PropertiesJdbcConnectionDetails</span>(props);
+    }
+}
+</code></pre>
+<p>"Read the condition," Maya said. "Auto-config only builds connection details from properties <em>if nobody else has</em>. Your <code>@ServiceConnection</code> is found by a test context customizer, which asks a container-aware factory for a <code>JdbcConnectionDetails</code> built straight from the live container — host, mapped port, the generated password — and registers it as a bean definition while the context is still being prepared. The conditions get evaluated later, inside the configuration-class post-processor — same column of the Wall as the lifecycle post-processors. So by the time Boot reads this class, your bean already exists, <code>@ConditionalOnMissingBean</code> fails, and auto-configuration backs off. The rule from the magic show: your own bean always wins — and now you've read <em>why</em>."</p>
+<p>While the source was open, Maya steered her one class deeper, into <code>CommonAnnotationBeanPostProcessor</code>. "And here's your <code>@PostConstruct</code> — not JVM magic, just an annotation this post-processor finds and invokes in the before-init phase. Build the bean with <code>new</code> and there's no post-processor, so no init call — it silently never runs. February's lifecycle column, in the source."</p>
+<p>Priya stared at the screen. "It was never magic."</p>
+<p>"No," Maya said. "It was never magic."</p>
+<p>The announcement came the Friday after — <em>principal architect</em>, effective January — and everyone pretended the design review hadn't been the interview; nobody believed anyone. Elias cleared his desk over an afternoon, refusing help. On Monday his desk was empty and Maya's wasn't: the green pen lay beside the dented yellow Canary, under a sticky note in green ink. <em>It was never magic. — E.</em></p>
+<p>That same week a line in the QBR notes mentioned, third-hand and unsourced, that a larger platform had been asking analysts about Glasshouse — only a rumor, and December had no room for weather that hadn't arrived.</p>
+<p>The January Wall tour fell to her now; Priya had inherited the request-trace walkthrough and acquired a mentee of her own. Maya walked the new hires down the whole year of ink: the lifecycle column, the proxy smoke cloud — <em>this. goes around the mirror</em> — the config-precedence ladder, the filter chain in front of the front door, the persistence panel, the breaker's three states. Then she drew one blank column for the year to come and traced the Request Journey a final time, socket to database and back. One thing was new: green numbers, one beneath each scene — ADR-002 under the lifecycle column, ADR-003 under the smoke cloud, ADR-004 beside the precedence ladder, ADR-010 on the filter chain, ADR-007 on the persistence panel, ADR-013 inside the breaker's states. The binder and the Wall were one document now, read in two directions; the trail <em>was</em> the tour.</p>
+<p>"So Spring just handles all that automatically," one of the new hires said.</p>
+<p>Maya smiled, and uncapped the green pen.</p>
+<p>"Show me the mechanism."</p>
+<h2 id="the-debrief-—-ch16-the-architects-chair">The debrief — Ch.16, The Architect's Chair</h2>
+<blockquote>
+<p><strong>The final gate: design a service end-to-end from a vague spec, out loud, and survive follow-ups on every layer.</strong> <strong>Claim:</strong> a senior turns "we need duplicate detection" into a system by interrogating the requirement before drawing anything, then designing in a fixed sequence — clarified spec → API contract → data model → transaction and consistency boundaries → failure modes → observability → rollout. <strong>Mechanism:</strong> each layer is pinned to a real mechanism, not a wish — suggestions ride async events off the outbox so submission never blocks on the engine; the merge is a small <code>@Transactional</code> service-layer core with <code>@Version</code> optimistic locking and a 409 on conflict; engine failure degrades to honest absence behind a status flag; a shadow-mode precision metric gates each rollout stage. <strong>Trade-off:</strong> eventual consistency means a triager may briefly see no suggestions (minutes lost, never submissions); optimistic beats pessimistic because contention is rare and hold time is human-scale; shadow mode spends six weeks to buy a precision number before users can be harmed. <strong>Failure mode:</strong> the design fails if a wrong answer can act without a human — auto-close on a false merge buries a live vulnerability — or if the fallback invents data instead of admitting absence, or if rollback requires anything more than turning a flag off.</p>
+</blockquote>
+<p><strong>THE ARCHITECT'S LENS</strong></p>
+<ul>
+<li><strong>-ilities at stake:</strong> <strong>Judgment</strong> — every -ility at once, weighed out loud: the submit path's <strong>availability</strong> and <strong>performance</strong> against suggestion freshness; <strong>integrity</strong> above everything, because a false merge is the company; <strong>evolvability</strong> behind the scorer port; <strong>operability</strong> in flags, shadow metrics, honest degradation. The final exam is pricing the ledger's columns against each other, in one design, in public.</li>
+<li><strong>The ADR:</strong> ADR-016 — duplicate detection as an async advisory pipeline behind the Triage context: outbox event → scorer port → candidate suggestions; only humans merge; ADR-006's budget kept, ADR-013's degradation honored, eventual suggestions accepted on the record.</li>
+<li><strong>Rejected alternatives:</strong> a synchronous scoring gate on submit (couples the sacred path's latency and uptime to the engine — ADR-006/013 violated on their face); nightly batch dedup (cheap, too slow — the binding budget is the triager's morning); a separate scoring service (ADR-014's exit criteria unmet — a module with a boundary, not a pager); anything that auto-closes (a false merge scheduled in advance).</li>
+<li><strong>Fight or lean:</strong> <em>Lean</em>, almost everywhere — the feature is assembly of rails already paid for: the outbox, <code>@Version</code>, virtual threads, the slices, the flags. The one fight is with the instinct to make the machine decisive: where the domain says a human owns truth, the framework suggests — and the architecture makes trust expensive.</li>
+<li><strong>Which door:</strong> almost all of ADR-016 is two-way — ports, thresholds, flags, cheaply reversible; the book's one-way doors were Ch.5's public API contract and Ch.8's consistency contract, committed decisively because others build on them.</li>
+</ul>
+<p><strong>Story anchors</strong></p>
+<ul>
+<li>The empty chair at the whiteboard → the senior design sequence: clarify the spec, then contract → data → transactions → failures → observability → rollout.</li>
+<li>Comment #1 on Priya's PR → code review as architecture: proxy traps, N+1, missing transaction boundaries, leaked entities, security gaps, untested failure branches.</li>
+<li>The green pen on the Boot source → the senior reflex: read the <code>AutoConfiguration</code> and its conditions — <code>@ConditionalOnMissingBean</code> is <em>why</em> your own bean wins.</li>
+<li>The green numbers under the year of ink → the trail is the tour: every Wall scene carries its ADR, the binder and the whiteboard one document read in two directions.</li>
+</ul>
+<p><strong>Interview ammo</strong></p>
+<ul>
+<li><em>Design duplicate-report detection end-to-end, out loud.</em> — Clarify the cost asymmetry first (missed dupe = an hour; false merge = a buried vuln), then: suggestion API + candidate-pair model with a reversible <code>merged_into</code> FK, async scoring off events, a small optimistic-locked merge transaction, honest degradation, precision metrics, shadow-mode rollout behind flags.</li>
+<li><em>What happens when your similarity engine returns garbage at p99?</em> — Degrade to honest absence (<code>DEGRADED</code> status, empty list), never auto-close; shadow-mode precision catches the drift before a triager ever acts on it.</li>
+<li><em>Why optimistic locking on the merge instead of <code>SELECT FOR UPDATE</code>?</em> — Contention is rare and hold time is human think-time; a version check costs one 409-and-retry, while a pessimistic lock holds a row hostage across a coffee break.</li>
+<li><em>Architect follow-up — Your similarity scorer needs to get smarter next year (trigram → embeddings) without destabilizing triage: where does that flexibility live?</em> — Behind a port inside the Triage context: the scorer is an adapter consuming outbox events and writing candidate pairs, so accuracy evolves by swapping the implementation while the contract, the merge invariant, and the rollout flags never move — and shadow mode re-runs against the new engine for free.</li>
+</ul>
+<p><strong>Pointers</strong> → Playbook Ch.12 + the whole trail · <code>examples/</code> (all) · Appendix F</p>
+<hr></hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch-15.html" class="navigation navigation-prev " aria-label="Previous page: Chapter 15 — Faster">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="part-07.html" class="navigation navigation-next " aria-label="Next page: Capstone">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 16 — The Architect's Chair","level":"1.23","depth":1,"next":{"title":"Capstone","level":"1.24","depth":1,"path":"part-07.md","ref":"part-07.md","articles":[]},"previous":{"title":"Chapter 15 — Faster","level":"1.22","depth":1,"path":"ch-15.md","ref":"ch-15.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Otmane Omry","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The Spring Boot Mastery Book","language":"en","gitbook":"*"},"file":{"path":"ch-16.md","mtime":"2026-06-14T00:07:38.131Z","type":"markdown"},"gitbook":{"version":"6.2.1","time":"2026-06-14T00:07:44.741Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

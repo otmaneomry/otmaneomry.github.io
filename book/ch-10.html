@@ -1,0 +1,783 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Chapter 10 — The Breach That Wasn't · The Spring Boot Mastery Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.1">
+        <meta name="author" content="Otmane Omry">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch-11.html" />
+    
+    
+    <link rel="prev" href="part-05.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    The Spring Boot Mastery Book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="part-01.html">
+            
+                <a href="part-01.html">
+            
+                    
+                    Part I — The Craft
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ch-01.html">
+            
+                <a href="ch-01.html">
+            
+                    
+                    Chapter 1 — The Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part-02.html">
+            
+                <a href="part-02.html">
+            
+                    
+                    Part II — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ch-02.html">
+            
+                <a href="ch-02.html">
+            
+                    
+                    Chapter 2 — The Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ch-03.html">
+            
+                <a href="ch-03.html">
+            
+                    
+                    Chapter 3 — Smoke and Mirrors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch-04.html">
+            
+                <a href="ch-04.html">
+            
+                    
+                    Chapter 4 — The Magic Show
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="part-03.html">
+            
+                <a href="part-03.html">
+            
+                    
+                    Part III — The Request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch-05.html">
+            
+                <a href="ch-05.html">
+            
+                    
+                    Chapter 5 — The Front Door
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch-06.html">
+            
+                <a href="ch-06.html">
+            
+                    
+                    Chapter 6 — The Pool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="part-04.html">
+            
+                <a href="part-04.html">
+            
+                    
+                    Part IV — The Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch-07.html">
+            
+                <a href="ch-07.html">
+            
+                    
+                    Chapter 7 — The Thousand Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch-08.html">
+            
+                <a href="ch-08.html">
+            
+                    
+                    Chapter 8 — The Silent Commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch-09.html">
+            
+                <a href="ch-09.html">
+            
+                    
+                    Chapter 9 — The Proxy You Didn't Write
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="part-05.html">
+            
+                <a href="part-05.html">
+            
+                    
+                    Part V — Production
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.16" data-path="ch-10.html">
+            
+                <a href="ch-10.html">
+            
+                    
+                    Chapter 10 — The Breach That Wasn't
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="ch-11.html">
+            
+                <a href="ch-11.html">
+            
+                    
+                    Chapter 11 — Forty Minutes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="ch-12.html">
+            
+                <a href="ch-12.html">
+            
+                    
+                    Chapter 12 — Three A.M.
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="ch-13.html">
+            
+                <a href="ch-13.html">
+            
+                    
+                    Chapter 13 — The Cascade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="part-06.html">
+            
+                <a href="part-06.html">
+            
+                    
+                    Part VI — The Architect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="ch-14.html">
+            
+                <a href="ch-14.html">
+            
+                    
+                    Chapter 14 — The Split
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="ch-15.html">
+            
+                <a href="ch-15.html">
+            
+                    
+                    Chapter 15 — Faster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="ch-16.html">
+            
+                <a href="ch-16.html">
+            
+                    
+                    Chapter 16 — The Architect's Chair
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="part-07.html">
+            
+                <a href="part-07.html">
+            
+                    
+                    Capstone
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="ch-17.html">
+            
+                <a href="ch-17.html">
+            
+                    
+                    Chapter 17 — The Hostile Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="appendices.html">
+            
+                <a href="appendices.html">
+            
+                    
+                    Appendices — The map behind the story
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 10 — The Breach That Wasn't</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="chapter-10-—-the-breach-that-wasnt">Chapter 10 — The Breach That Wasn't</h1>
+<p>The report arrived on a Tuesday in July, in the Stonethrow queue, between a duplicate XSS and a complaint about markdown rendering. Severity: critical. Author: <code>@sable</code>. Title: <em>"Your guard is posted at a door you no longer use."</em></p>
+<p>Marisol read it twice, then escalated. By ten it was on the war-room screen and nobody was talking.</p>
+<blockquote>
+<p>Any authenticated researcher token can <code>GET</code> and <code>POST</code> to <code>/api/v2/admin/programs/{id}/payout-settings</code>. I changed the bounty multiplier on a program I do not own. I changed it back. Reproduction below. Separately: your API reflects <code>Access-Control-Allow-Origin</code> from whatever <code>Origin</code> I send, with <code>Access-Control-Allow-Credentials: true</code>. A page I host can read authenticated responses from your API in any logged-in researcher's browser. — s.</p>
+</blockquote>
+<p>Lena set her coffee down carefully. "So our best researcher just told us that on our security platform, a researcher can rewrite the payout math for a bank's program. And then read other people's data from a website she controls."</p>
+<p>"It's valid," Maya said. She'd already run the reproduction. Her own JWT — a plain researcher token, no admin role — had sailed straight into the admin endpoint and come back <code>200 OK</code> with Northbeam's payout configuration.</p>
+<p>Idris was three terminals deep in access logs. "Give me twenty minutes. I want to know if anyone else found it first."</p>
+<p>Elias was at the Wall, at the Request Journey diagram born in March, the week Sable found the leaking stack traces. He picked up the green pen and drew a thick vertical line in front of the <code>DispatcherServlet</code> box, then a row of small boxes in front of the line — before any controller, before the front door Maya had spent the spring rebuilding. The stretch he was drawing on was the one he'd tapped in March and left deliberately empty — <em>out past the filters</em>, where the same reporter's floor-plan leak had proved that what happens in front of the servlet never reaches a <code>@ControllerAdvice</code>. Same reporter, bigger stakes; the geography lesson had been a forecast.</p>
+<p>"Security lives in front of the front door," he said. "I told you in March that chapter ten of your year would happen out here. Welcome to it."</p>
+<h2 id="the-investigation">The investigation</h2>
+<p>Maya pulled up the two suspects. The first was the route guard.</p>
+<blockquote>
+<p>⏸ <strong>Your call.</strong> A signed, unexpired researcher token came back <code>200 OK</code> from an admin route — no exception, no error log, nothing visibly <em>broke</em>. Before the code loads, commit: what class of bug lets a request through without anyone deciding to allow it — and did it get there by error, or by drift?</p>
+</blockquote>
+<pre><code class="lang-java"><span class="hljs-meta">@Bean</span>
+SecurityFilterChain <span class="hljs-title function_">api</span><span class="hljs-params">(HttpSecurity http)</span> <span class="hljs-keyword">throws</span> Exception {
+    <span class="hljs-keyword">return</span> http
+        .csrf(csrf -&gt; csrf.disable())
+        .sessionManagement(s -&gt; s.sessionCreationPolicy(STATELESS))
+        .authorizeHttpRequests(a -&gt; a
+            .requestMatchers(<span class="hljs-string">"/api/admin/**"</span>).hasRole(<span class="hljs-string">"ADMIN"</span>)   <span class="hljs-comment">// ← still guarding v1</span>
+            .anyRequest().authenticated())
+        .oauth2ResourceServer(o -&gt; o.jwt(Customizer.withDefaults()))
+        .build();
+}
+</code></pre>
+<p>She felt the bug before she could name it. <em>At Meridian the check would have been the first line of the handler itself — an <code>if</code> asking who you were before the method did anything; the guard traveled with the code it guarded.</em> Here the rule lived elsewhere. It sat in a filter, matching a URL string. And the URL had moved out from under it.</p>
+<p>"March," she said slowly. "When I versioned the public API. I moved the admin controllers under <code>/api/v2/admin/**</code>. The matcher still says <code>/api/admin/**</code>. So a request to <code>/api/v2/admin/programs/{id}/payout-settings</code> matches no specific rule at all. It falls through to <code>anyRequest().authenticated()</code> — and any researcher with a valid token <em>is</em> authenticated."</p>
+<p>"Authenticated," Elias said. "Not authorized."</p>
+<p>"Right." She wrote it on the Wall under his vertical line. <strong>Authn ≠ Authz.</strong> "The token's real — signed, unexpired, a genuine Glasshouse researcher. Authentication asks <em>who are you</em>, and the answer was honest. Authorization asks <em>are you allowed</em> — and nobody asked, because the only rule that would have asked was guarding a door we stopped using in March."</p>
+<p>(If you called <em>drift</em> at the pause: exactly — nothing malfunctioned; the chain enforced precisely what it said, and what it said had stopped describing the system. Hold that distinction; Elias prices it at the kitchen, later that afternoon.)</p>
+<p>The second suspect was older and uglier: a config class with a 2021 commit and a comment that read <code>// unblock the SPA team</code>.</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Bean</span>
+CorsConfigurationSource <span class="hljs-title function_">corsConfigurationSource</span><span class="hljs-params">()</span> {
+    <span class="hljs-type">var</span> <span class="hljs-variable">cfg</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">CorsConfiguration</span>();
+    cfg.setAllowedOriginPatterns(List.of(<span class="hljs-string">"*"</span>));     <span class="hljs-comment">// reflects ANY origin</span>
+    cfg.setAllowCredentials(<span class="hljs-literal">true</span>);                  <span class="hljs-comment">// ...with credentials</span>
+    cfg.setAllowedMethods(List.of(<span class="hljs-string">"*"</span>));
+    <span class="hljs-type">var</span> <span class="hljs-variable">source</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">UrlBasedCorsConfigurationSource</span>();
+    source.registerCorsConfiguration(<span class="hljs-string">"/**"</span>, cfg);
+    <span class="hljs-keyword">return</span> source;
+}
+</code></pre>
+<p>"Whoever wrote this," Maya said, "thought CORS was an access-control list."</p>
+<p>Idris looked up from the logs. "It isn't?"</p>
+<p>"No. CORS is a <em>browser</em> contract. For anything non-trivial the browser sends a pre-flight <code>OPTIONS</code> first — 'may a page from this origin send a <code>POST</code> with an <code>Authorization</code> header?' — and on the real response it reads <code>Access-Control-Allow-Origin</code> to decide whether the JavaScript that asked ever sees the body. The server blocks nothing; it only tells the browser what to permit." She tapped the screen. "Reflecting every origin <em>with credentials</em> tells every browser: let any website read authenticated Glasshouse responses. It's not a lock we left open. It's a sign on the door saying 'all welcome, bring your keys.'"</p>
+<p>"No exploitation," Idris announced, leaning back. "Six months of logs. Nobody reached <code>/api/v2/admin/programs/*/payout-settings</code> with a non-admin token except Sable last night — and you, eleven minutes ago. It's a breach that wasn't. She found it first."</p>
+<p>The room exhaled. Then the second conversation started — the one Maya would remember longer.</p>
+<p>"We fix this quietly," someone from the exec side said. "Patch the matcher, rotate, move on."</p>
+<p>Lena was already shaking her head, and so was Elias. "We pay this one in full and we say thank you in public," Lena said. "A security platform that hides its own holes is a punchline waiting for the first researcher who <em>doesn't</em> report what they find. Trust is the product. The glass house only works if we let people see in."</p>
+<p>She won. She usually won when she was right about money, and trust was money.</p>
+<h2 id="what-the-senior-sees">What the senior sees</h2>
+<p>That afternoon Elias caught Maya by the kitchen, away from the room.</p>
+<p>"Your plan. Change <code>/api/admin/**</code> to <code>/api/v2/admin/**</code> and ship."</p>
+<p>"It would work," she said.</p>
+<p>"You're fixing the hole. Fix the <em>class</em> of hole." He uncapped the green pen. "Next quarter someone adds <code>/api/v3</code>, or a new admin controller nobody updates a matcher for, and the silent fall-through to <code>authenticated()</code> opens again. The model is wrong, not the string."</p>
+<p>Her Meridian instinct was no shelter either. Scattered per-handler <code>if</code> checks meant a forgotten <code>if</code> was a forgotten check — fail-open by omission, the same trap in different syntax. <em>So the bug isn't the typo. The bug is that the default is 'allow.'</em></p>
+<p>"Deny by default," she said. "Make the drift structurally impossible instead of carefully avoided."</p>
+<p>"Good. And while you're in there — tell me what actually validates a token. Not 'Spring does it.' Show me the mechanism."</p>
+<p>She walked it. "The <code>Authorization: Bearer</code> header gets pulled by the <code>BearerTokenAuthenticationFilter</code> — one of the boxes on your line, early in the chain with the other authentication filters. It hands the token to a <code>JwtDecoder</code> — Nimbus under the hood — which verifies the <strong>signature</strong> against the issuer's JWK set, cached so we're not calling out per request. Then the claim checks: <strong>issuer</strong> is who we trust, <strong>expiry</strong> hasn't passed — and <strong>audience</strong> is us and not some other service sharing the auth server, which isn't automatic: signature, issuer, and expiry come as defaults, but the expected audience we have to declare ourselves — the resource-server <code>audiences</code> property, or our own validator. Only then does a <code>JwtAuthenticationConverter</code> map the claims to authorities — our roles claim becomes <code>ROLE_*</code>, which is the only reason <code>hasRole</code> means anything — and the <code>Authentication</code> lands in the <code>SecurityContextHolder</code>, a <code>ThreadLocal</code>. At the other end, the <code>AuthorizationFilter</code> enforcing the URL rules runs last in the chain, once authentication has had its chance. Authentication first, authorization last. The order is the architecture."</p>
+<p>"And if the signature's forged?"</p>
+<p>"The decoder throws, the filter's entry point answers <code>401</code>, and the request dies in the filter chain. The controller never runs. That's the whole point of security living in filters — a bad request never reaches the servlet."</p>
+<p>"One more box that isn't on your line," Elias said. "We validate the token. Who mints it?"</p>
+<p>"Not us — and that's the half of OAuth2 people skip." <em>The token check she'd once hand-rolled in a servlet filter at Meridian had validated tokens the same codebase minted — issuer and validator were one program, so the split never had a name.</em> "OAuth2 is a protocol with two roles. The <strong>authorization server</strong> — Keycloak, in our cluster — is the thing that actually authenticates a person or a service and <em>issues</em> the token. We're the <strong>resource server</strong>: we never see a password, we only validate and enforce. How the token gets issued is a <em>flow</em> — authorization-code with PKCE for humans in browsers, client-credentials for service-to-service — and the old implicit and password grants are deprecated because they leak credentials into places they don't belong. The JWT is just the token's <em>format</em>. OAuth2 is the contract about who mints it and who trusts it — which is why the DSL says <code>oauth2ResourceServer</code> and not <code>parseJwt</code>: it's naming our role in the protocol, not the parsing."</p>
+<p>"Good. Now the question Priya's going to ask you at standup tomorrow." Elias almost smiled. "Why is CSRF off?"</p>
+<h2 id="the-fix">The fix</h2>
+<p>She rebuilt it from the filter chain up and inverted the model.</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Bean</span>
+SecurityFilterChain <span class="hljs-title function_">api</span><span class="hljs-params">(HttpSecurity http)</span> <span class="hljs-keyword">throws</span> Exception {
+    <span class="hljs-keyword">return</span> http
+        .cors(Customizer.withDefaults())                  <span class="hljs-comment">// explicit allow-list bean below</span>
+        .csrf(csrf -&gt; csrf.disable())                     <span class="hljs-comment">// ADR-010: no cookie credential</span>
+        .sessionManagement(s -&gt; s.sessionCreationPolicy(STATELESS))
+        .authorizeHttpRequests(a -&gt; a
+            .requestMatchers(<span class="hljs-string">"/actuator/health"</span>).permitAll()
+            .requestMatchers(<span class="hljs-string">"/api/v2/admin/**"</span>).hasRole(<span class="hljs-string">"ADMIN"</span>)
+            .requestMatchers(HttpMethod.GET, <span class="hljs-string">"/api/*/reports/**"</span>).authenticated()
+            .anyRequest().denyAll())                      <span class="hljs-comment">// deny-by-default: silence means 403</span>
+        .oauth2ResourceServer(o -&gt; o.jwt(j -&gt;
+            j.jwtAuthenticationConverter(jwtAuthenticationConverter())))
+        .build();
+}
+</code></pre>
+<p><code>anyRequest().denyAll()</code> did the real work. A new route was <em>unreachable</em> until someone wrote an explicit rule for it, so a forgotten path failed closed — <code>403</code>, not <code>200</code>. The matcher couldn't drift open; there was no open to drift to.</p>
+<p>The kitchen walkthrough had named the one claim check the framework wouldn't assume. The diff that delivered it was two lines of YAML.</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">spring:</span>
+  <span class="hljs-attr">security:</span>
+    <span class="hljs-attr">oauth2:</span>
+      <span class="hljs-attr">resourceserver:</span>
+        <span class="hljs-attr">jwt:</span>
+          <span class="hljs-attr">issuer-uri:</span> <span class="hljs-string">https://auth.glasshouse.io/realms/glasshouse</span>
+          <span class="hljs-attr">audiences:</span> <span class="hljs-string">atrium</span>   <span class="hljs-comment"># ADR-010: the one claim validation the framework</span>
+                              <span class="hljs-comment"># will NOT assume — a valid token minted for another</span>
+                              <span class="hljs-comment"># service must bounce off this line</span>
+</code></pre>
+<p>And <code>hasRole("ADMIN")</code> was only a real rule because the chain no longer ended in <code>Customizer.withDefaults()</code>. Out of the box the converter maps the <code>scope</code>/<code>scp</code> claim to <code>SCOPE_*</code> authorities and nothing else. The default speaks <code>SCOPE_</code>, not <code>ROLE_</code>. Keycloak's realm roles live in their own claim. The mapping was hers to declare, like the audience.</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Bean</span>
+JwtAuthenticationConverter <span class="hljs-title function_">jwtAuthenticationConverter</span><span class="hljs-params">()</span> {
+    <span class="hljs-type">var</span> <span class="hljs-variable">roles</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">JwtGrantedAuthoritiesConverter</span>();
+    roles.setAuthoritiesClaimName(<span class="hljs-string">"roles"</span>);   <span class="hljs-comment">// Keycloak realm roles, flattened into the token</span>
+    roles.setAuthorityPrefix(<span class="hljs-string">"ROLE_"</span>);        <span class="hljs-comment">// the default maps scope -&gt; SCOPE_*, never ROLE_*</span>
+    <span class="hljs-type">var</span> <span class="hljs-variable">conv</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">JwtAuthenticationConverter</span>();
+    conv.setJwtGrantedAuthoritiesConverter(roles);
+    <span class="hljs-keyword">return</span> conv;
+}
+</code></pre>
+<p>But URL rules were coarse. "Any researcher can <code>GET</code> reports" wasn't the rule. The rule was "a researcher reads <em>their own</em> reports; a triager transitions status; an admin manages programs." That belonged on the domain methods, as defense in depth. Records at the boundary, not entities.</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Service</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ReportService</span> {
+
+    <span class="hljs-meta">@PreAuthorize("hasRole('RESEARCHER') and @reportAccess.owns(#reportId, authentication)")</span>
+    <span class="hljs-keyword">public</span> ReportView <span class="hljs-title function_">read</span><span class="hljs-params">(<span class="hljs-type">long</span> reportId)</span> { <span class="hljs-comment">/* load, map to record */</span> }
+
+    <span class="hljs-meta">@PreAuthorize("hasRole('TRIAGER')")</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">transition</span><span class="hljs-params">(<span class="hljs-type">long</span> reportId, Status next)</span> { <span class="hljs-comment">/* ... */</span> }
+
+    <span class="hljs-meta">@PreAuthorize("hasRole('ADMIN')")</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">updatePayoutSettings</span><span class="hljs-params">(<span class="hljs-type">long</span> programId, PayoutSettingsUpdate update)</span> { <span class="hljs-comment">/* ... */</span> }
+}
+</code></pre>
+<p><code>@reportAccess</code> was a small bean SpEL could call by name. The ownership logic lived in one tested place instead of copy-pasted strings.</p>
+<p>She paused at <code>@PreAuthorize</code> and felt February all over again — the smoke-cloud drawing. "Method security is an AOP proxy," she told Priya, who'd wandered over. "Same proxy as <code>@Transactional</code>. If <code>ReportService</code> calls its own <code>updatePayoutSettings</code> through <code>this.</code>, the proxy never sees the call and the check evaporates." The February discipline already had it covered — ADR-003 had made <code>this.</code>-invoked annotated methods a review finding, so <code>@PreAuthorize</code> simply joined the list the smoke cloud predicted. She made a note for the tests anyway: assert the rule fires on the <em>injected</em> bean, never on a hand-constructed one.</p>
+<p>The CORS fix was the smallest diff and the biggest mindset change: ACL out, named origins in.</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Bean</span>
+CorsConfigurationSource <span class="hljs-title function_">corsConfigurationSource</span><span class="hljs-params">()</span> {
+    <span class="hljs-type">var</span> <span class="hljs-variable">cfg</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">CorsConfiguration</span>();
+    cfg.setAllowedOrigins(List.of(<span class="hljs-string">"https://app.glasshouse.io"</span>));   <span class="hljs-comment">// named, not reflected</span>
+    cfg.setAllowedMethods(List.of(<span class="hljs-string">"GET"</span>, <span class="hljs-string">"POST"</span>, <span class="hljs-string">"PUT"</span>, <span class="hljs-string">"DELETE"</span>));
+    cfg.setAllowedHeaders(List.of(<span class="hljs-string">"Authorization"</span>, <span class="hljs-string">"Content-Type"</span>));
+    cfg.setAllowCredentials(<span class="hljs-literal">true</span>);                                  <span class="hljs-comment">// safe now: origin is fixed</span>
+    <span class="hljs-type">var</span> <span class="hljs-variable">source</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">UrlBasedCorsConfigurationSource</span>();
+    source.registerCorsConfiguration(<span class="hljs-string">"/**"</span>, cfg);
+    <span class="hljs-keyword">return</span> source;
+}
+</code></pre>
+<p>Then CSRF — Priya's standup question, exactly as Elias predicted.</p>
+<p>"Because JWT," Priya said.</p>
+<p>Elias waited. He was good at waiting. Maya let the silence work, then nudged. "Go a layer down. <em>Why</em> does a bearer token make CSRF moot?"</p>
+<p>Priya thought. "CSRF works because... the browser sends the cookie automatically? On any request to our domain, even from an attacker's page?"</p>
+<p>"That's it," Maya said. "CSRF exploits <em>ambient</em> credentials — a session cookie the browser attaches to every request to our origin whether the user meant to send it or not. The attacker's page can't read the response, but it can <em>cause</em> a state-changing request, and the cookie rides along for free — hence the CSRF token, a value that page can't obtain. But our credential lives in the <code>Authorization</code> header — JavaScript has to attach it deliberately; the browser never sends it ambiently. No ambient credential, no CSRF surface — leaving it on would guard nothing and break our own legitimate <code>POST</code>s." She wrote the rule on the Wall: <strong>cookie session → CSRF on; pure token API → CSRF off.</strong> "Same logic kills session fixation: in the cookie world an attacker pre-plants a session ID and waits for the victim to log into it — why Spring Security rotates the ID at login. No session, nothing to fixate. The skill isn't 'JWT is safer.' The skill is knowing which credential is ambient and defending <em>that</em>." The ADR recorded the rest: <em>off because no cookie credential; revisit the day a cookie appears.</em></p>
+<p>Before the Wall session broke up, Elias handed her the green pen. "One more drawing. Not the fix — the architecture. Walk the request again, but this time don't tell me what each layer <em>does</em>. Tell me what each layer is allowed to <em>trust</em> from the one before it."</p>
+<p>She started at the far left, where the Wall met the window.</p>
+<p class="diagram"><img src="assets/diag-61009875987bb0c9.svg" alt="diagram"></img></p>
+
+<p>"Zero standing trust," she said, stepping back. "Identity is cryptographic or absent, and silence past the matchers is a <code>403</code>. Each layer re-checks instead of trusting the one upstream: the chain settles <em>who</em>; the method layer re-asks <em>whether</em> — role and ownership — even though the request is already in. The chain authenticates, the method authorizes, the data layer assumes nothing."</p>
+<p>"And the arrows. What crosses them?"</p>
+<p>"Claims. Every arrow is a token boundary, and <strong>audience</strong> is the contract between zones — the claim naming which boundary the token was minted to cross. A token Keycloak issues for some <em>other</em> service carries a perfectly valid signature; it bounces off Atrium only because the audience check is ours to declare. Which is why it isn't a default."</p>
+<p>"Now say the quiet part. What failed in July — the matcher, or the model?"</p>
+<p>"The model. Fail-open is never designed; it <em>accumulates</em> — every refactor that outruns a URL string widens it, and nobody approves the purchase because nobody sees a diff. Deny-by-default makes fail-closed a <em>structural</em> property instead of a maintained one. That's the -ility on this wall — security as architecture, not as vigilance: making the safe thing the lazy thing." She wrote that last sentence under the zones, and then, before it cooled, the half-page:</p>
+<blockquote>
+<p><strong>ADR-010 — Security architecture.</strong>
+<strong>Context:</strong> <code>@sable</code> filed a valid critical — an admin route reachable without a role check, plus a credentialed wildcard CORS policy; the URL rules had drifted from the routes they guarded. <strong>Decision:</strong> Atrium is a stateless OAuth2 resource server (Keycloak issues, Atrium validates — signature, issuer, declared audience, expiry); the chain ends in <code>anyRequest().denyAll()</code>; method security adds role-plus-ownership rules as defense in depth; CSRF stays off for the token API <em>on the record</em> — no ambient cookie credential — and CORS is a named allow-list; access tokens run short with refresh rotation. <strong>Consequences:</strong> A forgotten route now fails closed (<code>403</code>) instead of open, at the price of an explicit rule for every new route — and a leaked token stays valid until expiry, a trade-off accepted in writing rather than discovered in an incident.</p>
+</blockquote>
+<p>Afterward, in the corridor, Elias said quietly: "That. That's the job. Consider this your notice — months before anyone else gets theirs." And he told her — privately, long before any all-hands would — that he was stepping back at year's end, and that this rebuild had been hers for a reason.</p>
+<p>The password path was boring in the best way: <code>DelegatingPasswordEncoder</code>, BCrypt with the <code>{bcrypt}</code> prefix at strength 12. "If this had been plaintext, or anything reversible," she told Priya, "the whole report would be a footnote — the storage itself would be the breach. BCrypt is deliberately slow, and the strength is a log scale: 12 means 2¹² rounds, so each increment doubles the cost. Milliseconds per login for us; an economic dead end for whoever steals the dump. And the prefix means we can migrate to Argon2 later without invalidating a single existing hash."</p>
+<p>The validation checklist went up on the Wall next to the filter boxes — <em>signature → issuer → audience → expiry → SecurityContext</em> — with the uncomfortable last line: a stolen token stays valid until it expires. Statelessness cuts both ways.</p>
+<h3 id="⚖-your-move-architect">⚖ Your move, architect</h3>
+<p>That last line is a fork, and ADR-010 had to take a side. Sable's <em>next</em> report, in some version of the future, is a leaked researcher token. Before reading what they chose, commit to a revocation posture:</p>
+<ul>
+<li><strong>A — Short TTL + refresh rotation, nothing else.</strong> Access tokens live minutes; refresh tokens rotate on every use, and a replayed refresh token kills the whole family. The exposure window is priced and accepted.</li>
+<li><strong>B — A denylist on the hot path.</strong> Revoked token IDs (<code>jti</code>) in a shared store, checked on every request. Real revocation, today.</li>
+<li><strong>C — Opaque tokens + introspection.</strong> The resource server asks the authorization server about every token it sees; Keycloak becomes the per-request source of truth.</li>
+</ul>
+<p><strong>The trade-offs, since you've committed:</strong> <strong>B</strong> gets real revocation but gives up <strong>statelessness</strong> — the shared store joins every request's critical path, adding latency and a new failure mode: when the denylist store is down, do you fail open or closed? You've just rebuilt the question this chapter answered. <strong>C</strong> gives up <strong>availability</strong>: the auth server joins every request's critical path — April's Cortexa lesson, where one synchronous dependency's bad afternoon spent the whole thread pool, the coupling ADR-006 taught the team to price. <strong>A</strong> is what they chose and what ADR-010 records: a <em>bounded</em> exposure window — fifteen minutes, knowable, in writing — in exchange for the horizontal scaling that justified JWTs in the first place. Every option sells an -ility; the architect's answer is naming which. The mature answer is never "you can't revoke a JWT." It's "we decided not to, here is the price, and here is the receipt."</p>
+<p>They shortened access tokens to fifteen minutes with refresh rotation, and recorded the heavier options — a denylist of revoked token IDs, live introspection — as the day-two path, each buying back control by selling statelessness.</p>
+<p>And one more mandate, hers: <strong>a security test per route</strong> — <code>401</code> without a token, <code>403</code> with the wrong role, <code>200</code> with the right one. The thing that would have caught the drift the day it shipped. Idris read the plan over her shoulder and said, mildly, "That's a few hundred new test classes on a CI already creeping past twenty minutes." Nobody heard him. They would, in August.</p>
+<p>Sable's retest came back two days later, one line: <em>"Clean. And thank you for publishing. — s."</em></p>
+<p>The postmortem went out publicly with Maya's name on it — the matcher, the CORS bean, the rebuild, the bounty paid in full. She left July carrying two things: a security model anyone could explain from the Wall, and a date in December nobody else knew yet.</p>
+<h2 id="the-debrief-—-ch10-the-breach-that-wasnt">The debrief — Ch.10, The Breach That Wasn't</h2>
+<blockquote>
+<p><strong>JWT stateless auth — where in the filter chain is the token validated, and why is CSRF protection usually disabled?</strong></p>
+<p><strong>Claim:</strong> In a stateless JWT API the token is validated in the security <em>filter chain</em> — before the <code>DispatcherServlet</code> ever runs — and CSRF protection is disabled because there is no ambient cookie credential to forge. <strong>Mechanism:</strong> The <code>BearerTokenAuthenticationFilter</code> extracts the <code>Authorization: Bearer</code> header and hands it to a <code>JwtDecoder</code>, which verifies the signature against the issuer's cached JWK set, then checks issuer, expiry, and (opt-in) audience; on success a converter maps claims to authorities and populates the <code>SecurityContextHolder</code>, and the <code>AuthorizationFilter</code> at the end of the chain enforces the access rules. Browsers auto-attach session cookies cross-site — that is CSRF; a header token is never sent ambiently, so a CSRF token would guard nothing. <strong>Trade-off:</strong> Stateless tokens scale horizontally with no session store, but you surrender server-side revocation — the token is good until expiry no matter what you learn afterward. <strong>Failure mode:</strong> A leaked token stays valid for its full TTL — the JWT revocation problem. Mitigate with short TTLs plus refresh rotation, a per-request denylist of token IDs, or live introspection — each trading statelessness back for control.</p>
+</blockquote>
+<p><strong>THE ARCHITECT'S LENS</strong></p>
+<ul>
+<li><strong>-ilities at stake:</strong> <strong>Security</strong> as <em>architecture</em>, not vigilance: trust zones with explicit token boundaries, and fail-closed as a structural property (<code>denyAll()</code>) versus fail-open as accumulated drift — the hole was opened by <strong>evolvability</strong> (a March refactor outrunning a URL string), which is why the fix is a model, not a matcher. <strong>Scalability</strong> is what statelessness buys; the revocation window is what it costs, priced in writing. Idris's unheard remark is <strong>operability</strong> debt accruing, due in August.</li>
+<li><strong>The ADR:</strong> ADR-010 — security architecture: stateless OAuth2 resource server (Keycloak issues, Atrium validates — signature, issuer, declared audience, expiry), <code>anyRequest().denyAll()</code> at the chain, method security with ownership rules as defense in depth, CSRF off <em>on the record</em>, CORS as a named allow-list, fifteen-minute tokens with refresh rotation.</li>
+<li><strong>Rejected alternatives:</strong> patching the matcher string and shipping (fixes the hole, not the class of hole — the drift re-opens at <code>/api/v3</code>); per-route annotations as the <em>only</em> layer (fail-open by omission — the same drift in annotation syntax); a denylist or introspection today (each buys revocation back by selling statelessness or availability — recorded as the purchasable day-two path instead).</li>
+<li><strong>Fight or lean:</strong> <em>Lean</em> on the resource-server machinery — <code>BearerTokenAuthenticationFilter</code>, the Nimbus decoder, the cached JWK set; hand-rolled token validation is how signature-bypass CVEs are born. <em>Fight</em> the permissive defaults you wrote yourselves — the wildcard CORS bean and the <code>authenticated()</code> fall-through were Glasshouse's ink, not Spring's — and remember the two checks the framework will <em>not</em> assume for you: the audience, and <code>denyAll()</code> itself.</li>
+</ul>
+<p><strong>Story anchors</strong></p>
+<ul>
+<li>The matcher guarding <code>/api/admin/**</code> while the routes moved to <code>/api/v2/admin/**</code> → URL-string rules drift; <code>anyRequest().denyAll()</code> makes a forgotten route fail closed instead of open.</li>
+<li>The CORS bean reflecting any origin with credentials, "to unblock the SPA" → CORS is a browser contract, not a server ACL; name your trusted origins.</li>
+<li>Sable's researcher token coming back <code>200 OK</code> from the admin endpoint → authentication (who you are) is not authorization (what you may do).</li>
+<li>The trust-zone map on the Wall — "the chain authenticates, the method authorizes, the data layer assumes nothing" → zero-trust posture: each layer re-checks instead of trusting upstream, and the audience claim is the contract that says which boundary a token was minted to cross.</li>
+</ul>
+<p><strong>Interview ammo</strong></p>
+<ul>
+<li><em>JWT stateless auth — where in the filter chain is the token validated, and why is CSRF usually disabled?</em> → In the <code>BearerTokenAuthenticationFilter</code>, before the servlet — signature, issuer, expiry, opt-in audience, then <code>SecurityContext</code>; CSRF is off because a header token isn't ambient the way a cookie is — it goes back on the day a cookie appears.</li>
+<li><em>Your <code>anyRequest().authenticated()</code> let a researcher reach an admin route — what's the real fix?</em> → Authenticated isn't authorized: invert to <code>denyAll()</code> with explicit allows so unknown routes fail closed, then layer <code>@PreAuthorize</code> ownership rules as defense in depth — remembering method security rides the same self-invocation-prone AOP proxy as <code>@Transactional</code>.</li>
+<li><em>How do you revoke a JWT before it expires?</em> → You don't, by design — you pick a poison: short TTL plus refresh rotation (cheap, small exposure window), a denylist of token IDs (a per-request lookup), or introspection (full control, fully stateful again).</li>
+<li><em>Architect follow-up — Your tokens can't be revoked; defend that to a security review.</em> → Name the sale and show the receipt: ADR-010 prices a bounded fifteen-minute exposure window (refresh rotation with reuse detection killing the family) against the statelessness that lets the API scale with no shared store on the hot path — and records denylist and introspection as purchasable day-two options, so "can't revoke" becomes "decided not to, in writing."</li>
+</ul>
+<p><strong>Pointers</strong> → Playbook Ch.2 · <code>examples/ch02_security/</code></p>
+<hr></hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="part-05.html" class="navigation navigation-prev " aria-label="Previous page: Part V — Production">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch-11.html" class="navigation navigation-next " aria-label="Next page: Chapter 11 — Forty Minutes">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 10 — The Breach That Wasn't","level":"1.16","depth":1,"next":{"title":"Chapter 11 — Forty Minutes","level":"1.17","depth":1,"path":"ch-11.md","ref":"ch-11.md","articles":[]},"previous":{"title":"Part V — Production","level":"1.15","depth":1,"path":"part-05.md","ref":"part-05.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Otmane Omry","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"The Spring Boot Mastery Book","language":"en","gitbook":"*"},"file":{"path":"ch-10.md","mtime":"2026-06-14T00:07:30.453Z","type":"markdown"},"gitbook":{"version":"6.2.1","time":"2026-06-14T00:07:44.741Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
