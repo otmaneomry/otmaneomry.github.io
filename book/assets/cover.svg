@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
 <defs>
-<radialGradient id="halo" cx="50%" cy="42%" r="55%">
-<stop offset="0%" stop-color="#6DB33F" stop-opacity="0.06"/>
-<stop offset="55%" stop-color="#6DB33F" stop-opacity="0.015"/>
+<radialGradient id="halo" cx="50%" cy="40%" r="56%">
+<stop offset="0%" stop-color="#6DB33F" stop-opacity="0.08"/>
+<stop offset="55%" stop-color="#6DB33F" stop-opacity="0.018"/>
 <stop offset="100%" stop-color="#6DB33F" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="cubeshadow" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#000" stop-opacity="0.5"/>
+<stop offset="62%" stop-color="#000" stop-opacity="0.16"/>
+<stop offset="100%" stop-color="#000" stop-opacity="0"/>
 </radialGradient>
 </defs>
 <rect width="800" height="1000" fill="#0d1117"/>
@@ -16,205 +21,72 @@
 <text x="400" y="142" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="48" font-weight="800" letter-spacing="2" fill="#6DB33F">MASTERY BOOK</text>
 <line x1="250" y1="162" x2="550" y2="162" stroke="#6DB33F" stroke-width="1" opacity="0.3"/>
 <text x="400" y="192" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="20" font-style="italic" fill="#c9d1d9">From your first bean to the architect’s chair.</text>
-<g transform="translate(400,236)">
-<circle cx="0" cy="-1" r="34" fill="#6DB33F" opacity="0.05"/>
-<path d="M0,-28 C-24,-22 -30,3 -25,19 C-19,31 -6,34 0,25" fill="none" stroke="#6DB33F" stroke-width="2.8" stroke-linecap="round"/>
-<path d="M0,-28 C24,-22 30,3 25,19 C19,31 6,34 0,25" fill="none" stroke="#6DB33F" stroke-width="2.8" stroke-linecap="round"/>
-<path d="M-12,-4 C-8,-15 8,-15 12,-4 C17,8 8,16 0,13 C-8,10 -17,17 -12,22" fill="none" stroke="#6DB33F" stroke-width="2" stroke-linecap="round"/>
-<circle cx="0" cy="4" r="3.6" fill="#6DB33F"/>
-</g>
-<polygon points="248,262 552,262 644,296 156,296" fill="#13181f" stroke="#21262d" stroke-width="1.5"/>
-<text x="400" y="286" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="11" letter-spacing="6" fill="#475060">GLASSHOUSE</text>
-<rect x="150" y="296" width="500" height="310" fill="#0f1419"/>
-<rect x="644" y="296" width="6" height="310" fill="#090d12"/>
-<line x1="150" y1="296" x2="650" y2="296" stroke="#30363d" stroke-width="2"/>
-<line x1="195" y1="298" x2="515" y2="604" stroke="#fff" stroke-width="1.5" opacity="0.022"/>
-<line x1="235" y1="298" x2="555" y2="604" stroke="#fff" stroke-width="1" opacity="0.013"/>
-<line x1="138" y1="296" x2="138" y2="608" stroke="#6DB33F" stroke-width="1.2" stroke-dasharray="2,7" opacity="0.4"/>
-<polygon points="133,610 143,610 138,619" fill="#6DB33F" opacity="0.45"/>
-<text x="126" y="451" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="9.5" letter-spacing="3" fill="#6DB33F" opacity="0.5" transform="rotate(-90 126 451)">THE REQUEST JOURNEY</text>
-<rect x="150" y="296" width="500" height="62" fill="#6DB33F" fill-opacity="0.045"/>
-<rect x="150" y="296" width="46" height="62" fill="#6DB33F" fill-opacity="0.17"/>
-<line x1="196" y1="296" x2="196" y2="358" stroke="#6DB33F" stroke-width="1" opacity="0.25"/>
-<text x="173.0" y="337.0" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="30" font-weight="800" fill="#6DB33F">B</text>
-<rect x="206" y="312" width="40" height="19" rx="2" fill="#6DB33F" opacity="0.13"/>
-<rect x="208" y="314" width="36" height="15" rx="1" fill="#6DB33F" opacity="0.72"/>
-<rect x="262" y="314" width="36" height="15" rx="1" fill="#0c1016" stroke="#6DB33F" stroke-opacity="0.07"/>
-<rect x="316" y="314" width="36" height="15" rx="1" fill="#0c1016" stroke="#6DB33F" stroke-opacity="0.07"/>
-<rect x="368" y="312" width="40" height="19" rx="2" fill="#6DB33F" opacity="0.13"/>
-<rect x="370" y="314" width="36" height="15" rx="1" fill="#6DB33F" opacity="0.72"/>
-<rect x="424" y="314" width="36" height="15" rx="1" fill="#0c1016" stroke="#6DB33F" stroke-opacity="0.07"/>
-<rect x="478" y="314" width="36" height="15" rx="1" fill="#0c1016" stroke="#6DB33F" stroke-opacity="0.07"/>
-<rect x="530" y="312" width="40" height="19" rx="2" fill="#6DB33F" opacity="0.13"/>
-<rect x="532" y="314" width="36" height="15" rx="1" fill="#6DB33F" opacity="0.72"/>
-<rect x="586" y="314" width="36" height="15" rx="1" fill="#0c1016" stroke="#6DB33F" stroke-opacity="0.07"/>
-<rect x="208" y="336" width="36" height="15" rx="1" fill="#0c1016" stroke="#6DB33F" stroke-opacity="0.07"/>
-<rect x="262" y="336" width="36" height="15" rx="1" fill="#0c1016" stroke="#6DB33F" stroke-opacity="0.07"/>
-<rect x="314" y="334" width="40" height="19" rx="2" fill="#6DB33F" opacity="0.13"/>
-<rect x="316" y="336" width="36" height="15" rx="1" fill="#6DB33F" opacity="0.72"/>
-<rect x="370" y="336" width="36" height="15" rx="1" fill="#0c1016" stroke="#6DB33F" stroke-opacity="0.07"/>
-<rect x="424" y="336" width="36" height="15" rx="1" fill="#0c1016" stroke="#6DB33F" stroke-opacity="0.07"/>
-<rect x="476" y="334" width="40" height="19" rx="2" fill="#6DB33F" opacity="0.13"/>
-<rect x="478" y="336" width="36" height="15" rx="1" fill="#6DB33F" opacity="0.72"/>
-<rect x="532" y="336" width="36" height="15" rx="1" fill="#0c1016" stroke="#6DB33F" stroke-opacity="0.07"/>
-<rect x="586" y="336" width="36" height="15" rx="1" fill="#0c1016" stroke="#6DB33F" stroke-opacity="0.07"/>
-<rect x="150" y="358" width="500" height="62" fill="#388bfd" fill-opacity="0.045"/>
-<rect x="150" y="358" width="46" height="62" fill="#388bfd" fill-opacity="0.17"/>
-<line x1="196" y1="358" x2="196" y2="420" stroke="#388bfd" stroke-width="1" opacity="0.25"/>
-<text x="173.0" y="399.0" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="30" font-weight="800" fill="#388bfd">E</text>
-<rect x="206" y="374" width="40" height="19" rx="2" fill="#388bfd" opacity="0.13"/>
-<rect x="208" y="376" width="36" height="15" rx="1" fill="#388bfd" opacity="0.72"/>
-<rect x="262" y="376" width="36" height="15" rx="1" fill="#0c1016" stroke="#388bfd" stroke-opacity="0.07"/>
-<rect x="314" y="374" width="40" height="19" rx="2" fill="#388bfd" opacity="0.13"/>
-<rect x="316" y="376" width="36" height="15" rx="1" fill="#388bfd" opacity="0.72"/>
-<rect x="370" y="376" width="36" height="15" rx="1" fill="#0c1016" stroke="#388bfd" stroke-opacity="0.07"/>
-<rect x="422" y="374" width="40" height="19" rx="2" fill="#388bfd" opacity="0.13"/>
-<rect x="424" y="376" width="36" height="15" rx="1" fill="#388bfd" opacity="0.72"/>
-<rect x="478" y="376" width="36" height="15" rx="1" fill="#0c1016" stroke="#388bfd" stroke-opacity="0.07"/>
-<rect x="530" y="374" width="40" height="19" rx="2" fill="#388bfd" opacity="0.13"/>
-<rect x="532" y="376" width="36" height="15" rx="1" fill="#388bfd" opacity="0.72"/>
-<rect x="586" y="376" width="36" height="15" rx="1" fill="#0c1016" stroke="#388bfd" stroke-opacity="0.07"/>
-<rect x="208" y="398" width="36" height="15" rx="1" fill="#0c1016" stroke="#388bfd" stroke-opacity="0.07"/>
-<rect x="260" y="396" width="40" height="19" rx="2" fill="#388bfd" opacity="0.13"/>
-<rect x="262" y="398" width="36" height="15" rx="1" fill="#388bfd" opacity="0.72"/>
-<rect x="316" y="398" width="36" height="15" rx="1" fill="#0c1016" stroke="#388bfd" stroke-opacity="0.07"/>
-<rect x="368" y="396" width="40" height="19" rx="2" fill="#388bfd" opacity="0.13"/>
-<rect x="370" y="398" width="36" height="15" rx="1" fill="#388bfd" opacity="0.72"/>
-<rect x="424" y="398" width="36" height="15" rx="1" fill="#0c1016" stroke="#388bfd" stroke-opacity="0.07"/>
-<rect x="476" y="396" width="40" height="19" rx="2" fill="#388bfd" opacity="0.13"/>
-<rect x="478" y="398" width="36" height="15" rx="1" fill="#388bfd" opacity="0.72"/>
-<rect x="532" y="398" width="36" height="15" rx="1" fill="#0c1016" stroke="#388bfd" stroke-opacity="0.07"/>
-<rect x="584" y="396" width="40" height="19" rx="2" fill="#388bfd" opacity="0.13"/>
-<rect x="586" y="398" width="36" height="15" rx="1" fill="#388bfd" opacity="0.72"/>
-<line x1="150" y1="358" x2="650" y2="358" stroke="#21262d" stroke-width="1"/>
-<rect x="150" y="420" width="500" height="62" fill="#f0883e" fill-opacity="0.045"/>
-<rect x="150" y="420" width="46" height="62" fill="#f0883e" fill-opacity="0.17"/>
-<line x1="196" y1="420" x2="196" y2="482" stroke="#f0883e" stroke-width="1" opacity="0.25"/>
-<text x="173.0" y="461.0" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="30" font-weight="800" fill="#f0883e">A</text>
-<rect x="208" y="438" width="36" height="15" rx="1" fill="#0c1016" stroke="#f0883e" stroke-opacity="0.07"/>
-<rect x="260" y="436" width="40" height="19" rx="2" fill="#f0883e" opacity="0.13"/>
-<rect x="262" y="438" width="36" height="15" rx="1" fill="#f0883e" opacity="0.72"/>
-<rect x="314" y="436" width="40" height="19" rx="2" fill="#f0883e" opacity="0.13"/>
-<rect x="316" y="438" width="36" height="15" rx="1" fill="#f0883e" opacity="0.72"/>
-<rect x="368" y="436" width="40" height="19" rx="2" fill="#f0883e" opacity="0.13"/>
-<rect x="370" y="438" width="36" height="15" rx="1" fill="#f0883e" opacity="0.72"/>
-<rect x="422" y="436" width="40" height="19" rx="2" fill="#f0883e" opacity="0.13"/>
-<rect x="424" y="438" width="36" height="15" rx="1" fill="#f0883e" opacity="0.72"/>
-<rect x="476" y="436" width="40" height="19" rx="2" fill="#f0883e" opacity="0.13"/>
-<rect x="478" y="438" width="36" height="15" rx="1" fill="#f0883e" opacity="0.72"/>
-<rect x="530" y="436" width="40" height="19" rx="2" fill="#f0883e" opacity="0.13"/>
-<rect x="532" y="438" width="36" height="15" rx="1" fill="#f0883e" opacity="0.72"/>
-<rect x="586" y="438" width="36" height="15" rx="1" fill="#0c1016" stroke="#f0883e" stroke-opacity="0.07"/>
-<rect x="208" y="460" width="36" height="15" rx="1" fill="#0c1016" stroke="#f0883e" stroke-opacity="0.07"/>
-<rect x="262" y="460" width="36" height="15" rx="1" fill="#0c1016" stroke="#f0883e" stroke-opacity="0.07"/>
-<rect x="314" y="458" width="40" height="19" rx="2" fill="#f0883e" opacity="0.13"/>
-<rect x="316" y="460" width="36" height="15" rx="1" fill="#f0883e" opacity="0.72"/>
-<rect x="368" y="458" width="40" height="19" rx="2" fill="#f0883e" opacity="0.13"/>
-<rect x="370" y="460" width="36" height="15" rx="1" fill="#f0883e" opacity="0.72"/>
-<rect x="422" y="458" width="40" height="19" rx="2" fill="#f0883e" opacity="0.13"/>
-<rect x="424" y="460" width="36" height="15" rx="1" fill="#f0883e" opacity="0.72"/>
-<rect x="476" y="458" width="40" height="19" rx="2" fill="#f0883e" opacity="0.13"/>
-<rect x="478" y="460" width="36" height="15" rx="1" fill="#f0883e" opacity="0.72"/>
-<rect x="532" y="460" width="36" height="15" rx="1" fill="#0c1016" stroke="#f0883e" stroke-opacity="0.07"/>
-<rect x="586" y="460" width="36" height="15" rx="1" fill="#0c1016" stroke="#f0883e" stroke-opacity="0.07"/>
-<line x1="150" y1="420" x2="650" y2="420" stroke="#21262d" stroke-width="1"/>
-<rect x="150" y="482" width="500" height="62" fill="#8b5cf6" fill-opacity="0.045"/>
-<rect x="150" y="482" width="46" height="62" fill="#8b5cf6" fill-opacity="0.17"/>
-<line x1="196" y1="482" x2="196" y2="544" stroke="#8b5cf6" stroke-width="1" opacity="0.25"/>
-<text x="173.0" y="523.0" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="30" font-weight="800" fill="#8b5cf6">N</text>
-<rect x="206" y="498" width="40" height="19" rx="2" fill="#8b5cf6" opacity="0.13"/>
-<rect x="208" y="500" width="36" height="15" rx="1" fill="#8b5cf6" opacity="0.72"/>
-<rect x="262" y="500" width="36" height="15" rx="1" fill="#0c1016" stroke="#8b5cf6" stroke-opacity="0.07"/>
-<rect x="316" y="500" width="36" height="15" rx="1" fill="#0c1016" stroke="#8b5cf6" stroke-opacity="0.07"/>
-<rect x="368" y="498" width="40" height="19" rx="2" fill="#8b5cf6" opacity="0.13"/>
-<rect x="370" y="500" width="36" height="15" rx="1" fill="#8b5cf6" opacity="0.72"/>
-<rect x="422" y="498" width="40" height="19" rx="2" fill="#8b5cf6" opacity="0.13"/>
-<rect x="424" y="500" width="36" height="15" rx="1" fill="#8b5cf6" opacity="0.72"/>
-<rect x="478" y="500" width="36" height="15" rx="1" fill="#0c1016" stroke="#8b5cf6" stroke-opacity="0.07"/>
-<rect x="532" y="500" width="36" height="15" rx="1" fill="#0c1016" stroke="#8b5cf6" stroke-opacity="0.07"/>
-<rect x="584" y="498" width="40" height="19" rx="2" fill="#8b5cf6" opacity="0.13"/>
-<rect x="586" y="500" width="36" height="15" rx="1" fill="#8b5cf6" opacity="0.72"/>
-<rect x="206" y="520" width="40" height="19" rx="2" fill="#8b5cf6" opacity="0.13"/>
-<rect x="208" y="522" width="36" height="15" rx="1" fill="#8b5cf6" opacity="0.72"/>
-<rect x="262" y="522" width="36" height="15" rx="1" fill="#0c1016" stroke="#8b5cf6" stroke-opacity="0.07"/>
-<rect x="316" y="522" width="36" height="15" rx="1" fill="#0c1016" stroke="#8b5cf6" stroke-opacity="0.07"/>
-<rect x="370" y="522" width="36" height="15" rx="1" fill="#0c1016" stroke="#8b5cf6" stroke-opacity="0.07"/>
-<rect x="424" y="522" width="36" height="15" rx="1" fill="#0c1016" stroke="#8b5cf6" stroke-opacity="0.07"/>
-<rect x="478" y="522" width="36" height="15" rx="1" fill="#0c1016" stroke="#8b5cf6" stroke-opacity="0.07"/>
-<rect x="532" y="522" width="36" height="15" rx="1" fill="#0c1016" stroke="#8b5cf6" stroke-opacity="0.07"/>
-<rect x="584" y="520" width="40" height="19" rx="2" fill="#8b5cf6" opacity="0.13"/>
-<rect x="586" y="522" width="36" height="15" rx="1" fill="#8b5cf6" opacity="0.72"/>
-<line x1="150" y1="482" x2="650" y2="482" stroke="#21262d" stroke-width="1"/>
-<rect x="150" y="544" width="500" height="62" fill="#22d3ee" fill-opacity="0.045"/>
-<rect x="150" y="544" width="46" height="62" fill="#22d3ee" fill-opacity="0.17"/>
-<line x1="196" y1="544" x2="196" y2="606" stroke="#22d3ee" stroke-width="1" opacity="0.25"/>
-<text x="173.0" y="585.0" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="30" font-weight="800" fill="#22d3ee">S</text>
-<rect x="206" y="560" width="40" height="19" rx="2" fill="#22d3ee" opacity="0.13"/>
-<rect x="208" y="562" width="36" height="15" rx="1" fill="#22d3ee" opacity="0.72"/>
-<rect x="260" y="560" width="40" height="19" rx="2" fill="#22d3ee" opacity="0.13"/>
-<rect x="262" y="562" width="36" height="15" rx="1" fill="#22d3ee" opacity="0.72"/>
-<rect x="314" y="560" width="40" height="19" rx="2" fill="#22d3ee" opacity="0.13"/>
-<rect x="316" y="562" width="36" height="15" rx="1" fill="#22d3ee" opacity="0.72"/>
-<rect x="368" y="560" width="40" height="19" rx="2" fill="#22d3ee" opacity="0.13"/>
-<rect x="370" y="562" width="36" height="15" rx="1" fill="#22d3ee" opacity="0.72"/>
-<rect x="422" y="560" width="40" height="19" rx="2" fill="#22d3ee" opacity="0.13"/>
-<rect x="424" y="562" width="36" height="15" rx="1" fill="#22d3ee" opacity="0.72"/>
-<rect x="476" y="560" width="40" height="19" rx="2" fill="#22d3ee" opacity="0.13"/>
-<rect x="478" y="562" width="36" height="15" rx="1" fill="#22d3ee" opacity="0.72"/>
-<rect x="530" y="560" width="40" height="19" rx="2" fill="#22d3ee" opacity="0.13"/>
-<rect x="532" y="562" width="36" height="15" rx="1" fill="#22d3ee" opacity="0.72"/>
-<rect x="584" y="560" width="40" height="19" rx="2" fill="#22d3ee" opacity="0.13"/>
-<rect x="586" y="562" width="36" height="15" rx="1" fill="#22d3ee" opacity="0.72"/>
-<rect x="206" y="582" width="40" height="19" rx="2" fill="#22d3ee" opacity="0.13"/>
-<rect x="208" y="584" width="36" height="15" rx="1" fill="#22d3ee" opacity="0.72"/>
-<rect x="260" y="582" width="40" height="19" rx="2" fill="#22d3ee" opacity="0.13"/>
-<rect x="262" y="584" width="36" height="15" rx="1" fill="#22d3ee" opacity="0.72"/>
-<rect x="314" y="582" width="40" height="19" rx="2" fill="#22d3ee" opacity="0.13"/>
-<rect x="316" y="584" width="36" height="15" rx="1" fill="#22d3ee" opacity="0.72"/>
-<rect x="368" y="582" width="40" height="19" rx="2" fill="#22d3ee" opacity="0.13"/>
-<rect x="370" y="584" width="36" height="15" rx="1" fill="#22d3ee" opacity="0.72"/>
-<rect x="422" y="582" width="40" height="19" rx="2" fill="#22d3ee" opacity="0.13"/>
-<rect x="424" y="584" width="36" height="15" rx="1" fill="#22d3ee" opacity="0.72"/>
-<rect x="476" y="582" width="40" height="19" rx="2" fill="#22d3ee" opacity="0.13"/>
-<rect x="478" y="584" width="36" height="15" rx="1" fill="#22d3ee" opacity="0.72"/>
-<rect x="530" y="582" width="40" height="19" rx="2" fill="#22d3ee" opacity="0.13"/>
-<rect x="532" y="584" width="36" height="15" rx="1" fill="#22d3ee" opacity="0.72"/>
-<rect x="584" y="582" width="40" height="19" rx="2" fill="#22d3ee" opacity="0.13"/>
-<rect x="586" y="584" width="36" height="15" rx="1" fill="#22d3ee" opacity="0.72"/>
-<line x1="150" y1="544" x2="650" y2="544" stroke="#21262d" stroke-width="1"/>
-<rect x="138" y="606" width="524" height="16" rx="1" fill="#161b22" stroke="#21262d" stroke-width="1.5"/>
-<line x1="90" y1="636" x2="710" y2="636" stroke="#21262d" stroke-width="1.5"/>
-<rect x="150" y="636" width="500" height="7" fill="#6DB33F" fill-opacity="0.02"/>
-<text x="400" y="682" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="10.5" letter-spacing="3.5" fill="#6e7681">THE ARC OF EVERY CHAPTER</text>
-<line x1="232" y1="722" x2="568" y2="722" stroke="#30363d" stroke-width="1.5"/>
-<path d="M313,717 L320,722 L313,727" fill="none" stroke="#6e7681" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M481,717 L488,722 L481,727" fill="none" stroke="#6e7681" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="232" cy="722" r="6.5" fill="#0d1117" stroke="#8b949e" stroke-width="1.8"/>
-<text x="232" y="750" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="1.5" fill="#8b949e">MECHANIC</text>
-<circle cx="400" cy="722" r="6.5" fill="#0d1117" stroke="#c9d1d9" stroke-width="1.8"/>
-<text x="400" y="750" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="1.5" fill="#c9d1d9">SENIOR</text>
-<circle cx="568" cy="722" r="13" fill="#6DB33F" opacity="0.14"/>
-<circle cx="568" cy="722" r="7" fill="#6DB33F"/>
-<text x="568" y="750" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="800" letter-spacing="1.5" fill="#6DB33F">ARCHITECT</text>
-<text x="400" y="792" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="10.5" letter-spacing="3.5" fill="#6e7681">B.E.A.N.S. · THE FIVE PILLARS</text>
-<rect x="300" y="802" width="19" height="19" rx="3" fill="#6DB33F" opacity="0.9"/>
-<text x="309.5" y="817" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="800" fill="#0d1117">B</text>
-<text x="336" y="816" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#adbac7">Bootstrap</text>
-<rect x="300" y="824" width="19" height="19" rx="3" fill="#388bfd" opacity="0.9"/>
-<text x="309.5" y="839" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="800" fill="#0d1117">E</text>
-<text x="336" y="838" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#adbac7">Endpoints</text>
-<rect x="300" y="846" width="19" height="19" rx="3" fill="#f0883e" opacity="0.9"/>
-<text x="309.5" y="861" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="800" fill="#0d1117">A</text>
-<text x="336" y="860" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#adbac7">Access to data</text>
-<rect x="300" y="868" width="19" height="19" rx="3" fill="#8b5cf6" opacity="0.9"/>
-<text x="309.5" y="883" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="800" fill="#0d1117">N</text>
-<text x="336" y="882" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#adbac7">Non-functional</text>
-<rect x="300" y="890" width="19" height="19" rx="3" fill="#22d3ee" opacity="0.9"/>
-<text x="309.5" y="905" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="800" fill="#0d1117">S</text>
-<text x="336" y="904" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#adbac7">Scale &amp; ship</text>
-<text x="400" y="932" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" font-style="italic" fill="#8b949e">“Show me the mechanism. Then show me the system.”</text>
-<text x="400" y="959" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" letter-spacing="4" font-weight="600" fill="#c9d1d9">OTMANE OMRY</text>
-<text x="400" y="978" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="9" letter-spacing="2.5" fill="#6e7681">v2.0 · SEVENTEEN INCIDENTS · ONE HOSTILE REVIEW</text>
+<ellipse cx="400" cy="650" rx="174" ry="27" fill="url(#cubeshadow)"/>
+<polygon points="400.0,248.0 568.0,344.0 400.0,440.0 232.0,344.0" fill="#06090d"/>
+<polygon points="232.0,344.0 400.0,440.0 400.0,632.0 232.0,536.0" fill="#06090d"/>
+<polygon points="568.0,344.0 400.0,440.0 400.0,632.0 568.0,536.0" fill="#06090d"/>
+<polygon points="400.0,252.8 447.6,280.0 400.0,307.2 352.4,280.0" fill="#388bfd"/>
+<polygon points="344.0,284.8 391.6,312.0 344.0,339.2 296.4,312.0" fill="#6DB33F"/>
+<polygon points="288.0,316.8 335.6,344.0 288.0,371.2 240.4,344.0" fill="#6DB33F"/>
+<polygon points="456.0,284.8 503.6,312.0 456.0,339.2 408.4,312.0" fill="#6DB33F"/>
+<polygon points="400.0,316.8 447.6,344.0 400.0,371.2 352.4,344.0" fill="#6DB33F"/>
+<polygon points="344.0,348.8 391.6,376.0 344.0,403.2 296.4,376.0" fill="#22d3ee"/>
+<polygon points="512.0,316.8 559.6,344.0 512.0,371.2 464.4,344.0" fill="#6DB33F"/>
+<polygon points="456.0,348.8 503.6,376.0 456.0,403.2 408.4,376.0" fill="#8b5cf6"/>
+<polygon points="400.0,380.8 447.6,408.0 400.0,435.2 352.4,408.0" fill="#6DB33F"/>
+<polygon points="236.2,351.2 283.8,378.4 283.8,432.8 236.2,405.6" fill="#388bfd"/>
+<polygon points="236.2,351.2 283.8,378.4 283.8,432.8 236.2,405.6" fill="#000" fill-opacity="0.22"/>
+<polygon points="292.2,383.2 339.8,410.4 339.8,464.8 292.2,437.6" fill="#388bfd"/>
+<polygon points="292.2,383.2 339.8,410.4 339.8,464.8 292.2,437.6" fill="#000" fill-opacity="0.22"/>
+<polygon points="348.2,415.2 395.8,442.4 395.8,496.8 348.2,469.6" fill="#f0883e"/>
+<polygon points="348.2,415.2 395.8,442.4 395.8,496.8 348.2,469.6" fill="#000" fill-opacity="0.22"/>
+<polygon points="236.2,415.2 283.8,442.4 283.8,496.8 236.2,469.6" fill="#8b5cf6"/>
+<polygon points="236.2,415.2 283.8,442.4 283.8,496.8 236.2,469.6" fill="#000" fill-opacity="0.22"/>
+<polygon points="292.2,447.2 339.8,474.4 339.8,528.8 292.2,501.6" fill="#388bfd"/>
+<polygon points="292.2,447.2 339.8,474.4 339.8,528.8 292.2,501.6" fill="#000" fill-opacity="0.22"/>
+<polygon points="348.2,479.2 395.8,506.4 395.8,560.8 348.2,533.6" fill="#388bfd"/>
+<polygon points="348.2,479.2 395.8,506.4 395.8,560.8 348.2,533.6" fill="#000" fill-opacity="0.22"/>
+<polygon points="236.2,479.2 283.8,506.4 283.8,560.8 236.2,533.6" fill="#388bfd"/>
+<polygon points="236.2,479.2 283.8,506.4 283.8,560.8 236.2,533.6" fill="#000" fill-opacity="0.22"/>
+<polygon points="292.2,511.2 339.8,538.4 339.8,592.8 292.2,565.6" fill="#6DB33F"/>
+<polygon points="292.2,511.2 339.8,538.4 339.8,592.8 292.2,565.6" fill="#000" fill-opacity="0.22"/>
+<polygon points="348.2,543.2 395.8,570.4 395.8,624.8 348.2,597.6" fill="#388bfd"/>
+<polygon points="348.2,543.2 395.8,570.4 395.8,624.8 348.2,597.6" fill="#000" fill-opacity="0.22"/>
+<polygon points="563.8,351.2 516.2,378.4 516.2,432.8 563.8,405.6" fill="#f0883e"/>
+<polygon points="563.8,351.2 516.2,378.4 516.2,432.8 563.8,405.6" fill="#000" fill-opacity="0.09"/>
+<polygon points="507.8,383.2 460.2,410.4 460.2,464.8 507.8,437.6" fill="#22d3ee"/>
+<polygon points="507.8,383.2 460.2,410.4 460.2,464.8 507.8,437.6" fill="#000" fill-opacity="0.09"/>
+<polygon points="451.8,415.2 404.2,442.4 404.2,496.8 451.8,469.6" fill="#f0883e"/>
+<polygon points="451.8,415.2 404.2,442.4 404.2,496.8 451.8,469.6" fill="#000" fill-opacity="0.09"/>
+<polygon points="563.8,415.2 516.2,442.4 516.2,496.8 563.8,469.6" fill="#f0883e"/>
+<polygon points="563.8,415.2 516.2,442.4 516.2,496.8 563.8,469.6" fill="#000" fill-opacity="0.09"/>
+<polygon points="507.8,447.2 460.2,474.4 460.2,528.8 507.8,501.6" fill="#f0883e"/>
+<polygon points="507.8,447.2 460.2,474.4 460.2,528.8 507.8,501.6" fill="#000" fill-opacity="0.09"/>
+<polygon points="451.8,479.2 404.2,506.4 404.2,560.8 451.8,533.6" fill="#8b5cf6"/>
+<polygon points="451.8,479.2 404.2,506.4 404.2,560.8 451.8,533.6" fill="#000" fill-opacity="0.09"/>
+<polygon points="563.8,479.2 516.2,506.4 516.2,560.8 563.8,533.6" fill="#6DB33F"/>
+<polygon points="563.8,479.2 516.2,506.4 516.2,560.8 563.8,533.6" fill="#000" fill-opacity="0.09"/>
+<polygon points="507.8,511.2 460.2,538.4 460.2,592.8 507.8,565.6" fill="#f0883e"/>
+<polygon points="507.8,511.2 460.2,538.4 460.2,592.8 507.8,565.6" fill="#000" fill-opacity="0.09"/>
+<polygon points="451.8,543.2 404.2,570.4 404.2,624.8 451.8,597.6" fill="#f0883e"/>
+<polygon points="451.8,543.2 404.2,570.4 404.2,624.8 451.8,597.6" fill="#000" fill-opacity="0.09"/>
+<polygon points="400.0,248.0 568.0,344.0 400.0,440.0 232.0,344.0" fill="#fff" fill-opacity="0.05"/>
+<polygon points="400.0,248.0 568.0,344.0 568.0,536.0 400.0,632.0 232.0,536.0 232.0,344.0" fill="none" stroke="#6DB33F" stroke-opacity="0.16" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="400" y="682" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="10.5" letter-spacing="3.5" fill="#6e7681">SOLVED ONE TURN AT A TIME</text>
+<text x="400" y="736" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="10.5" letter-spacing="3.5" fill="#6e7681">THE ARC OF EVERY CHAPTER</text>
+<line x1="232" y1="776" x2="568" y2="776" stroke="#30363d" stroke-width="1.5"/>
+<path d="M313,771 L320,776 L313,781" fill="none" stroke="#6e7681" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M481,771 L488,776 L481,781" fill="none" stroke="#6e7681" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="232" cy="776" r="6.5" fill="#0d1117" stroke="#8b949e" stroke-width="1.8"/>
+<text x="232" y="804" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="1.5" fill="#8b949e">MECHANIC</text>
+<circle cx="400" cy="776" r="6.5" fill="#0d1117" stroke="#c9d1d9" stroke-width="1.8"/>
+<text x="400" y="804" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="1.5" fill="#c9d1d9">SENIOR</text>
+<circle cx="568" cy="776" r="13" fill="#6DB33F" opacity="0.14"/>
+<circle cx="568" cy="776" r="7" fill="#6DB33F"/>
+<text x="568" y="804" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="800" letter-spacing="1.5" fill="#6DB33F">ARCHITECT</text>
+<text x="400" y="928" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" font-style="italic" fill="#8b949e">“Show me the mechanism. Then show me the system.”</text>
+<text x="400" y="955" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" letter-spacing="4" font-weight="600" fill="#c9d1d9">OTMANE OMRY</text>
+<text x="400" y="974" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="9" letter-spacing="2.5" fill="#6e7681">v2.0 · SEVENTEEN INCIDENTS · ONE HOSTILE REVIEW</text>
 <path d="M34,38 L34,16 L56,16" fill="none" stroke="#6DB33F" stroke-width="1.5" opacity="0.22"/>
 <path d="M766,38 L766,16 L744,16" fill="none" stroke="#6DB33F" stroke-width="1.5" opacity="0.22"/>
 <path d="M34,962 L34,984 L56,984" fill="none" stroke="#6DB33F" stroke-width="1.5" opacity="0.22"/>
