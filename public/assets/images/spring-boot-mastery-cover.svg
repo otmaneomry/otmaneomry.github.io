@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+<defs>
+<radialGradient id="halo" cx="50%" cy="40%" r="56%">
+<stop offset="0%" stop-color="#6DB33F" stop-opacity="0.08"/>
+<stop offset="55%" stop-color="#6DB33F" stop-opacity="0.018"/>
+<stop offset="100%" stop-color="#6DB33F" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="cubeshadow" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#000" stop-opacity="0.5"/>
+<stop offset="62%" stop-color="#000" stop-opacity="0.16"/>
+<stop offset="100%" stop-color="#000" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect width="800" height="1000" fill="#0d1117"/>
+<rect width="800" height="1000" fill="url(#halo)"/>
+<rect x="0" y="0" width="800" height="4" fill="#6DB33F"/>
+<rect x="0" y="996" width="800" height="4" fill="#6DB33F"/>
+<text x="400" y="34" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="11" letter-spacing="4" fill="#6DB33F" opacity="0.6">SPRING BOOT 4 · SPRING FRAMEWORK 7 · JAVA 21</text>
+<text x="400" y="92" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="48" font-weight="800" letter-spacing="2" fill="#f0f6fc">THE SPRING BOOT</text>
+<text x="400" y="142" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="48" font-weight="800" letter-spacing="2" fill="#6DB33F">MASTERY BOOK</text>
+<line x1="250" y1="162" x2="550" y2="162" stroke="#6DB33F" stroke-width="1" opacity="0.3"/>
+<text x="400" y="192" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="20" font-style="italic" fill="#c9d1d9">From your first bean to the architect’s chair.</text>
+<ellipse cx="400" cy="650" rx="174" ry="27" fill="url(#cubeshadow)"/>
+<polygon points="400.0,248.0 568.0,344.0 400.0,440.0 232.0,344.0" fill="#06090d"/>
+<polygon points="232.0,344.0 400.0,440.0 400.0,632.0 232.0,536.0" fill="#06090d"/>
+<polygon points="568.0,344.0 400.0,440.0 400.0,632.0 568.0,536.0" fill="#06090d"/>
+<polygon points="400.0,252.8 447.6,280.0 400.0,307.2 352.4,280.0" fill="#388bfd"/>
+<polygon points="344.0,284.8 391.6,312.0 344.0,339.2 296.4,312.0" fill="#6DB33F"/>
+<polygon points="288.0,316.8 335.6,344.0 288.0,371.2 240.4,344.0" fill="#6DB33F"/>
+<polygon points="456.0,284.8 503.6,312.0 456.0,339.2 408.4,312.0" fill="#6DB33F"/>
+<polygon points="400.0,316.8 447.6,344.0 400.0,371.2 352.4,344.0" fill="#6DB33F"/>
+<polygon points="344.0,348.8 391.6,376.0 344.0,403.2 296.4,376.0" fill="#22d3ee"/>
+<polygon points="512.0,316.8 559.6,344.0 512.0,371.2 464.4,344.0" fill="#6DB33F"/>
+<polygon points="456.0,348.8 503.6,376.0 456.0,403.2 408.4,376.0" fill="#8b5cf6"/>
+<polygon points="400.0,380.8 447.6,408.0 400.0,435.2 352.4,408.0" fill="#6DB33F"/>
+<polygon points="236.2,351.2 283.8,378.4 283.8,432.8 236.2,405.6" fill="#388bfd"/>
+<polygon points="236.2,351.2 283.8,378.4 283.8,432.8 236.2,405.6" fill="#000" fill-opacity="0.22"/>
+<polygon points="292.2,383.2 339.8,410.4 339.8,464.8 292.2,437.6" fill="#388bfd"/>
+<polygon points="292.2,383.2 339.8,410.4 339.8,464.8 292.2,437.6" fill="#000" fill-opacity="0.22"/>
+<polygon points="348.2,415.2 395.8,442.4 395.8,496.8 348.2,469.6" fill="#f0883e"/>
+<polygon points="348.2,415.2 395.8,442.4 395.8,496.8 348.2,469.6" fill="#000" fill-opacity="0.22"/>
+<polygon points="236.2,415.2 283.8,442.4 283.8,496.8 236.2,469.6" fill="#8b5cf6"/>
+<polygon points="236.2,415.2 283.8,442.4 283.8,496.8 236.2,469.6" fill="#000" fill-opacity="0.22"/>
+<polygon points="292.2,447.2 339.8,474.4 339.8,528.8 292.2,501.6" fill="#388bfd"/>
+<polygon points="292.2,447.2 339.8,474.4 339.8,528.8 292.2,501.6" fill="#000" fill-opacity="0.22"/>
+<polygon points="348.2,479.2 395.8,506.4 395.8,560.8 348.2,533.6" fill="#388bfd"/>
+<polygon points="348.2,479.2 395.8,506.4 395.8,560.8 348.2,533.6" fill="#000" fill-opacity="0.22"/>
+<polygon points="236.2,479.2 283.8,506.4 283.8,560.8 236.2,533.6" fill="#388bfd"/>
+<polygon points="236.2,479.2 283.8,506.4 283.8,560.8 236.2,533.6" fill="#000" fill-opacity="0.22"/>
+<polygon points="292.2,511.2 339.8,538.4 339.8,592.8 292.2,565.6" fill="#6DB33F"/>
+<polygon points="292.2,511.2 339.8,538.4 339.8,592.8 292.2,565.6" fill="#000" fill-opacity="0.22"/>
+<polygon points="348.2,543.2 395.8,570.4 395.8,624.8 348.2,597.6" fill="#388bfd"/>
+<polygon points="348.2,543.2 395.8,570.4 395.8,624.8 348.2,597.6" fill="#000" fill-opacity="0.22"/>
+<polygon points="563.8,351.2 516.2,378.4 516.2,432.8 563.8,405.6" fill="#f0883e"/>
+<polygon points="563.8,351.2 516.2,378.4 516.2,432.8 563.8,405.6" fill="#000" fill-opacity="0.09"/>
+<polygon points="507.8,383.2 460.2,410.4 460.2,464.8 507.8,437.6" fill="#22d3ee"/>
+<polygon points="507.8,383.2 460.2,410.4 460.2,464.8 507.8,437.6" fill="#000" fill-opacity="0.09"/>
+<polygon points="451.8,415.2 404.2,442.4 404.2,496.8 451.8,469.6" fill="#f0883e"/>
+<polygon points="451.8,415.2 404.2,442.4 404.2,496.8 451.8,469.6" fill="#000" fill-opacity="0.09"/>
+<polygon points="563.8,415.2 516.2,442.4 516.2,496.8 563.8,469.6" fill="#f0883e"/>
+<polygon points="563.8,415.2 516.2,442.4 516.2,496.8 563.8,469.6" fill="#000" fill-opacity="0.09"/>
+<polygon points="507.8,447.2 460.2,474.4 460.2,528.8 507.8,501.6" fill="#f0883e"/>
+<polygon points="507.8,447.2 460.2,474.4 460.2,528.8 507.8,501.6" fill="#000" fill-opacity="0.09"/>
+<polygon points="451.8,479.2 404.2,506.4 404.2,560.8 451.8,533.6" fill="#8b5cf6"/>
+<polygon points="451.8,479.2 404.2,506.4 404.2,560.8 451.8,533.6" fill="#000" fill-opacity="0.09"/>
+<polygon points="563.8,479.2 516.2,506.4 516.2,560.8 563.8,533.6" fill="#6DB33F"/>
+<polygon points="563.8,479.2 516.2,506.4 516.2,560.8 563.8,533.6" fill="#000" fill-opacity="0.09"/>
+<polygon points="507.8,511.2 460.2,538.4 460.2,592.8 507.8,565.6" fill="#f0883e"/>
+<polygon points="507.8,511.2 460.2,538.4 460.2,592.8 507.8,565.6" fill="#000" fill-opacity="0.09"/>
+<polygon points="451.8,543.2 404.2,570.4 404.2,624.8 451.8,597.6" fill="#f0883e"/>
+<polygon points="451.8,543.2 404.2,570.4 404.2,624.8 451.8,597.6" fill="#000" fill-opacity="0.09"/>
+<polygon points="400.0,248.0 568.0,344.0 400.0,440.0 232.0,344.0" fill="#fff" fill-opacity="0.05"/>
+<polygon points="400.0,248.0 568.0,344.0 568.0,536.0 400.0,632.0 232.0,536.0 232.0,344.0" fill="none" stroke="#6DB33F" stroke-opacity="0.16" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="400" y="682" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="10.5" letter-spacing="3.5" fill="#6e7681">SOLVED ONE TURN AT A TIME</text>
+<text x="400" y="736" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="10.5" letter-spacing="3.5" fill="#6e7681">THE ARC OF EVERY CHAPTER</text>
+<line x1="232" y1="776" x2="568" y2="776" stroke="#30363d" stroke-width="1.5"/>
+<path d="M313,771 L320,776 L313,781" fill="none" stroke="#6e7681" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M481,771 L488,776 L481,781" fill="none" stroke="#6e7681" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="232" cy="776" r="6.5" fill="#0d1117" stroke="#8b949e" stroke-width="1.8"/>
+<text x="232" y="804" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="1.5" fill="#8b949e">MECHANIC</text>
+<circle cx="400" cy="776" r="6.5" fill="#0d1117" stroke="#c9d1d9" stroke-width="1.8"/>
+<text x="400" y="804" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="1.5" fill="#c9d1d9">SENIOR</text>
+<circle cx="568" cy="776" r="13" fill="#6DB33F" opacity="0.14"/>
+<circle cx="568" cy="776" r="7" fill="#6DB33F"/>
+<text x="568" y="804" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="800" letter-spacing="1.5" fill="#6DB33F">ARCHITECT</text>
+<text x="400" y="928" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" font-style="italic" fill="#8b949e">“Show me the mechanism. Then show me the system.”</text>
+<text x="400" y="955" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" letter-spacing="4" font-weight="600" fill="#c9d1d9">OTMANE OMRY</text>
+<text x="400" y="974" text-anchor="middle" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="9" letter-spacing="2.5" fill="#6e7681">v2.0 · SEVENTEEN INCIDENTS · ONE HOSTILE REVIEW</text>
+<path d="M34,38 L34,16 L56,16" fill="none" stroke="#6DB33F" stroke-width="1.5" opacity="0.22"/>
+<path d="M766,38 L766,16 L744,16" fill="none" stroke="#6DB33F" stroke-width="1.5" opacity="0.22"/>
+<path d="M34,962 L34,984 L56,984" fill="none" stroke="#6DB33F" stroke-width="1.5" opacity="0.22"/>
+<path d="M766,962 L766,984 L744,984" fill="none" stroke="#6DB33F" stroke-width="1.5" opacity="0.22"/>
+</svg>
