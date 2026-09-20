@@ -5,7 +5,7 @@ Modern portfolio website showcasing my work and experience as a Lead Software De
 ## 🚀 Live Demo
 [https://otmaneomry.github.io](https://otmaneomry.github.io)
 
-## 🤝 Connect with me
+## 🤝 Connect with me :
 [<img align="left" alt="otmaneomry | Twitter" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />][twitter]
 [<img align="left" alt="otmaneomry | LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />][linkedin]
 
