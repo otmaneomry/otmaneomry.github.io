@@ -85,8 +85,15 @@ const BookFeature = () => {
                 >
                   or start at Chapter 1 →
                 </a>
+                <a
+                    href="/Spring-Boot-Mastery-Book.pdf"
+                    download
+                    className="text-[#ABB2BF] hover:text-white duration-150"
+                >
+                  Download PDF ↓
+                </a>
                 <span className="text-[#6B7280] text-sm md:ml-auto">
-                  v1.6 · Updated June 2026 · 6 parts + capstone
+                  v2.4 · Updated November 2026 · 6 parts + capstone
                 </span>
               </div>
             </div>
